@@ -1,0 +1,135 @@
+[
+  {
+    "id": 92,
+    "address": "Mirpur 1, Tolarbag, 3 Number Gate",
+    "components": {
+      "area": "Mirpur"
+    }
+  },
+  {
+    "id": 105,
+    "address": "115, Shantinagar, Rupayan Z.A Tower, Dhaka . Flat-C14",
+    "components": {
+      "area": "Shantinagar"
+    }
+  },
+  {
+    "id": 200,
+    "address": "Gulshan 2, Road Number 65, Navy Headquarter",
+    "components": {
+      "area": "Gulshan"
+    }
+  },
+  {
+    "id": 223,
+    "address": "Dhanmondi 12/A Road, House Number 79, Flat Number A/6",
+    "components": {
+      "area": "Dhanmondi"
+    }
+  },
+  {
+    "id": 246,
+    "address": "Florica Perfumery, 49, Jail Road, Ansar club moor, Kotwali, Chittagong",
+    "components": {
+      "area": "Jail Road"
+    }
+  },
+  {
+    "id": 261,
+    "address": "Dhaka, Uttara, Abdullahpur, Fayadabad, in front of Khondokar School, 21 Bhobon",
+    "components": {
+      "area": "Uttara"
+    }
+  },
+  {
+    "id": 606,
+    "address": "39/2, Abdul Hadi Lane, Agamasi Lane, Majedun Bibi Monjil, Lift - 5C, Dipti Bari, Puran Dhaka",
+    "components": {
+      "area": "Puran"
+    }
+  },
+  {
+    "id": 639,
+    "address": "House-17, Road-K.M Azom Lane, Satrowja, Puran Dhaka",
+    "components": {
+      "area": "Puran"
+    }
+  },
+  {
+    "id": 677,
+    "address": "Dhaka, Mohammadpur, Shakertaq Roffiqe Housing, Road 8, House 14",
+    "components": {
+      "area": "Mohammadpur"
+    }
+  },
+  {
+    "id": 737,
+    "address": "Comilla, Ward No. 22, City Corporation, Sadar South Comilla, Poduar Bazar Bishwaroad, Uttar Rampur Chay Bari",
+    "components": {
+      "area": "Sadar South"
+    }
+  },
+  {
+    "id": 740,
+    "address": "Zindabazar, Sylhet",
+    "components": {
+      "area": "Zindabazar"
+    }
+  },
+  {
+    "id": 760,
+    "address": "Gulshan 2, Road 107, House 20, Flat 1C",
+    "components": {
+      "area": "Gulshan"
+    }
+  },
+  {
+    "id": 784,
+    "address": "1163/A, Khilgaon Chowdhury Para, 5th floor, left side, Dhaka",
+    "components": {
+      "area": "Khilgaon"
+    }
+  },
+  {
+    "id": 918,
+    "address": "535/C, Khilgaon, Purano Police Phari'r Pasha",
+    "components": {
+      "area": "Khilgaon"
+    }
+  },
+  {
+    "id": 1021,
+    "address": "ICT Tower, Agargaon, Sher e Bangla Nagar, Dhaka-1207",
+    "components": {
+      "area": "Agargaon"
+    }
+  },
+  {
+    "id": 1058,
+    "address": "Mirpur 11, Navana Probani Redgedale Building 06, Flat No C13",
+    "components": {
+      "area": "Mirpur"
+    }
+  },
+  {
+    "id": 1122,
+    "address": "Flat 8A, Ekota Tower (Sergeant Tower er pashe), Bhuiyan Bari, Dakkhin Ananda Nagar, Aftabnagar, Dhaka",
+    "components": {
+      "area": "Aftab Nagar"
+    }
+  },
+  {
+    "id": 1158,
+    "address": "Mirpur 2 Number, 60 Feet, Borobag Tampu Stand, House Number 47, Lift-3, D4",
+    "components": {
+      "area": "Mirpur"
+    }
+  },
+  {
+    "id": 1167,
+    "address": "Dhanmondi 2, PWD Office Quarters, 6 Number Building, Floor 10, Dhaka",
+    "components": {
+      "area": "Dhanmondi"
+    }
+  }
+]

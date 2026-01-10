@@ -1,0 +1,331 @@
+[
+  {
+    "id": 751,
+    "address": "356, South Anand Nagar, Inside Aftab Nagar, in front of BDR House, Baitul Falah Road, Amjad Sir's House, Badda, Dhaka",
+    "components": {
+      "house_number": "356"
+    }
+  },
+  {
+    "id": 752,
+    "address": "112, Nayapaltan, Dhaka",
+    "components": {
+      "house_number": "112"
+    }
+  },
+  {
+    "id": 753,
+    "address": "115, Shantinagar, Rupayan Z.A Tower, Dhaka . Flat-C14",
+    "components": {
+      "house_number": "115"
+    }
+  },
+  {
+    "id": 754,
+    "address": "322, Panorama, Road 1, Padma Residential Area, Rajshahi, 6207, Rajshahi, Bangladesh",
+    "components": {
+      "house_number": "322"
+    }
+  },
+  {
+    "id": 755,
+    "address": "38, East Ahmednagar, Daud Khan Mosque Road, Mirpur 2, Dhaka",
+    "components": {
+      "house_number": "38"
+    }
+  },
+  {
+    "id": 756,
+    "address": "367, 368, North Shajahanpur, Flat No. 5-A, Dhaka-1217",
+    "components": {
+      "house_number": "367"
+    }
+  },
+  {
+    "id": 757,
+    "address": "54, Rawshan Ara Lane, Siddeshwari. Building name: Abedin Heights , (beside Sun Tower building) Flat no: 6-A",
+    "components": {
+      "house_number": "54"
+    }
+  },
+  {
+    "id": 758,
+    "address": "188, East Kazipara, Mirpur 10, Dhaka",
+    "components": {
+      "house_number": "188"
+    }
+  },
+  {
+    "id": 759,
+    "address": "287, Elephant Road, Achiya Garden, Flat-3B",
+    "components": {
+      "house_number": "287"
+    }
+  },
+  {
+    "id": 760,
+    "address": "189, Sahazada Tower, Rosulbag, Lalbagh, Dhaka",
+    "components": {
+      "house_number": "189"
+    }
+  },
+  {
+    "id": 761,
+    "address": "335, MRF Gafur Heights, West Nakhalpara, Dhaka 1215., Road No: 12, Flat No: B4",
+    "components": {
+      "house_number": "335"
+    }
+  },
+  {
+    "id": 762,
+    "address": "462, Manikde, Dhaka Cant",
+    "components": {
+      "house_number": "462"
+    }
+  },
+  {
+    "id": 763,
+    "address": "77, East Basabo, Sabujbagh, Dhaka - 1214",
+    "components": {
+      "house_number": "77"
+    }
+  },
+  {
+    "id": 764,
+    "address": "41, Chatteshwari Road, opposite Chatteshwari Kali Temple, beside Karnakod Tower, Chatteshwari Road, Chattogram",
+    "components": {
+      "house_number": "41"
+    }
+  },
+  {
+    "id": 765,
+    "address": "70, Outer Circular Road, Bora Moghbazar, Dhaka - 1217",
+    "components": {
+      "house_number": "70"
+    }
+  },
+  {
+    "id": 766,
+    "address": "79, Old Thana Road, North Badda, Gulshan, Dhaka",
+    "components": {
+      "house_number": "79"
+    }
+  },
+  {
+    "id": 767,
+    "address": "763, Nasir Plaza D.T., Kadamtali, Chattogram",
+    "components": {
+      "house_number": "763"
+    }
+  },
+  {
+    "id": 768,
+    "address": "37, Kalicharan Saha Road, Mill Barrack Police Line, Thana Gandaria, Dhaka",
+    "components": {
+      "house_number": "37"
+    }
+  },
+  {
+    "id": 769,
+    "address": "62, North Circular Road, Hatirpool, Dhanmondi, Dhaka 1205",
+    "components": {
+      "house_number": "62"
+    }
+  },
+  {
+    "id": 770,
+    "address": "25, MRC, Shamol Chaya, North Baghichagaon, Adarsha Sadar, Cumilla",
+    "components": {
+      "house_number": "25"
+    }
+  },
+  {
+    "id": 771,
+    "address": "228, South Goran, Bagan Bari Road, M R Khan Lane, Khilgaon, Dhaka 1219",
+    "components": {
+      "house_number": "228"
+    }
+  },
+  {
+    "id": 772,
+    "address": "908, East Shewrapara, Dhaka",
+    "components": {
+      "house_number": "908"
+    }
+  },
+  {
+    "id": 773,
+    "address": "355, Matrinir, Behind Eastern Plaza, Hatirpool, Dhanmondi, Dhaka",
+    "components": {
+      "house_number": "355"
+    }
+  },
+  {
+    "id": 774,
+    "address": "821, Shewrapara, Mirpur, Dhaka",
+    "components": {
+      "house_number": "821"
+    }
+  },
+  {
+    "id": 775,
+    "address": "119, Ananda Twin Tower, North Pirerbag (near Border Bazar), West Shewrapara, Mirpur, Dhaka",
+    "components": {
+      "house_number": "119"
+    }
+  },
+  {
+    "id": 776,
+    "address": "175, Dakkhin Kutubkhali, Jatrabari, Dhaka",
+    "components": {
+      "house_number": "175"
+    }
+  },
+  {
+    "id": 777,
+    "address": "176, East Kafrul, Dhaka-1206",
+    "components": {
+      "house_number": "176"
+    }
+  },
+  {
+    "id": 778,
+    "address": "28, Amirbag R/A, Mehedibag, Chattogram",
+    "components": {
+      "house_number": "28"
+    }
+  },
+  {
+    "id": 779,
+    "address": "৩০, রাজাবাড়ি (লাংগলের গলি), গেন্ডা, সাভার, ঢাকা ১৩৪০",
+    "components": {
+      "house_number": "30"
+    }
+  },
+  {
+    "id": 780,
+    "address": "310, West Nakhalpara, Lane:12, Tejgaon, Dhaka",
+    "components": {
+      "house_number": "310"
+    }
+  },
+  {
+    "id": 781,
+    "address": "47, Kawranbazar, Latif Tower (12th floor), Dhaka-1215",
+    "components": {
+      "house_number": "47"
+    }
+  },
+  {
+    "id": 782,
+    "address": "71, Jawad towar opposite of Eidgah field Dhaka -1216, Mirpur 1",
+    "components": {
+      "house_number": "71"
+    }
+  },
+  {
+    "id": 783,
+    "address": "134, South Kamalapur (Behind South Kamalapur Jame Masjid), 7th Floor (Lift-6)",
+    "components": {
+      "house_number": "134"
+    }
+  },
+  {
+    "id": 784,
+    "address": "132, Lalbagh road, Sikh shah Bazar, Azimpur, Dhaka",
+    "components": {
+      "house_number": "132"
+    }
+  },
+  {
+    "id": 785,
+    "address": "35, Shahjahanpur, Khilgaon, Iman Manjil, F-5/A, Dhaka-1219",
+    "components": {
+      "house_number": "35"
+    }
+  },
+  {
+    "id": 786,
+    "address": "53, Green Tower, Uttor Pirerbag, 60 Feet Mike er Goli, Mirpur, Dhaka",
+    "components": {
+      "house_number": "53"
+    }
+  },
+  {
+    "id": 787,
+    "address": "308, Mojumder Cottage, Ainushbug, Dakshinkhan, Uttara, Dhaka",
+    "components": {
+      "house_number": "308"
+    }
+  },
+  {
+    "id": 788,
+    "address": "23, Hena Kutir, East Ahmednagar, Mirpur 2, Dhaka 1216",
+    "components": {
+      "house_number": "23"
+    }
+  },
+  {
+    "id": 789,
+    "address": "15, Mayakanon, Bashabo, Dhaka, Lift: 2, Flat No: C2",
+    "components": {
+      "house_number": "15"
+    }
+  },
+  {
+    "id": 790,
+    "address": "403(1 Ulama Monzil, Hazi Tower Goli, Modhubag, Moghbazar, Dhaka",
+    "components": {
+      "house_number": "403"
+    }
+  },
+  {
+    "id": 791,
+    "address": "249, Khalil Box Road, South Gawair, Ashkona, Dakkhin Khan, Square Building-এর বিপরীতে, হাজী তাহের মসজিদ থেকে সোজা দক্ষিণ দিকে, সেস মাঠের শেষে",
+    "components": {
+      "house_number": "249"
+    }
+  },
+  {
+    "id": 792,
+    "address": "296, Shadhinota Shoroni Road, Jamtola Mor, Uttar Badda, Dhaka",
+    "components": {
+      "house_number": "296"
+    }
+  },
+  {
+    "id": 793,
+    "address": "28, পশ্চিম তল্লাবাগ, ঢাকা ট‍্যানাড়ি মোড়",
+    "components": {
+      "house_number": "28"
+    }
+  },
+  {
+    "id": 794,
+    "address": "164, South Kamlapur, ICD Custom গেটের সামনে",
+    "components": {
+      "house_number": "164"
+    }
+  },
+  {
+    "id": 795,
+    "address": "258, Uttar Sainboad, Mahmudnagor Dagair, Demra",
+    "components": {
+      "house_number": "258"
+    }
+  },
+  {
+    "id": 796,
+    "address": "495, সুফি বাড়ি, শুলকবহর, পাটলাশ, চট্টগ্রাম ডাকঘর: চকবাজার থানা: পাটলাইশ",
+    "components": {
+      "house_number": "495"
+    }
+  },
+  {
+    "id": 797,
+    "address": "269 (Quick Sultan), Sultangonj Road, Rayer Bazar, Dhaka-1209",
+    "components": {
+      "house_number": "269"
+    }
+  }
+]

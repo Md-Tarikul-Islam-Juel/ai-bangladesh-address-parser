@@ -1,0 +1,18 @@
+{
+  "statistics": {
+    "total_records": 1363,
+    "with_road_number": 715,
+    "without_road_number": 648,
+    "coverage_percentage": 52.46,
+    "confidence_breakdown": {
+      "excellent_95_100": 715,
+      "very_high_90_95": 0,
+      "high_85_90": 0,
+      "good_80_85": 0,
+      "medium_high_75_80": 0,
+      "medium_70_75": 0,
+      "acceptable_65_70": 0,
+      "low_below_65": 0
+    }
+  }
+}

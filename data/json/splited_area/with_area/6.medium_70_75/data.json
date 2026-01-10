@@ -1,0 +1,156 @@
+[
+  {
+    "id": 9,
+    "address": "৩৩২ নং পিরেরবাগ (আলেয়া টাওয়ার), শিমুলতলা মসজিদের কাছে, মিরপুর-১, ঢাকা-১২১৬",
+    "components": {
+      "area": "মিরপুর"
+    }
+  },
+  {
+    "id": 191,
+    "address": " Jhulonbari, 5th Floor, Tantibazar, Dhaka - 1100",
+    "components": {
+      "area": "Tantibazar"
+    }
+  },
+  {
+    "id": 273,
+    "address": "560 Shamim Soroni, Shewrapara, Dhaka",
+    "components": {
+      "area": "Shewrapara"
+    }
+  },
+  {
+    "id": 407,
+    "address": "Touhid Homeo Hall, Pourashava Mor, Chuadanga Sadar.",
+    "components": {
+      "area": "Chuadanga Sadar"
+    }
+  },
+  {
+    "id": 454,
+    "address": "Assurance City, B-3 A-5, 127 Baganbari, Bhashantec, Dhaka Cantonment",
+    "components": {
+      "area": "Bhashantec"
+    }
+  },
+  {
+    "id": 463,
+    "address": "383/84, Block-C, Chowdhurypara, Malibag, Dhaka",
+    "components": {
+      "area": "Chowdhurypara"
+    }
+  },
+  {
+    "id": 571,
+    "address": "23 No. Ward Councillor, Bahar Vir Basa, Barisal Sadar",
+    "components": {
+      "area": "Barisal Sadar"
+    }
+  },
+  {
+    "id": 612,
+    "address": "1-A/11, Pallabi R/A, Dhaka",
+    "components": {
+      "area": "Pallabi"
+    }
+  },
+  {
+    "id": 906,
+    "address": "৪১/৪, বাবর রোড, ব্লক-এফ, জহুরী মহল্লা, মোহাম্মদপুর, ঢাকা-১২০৭",
+    "components": {
+      "area": "মোহাম্মদপুর"
+    }
+  },
+  {
+    "id": 1012,
+    "address": "৬ রোড, ৯ ব্লক, C, চন্দ্রিমা মডেল টাউন, মোহাম্মদপুর, ঢাকা।",
+    "components": {
+      "area": "মোহাম্মদপুর"
+    }
+  },
+  {
+    "id": 1067,
+    "address": "PLOT #71/2 & 71, Flat- B/7, 3 Pioneer Rd, Kakrail, Dhaka 1205",
+    "components": {
+      "area": "Kakrail"
+    }
+  },
+  {
+    "id": 1069,
+    "address": "মহাম্মাদিয়া হাউজিং সোসাইটি, রোড ৩, বাসা ২৪৫, মোহাম্মদপুর, ঢাকা",
+    "components": {
+      "area": "মোহাম্মদপুর"
+    }
+  },
+  {
+    "id": 1077,
+    "address": "Lalkhan Bazar Momota Clinic er pase, Thana: Khulshi, Chittagong, Building Name: Mison Matrichaya, Flat No: 4G",
+    "components": {
+      "area": "Lalkhan Bazar"
+    }
+  },
+  {
+    "id": 1092,
+    "address": "বাসা নং: ১৫০/৪, বাগানাবাড়ি, ঢাকা ক্যান্টনমেন্ট, ঢাকা-১২০৬",
+    "components": {
+      "area": "ক্যান্টনমেন্ট"
+    }
+  },
+  {
+    "id": 1100,
+    "address": "3/b, Ujjibone, Ajij Polli, Dhaka Cantonment",
+    "components": {
+      "area": "Cantonment"
+    }
+  },
+  {
+    "id": 1157,
+    "address": "ঢাকা উত্তর সিটি কর্পোরেশন, অঞ্চল ৫, শিয়া মসজিদ সংলগ্ন পূর্ব পাশে, মোহাম্মদপুর, ঢাকা ১২০৭",
+    "components": {
+      "area": "মোহাম্মদপুর"
+    }
+  },
+  {
+    "id": 1200,
+    "address": "ACL Xchoria, 161/2/2B Baganbari, Dhaka Cantonment, Kafrul",
+    "components": {
+      "area": "Cantonment"
+    }
+  },
+  {
+    "id": 1201,
+    "address": "২৩৮/১/এন, সলিমুদ্দিন মার্কেট, আহম্মেদনগর, পাইকপাড়া, মিরপুর-১, ঢাকা",
+    "components": {
+      "area": "মিরপুর"
+    }
+  },
+  {
+    "id": 1266,
+    "address": "রোড ১, 10/10A মুন এপার্টমেন্ট, ৩য় তলা, মোহাম্মদপুর, ঢাকা,মোহাম্মদিয়া হাউজিং লিমিটেড",
+    "components": {
+      "area": "মোহাম্মদপুর"
+    }
+  },
+  {
+    "id": 1286,
+    "address": "২২/২০ বড়বাগ, ৬০ ফিট রোড লেগুনাস্ট্যান্ড, মিরপুর-০২, ঢাকা-১২১৬",
+    "components": {
+      "area": "মিরপুর"
+    }
+  },
+  {
+    "id": 1358,
+    "address": "ৌধুরী গ্যালাক্সি ভিলা, মাজার রোড, লালকুঠি বাজার, মিরপুর, ঢাকা-১২১৬",
+    "components": {
+      "area": "মিরপুর"
+    }
+  },
+  {
+    "id": 1361,
+    "address": "Narayanganj, Chashara, Jamtola Masjid Goli",
+    "components": {
+      "area": "Jamtola Masjid Goli"
+    }
+  }
+]

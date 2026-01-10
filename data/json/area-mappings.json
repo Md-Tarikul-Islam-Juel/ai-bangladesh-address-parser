@@ -1,0 +1,183 @@
+{
+  "area_mappings": {
+    "Dhaka": [
+      "mirpur", "mirpur 1", "mirpur 2", "mirpur 6", "mirpur 10", "mirpur 11", "mirpur 12", "mirpur 13", "mirpur 14",
+      "dhanmondi", "dhanmondi 15", "dhanmondi 27", "dhanmondi 32",
+      "gulshan", "gulshan 1", "gulshan 2",
+      "banani", "banani 11",
+      "uttara", "uttara 1", "uttara 2", "uttara 3", "uttara 4", "uttara 5", "uttara 6", "uttara 7", "uttara 8", "uttara 9", "uttara 10", "uttara 11", "uttara 12", "uttara 13", "uttara 14", "uttara 15", "uttara 16", "uttara 17", "uttara 18",
+      "uttara sector 1", "uttara sector 2", "uttara sector 3", "uttara sector 4", "uttara sector 5", "uttara sector 6", "uttara sector 7", "uttara sector 8", "uttara sector 9", "uttara sector 10", "uttara sector 11", "uttara sector 12", "uttara sector 13", "uttara sector 14", "uttara sector 15",
+      "uttarkhan", "raja bari", "rampura", "khilgaon", "motijheel", "new market", "farmgate", "tejgaon", "mohammadpur", "lalbagh", "old dhaka", "wari", "shantinagar", "malibagh", "moghbazar", "shahbagh", "banglamotor", "kawran bazar", "panthapath", "green road", "elephant road", "nilkhet", "azimpur", "new eskaton", "old eskaton", "bashabo", "sabujbag", "jatrabari", "demra", "shyampur", "hazaribagh", "cantonment", "kafrul", "pallabi", "badda", "south anand nagar", "anand nagar", "aftab nagar", "baitul falah road", "baitul falah", "khilkhet", "baridhara", "nikunja", "bashundhara", "north bishil", "bishil", "adabor", "baitul aman housing society", "baitul aman", "agargaon", "airport", "bangshal", "begunbari", "bijoy sarani", "chankharpool", "dhanmondi 27", "dhanmondi 32", "dilkusha", "dhanmondi road", "elephant road", "fakirapool", "fulbaria", "gandaria", "gopibagh", "goran", "hatirjheel", "indira road", "jigatola", "kakrail", "kamalapur", "kamlapur", "katabon", "kathalbagan", "khilgaon", "khilkhet", "kuril", "lalmatia", "magbazar", "malibagh", "manik mia avenue", "mohakhali", "arjatpara", "mouchak", "nakhalpara", "new market", "paltan", "ramna", "rampura", "russell square", "sadarghat", "shahbagh", "shantinagar", "siddheswari", "sutrapur", "tejgaon", "tejgaon industrial area", "tongi", "turagh", "wasa", "wari", "wari thana", "narinda", "narinda road", "narinda bazar", "vashantek", "vashantek mojumdermor", "shahjadpur", "shahjadpur bashtola", "kataban", "chalantika mor", "west shewrapara", "shewrapara", "lalmatia housing estate", "kochukhet", "kochukhet puran bazar", "kalabagan", "lake circus kalabagan", "dilkusa", "bottola", "bottola railgate", "hathirpool", "hathirpool pukurpar", "south matuail", "matuail", "tilpapara", "dakshinkhan", "lomboritek", "balughat", "middle badda", "gudaraghat bazar", "north jatrabari", "jatrabari", "bibir bagicha", "jheelpar", "rojonigondha road", "ibrahimpur", "north ibrahimpur", "banasree", "diyabari", "tolarbag", "zigatola", "zigatola tannery mor", "chorokghatar goli", "shamoli", "shamoli -3", "shymoli-4", "shahalibag", "west kazipara", "kazipara", "bonosri", "siddheswari", "siddheswari road", "shadhinota shoroni", "north kalshi", "kalshi", "ring road", "bashundhara r/a", "bashundhara residential area", "west nakhalpara", "nakhalpara", "jhulonbari", "tantibazar", "kunjbon", "aftabnagar", "sec-13", "sector 13", "uttara sector 11",
+      "মিরপুর", "গুলশান", "বনানী", "উত্তরা", "ধানমন্ডি", "মোহাম্মদপুর", "রামপুরা", "খিলগাঁও", "মতিঝিল", "তেজগাঁও", "লালবাগ", "ওয়ারী", "শান্তিনগর", "মালিবাগ", "মগবাজার", "শাহবাগ", "কাওরান", "পান্থপথ", "নীলক্ষেত", "আজিমপুর", "বাসাবো", "সাবুজবাগ", "যাত্রাবাড়ী", "হাজারীবাগ", "ক্যান্টনমেন্ট", "বাড্ডা", "খিলক্ষেত", "বারিধারা", "বসুন্ধরা", "আদাবর", "মোহাখালী",
+      "abdullahpur", "adabor 10", "adorshopara", "arambag", "arifabad housing society", "ashulia", "avenue 3", "avenue-3", "badaldi bazar", "banasree h block", "bangshal thana", "baridhara dohs", "baunia", "bawnia", "block a", "block e", "block k", "block-b", "block-e", "block: c", "block:k", "boishaki telecom er mor", "boubazar", "dhaka bank goli", "dhaka uddyan", "east narsinghpur", "faridabad", "fayadabad", "ghatarchor", "green city", "hatirpool", "kadamtoli model town", "kallyanpur", "khilgaon taltola", "laboni point", "lake city", "madani jhil par", "mirpur 15", "mirpur dohs", "mirpur dohs link road", "mirpur original 10", "mirpur-1", "mirpur-11", "mirpur-12", "mirpur-7", "mirpur: 1", "moddho badda adorsho no nogor", "modinabag society", "mohammadia housing society", "molla para", "monsurabad r/a", "nababi mor", "nasirabad housing society", "nayapaltan", "nikunja 2", "north badda", "north bashabo", "purbo hazipara", "rampura boubazar", "rupnagar residential area", "sanarpar", "savar", "sector 4", "sector 9", "sector 11", "sector-14", "sector-18", "shantipur", "sher-e-bangla nagar", "south bonoshree", "south goran", "south pallabi", "uttar badda", "uttar badda shadhinota shoroni bagan bari", "uttara sector -14", "west kafrul", "west panthapath", "উত্তরা মডেল টাউন", "মিরপুর-১", "সেক্টর ১২",
+      "tallabag", "nimtola model town", "merul badda", "kalibari", "shamoly housing", "mogbazar", "ekta housing",
+      "north shajahanpur", "tejgaon ia", "bakshibazar", "rayerbagh", "merajnagar", "siddeshwari",
+      "police line", "niketon", "segunbagicha", "dhaka cantonment", "east kazipara", "purbo ahmed nogor", "khilgaon sipaibag",
+      "west tejturi bazar", "jhigatola", "boro moghbazar wireless", "shakhertak", "kaliyartek", "kamarpara", "south banossree",
+      "water tank area", "bhashantec", "borobag", "chowdhurypara", "kollanpur", "shonir akhra bridge",
+      "bosila", "west dhanmondi", "shahinbaag", "uttar jatabari",
+      "saddam market", "zero point", "baitul aman jame moshjid", "kodomtuli", "manikde", "uttar mugdha", "jannat bagh", "jurain", "alambag", "postogola"
+    ],
+    "Chattogram": [
+      "agrabad", "nasirabad", "halishahar", "pahartali", "patenga", "bandar", "epz", "chawkbazar", "andarkilla", "lalkhan bazar", "new market", "golpahar", "panchlaish", "panchlaish thana", "katalgonj", "kunjochaya avashik", "north agrabad", "ramna residential area", "bakolia", "mojaffor noghor", "polytechnic mood", "rahman nagar", "hill view", "khulshi", "chandgaon", "bayezid", "muradpur", "chattogram sadar", "chattogram city", "wasa", "oxygen", "oxygen mor", "firozshah colony", "sholoshahar", "sholoshahar new area", "sholoshahar old area", "sholoshahar railway", "sholoshahar bus stand", "sholoshahar market",
+      "block - c", "mog pukur par", "mogoltuli bazarer mukhe", "mozzafar nagar", "p.s: bakolia", "proshanti", "sitakunda", "south khulsi", "subarea", "thana panchlaish", "ameen centre", "dc hill", "dewanhat", "dhoom para", "east nasirabad", "eidga boro pukur par", "h block", "jhongkar", "lalkhan bazar", "middle rampur", "mohammadpur residential area", "nazirhat fatickchari", "north patenga", "noyahat", "shaheed minar goli", "shamsi colony", "thana: double mooring",
+      "west khulshi", "chok bajar", "bitora mosjidar ahga",
+      "gec circle", "akbarshah",
+      "bagh ghona", "hillside r/a", "khulshi thana", "andorkillah",
+      "banijjakiran market",
+      "h & i block"
+    ],
+    "Sylhet": [
+      "shahjalal university", "kadamtali", "amberkhana", "bandar bazar", "zindabazar", "subhanighat", "kumarpara", "shibganj", "sylhet sadar", "sylhet city", "osmani nagar", "shahporan", "dargah gate", "taltola", "mirabazar", "jail road", "uposhahar", "shahjalal uposhahar", "nayasarak", "chowhatta", "bondor bazar"
+    ],
+    "Rajshahi": [
+      "sapura", "rajshahi university", "shah makhdum", "katakhali", "padma", "new market", "shaheb bazar", "rajshahi sadar", "rajshahi city", "kadamtali", "upashahar", "shah makhdum airport", "padma residential area", "katakhali bazar", "horogram", "kajla", "dharampur", "kumar para", "padma residential area", "sapura housing",
+      "kazla", "octroi mor",
+      "terikhadiya"
+    ],
+    "Gazipur": [
+      "tongi", "kaliakair", "kapasia", "sreepur", "kaliganj", "national university", "open university", "gazipur sadar", "gazipur city", "joydebpur", "kashimpur", "bhawal", "rajendrapur", "rajendrapur cantonment", "pepsi gate",
+      "gazipur cantonment", "gazipur chowrasta", "shimultoly"
+    ],
+    "Narayanganj": [
+      "fatullah", "siddhirganj", "bandar", "rupganj", "sonargaon", "araihazar", "narayanganj sadar", "bandar upazila", "rupganj upazila", "sonargaon upazila", "chashara", "jamtola", "jamtola masjid goli", "masjid goli", "chashara bazar",
+      "takkar math", "uttor sehachor",
+      "bondor akrampur",
+      "mizmizi pochimpara", "duspipe jalkuri"
+    ],
+    "Khulna": [
+      "sonadanga", "khulna university", "khan jahan ali", "daulatpur", "phultala", "dumuria", "khulna sadar", "khulna city", "labonchara", "royel mor", "gollamari", "boyra", "khalishpur", "shiromoni", "new market", "royel area"
+    ],
+    "Bogra": [
+      "bogra sadar", "bogra city", "bogra university", "shahid chandu stadium", "new market", "old market", "railway station", "bus stand",
+      "bogura sadar",
+      "char matha godarpara bazar"
+    ],
+    "Comilla": [
+      "comilla sadar", "comilla city", "comilla university", "comilla cantonment", "new market", "old market", "shashongacha", "kandirpar", "shahid dhirendra shambhu park",
+      "comilla cadet college", "jagannath dighi", "kotbari",
+      "thakurpara",
+      "ranirdighi"
+    ],
+    "Mymensingh": [
+      "mymensingh sadar", "mymensingh city", "mymensingh medical college", "agricultural university", "new market", "old market", "railway station", "bus stand", "jamirdia", "hobirbari", "valuka"
+    ],
+    "Rangpur": [
+      "rangpur sadar", "rangpur city", "rangpur medical college", "new market", "old market", "railway station", "bus stand",
+      "bakultala mor", "purbo ganeshpur"
+    ],
+    "Munshiganj": [
+      "munshiganj sadar", "munshiganj city", "new market", "old market", "railway station",
+      "court gaon"
+    ],
+    "Jashore": [
+      "jashore sadar", "jashore city", "jashore cantonment", "new market", "old market", "railway station", "bus stand",
+      "chowgachha"
+    ],
+    "Barisal": [
+      "barisal sadar", "barisal city", "barisal medical college", "new market", "old market", "river port", "bus stand"
+    ],
+    "Pabna": [
+      "pabna sadar", "pabna city", "pabna medical college", "new market", "old market", "railway station",
+      "ishurdi", "pabna",
+      "sujanagar", "jakirer mor"
+    ],
+    "Tangail": [
+      "tangail sadar", "tangail city", "new market", "old market", "railway station", "bus stand"
+    ],
+    "Kushtia": [
+      "kushtia sadar", "kushtia city", "kushtia medical college", "new market", "old market", "railway station"
+    ],
+    "Jhenaidah": [
+      "jhenaidah sadar", "jhenaidah city", "new market", "old market", "railway station"
+    ],
+    "Magura": ["magura sadar", "magura city", "new market", "old market"],
+    "Meherpur": ["meherpur sadar", "meherpur city", "new market", "old market"],
+    "Chuadanga": [
+      "chuadanga sadar", "chuadanga city", "new market", "old market",
+      "pourashava mor"
+    ],
+    "Satkhira": ["satkhira sadar", "satkhira city", "new market", "old market"],
+    "Bagerhat": [
+      "bagerhat sadar", "bagerhat city", "sixty domed mosque area", "new market", "old market"
+    ],
+    "Jhalokati": ["jhalokati sadar", "jhalokati city", "new market", "old market"],
+    "Patuakhali": [
+      "patuakhali sadar", "patuakhali city", "new market", "old market", "kuakata"
+    ],
+    "Pirojpur": ["pirojpur sadar", "pirojpur city", "new market", "old market"],
+    "Brahmanbaria": [
+      "brahmanbaria sadar", "brahmanbaria city", "new market", "old market", "railway station",
+      "kasba", "shital para"
+    ],
+    "Chandpur": [
+      "chandpur sadar", "chandpur city", "new market", "old market", "river port"
+    ],
+    "Lakshmipur": [
+      "lakshmipur sadar", "lakshmipur city", "new market", "old market"
+    ],
+    "Noakhali": ["noakhali sadar", "noakhali city", "new market", "old market"],
+    "Feni": [
+      "feni sadar", "feni city", "new market", "old market", "railway station"
+    ],
+    "Habiganj": ["habiganj sadar", "habiganj city", "new market", "old market"],
+    "Moulvibazar": [
+      "moulvibazar sadar", "moulvibazar city", "new market", "old market"
+    ],
+    "Sunamganj": ["sunamganj sadar", "sunamganj city", "new market", "old market"],
+    "Dinajpur": [
+      "dinajpur sadar", "dinajpur city", "dinajpur medical college", "new market", "old market", "railway station",
+      "daudpur", "sostitola"
+    ],
+    "Gaibandha": [
+      "gaibandha sadar", "gaibandha city", "new market", "old market",
+      "gaibandha"
+    ],
+    "Kurigram": [
+      "kurigram sadar", "kurigram city", "new market", "old market",
+      "power house para"
+    ],
+    "Lalmonirhat": [
+      "lalmonirhat sadar", "lalmonirhat city", "new market", "old market", "railway station"
+    ],
+    "Nilphamari": [
+      "nilphamari sadar", "nilphamari city", "new market", "old market"
+    ],
+    "Panchagarh": [
+      "panchagarh sadar", "panchagarh city", "new market", "old market"
+    ],
+    "Thakurgaon": [
+      "thakurgaon sadar", "thakurgaon city", "new market", "old market"
+    ],
+    "Jamalpur": [
+      "jamalpur sadar", "jamalpur city", "new market", "old market", "railway station"
+    ],
+    "Netrokona": ["netrokona sadar", "netrokona city", "new market", "old market"],
+    "Sherpur": ["sherpur sadar", "sherpur city", "new market", "old market"],
+    "Naogaon": [
+      "naogaon sadar", "naogaon city", "new market", "old market",
+      "srirampur", "satihat", "manda"
+    ],
+    "Natore": ["natore sadar", "natore city", "new market", "old market"],
+    "Sirajganj": [
+      "sirajganj sadar", "sirajganj city", "new market", "old market", "railway station"
+    ],
+    "Narail": [
+      "narail sadar", "narail city", "new market", "old market", "lohagara bazar"
+    ],
+    "Keraniganj": [
+      "keraniganj sadar", "kadamtoli model town", "kadamtoli"
+    ],
+    "Bandarban": [
+      "bandarban sadar", "bandarban city", "new market", "old market",
+      "hafezghona"
+    ],
+    "Narsingdi": [
+      "narsingdi sadar", "narsingdi city", "new market", "old market",
+      "middle kandapara", "boro bazar"
+    ],
+    "CoxsBazar": [
+      "cox's bazar", "cox's bazar sadar", "coxs bazar", "coxs bazar city", "new market", "old market", "beach area"
+    ]
+  }
+}

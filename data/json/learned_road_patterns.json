@@ -1,0 +1,3318 @@
+{
+  "learned_LETTER-NUMBER_0": {
+    "pattern": "Road-19",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara sector -14, Road-19, House- 17, ",
+      "House-33, Road-11, Sector-14, Uttara, Dhaka",
+      "Rangs 76, Road-12, Block-E, Banani",
+      "Nafiz castle, Home-1342, Road-13, Avenue-3, Mirpur DOHS, Dhaka",
+      "House-25, Road-10, Sector-10, Uttara, Dhaka"
+    ],
+    "frequency": 51,
+    "last_seen": "South Banasree, Block-C, Road-4, House-26, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBER_1": {
+    "pattern": "Road 05",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House 48 & 52, Road 05, Block B, Monsurabad R/A, Dhaka",
+      "Flat A9, House 384(Nehar Villa), Road 10, Adabor, Baitul Aman Housing Society, Mohammadpur, Dhaka",
+      "House 339, Road 3, Adabor, Mohammadpur, Dhaka",
+      "House 18, Road 7, Nikunja 2",
+      "Dhaka, Uttara Sector 7, Road 9, House 14"
+    ],
+    "frequency": 102,
+    "last_seen": "House 52, Road 10, Sector 10, Flat 4A, Uttara, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER-NUMBER/LETTER_2": {
+    "pattern": "Road-10/A",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House-35/A,Road-10/A,Dhanmondi, dhaka",
+      "House-303, road-19/b, lift-5, Mohakhali DOHS",
+      "House-63/1, Flat-A-4, Road-7/A, Dhanmondi R/A, Dhaka",
+      "Flat-B3, House-09, Road-7/C, Sector-03, Uttara, Dhaka",
+      "House-34, Road-17/A, Block-E, Banani, Dhaka"
+    ],
+    "frequency": 9,
+    "last_seen": "H-57/A, Road-4/A, Dhanmondi, Dhaka 1209",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER:NUMBER_3": {
+    "pattern": "road:3",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:[\\d০-৯]+",
+    "confidence": 0.85,
+    "examples": [
+      "house:51(madina manjil),road:3,Mohammadia housing soceity mohammadpur, Dhaka",
+      "H:51, R:18, S:7, Uttara, Dhaka 1230",
+      "188 Khilgaon, Tilpapara, Road:10"
+    ],
+    "frequency": 3,
+    "last_seen": "188 Khilgaon, Tilpapara, Road:10",
+    "context_before": [],
+    "context_after": [],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER# NUMBER_4": {
+    "pattern": "Road# 18",
+    "regex": "(?:(?:house\\#|346/a,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#\\ [\\d০-৯]+(?:\\s+(?:,|tilpapara))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House# 346/A, Road# 18, Tilpapara Main Road, Tilpapara, Khilgaon, Dhaka-1219",
+      "1152/C \"Greenhouse\", House# 45, Road# 08 (In front of Kamal Store), Shapla Residential Area, Halishahar, Chittagong-4219"
+    ],
+    "frequency": 2,
+    "last_seen": "1152/C \"Greenhouse\", House# 45, Road# 08 (In front of Kamal Store), Shapla Residential Area, Halishahar, Chittagong-4219",
+    "context_before": [
+      "346/a,",
+      "house#",
+      "\"greenhouse\","
+    ],
+    "context_after": [
+      "main",
+      ",",
+      "tilpapara"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER # NUMBER_5": {
+    "pattern": "Road # 14",
+    "regex": "(?:(?:\\#)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#\\ [\\d০-৯]+(?:\\s+(?:,|\\#))?",
+    "confidence": 0.95,
+    "examples": [
+      "Sector # 13, Road # 14, House # 55, Flat No # 1/A",
+      "House # 296, Road # 13, Block # C, Flat # 7A (SE), Bashundhara R/A",
+      "House # 580, Road # 8, Avenue # 4, Mirpur DOHS",
+      "H # 1, R # 9, Block # A, Mirpur-1, Dhaka-1216",
+      "Block # F, Road # 2, House # 10/12, Banasree, Rampura, Dhaka-1219"
+    ],
+    "frequency": 11,
+    "last_seen": "House # 38, Road # 02, Sector # 09, Uttara, Dhaka",
+    "context_before": [
+      "#"
+    ],
+    "context_after": [
+      ",",
+      "#"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER -NUMBER_6": {
+    "pattern": "Road -8",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "H-54, Road -8, Block -B, Adorshopara, Bawnia (West), Uttara-1230",
+      "House -69, Road -14, Sec-13, Uttara",
+      "House -69, Road -14, Sec-13, Uttara",
+      "foyslake, Road -02, house -01.floors-5A, lakevista, Chattogram",
+      "House -69, Road -14, Sec-13, Uttara"
+    ],
+    "frequency": 7,
+    "last_seen": "House -14/A, Road -8, 3rd Floor, Block -D, Mirpur -11",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER: NUMBER_7": {
+    "pattern": "Road: 17",
+    "regex": "(?:(?:house:)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,|block:))?",
+    "confidence": 0.95,
+    "examples": [
+      "Road: 17, Home: 15, Block: C, Banani, Dhaka 1213",
+      "House: 88/B, Road: 14, Block: H, South Banasree, Dhaka",
+      "House: 13 (5th Floor), Road: 05, Block: Kha, Shekhertek, PC Culture Housing Society, , Adabor, Dhaka - 1207",
+      "House: 26, Road: 2, Block: D, Sector: 1, Aftab Nagar",
+      "House: 26, Road: 2, Block: D, Sector: 1, Aftab Nagar"
+    ],
+    "frequency": 16,
+    "last_seen": "House: 1/3, Road: 09, Priyanka Runway City, (near Baunia), Uttara 1230",
+    "context_before": [
+      "house:"
+    ],
+    "context_after": [
+      "block:",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER#NUMBER_8": {
+    "pattern": "Road#7",
+    "regex": "(?:(?:tower,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.8999999999999999,
+    "examples": [
+      "Tropical Homes Hossain Tower, House#582/A/B, Road#7, Flat#B-9, Adabor",
+      "House#28, Road#2, Block#C, Rampura, Banasree, Dhaka",
+      "N.S Siddique Tower, House#4/1, Road#11, Godakhali South Bishil, Mirpur-1, Dhaka-1216",
+      "Flat# A102, Karabi-14A, Road#04, Block#A, Rajuk Uttara Apartment Project, Uttara Sector 18, Dhaka"
+    ],
+    "frequency": 4,
+    "last_seen": "Flat# A102, Karabi-14A, Road#04, Block#A, Rajuk Uttara Apartment Project, Uttara Sector 18, Dhaka",
+    "context_before": [
+      "tower,"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBER/LETTER_9": {
+    "pattern": "Road 3/C",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Sector 9, Road 3/C, House 26, Uttara, Dhaka",
+      "Flat - 5D, House - 36, Road 14/A, Dhanmondi , (Opposite side of Bangladesh Medical emergency gate)",
+      "Building Name: Monen Shah, House 68, Road 17/E, Banani, Dhaka, Bangladesh, 1213",
+      "House 66, Road 8/A, Dhanmondi, Dhaka",
+      "Flat No. 1306, House-12B (Tista-1), Road 2/C, Block-A, Sector-18, Uttara, Dhaka"
+    ],
+    "frequency": 9,
+    "last_seen": "House 8, Road 23/C, Asad Tower, Gulshan-1, Dhaka",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER #NUMBER_10": {
+    "pattern": "Road #01",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House #46 (Flat-5B), Road #01, Sector #10, Uttara, Dhaka",
+      "Flat#5E, House#27, Road #2, Nasirabad Housing Society, Chittagong",
+      "House #6, Road #6, Polaspur, Soniakhra, Dhaka",
+      "House #03, Flat #C2, Road #18, Sector #04, Uttara",
+      "Road #5, House #1, Block #A, Chandrima Model Kacha Bazar, Mohammadpur, Dhaka"
+    ],
+    "frequency": 9,
+    "last_seen": "House C/36, Road #2, Block #D, Bashundhara R/A, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER NUMBER_11": {
+    "pattern": "Road No 4",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Banasree H Block, Road No 4, House No 24, Flat No 6B, Dhaka",
+      "House 69, Road No 16, Sector 11, Uttara, Dhaka",
+      "Block - A, 6 Number, Road Number 6, House No 2, Mirpur (Mirpur Stadium, , Swimming Pool er Pichone)",
+      "Gulshan 2, Road Number 65, Navy Headquarter",
+      "Gulshan 2, Road Number 65, Navy Headquarter"
+    ],
+    "frequency": 16,
+    "last_seen": "House no 6 (2nd floor), Road no 8, Sector 11, Uttara, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER-NUMBER_12": {
+    "pattern": "Road Number-3",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+(?:\\s+(?:,|house))?",
+    "confidence": 0.95,
+    "examples": [
+      "Bayezid Textile, Kunjochaya Avashik, Road Number-3, RSRM Building, Chittagong",
+      "(After Rangipara Kachabazar), Road No-03, Ramna Residential Area, , North Agrabad, Chattogram, Proshanti (Beside Kazi Store)",
+      "North Khulshi, Road No-04, House No-05, Crystal Home, Flat No-A8, Chittagong",
+      "Mirpur-12, Block-B, Road No-9, House No-153 (4th Floor, Back Side), Dhaka",
+      "Section No-12, Block No-C, Road No-10, House No-01, 6th Floor, (Pallabi), Mirpur-12, Dhaka-1216"
+    ],
+    "frequency": 5,
+    "last_seen": "Section No-12, Block No-C, Road No-10, House No-01, 6th Floor, (Pallabi), Mirpur-12, Dhaka-1216",
+    "context_before": [],
+    "context_after": [
+      "house",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER. NUMBER/LETTER_13": {
+    "pattern": "Road No. 6/A",
+    "regex": "(?:(?:house|no\\.)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,|no\\.))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House No. 16, Road No. 6/A, Apartment No. 2A, Nobodoy Housing Society, Mohammadpur, Dhaka-1207",
+      "Pallabi, Jhilpar, Road No. 29/A, Plot No. 8, Pallabi Peace Apartment (Engineer Saheber Basha)"
+    ],
+    "frequency": 2,
+    "last_seen": "Pallabi, Jhilpar, Road No. 29/A, Plot No. 8, Pallabi Peace Apartment (Engineer Saheber Basha)",
+    "context_before": [
+      "house",
+      "no.",
+      "16,"
+    ],
+    "context_after": [
+      "no.",
+      "apartment",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER: NUMBER/NUMBER_14": {
+    "pattern": "Road: 12/4",
+    "regex": "(?:(?:70,|block:)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|south))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House: 70, Block: J, Road: 12/4, South Bonoshree, Goran, Dhaka",
+      "Protik Ruposree Housing, Building: Cherry E2, Flat: D4 4th Floor, Holding: 78, Road: 12/4, Block: J, South Banasree (Falguni Check)"
+    ],
+    "frequency": 2,
+    "last_seen": "Protik Ruposree Housing, Building: Cherry E2, Flat: D4 4th Floor, Holding: 78, Road: 12/4, Block: J, South Banasree (Falguni Check)",
+    "context_before": [
+      "block:",
+      "j,",
+      "70,"
+    ],
+    "context_after": [
+      "bonoshree,",
+      ",",
+      "south"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER. NUMBER_15": {
+    "pattern": "Road No. 1",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "South Khulsi, Road No. 1, Block - C, Lane 1, Chattogram",
+      "Foysal Tower, Flat No. 9B, House No. 3, Road No. 5, Block-B, Dhaka Uddyan,, Mohammadpur, Dhaka-1207",
+      "Hoque Heritage, 68 Panchlaish, Road No. 9, Opposite of Medical Staff Quarter,, Panchlaish, Chittagong",
+      "No. 1359, Road No. 2, Nimtola Model Town, Merul Badda, Dhaka",
+      "Sarulia Wasa Road, Ward No. 68, Demra, Dhaka South City Corporation"
+    ],
+    "frequency": 25,
+    "last_seen": "Ispahane Nodedhara Abasik Alaka, Road No. 1, House No. 20, Keraniganj, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBER/NUMBER_16": {
+    "pattern": "Road 126/123",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.85,
+    "examples": [
+      "1/A House, Road 126/123, Flat AG, Mayfair Apt, Gulshan 1",
+      "144/4A (Ayesha Manjil), Road 8/3, Block F, Banasree, Lal Miar Goli, Nayapara, , Meradia, Dhaka",
+      "Banasree, Block D, Road 8/3, House: Radiant Krishnachura, Banasree, Dhaka"
+    ],
+    "frequency": 3,
+    "last_seen": "Banasree, Block D, Road 8/3, House: Radiant Krishnachura, Banasree, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER - NUMBER_17": {
+    "pattern": "Road - 4",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.85,
+    "examples": [
+      "Epic Saleh Cielo, Flat: D-06, Katalganj R/A, Road - 4, Chawkbazar, Chittagong",
+      "House - 74/B/1, Road - 14, Kollanpur, Mirpur, Dhaka",
+      "541/2, R - 12, Baridhara DOHS"
+    ],
+    "frequency": 3,
+    "last_seen": "541/2, R - 12, Baridhara DOHS",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER: NUMBER_18": {
+    "pattern": "Road No: 05",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara (Ranavola -1st Security Islami Bank), Road No: 05, House No: 01, Opposite Sector 10",
+      "Mohammadpur, Dhaka Udyan, Ekta Housing, Road No: 2, House No: 24, Diamond Tower",
+      "Dhanmondi, Road no: 32, House no: 22/A, Flat no: 103",
+      "Road No: 8, House No: 149, DOHS, Savar Cantt., Savar",
+      "335, MRF Gafur Heights, West Nakhalpara, Dhaka 1215., Road No: 12, Flat No: B4"
+    ],
+    "frequency": 18,
+    "last_seen": "Mohammadpur Shakher Tack, Road No: 8, House No: 48, Kushi Villa, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBERLETTER_19": {
+    "pattern": "Road 4A",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara Sector 5, Road 4A, House 23B",
+      "House 29, Road 3B, Mohammadia Housing Limited, Mohammad",
+      "House 66, Road 8A, Dhanmondi, Dhaka",
+      "Flat D3, House 64, Road 9A, Dhanmondi",
+      "Uttara, Sector 11, Road 13A, House 1, Floor 7B"
+    ],
+    "frequency": 6,
+    "last_seen": "Flat 3F, House 45, Road 4A, Dhanmondi R/A, Dhaka 1209",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER-NUMBER/NUMBER_20": {
+    "pattern": "R-2/2",
+    "regex": "(?:(?:h\\-07,|house\\-39,)\\s+)?[a-zA-Z]?\\-[\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|banani,))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "H-07, R-2/2, Block-L, Banani, Dhaka",
+      "House-39, Road-13/15, Block-D, Banani, ঢাকা"
+    ],
+    "frequency": 2,
+    "last_seen": "House-39, Road-13/15, Block-D, Banani, ঢাকা",
+    "context_before": [
+      "h-07,",
+      "house-39,"
+    ],
+    "context_after": [
+      ",",
+      "banani,",
+      "block-l,"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER#LETTERNUMBER_21": {
+    "pattern": "Road#S06",
+    "regex": "(?:(?:house\\#f25,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#[a-zA-Z]?[\\d০-৯]+(?:\\s+(?:,|block\\#f,))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House#F25, Road#S06, Block#F, Mirpur Eastern Housing, Pallabi Phase 2, Dhaka",
+      "House#F25, Road#S06, Block#F, Mirpur Eastern Housing, Pallabi Phase 2, Dhaka"
+    ],
+    "frequency": 2,
+    "last_seen": "House#F25, Road#S06, Block#F, Mirpur Eastern Housing, Pallabi Phase 2, Dhaka",
+    "context_before": [
+      "house#f25,"
+    ],
+    "context_after": [
+      "block#f,",
+      ",",
+      "mirpur"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER # NUMBER/NUMBER_22": {
+    "pattern": "Road # 12/3",
+    "regex": "(?:(?:plot|\\#)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|block:))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Plot # 17, Road # 12/3, Block: J (Beside South Banasree Jame Mashid), South Banasree, Dhaka",
+      "Road # 10/5, House # 81, Block # F, Dokkhin Banashree, Near Protik Housing, Beside Bappir Math Nurserir Goli"
+    ],
+    "frequency": 2,
+    "last_seen": "Road # 10/5, House # 81, Block # F, Dokkhin Banashree, Near Protik Housing, Beside Bappir Math Nurserir Goli",
+    "context_before": [
+      "plot",
+      "17,",
+      "#"
+    ],
+    "context_after": [
+      "j",
+      "block:",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER - NUMBER/LETTER_23": {
+    "pattern": "Road - 15/A",
+    "regex": "(?:(?:\\-|block)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,|\\-))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Block - F, Road - 15/A, House - 525, Bashundhara R/A, Dhaka",
+      "Green Model Town, Flat - 8(C), House - 8, Road - 7/A, Section - B, Mugda/Manda, Dhaka"
+    ],
+    "frequency": 2,
+    "last_seen": "Green Model Town, Flat - 8(C), House - 8, Road - 7/A, Section - B, Mugda/Manda, Dhaka",
+    "context_before": [
+      "block",
+      "-",
+      "f,"
+    ],
+    "context_after": [
+      "house",
+      ",",
+      "-"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER- NUMBER_24": {
+    "pattern": "Road- 14",
+    "regex": "(?:(?:house\\-|391,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-\\ [\\d০-৯]+(?:\\s+(?:,|savar))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House- 391, Road- 14, Savar DOHS",
+      "House- Dream Tower, House- 397/1, Flat- 7C, Road- 1, Ward- 49, Kawla Namapara, PO- Khilkhet, Dakshinkhan, Dhaka-1229"
+    ],
+    "frequency": 2,
+    "last_seen": "House- Dream Tower, House- 397/1, Flat- 7C, Road- 1, Ward- 49, Kawla Namapara, PO- Khilkhet, Dakshinkhan, Dhaka-1229",
+    "context_before": [
+      "391,",
+      "397/1,",
+      "house-"
+    ],
+    "context_after": [
+      "dohs",
+      ",",
+      "savar"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_NUMBER_25": {
+    "pattern": "০৪",
+    "regex": "(?:(?:রোড)\\s+)?[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "একুশে টাওয়ার, গ্যাস রোড ০৪, রায়ের বাগ (শনির আখড়া)",
+      "উত্তরা, ১০ নাম্বার সেক্টর, ২২ নাম্বার রোড, ভাটুলিয়া মহিলা মাদ্রাসা, রোড ১, বাড়ি ১",
+      "পল্লবী মিরপুর, ইসলামি ব্যাংকের উপরে, ফ্ল্যাট নম্বর ৬০৪, সেকশন ১২, বি ব্লক, রোড নাম্বার ৪",
+      "নিকুঞ্জ ২, রোড নম্বর ১৮, ২/A",
+      "মহাম্মাদিয়া হাউজিং সোসাইটি, রোড ৩, বাসা ২৪৫, মোহাম্মদপুর, ঢাকা"
+    ],
+    "frequency": 6,
+    "last_seen": "রোড ১, 10/10A মুন এপার্টমেন্ট, ৩য় তলা, মোহাম্মদপুর, ঢাকা,মোহাম্মদিয়া হাউজিং লিমিটেড",
+    "context_before": [
+      "রোড"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": true,
+    "english_variant": false
+  },
+  "learned_LETTER-NUMBER_26": {
+    "pattern": "Road-19",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara sector -14, Road-19, House- 17, ",
+      "House-33, Road-11, Sector-14, Uttara, Dhaka",
+      "Rangs 76, Road-12, Block-E, Banani",
+      "Nafiz castle, Home-1342, Road-13, Avenue-3, Mirpur DOHS, Dhaka",
+      "House-25, Road-10, Sector-10, Uttara, Dhaka"
+    ],
+    "frequency": 51,
+    "last_seen": "South Banasree, Block-C, Road-4, House-26, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBER_27": {
+    "pattern": "Road 05",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House 48 & 52, Road 05, Block B, Monsurabad R/A, Dhaka",
+      "Flat A9, House 384(Nehar Villa), Road 10, Adabor, Baitul Aman Housing Society, Mohammadpur, Dhaka",
+      "House 339, Road 3, Adabor, Mohammadpur, Dhaka",
+      "House 18, Road 7, Nikunja 2",
+      "Dhaka, Uttara Sector 7, Road 9, House 14"
+    ],
+    "frequency": 102,
+    "last_seen": "House 52, Road 10, Sector 10, Flat 4A, Uttara, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER-NUMBER/LETTER_28": {
+    "pattern": "Road-10/A",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House-35/A,Road-10/A,Dhanmondi, dhaka",
+      "House-303, road-19/b, lift-5, Mohakhali DOHS",
+      "House-63/1, Flat-A-4, Road-7/A, Dhanmondi R/A, Dhaka",
+      "Flat-B3, House-09, Road-7/C, Sector-03, Uttara, Dhaka",
+      "House-34, Road-17/A, Block-E, Banani, Dhaka"
+    ],
+    "frequency": 9,
+    "last_seen": "H-57/A, Road-4/A, Dhanmondi, Dhaka 1209",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER:NUMBER_29": {
+    "pattern": "road:3",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:[\\d০-৯]+",
+    "confidence": 0.85,
+    "examples": [
+      "house:51(madina manjil),road:3,Mohammadia housing soceity mohammadpur, Dhaka",
+      "H:51, R:18, S:7, Uttara, Dhaka 1230",
+      "188 Khilgaon, Tilpapara, Road:10"
+    ],
+    "frequency": 3,
+    "last_seen": "188 Khilgaon, Tilpapara, Road:10",
+    "context_before": [],
+    "context_after": [],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER# NUMBER_30": {
+    "pattern": "Road# 18",
+    "regex": "(?:(?:house\\#|346/a,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#\\ [\\d০-৯]+(?:\\s+(?:,|tilpapara))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House# 346/A, Road# 18, Tilpapara Main Road, Tilpapara, Khilgaon, Dhaka-1219",
+      "1152/C \"Greenhouse\", House# 45, Road# 08 (In front of Kamal Store), Shapla Residential Area, Halishahar, Chittagong-4219"
+    ],
+    "frequency": 2,
+    "last_seen": "1152/C \"Greenhouse\", House# 45, Road# 08 (In front of Kamal Store), Shapla Residential Area, Halishahar, Chittagong-4219",
+    "context_before": [
+      "346/a,",
+      "house#",
+      "\"greenhouse\","
+    ],
+    "context_after": [
+      "main",
+      ",",
+      "tilpapara"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER # NUMBER_31": {
+    "pattern": "Road # 14",
+    "regex": "(?:(?:\\#)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#\\ [\\d০-৯]+(?:\\s+(?:,|\\#))?",
+    "confidence": 0.95,
+    "examples": [
+      "Sector # 13, Road # 14, House # 55, Flat No # 1/A",
+      "House # 296, Road # 13, Block # C, Flat # 7A (SE), Bashundhara R/A",
+      "House # 580, Road # 8, Avenue # 4, Mirpur DOHS",
+      "H # 1, R # 9, Block # A, Mirpur-1, Dhaka-1216",
+      "Block # F, Road # 2, House # 10/12, Banasree, Rampura, Dhaka-1219"
+    ],
+    "frequency": 11,
+    "last_seen": "House # 38, Road # 02, Sector # 09, Uttara, Dhaka",
+    "context_before": [
+      "#"
+    ],
+    "context_after": [
+      ",",
+      "#"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER -NUMBER_32": {
+    "pattern": "Road -8",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "H-54, Road -8, Block -B, Adorshopara, Bawnia (West), Uttara-1230",
+      "House -69, Road -14, Sec-13, Uttara",
+      "House -69, Road -14, Sec-13, Uttara",
+      "foyslake, Road -02, house -01.floors-5A, lakevista, Chattogram",
+      "House -69, Road -14, Sec-13, Uttara"
+    ],
+    "frequency": 7,
+    "last_seen": "House -14/A, Road -8, 3rd Floor, Block -D, Mirpur -11",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER: NUMBER_33": {
+    "pattern": "Road: 17",
+    "regex": "(?:(?:house:)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,|block:))?",
+    "confidence": 0.95,
+    "examples": [
+      "Road: 17, Home: 15, Block: C, Banani, Dhaka 1213",
+      "House: 88/B, Road: 14, Block: H, South Banasree, Dhaka",
+      "House: 13 (5th Floor), Road: 05, Block: Kha, Shekhertek, PC Culture Housing Society, , Adabor, Dhaka - 1207",
+      "House: 26, Road: 2, Block: D, Sector: 1, Aftab Nagar",
+      "House: 26, Road: 2, Block: D, Sector: 1, Aftab Nagar"
+    ],
+    "frequency": 16,
+    "last_seen": "House: 1/3, Road: 09, Priyanka Runway City, (near Baunia), Uttara 1230",
+    "context_before": [
+      "house:"
+    ],
+    "context_after": [
+      "block:",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER#NUMBER_34": {
+    "pattern": "Road#7",
+    "regex": "(?:(?:tower,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.8999999999999999,
+    "examples": [
+      "Tropical Homes Hossain Tower, House#582/A/B, Road#7, Flat#B-9, Adabor",
+      "House#28, Road#2, Block#C, Rampura, Banasree, Dhaka",
+      "N.S Siddique Tower, House#4/1, Road#11, Godakhali South Bishil, Mirpur-1, Dhaka-1216",
+      "Flat# A102, Karabi-14A, Road#04, Block#A, Rajuk Uttara Apartment Project, Uttara Sector 18, Dhaka"
+    ],
+    "frequency": 4,
+    "last_seen": "Flat# A102, Karabi-14A, Road#04, Block#A, Rajuk Uttara Apartment Project, Uttara Sector 18, Dhaka",
+    "context_before": [
+      "tower,"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBER/LETTER_35": {
+    "pattern": "Road 3/C",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Sector 9, Road 3/C, House 26, Uttara, Dhaka",
+      "Flat - 5D, House - 36, Road 14/A, Dhanmondi , (Opposite side of Bangladesh Medical emergency gate)",
+      "Building Name: Monen Shah, House 68, Road 17/E, Banani, Dhaka, Bangladesh, 1213",
+      "House 66, Road 8/A, Dhanmondi, Dhaka",
+      "Flat No. 1306, House-12B (Tista-1), Road 2/C, Block-A, Sector-18, Uttara, Dhaka"
+    ],
+    "frequency": 9,
+    "last_seen": "House 8, Road 23/C, Asad Tower, Gulshan-1, Dhaka",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER #NUMBER_36": {
+    "pattern": "Road #01",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House #46 (Flat-5B), Road #01, Sector #10, Uttara, Dhaka",
+      "Flat#5E, House#27, Road #2, Nasirabad Housing Society, Chittagong",
+      "House #6, Road #6, Polaspur, Soniakhra, Dhaka",
+      "House #03, Flat #C2, Road #18, Sector #04, Uttara",
+      "Road #5, House #1, Block #A, Chandrima Model Kacha Bazar, Mohammadpur, Dhaka"
+    ],
+    "frequency": 9,
+    "last_seen": "House C/36, Road #2, Block #D, Bashundhara R/A, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER NUMBER_37": {
+    "pattern": "Road No 4",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Banasree H Block, Road No 4, House No 24, Flat No 6B, Dhaka",
+      "House 69, Road No 16, Sector 11, Uttara, Dhaka",
+      "Block - A, 6 Number, Road Number 6, House No 2, Mirpur (Mirpur Stadium, , Swimming Pool er Pichone)",
+      "Gulshan 2, Road Number 65, Navy Headquarter",
+      "Gulshan 2, Road Number 65, Navy Headquarter"
+    ],
+    "frequency": 16,
+    "last_seen": "House no 6 (2nd floor), Road no 8, Sector 11, Uttara, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER-NUMBER_38": {
+    "pattern": "Road Number-3",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+(?:\\s+(?:,|house))?",
+    "confidence": 0.95,
+    "examples": [
+      "Bayezid Textile, Kunjochaya Avashik, Road Number-3, RSRM Building, Chittagong",
+      "(After Rangipara Kachabazar), Road No-03, Ramna Residential Area, , North Agrabad, Chattogram, Proshanti (Beside Kazi Store)",
+      "North Khulshi, Road No-04, House No-05, Crystal Home, Flat No-A8, Chittagong",
+      "Mirpur-12, Block-B, Road No-9, House No-153 (4th Floor, Back Side), Dhaka",
+      "Section No-12, Block No-C, Road No-10, House No-01, 6th Floor, (Pallabi), Mirpur-12, Dhaka-1216"
+    ],
+    "frequency": 5,
+    "last_seen": "Section No-12, Block No-C, Road No-10, House No-01, 6th Floor, (Pallabi), Mirpur-12, Dhaka-1216",
+    "context_before": [],
+    "context_after": [
+      "house",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER. NUMBER/LETTER_39": {
+    "pattern": "Road No. 6/A",
+    "regex": "(?:(?:house|no\\.)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,|no\\.))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House No. 16, Road No. 6/A, Apartment No. 2A, Nobodoy Housing Society, Mohammadpur, Dhaka-1207",
+      "Pallabi, Jhilpar, Road No. 29/A, Plot No. 8, Pallabi Peace Apartment (Engineer Saheber Basha)"
+    ],
+    "frequency": 2,
+    "last_seen": "Pallabi, Jhilpar, Road No. 29/A, Plot No. 8, Pallabi Peace Apartment (Engineer Saheber Basha)",
+    "context_before": [
+      "house",
+      "no.",
+      "16,"
+    ],
+    "context_after": [
+      "no.",
+      "apartment",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER: NUMBER/NUMBER_40": {
+    "pattern": "Road: 12/4",
+    "regex": "(?:(?:70,|block:)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|south))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House: 70, Block: J, Road: 12/4, South Bonoshree, Goran, Dhaka",
+      "Protik Ruposree Housing, Building: Cherry E2, Flat: D4 4th Floor, Holding: 78, Road: 12/4, Block: J, South Banasree (Falguni Check)"
+    ],
+    "frequency": 2,
+    "last_seen": "Protik Ruposree Housing, Building: Cherry E2, Flat: D4 4th Floor, Holding: 78, Road: 12/4, Block: J, South Banasree (Falguni Check)",
+    "context_before": [
+      "block:",
+      "j,",
+      "70,"
+    ],
+    "context_after": [
+      "bonoshree,",
+      ",",
+      "south"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER. NUMBER_41": {
+    "pattern": "Road No. 1",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "South Khulsi, Road No. 1, Block - C, Lane 1, Chattogram",
+      "Foysal Tower, Flat No. 9B, House No. 3, Road No. 5, Block-B, Dhaka Uddyan,, Mohammadpur, Dhaka-1207",
+      "Hoque Heritage, 68 Panchlaish, Road No. 9, Opposite of Medical Staff Quarter,, Panchlaish, Chittagong",
+      "No. 1359, Road No. 2, Nimtola Model Town, Merul Badda, Dhaka",
+      "Sarulia Wasa Road, Ward No. 68, Demra, Dhaka South City Corporation"
+    ],
+    "frequency": 25,
+    "last_seen": "Ispahane Nodedhara Abasik Alaka, Road No. 1, House No. 20, Keraniganj, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBER/NUMBER_42": {
+    "pattern": "Road 126/123",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.85,
+    "examples": [
+      "1/A House, Road 126/123, Flat AG, Mayfair Apt, Gulshan 1",
+      "144/4A (Ayesha Manjil), Road 8/3, Block F, Banasree, Lal Miar Goli, Nayapara, , Meradia, Dhaka",
+      "Banasree, Block D, Road 8/3, House: Radiant Krishnachura, Banasree, Dhaka"
+    ],
+    "frequency": 3,
+    "last_seen": "Banasree, Block D, Road 8/3, House: Radiant Krishnachura, Banasree, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER - NUMBER_43": {
+    "pattern": "Road - 4",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.85,
+    "examples": [
+      "Epic Saleh Cielo, Flat: D-06, Katalganj R/A, Road - 4, Chawkbazar, Chittagong",
+      "House - 74/B/1, Road - 14, Kollanpur, Mirpur, Dhaka",
+      "541/2, R - 12, Baridhara DOHS"
+    ],
+    "frequency": 3,
+    "last_seen": "541/2, R - 12, Baridhara DOHS",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER: NUMBER_44": {
+    "pattern": "Road No: 05",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara (Ranavola -1st Security Islami Bank), Road No: 05, House No: 01, Opposite Sector 10",
+      "Mohammadpur, Dhaka Udyan, Ekta Housing, Road No: 2, House No: 24, Diamond Tower",
+      "Dhanmondi, Road no: 32, House no: 22/A, Flat no: 103",
+      "Road No: 8, House No: 149, DOHS, Savar Cantt., Savar",
+      "335, MRF Gafur Heights, West Nakhalpara, Dhaka 1215., Road No: 12, Flat No: B4"
+    ],
+    "frequency": 18,
+    "last_seen": "Mohammadpur Shakher Tack, Road No: 8, House No: 48, Kushi Villa, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBERLETTER_45": {
+    "pattern": "Road 4A",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara Sector 5, Road 4A, House 23B",
+      "House 29, Road 3B, Mohammadia Housing Limited, Mohammad",
+      "House 66, Road 8A, Dhanmondi, Dhaka",
+      "Flat D3, House 64, Road 9A, Dhanmondi",
+      "Uttara, Sector 11, Road 13A, House 1, Floor 7B"
+    ],
+    "frequency": 6,
+    "last_seen": "Flat 3F, House 45, Road 4A, Dhanmondi R/A, Dhaka 1209",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER-NUMBER/NUMBER_46": {
+    "pattern": "R-2/2",
+    "regex": "(?:(?:h\\-07,|house\\-39,)\\s+)?[a-zA-Z]?\\-[\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|banani,))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "H-07, R-2/2, Block-L, Banani, Dhaka",
+      "House-39, Road-13/15, Block-D, Banani, ঢাকা"
+    ],
+    "frequency": 2,
+    "last_seen": "House-39, Road-13/15, Block-D, Banani, ঢাকা",
+    "context_before": [
+      "h-07,",
+      "house-39,"
+    ],
+    "context_after": [
+      ",",
+      "banani,",
+      "block-l,"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER#LETTERNUMBER_47": {
+    "pattern": "Road#S06",
+    "regex": "(?:(?:house\\#f25,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#[a-zA-Z]?[\\d০-৯]+(?:\\s+(?:,|block\\#f,))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House#F25, Road#S06, Block#F, Mirpur Eastern Housing, Pallabi Phase 2, Dhaka",
+      "House#F25, Road#S06, Block#F, Mirpur Eastern Housing, Pallabi Phase 2, Dhaka"
+    ],
+    "frequency": 2,
+    "last_seen": "House#F25, Road#S06, Block#F, Mirpur Eastern Housing, Pallabi Phase 2, Dhaka",
+    "context_before": [
+      "house#f25,"
+    ],
+    "context_after": [
+      "block#f,",
+      ",",
+      "mirpur"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER # NUMBER/NUMBER_48": {
+    "pattern": "Road # 12/3",
+    "regex": "(?:(?:plot|\\#)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|block:))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Plot # 17, Road # 12/3, Block: J (Beside South Banasree Jame Mashid), South Banasree, Dhaka",
+      "Road # 10/5, House # 81, Block # F, Dokkhin Banashree, Near Protik Housing, Beside Bappir Math Nurserir Goli"
+    ],
+    "frequency": 2,
+    "last_seen": "Road # 10/5, House # 81, Block # F, Dokkhin Banashree, Near Protik Housing, Beside Bappir Math Nurserir Goli",
+    "context_before": [
+      "plot",
+      "17,",
+      "#"
+    ],
+    "context_after": [
+      "j",
+      "block:",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER - NUMBER/LETTER_49": {
+    "pattern": "Road - 15/A",
+    "regex": "(?:(?:\\-|block)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,|\\-))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Block - F, Road - 15/A, House - 525, Bashundhara R/A, Dhaka",
+      "Green Model Town, Flat - 8(C), House - 8, Road - 7/A, Section - B, Mugda/Manda, Dhaka"
+    ],
+    "frequency": 2,
+    "last_seen": "Green Model Town, Flat - 8(C), House - 8, Road - 7/A, Section - B, Mugda/Manda, Dhaka",
+    "context_before": [
+      "block",
+      "-",
+      "f,"
+    ],
+    "context_after": [
+      "house",
+      ",",
+      "-"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER- NUMBER_50": {
+    "pattern": "Road- 14",
+    "regex": "(?:(?:house\\-|391,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-\\ [\\d০-৯]+(?:\\s+(?:,|savar))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House- 391, Road- 14, Savar DOHS",
+      "House- Dream Tower, House- 397/1, Flat- 7C, Road- 1, Ward- 49, Kawla Namapara, PO- Khilkhet, Dakshinkhan, Dhaka-1229"
+    ],
+    "frequency": 2,
+    "last_seen": "House- Dream Tower, House- 397/1, Flat- 7C, Road- 1, Ward- 49, Kawla Namapara, PO- Khilkhet, Dakshinkhan, Dhaka-1229",
+    "context_before": [
+      "391,",
+      "397/1,",
+      "house-"
+    ],
+    "context_after": [
+      "dohs",
+      ",",
+      "savar"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_NUMBER_51": {
+    "pattern": "০৪",
+    "regex": "(?:(?:রোড)\\s+)?[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "একুশে টাওয়ার, গ্যাস রোড ০৪, রায়ের বাগ (শনির আখড়া)",
+      "উত্তরা, ১০ নাম্বার সেক্টর, ২২ নাম্বার রোড, ভাটুলিয়া মহিলা মাদ্রাসা, রোড ১, বাড়ি ১",
+      "পল্লবী মিরপুর, ইসলামি ব্যাংকের উপরে, ফ্ল্যাট নম্বর ৬০৪, সেকশন ১২, বি ব্লক, রোড নাম্বার ৪",
+      "নিকুঞ্জ ২, রোড নম্বর ১৮, ২/A",
+      "মহাম্মাদিয়া হাউজিং সোসাইটি, রোড ৩, বাসা ২৪৫, মোহাম্মদপুর, ঢাকা"
+    ],
+    "frequency": 6,
+    "last_seen": "রোড ১, 10/10A মুন এপার্টমেন্ট, ৩য় তলা, মোহাম্মদপুর, ঢাকা,মোহাম্মদিয়া হাউজিং লিমিটেড",
+    "context_before": [
+      "রোড"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": true,
+    "english_variant": false
+  },
+  "learned_LETTER LETTER LETTER_52": {
+    "pattern": "Baitul Falah Road",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "356, South Anand Nagar, Inside Aftab Nagar, in front of BDR House, Baitul Falah Road, Amjad Sir's House, Badda, Dhaka",
+      "B-14, Block-E, Level-2, Jakir Hossain Road, Mohammadpur, Dhaka",
+      "Uttor Sehachor, Takkar Math, Nur Mosque Road, Fatullah, Narayanganj",
+      "Soyed Shah Road, Wapda Office, Land Mark Housing Society, , Bakolia Access Road, P.S: Bakolia, District: Chattogram",
+      "West Madar Bari , Yugichad Mosque Line , S.A. Chowdhury Tower, Agrabad, Chattogram"
+    ],
+    "frequency": 103,
+    "last_seen": "Narayanganj, Chashara, Jamtola Masjid Goli",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER-NUMBER/LETTER_53": {
+    "pattern": "Road-10/A",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House-35/A,Road-10/A,Dhanmondi, dhaka",
+      "House-303, road-19/b, lift-5, Mohakhali DOHS",
+      "House-63/1, Flat-A-4, Road-7/A, Dhanmondi R/A, Dhaka",
+      "Flat-B3, House-09, Road-7/C, Sector-03, Uttara, Dhaka",
+      "House-34, Road-17/A, Block-E, Banani, Dhaka"
+    ],
+    "frequency": 8,
+    "last_seen": "H-57/A, Road-4/A, Dhanmondi, Dhaka 1209",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER:NUMBER_54": {
+    "pattern": "road:3",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:[\\d০-৯]+",
+    "confidence": 0.85,
+    "examples": [
+      "house:51(madina manjil),road:3,Mohammadia housing soceity mohammadpur, Dhaka",
+      "H:51, R:18, S:7, Uttara, Dhaka 1230",
+      "188 Khilgaon, Tilpapara, Road:10"
+    ],
+    "frequency": 3,
+    "last_seen": "188 Khilgaon, Tilpapara, Road:10",
+    "context_before": [],
+    "context_after": [],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER_55": {
+    "pattern": "Green Road",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Flat # 5A, Green Valley Apt, 147/1 Green Road, (beside Agora) Dhanmondi, Dhaka 1205",
+      "House No 1/18, Flat No B5, Park Palace, Humayun Road, Mohammadpur, Dhaka",
+      "76/2/E/24, North Jatrabari, Bibir Bagicha, Rojonigondha Road, Jheelpar, Dhaka",
+      "202/1-D, Lalbagh Road, Choto Vat Mosjid, Dhaka-1211",
+      "105/A, Central Road, Hatirpool, Dhaka"
+    ],
+    "frequency": 142,
+    "last_seen": "Prism VIP Garden, 76.78 KB Road, Gandharia, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER# NUMBER_56": {
+    "pattern": "Road# 18",
+    "regex": "(?:(?:house\\#|346/a,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#\\ [\\d০-৯]+(?:\\s+(?:,|tilpapara))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House# 346/A, Road# 18, Tilpapara Main Road, Tilpapara, Khilgaon, Dhaka-1219",
+      "1152/C \"Greenhouse\", House# 45, Road# 08 (In front of Kamal Store), Shapla Residential Area, Halishahar, Chittagong-4219"
+    ],
+    "frequency": 2,
+    "last_seen": "1152/C \"Greenhouse\", House# 45, Road# 08 (In front of Kamal Store), Shapla Residential Area, Halishahar, Chittagong-4219",
+    "context_before": [
+      "346/a,",
+      "house#",
+      "\"greenhouse\","
+    ],
+    "context_after": [
+      "main",
+      ",",
+      "tilpapara"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER # NUMBER_57": {
+    "pattern": "Road # 14",
+    "regex": "(?:(?:\\#)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#\\ [\\d০-৯]+(?:\\s+(?:,|\\#))?",
+    "confidence": 0.95,
+    "examples": [
+      "Sector # 13, Road # 14, House # 55, Flat No # 1/A",
+      "House # 296, Road # 13, Block # C, Flat # 7A (SE), Bashundhara R/A",
+      "House # 580, Road # 8, Avenue # 4, Mirpur DOHS",
+      "H # 1, R # 9, Block # A, Mirpur-1, Dhaka-1216",
+      "Block # F, Road # 2, House # 10/12, Banasree, Rampura, Dhaka-1219"
+    ],
+    "frequency": 10,
+    "last_seen": "House # 38, Road # 02, Sector # 09, Uttara, Dhaka",
+    "context_before": [
+      "#"
+    ],
+    "context_after": [
+      ",",
+      "#"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER -NUMBER_58": {
+    "pattern": "Road -8",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "H-54, Road -8, Block -B, Adorshopara, Bawnia (West), Uttara-1230",
+      "House -69, Road -14, Sec-13, Uttara",
+      "foyslake, Road -02, house -01.floors-5A, lakevista, Chattogram",
+      "House -21, Road -121, Gulshan-1, Dhaka",
+      "House -14/A, Road -8, 3rd Floor, Block -D, Mirpur -11"
+    ],
+    "frequency": 5,
+    "last_seen": "House -14/A, Road -8, 3rd Floor, Block -D, Mirpur -11",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER LETTER LETTER_59": {
+    "pattern": "vanga mosjid er goli",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "66/2 agamashilen law college (vanga mosjid er goli boro mosque ) bangshal thana , dhaka -1100 world num 33",
+      "House 38, Block E, Lake View Avenue Road, Sector 2, Aftabnagar, Dhaka",
+      "592/ka, Victoria Primary school road, Ranir dighir par, Nimtoli, Cumilla",
+      "East Delta University Road, Mozzafar Nagar, Hill Top Tower, Chattogram",
+      "68 Haji Afser Uddin Road, West Dhanmondi, Dhaka"
+    ],
+    "frequency": 31,
+    "last_seen": "Nasir villa, Vatara central mosque road, Vatara, Dhaka-1212",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER: NUMBER_60": {
+    "pattern": "Road: 17",
+    "regex": "(?:(?:house:)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,|block:))?",
+    "confidence": 0.95,
+    "examples": [
+      "Road: 17, Home: 15, Block: C, Banani, Dhaka 1213",
+      "House: 88/B, Road: 14, Block: H, South Banasree, Dhaka",
+      "House: 13 (5th Floor), Road: 05, Block: Kha, Shekhertek, PC Culture Housing Society, , Adabor, Dhaka - 1207",
+      "House: 26, Road: 2, Block: D, Sector: 1, Aftab Nagar",
+      "House: 35, Road: 02, Arunapalli, C & B, Savar, Dhaka"
+    ],
+    "frequency": 14,
+    "last_seen": "House: 1/3, Road: 09, Priyanka Runway City, (near Baunia), Uttara 1230",
+    "context_before": [
+      "house:"
+    ],
+    "context_after": [
+      "block:",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER#NUMBER_61": {
+    "pattern": "Road#7",
+    "regex": "(?:(?:tower,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.8999999999999999,
+    "examples": [
+      "Tropical Homes Hossain Tower, House#582/A/B, Road#7, Flat#B-9, Adabor",
+      "House#28, Road#2, Block#C, Rampura, Banasree, Dhaka",
+      "N.S Siddique Tower, House#4/1, Road#11, Godakhali South Bishil, Mirpur-1, Dhaka-1216",
+      "Flat# A102, Karabi-14A, Road#04, Block#A, Rajuk Uttara Apartment Project, Uttara Sector 18, Dhaka"
+    ],
+    "frequency": 4,
+    "last_seen": "Flat# A102, Karabi-14A, Road#04, Block#A, Rajuk Uttara Apartment Project, Uttara Sector 18, Dhaka",
+    "context_before": [
+      "tower,"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBER/LETTER_62": {
+    "pattern": "Road 3/C",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Sector 9, Road 3/C, House 26, Uttara, Dhaka",
+      "Flat - 5D, House - 36, Road 14/A, Dhanmondi , (Opposite side of Bangladesh Medical emergency gate)",
+      "Building Name: Monen Shah, House 68, Road 17/E, Banani, Dhaka, Bangladesh, 1213",
+      "House 66, Road 8/A, Dhanmondi, Dhaka",
+      "Flat No. 1306, House-12B (Tista-1), Road 2/C, Block-A, Sector-18, Uttara, Dhaka"
+    ],
+    "frequency": 9,
+    "last_seen": "House 8, Road 23/C, Asad Tower, Gulshan-1, Dhaka",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER #NUMBER_63": {
+    "pattern": "Road #01",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House #46 (Flat-5B), Road #01, Sector #10, Uttara, Dhaka",
+      "Flat#5E, House#27, Road #2, Nasirabad Housing Society, Chittagong",
+      "House #6, Road #6, Polaspur, Soniakhra, Dhaka",
+      "House #03, Flat #C2, Road #18, Sector #04, Uttara",
+      "Road #5, House #1, Block #A, Chandrima Model Kacha Bazar, Mohammadpur, Dhaka"
+    ],
+    "frequency": 8,
+    "last_seen": "House C/36, Road #2, Block #D, Bashundhara R/A, Dhaka",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER NUMBER_64": {
+    "pattern": "Road No 4",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Banasree H Block, Road No 4, House No 24, Flat No 6B, Dhaka",
+      "House 69, Road No 16, Sector 11, Uttara, Dhaka",
+      "Block - A, 6 Number, Road Number 6, House No 2, Mirpur (Mirpur Stadium, , Swimming Pool er Pichone)",
+      "Gulshan 2, Road Number 65, Navy Headquarter",
+      "Tropical Hussein Tower, building no 582A, 582B, road no 7, , Baitul Aman housing Society, Adabor, Dhaka"
+    ],
+    "frequency": 15,
+    "last_seen": "House no 6 (2nd floor), Road no 8, Sector 11, Uttara, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_NUMBER LETTER_65": {
+    "pattern": "60 Feet",
+    "regex": "[\\d০-৯]+\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?",
+    "confidence": 0.95,
+    "examples": [
+      "20/22 Meheghni Tower, 60 Feet (beside Leguna Stand), Mirpur 2, Dhaka",
+      "363/A/10, North Pirerbag, Mirpur 60 feet, Sapra Mosjid , (Near Abubokkor Madrasa, Balur Math)",
+      "Moddho Pirer Bagh, Paka Mosque, 60 Feet Road, Mirpur 2, Dhaka",
+      "House#39/4c, DLL Solaimon Villa, North Pirerbagh, 60 feet (Maiker Goli), Dhaka",
+      "Demra, Staff Quarter. Virgin Bakery Lane (16 feet road), south side of Haji Moazzem Ali High School"
+    ],
+    "frequency": 15,
+    "last_seen": "Madani Avenue, 100 Feet Road, Vatara, Dhaka 1212",
+    "context_before": [],
+    "context_after": [],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_NUMBER LETTER. LETTER_66": {
+    "pattern": "2 No. Road",
+    "regex": "[\\d০-৯]+\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.8999999999999999,
+    "examples": [
+      "Chittagong, Polytechnic Mood, Mojaffor Noghor, Shahid Sohel Shorok, , New Professor Building, 2 No. Road",
+      "Ctg, Kulshi, Kulshi Colony Yakub Future Park Housing Society, 3 No. Road, 19 No. Building, M S Heritage",
+      "90/C, Shekertek 6 No. Road, Shamoly Housing",
+      "Basa 49/23 (Vhai Vhai Vila), 6 No. Road, Jonota Bag (Polashpur), Sonirakhra"
+    ],
+    "frequency": 4,
+    "last_seen": "Basa 49/23 (Vhai Vhai Vila), 6 No. Road, Jonota Bag (Polashpur), Sonirakhra",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER-NUMBER_67": {
+    "pattern": "Road Number-3",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+(?:\\s+(?:,|house))?",
+    "confidence": 0.95,
+    "examples": [
+      "Bayezid Textile, Kunjochaya Avashik, Road Number-3, RSRM Building, Chittagong",
+      "(After Rangipara Kachabazar), Road No-03, Ramna Residential Area, , North Agrabad, Chattogram, Proshanti (Beside Kazi Store)",
+      "North Khulshi, Road No-04, House No-05, Crystal Home, Flat No-A8, Chittagong",
+      "Mirpur-12, Block-B, Road No-9, House No-153 (4th Floor, Back Side), Dhaka",
+      "Section No-12, Block No-C, Road No-10, House No-01, 6th Floor, (Pallabi), Mirpur-12, Dhaka-1216"
+    ],
+    "frequency": 5,
+    "last_seen": "Section No-12, Block No-C, Road No-10, House No-01, 6th Floor, (Pallabi), Mirpur-12, Dhaka-1216",
+    "context_before": [],
+    "context_after": [
+      "house",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER. NUMBER/LETTER_68": {
+    "pattern": "Road No. 6/A",
+    "regex": "(?:(?:house|no\\.)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,|no\\.))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House No. 16, Road No. 6/A, Apartment No. 2A, Nobodoy Housing Society, Mohammadpur, Dhaka-1207",
+      "Pallabi, Jhilpar, Road No. 29/A, Plot No. 8, Pallabi Peace Apartment (Engineer Saheber Basha)"
+    ],
+    "frequency": 2,
+    "last_seen": "Pallabi, Jhilpar, Road No. 29/A, Plot No. 8, Pallabi Peace Apartment (Engineer Saheber Basha)",
+    "context_before": [
+      "house",
+      "no.",
+      "16,"
+    ],
+    "context_after": [
+      "no.",
+      "apartment",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER: NUMBER/NUMBER_69": {
+    "pattern": "Road: 12/4",
+    "regex": "(?:(?:70,|block:)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|south))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House: 70, Block: J, Road: 12/4, South Bonoshree, Goran, Dhaka",
+      "Protik Ruposree Housing, Building: Cherry E2, Flat: D4 4th Floor, Holding: 78, Road: 12/4, Block: J, South Banasree (Falguni Check)"
+    ],
+    "frequency": 2,
+    "last_seen": "Protik Ruposree Housing, Building: Cherry E2, Flat: D4 4th Floor, Holding: 78, Road: 12/4, Block: J, South Banasree (Falguni Check)",
+    "context_before": [
+      "block:",
+      "j,",
+      "70,"
+    ],
+    "context_after": [
+      "bonoshree,",
+      ",",
+      "south"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER. NUMBER_70": {
+    "pattern": "Road No. 1",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "South Khulsi, Road No. 1, Block - C, Lane 1, Chattogram",
+      "Foysal Tower, Flat No. 9B, House No. 3, Road No. 5, Block-B, Dhaka Uddyan,, Mohammadpur, Dhaka-1207",
+      "Hoque Heritage, 68 Panchlaish, Road No. 9, Opposite of Medical Staff Quarter,, Panchlaish, Chittagong",
+      "No. 1359, Road No. 2, Nimtola Model Town, Merul Badda, Dhaka",
+      "Jamal Building, Road No. 1, Kalpolok Residential, Baklia, Chittagong"
+    ],
+    "frequency": 22,
+    "last_seen": "Ispahane Nodedhara Abasik Alaka, Road No. 1, House No. 20, Keraniganj, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBER/NUMBER_71": {
+    "pattern": "Road 126/123",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.85,
+    "examples": [
+      "1/A House, Road 126/123, Flat AG, Mayfair Apt, Gulshan 1",
+      "144/4A (Ayesha Manjil), Road 8/3, Block F, Banasree, Lal Miar Goli, Nayapara, , Meradia, Dhaka",
+      "Banasree, Block D, Road 8/3, House: Radiant Krishnachura, Banasree, Dhaka"
+    ],
+    "frequency": 3,
+    "last_seen": "Banasree, Block D, Road 8/3, House: Radiant Krishnachura, Banasree, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER - NUMBER_72": {
+    "pattern": "Road - 4",
+    "regex": "(?:(?:\\-)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.8999999999999999,
+    "examples": [
+      "Epic Saleh Cielo, Flat: D-06, Katalganj R/A, Road - 4, Chawkbazar, Chittagong",
+      "Tagor House, Plot - 9/2(a), Lane - 1, Block - B, Section - 6, Mirpur, Dhaka",
+      "House - 74/B/1, Road - 14, Kollanpur, Mirpur, Dhaka",
+      "541/2, R - 12, Baridhara DOHS"
+    ],
+    "frequency": 4,
+    "last_seen": "541/2, R - 12, Baridhara DOHS",
+    "context_before": [
+      "-"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER: NUMBER_73": {
+    "pattern": "Road No: 05",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara (Ranavola -1st Security Islami Bank), Road No: 05, House No: 01, Opposite Sector 10",
+      "Mohammadpur, Dhaka Udyan, Ekta Housing, Road No: 2, House No: 24, Diamond Tower",
+      "Dhanmondi, Road no: 32, House no: 22/A, Flat no: 103",
+      "Road No: 8, House No: 149, DOHS, Savar Cantt., Savar",
+      "335, MRF Gafur Heights, West Nakhalpara, Dhaka 1215., Road No: 12, Flat No: B4"
+    ],
+    "frequency": 16,
+    "last_seen": "Mohammadpur Shakher Tack, Road No: 8, House No: 48, Kushi Villa, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_NUMBER_74": {
+    "pattern": "20",
+    "regex": "(?:(?:sector|road)\\s+)?[\\d০-৯]+(?:\\s+(?:,|house))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara Sector 11, Road 20, House 18, 3rd Floor, Left Side",
+      "Sector 4, Road 16, House 21, Uttara",
+      "একুশে টাওয়ার, গ্যাস রোড ০৪, রায়ের বাগ (শনির আখড়া)",
+      "নিকুঞ্জ ২, রোড নম্বর ১৮, ২/A",
+      "Uttara, Sector 13, Road 11, House 81"
+    ],
+    "frequency": 5,
+    "last_seen": "Uttara, Sector 13, Road 11, House 81",
+    "context_before": [
+      "sector",
+      "road"
+    ],
+    "context_after": [
+      "house",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_NUMBER LETTER LETTER_75": {
+    "pattern": "3 No Road",
+    "regex": "(?:(?:krisnochuda,|dokkhingaon)\\s+)?[\\d০-৯]+\\ [a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,|west))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Krisnochuda, 3 No Road, West Khulshi, Chottogram",
+      "Dokkhingaon 1 no road Dhaka .Bashaboo"
+    ],
+    "frequency": 2,
+    "last_seen": "Dokkhingaon 1 no road Dhaka .Bashaboo",
+    "context_before": [
+      "krisnochuda,",
+      "dokkhingaon"
+    ],
+    "context_after": [
+      "khulshi,",
+      "west",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBERLETTER_76": {
+    "pattern": "Road 4A",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara Sector 5, Road 4A, House 23B",
+      "House 29, Road 3B, Mohammadia Housing Limited, Mohammad",
+      "House 66, Road 8A, Dhanmondi, Dhaka",
+      "Flat D3, House 64, Road 9A, Dhanmondi",
+      "Uttara, Sector 11, Road 13A, House 1, Floor 7B"
+    ],
+    "frequency": 6,
+    "last_seen": "Flat 3F, House 45, Road 4A, Dhanmondi R/A, Dhaka 1209",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER-NUMBER/NUMBER_77": {
+    "pattern": "R-2/2",
+    "regex": "(?:(?:h\\-07,|house\\-39,)\\s+)?[a-zA-Z]?\\-[\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|banani,))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "H-07, R-2/2, Block-L, Banani, Dhaka",
+      "House-39, Road-13/15, Block-D, Banani, ঢাকা"
+    ],
+    "frequency": 2,
+    "last_seen": "House-39, Road-13/15, Block-D, Banani, ঢাকা",
+    "context_before": [
+      "h-07,",
+      "house-39,"
+    ],
+    "context_after": [
+      ",",
+      "banani,",
+      "block-l,"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER LETTER LETTER LETTER_78": {
+    "pattern": "Haji Akram Uddin Mollah Road",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House No. 56, Haji Akram Uddin Mollah Road, Rana Market, Shahjahan Sir Road, Hazaribagh, Dhaka",
+      "3 No Sher Shah Suri Road, Mohammadpur, Dhaka",
+      "Foys Lake Abdul Hamid Road, Jom Jom Bliding, Khulshi, Chattogram",
+      "Bhai Bhai Safir Uddin Road, (Borof Goli), Kuwait Bangladesh Building, Kha-Para, Khilkhet, Dhaka",
+      "Flat - 3B, Elite House Tower, Baitul Aqsa Jame Masjid Road, Shantibag, Paradogair, Matuail, Demra, Dhaka-1362"
+    ],
+    "frequency": 6,
+    "last_seen": "Baitul Aman Moshjid er goli, Haque Pharmacy r pichoner 10 tola building er 3 tolai, Paterbag, Shonirakhra, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER # NUMBER/NUMBER_79": {
+    "pattern": "Road # 12/3",
+    "regex": "(?:(?:plot|\\#)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|block:))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Plot # 17, Road # 12/3, Block: J (Beside South Banasree Jame Mashid), South Banasree, Dhaka",
+      "Road # 10/5, House # 81, Block # F, Dokkhin Banashree, Near Protik Housing, Beside Bappir Math Nurserir Goli"
+    ],
+    "frequency": 2,
+    "last_seen": "Road # 10/5, House # 81, Block # F, Dokkhin Banashree, Near Protik Housing, Beside Bappir Math Nurserir Goli",
+    "context_before": [
+      "plot",
+      "17,",
+      "#"
+    ],
+    "context_after": [
+      "j",
+      "block:",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER - NUMBER/LETTER_80": {
+    "pattern": "Road - 15/A",
+    "regex": "(?:(?:\\-|block)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,|\\-))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Block - F, Road - 15/A, House - 525, Bashundhara R/A, Dhaka",
+      "Green Model Town, Flat - 8(C), House - 8, Road - 7/A, Section - B, Mugda/Manda, Dhaka"
+    ],
+    "frequency": 2,
+    "last_seen": "Green Model Town, Flat - 8(C), House - 8, Road - 7/A, Section - B, Mugda/Manda, Dhaka",
+    "context_before": [
+      "block",
+      "-",
+      "f,"
+    ],
+    "context_after": [
+      "house",
+      ",",
+      "-"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER- NUMBER_81": {
+    "pattern": "Road- 14",
+    "regex": "(?:(?:house\\-|391,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-\\ [\\d০-৯]+(?:\\s+(?:,|savar))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House- 391, Road- 14, Savar DOHS",
+      "House- Dream Tower, House- 397/1, Flat- 7C, Road- 1, Ward- 49, Kawla Namapara, PO- Khilkhet, Dakshinkhan, Dhaka-1229"
+    ],
+    "frequency": 2,
+    "last_seen": "House- Dream Tower, House- 397/1, Flat- 7C, Road- 1, Ward- 49, Kawla Namapara, PO- Khilkhet, Dakshinkhan, Dhaka-1229",
+    "context_before": [
+      "391,",
+      "397/1,",
+      "house-"
+    ],
+    "context_after": [
+      "dohs",
+      ",",
+      "savar"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER_82": {
+    "pattern": "Bissoroad",
+    "regex": "(?:(?:পিছনে,|poduar)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,|cumilla))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Bhuiyan Bari, Hazi Akram Uddin School-এর পিছনে, Poduar Bazar, Bissoroad, Cumilla",
+      "17/3, Onward Lucida, Panthapath West Rajabazar, Gym er Goli, Dhaka, Flat 1C"
+    ],
+    "frequency": 2,
+    "last_seen": "17/3, Onward Lucida, Panthapath West Rajabazar, Gym er Goli, Dhaka, Flat 1C",
+    "context_before": [
+      "bazar,",
+      "poduar",
+      "পিছনে,"
+    ],
+    "context_after": [
+      ",",
+      "cumilla",
+      "lucida,"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L L_83": {
+    "pattern": "Learned from 103 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Baitul Falah Road",
+      "Jakir Hossain Road",
+      "Nur Mosque Road",
+      "Soyed Shah Road",
+      "Yugichad Mosque Line"
+    ],
+    "frequency": 103,
+    "last_seen": "Jamtola Masjid Goli",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L-N/L_84": {
+    "pattern": "Learned from 8 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.83,
+    "examples": [
+      "Road-10/A",
+      "road-19/b",
+      "Road-7/A",
+      "Road-7/C",
+      "Road-17/A"
+    ],
+    "frequency": 8,
+    "last_seen": "Road-4/A",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L:N_85": {
+    "pattern": "Learned from 3 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:[\\d০-৯]+",
+    "confidence": 0.78,
+    "examples": [
+      "road:3",
+      "R:18",
+      "Road:10"
+    ],
+    "frequency": 3,
+    "last_seen": "Road:10",
+    "context_before": [],
+    "context_after": [],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L_86": {
+    "pattern": "Learned from 142 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Green Road",
+      "Humayun Road",
+      "Rojonigondha Road",
+      "Lalbagh Road",
+      "Central Road"
+    ],
+    "frequency": 142,
+    "last_seen": "KB Road",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L # N_87": {
+    "pattern": "Learned from 10 excellent examples",
+    "regex": "(?:(?:\\#)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#\\ [\\d০-৯]+(?:\\s+(?:,|\\#))?",
+    "confidence": 0.85,
+    "examples": [
+      "Road # 14",
+      "Road # 13",
+      "Road # 8",
+      "R # 9",
+      "Road # 2"
+    ],
+    "frequency": 10,
+    "last_seen": "Road # 02",
+    "context_before": [
+      "#"
+    ],
+    "context_after": [
+      ",",
+      "#"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L -N_88": {
+    "pattern": "Learned from 5 excellent examples",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.8,
+    "examples": [
+      "Road -8",
+      "Road -14",
+      "Road -02",
+      "Road -121",
+      "Road -8"
+    ],
+    "frequency": 5,
+    "last_seen": "Road -8",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L L L_89": {
+    "pattern": "Learned from 31 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "vanga mosjid er goli",
+      "Lake View Avenue Road",
+      "Victoria Primary school road",
+      "East Delta University Road",
+      "Haji Afser Uddin Road"
+    ],
+    "frequency": 31,
+    "last_seen": "Vatara central mosque road",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L: N_90": {
+    "pattern": "Learned from 14 excellent examples",
+    "regex": "(?:(?:house:)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,|block:))?",
+    "confidence": 0.89,
+    "examples": [
+      "Road: 17",
+      "Road: 14",
+      "Road: 05",
+      "Road: 2",
+      "Road: 02"
+    ],
+    "frequency": 14,
+    "last_seen": "Road: 09",
+    "context_before": [
+      "house:"
+    ],
+    "context_after": [
+      "block:",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L#N_91": {
+    "pattern": "Learned from 4 excellent examples",
+    "regex": "(?:(?:tower,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.79,
+    "examples": [
+      "Road#7",
+      "Road#2",
+      "Road#11",
+      "Road#04"
+    ],
+    "frequency": 4,
+    "last_seen": "Road#04",
+    "context_before": [
+      "tower,"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L N/L_92": {
+    "pattern": "Learned from 9 excellent examples",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.84,
+    "examples": [
+      "Road 3/C",
+      "Road 14/A",
+      "Road 17/E",
+      "Road 8/A",
+      "Road 2/C"
+    ],
+    "frequency": 9,
+    "last_seen": "Road 23/C",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L #N_93": {
+    "pattern": "Learned from 8 excellent examples",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.83,
+    "examples": [
+      "Road #01",
+      "Road #2",
+      "Road #6",
+      "Road #18",
+      "Road #5"
+    ],
+    "frequency": 8,
+    "last_seen": "Road #2",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L N_94": {
+    "pattern": "Learned from 15 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.9,
+    "examples": [
+      "Road No 4",
+      "Road No 16",
+      "Road Number 6",
+      "Road Number 65",
+      "road no 7"
+    ],
+    "frequency": 15,
+    "last_seen": "Road no 8",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_N L_95": {
+    "pattern": "Learned from 15 excellent examples",
+    "regex": "[\\d০-৯]+\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?",
+    "confidence": 0.9,
+    "examples": [
+      "60 Feet",
+      "60 feet",
+      "60 Feet",
+      "60 feet",
+      "16 feet"
+    ],
+    "frequency": 15,
+    "last_seen": "100 Feet",
+    "context_before": [],
+    "context_after": [],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_N L. L_96": {
+    "pattern": "Learned from 4 excellent examples",
+    "regex": "[\\d০-৯]+\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.79,
+    "examples": [
+      "2 No. Road",
+      "3 No. Road",
+      "6 No. Road",
+      "6 No. Road"
+    ],
+    "frequency": 4,
+    "last_seen": "6 No. Road",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L-N_97": {
+    "pattern": "Learned from 5 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+(?:\\s+(?:,|house))?",
+    "confidence": 0.8,
+    "examples": [
+      "Road Number-3",
+      "Road No-03",
+      "Road No-04",
+      "Road No-9",
+      "Road No-10"
+    ],
+    "frequency": 5,
+    "last_seen": "Road No-10",
+    "context_before": [],
+    "context_after": [
+      "house",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L. N_98": {
+    "pattern": "Learned from 22 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Road No. 1",
+      "Road No. 5",
+      "Road No. 9",
+      "Road No. 2",
+      "Road No. 1"
+    ],
+    "frequency": 22,
+    "last_seen": "Road No. 1",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L N/N_99": {
+    "pattern": "Learned from 3 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.78,
+    "examples": [
+      "Road 126/123",
+      "Road 8/3",
+      "Road 8/3"
+    ],
+    "frequency": 3,
+    "last_seen": "Road 8/3",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L - N_100": {
+    "pattern": "Learned from 4 excellent examples",
+    "regex": "(?:(?:\\-)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.79,
+    "examples": [
+      "Road - 4",
+      "Lane - 1",
+      "Road - 14",
+      "R - 12"
+    ],
+    "frequency": 4,
+    "last_seen": "R - 12",
+    "context_before": [
+      "-"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L: N_101": {
+    "pattern": "Learned from 16 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.91,
+    "examples": [
+      "Road No: 05",
+      "Road No: 2",
+      "Road no: 32",
+      "Road No: 8",
+      "Road No: 12"
+    ],
+    "frequency": 16,
+    "last_seen": "Road No: 8",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_N_102": {
+    "pattern": "Learned from 5 excellent examples",
+    "regex": "(?:(?:sector|road)\\s+)?[\\d০-৯]+(?:\\s+(?:,|house))?",
+    "confidence": 0.8,
+    "examples": [
+      "20",
+      "16",
+      "০৪",
+      "১৮",
+      "11"
+    ],
+    "frequency": 5,
+    "last_seen": "11",
+    "context_before": [
+      "sector",
+      "road"
+    ],
+    "context_after": [
+      "house",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L NL_103": {
+    "pattern": "Learned from 6 excellent examples",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.81,
+    "examples": [
+      "Road 4A",
+      "Road 3B",
+      "Road 8A",
+      "Road 9A",
+      "Road 13A"
+    ],
+    "frequency": 6,
+    "last_seen": "Road 4A",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L L L L_104": {
+    "pattern": "Learned from 6 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.81,
+    "examples": [
+      "Haji Akram Uddin Mollah Road",
+      "No Sher Shah Suri Road",
+      "Foys Lake Abdul Hamid Road",
+      "Bhai Bhai Safir Uddin Road",
+      "Baitul Aqsa Jame Masjid Road"
+    ],
+    "frequency": 6,
+    "last_seen": "Baitul Aman Moshjid er goli",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER LETTER_105": {
+    "pattern": "Baitul Falah Road",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "356, South Anand Nagar, Inside Aftab Nagar, in front of BDR House, Baitul Falah Road, Amjad Sir's House, Badda, Dhaka",
+      "B-14, Block-E, Level-2, Jakir Hossain Road, Mohammadpur, Dhaka",
+      "Uttor Sehachor, Takkar Math, Nur Mosque Road, Fatullah, Narayanganj",
+      "Soyed Shah Road, Wapda Office, Land Mark Housing Society, , Bakolia Access Road, P.S: Bakolia, District: Chattogram",
+      "West Madar Bari , Yugichad Mosque Line , S.A. Chowdhury Tower, Agrabad, Chattogram"
+    ],
+    "frequency": 103,
+    "last_seen": "Narayanganj, Chashara, Jamtola Masjid Goli",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER-NUMBER/LETTER_106": {
+    "pattern": "Road-10/A",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House-35/A,Road-10/A,Dhanmondi, dhaka",
+      "House-303, road-19/b, lift-5, Mohakhali DOHS",
+      "House-63/1, Flat-A-4, Road-7/A, Dhanmondi R/A, Dhaka",
+      "Flat-B3, House-09, Road-7/C, Sector-03, Uttara, Dhaka",
+      "House-34, Road-17/A, Block-E, Banani, Dhaka"
+    ],
+    "frequency": 8,
+    "last_seen": "H-57/A, Road-4/A, Dhanmondi, Dhaka 1209",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER:NUMBER_107": {
+    "pattern": "road:3",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:[\\d০-৯]+",
+    "confidence": 0.85,
+    "examples": [
+      "house:51(madina manjil),road:3,Mohammadia housing soceity mohammadpur, Dhaka",
+      "H:51, R:18, S:7, Uttara, Dhaka 1230",
+      "188 Khilgaon, Tilpapara, Road:10"
+    ],
+    "frequency": 3,
+    "last_seen": "188 Khilgaon, Tilpapara, Road:10",
+    "context_before": [],
+    "context_after": [],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER_108": {
+    "pattern": "Green Road",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Flat # 5A, Green Valley Apt, 147/1 Green Road, (beside Agora) Dhanmondi, Dhaka 1205",
+      "House No 1/18, Flat No B5, Park Palace, Humayun Road, Mohammadpur, Dhaka",
+      "76/2/E/24, North Jatrabari, Bibir Bagicha, Rojonigondha Road, Jheelpar, Dhaka",
+      "202/1-D, Lalbagh Road, Choto Vat Mosjid, Dhaka-1211",
+      "105/A, Central Road, Hatirpool, Dhaka"
+    ],
+    "frequency": 142,
+    "last_seen": "Prism VIP Garden, 76.78 KB Road, Gandharia, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER# NUMBER_109": {
+    "pattern": "Road# 18",
+    "regex": "(?:(?:house\\#|346/a,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#\\ [\\d০-৯]+(?:\\s+(?:,|tilpapara))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House# 346/A, Road# 18, Tilpapara Main Road, Tilpapara, Khilgaon, Dhaka-1219",
+      "1152/C \"Greenhouse\", House# 45, Road# 08 (In front of Kamal Store), Shapla Residential Area, Halishahar, Chittagong-4219"
+    ],
+    "frequency": 2,
+    "last_seen": "1152/C \"Greenhouse\", House# 45, Road# 08 (In front of Kamal Store), Shapla Residential Area, Halishahar, Chittagong-4219",
+    "context_before": [
+      "346/a,",
+      "house#",
+      "\"greenhouse\","
+    ],
+    "context_after": [
+      "main",
+      ",",
+      "tilpapara"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER # NUMBER_110": {
+    "pattern": "Road # 14",
+    "regex": "(?:(?:\\#)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#\\ [\\d০-৯]+(?:\\s+(?:,|\\#))?",
+    "confidence": 0.95,
+    "examples": [
+      "Sector # 13, Road # 14, House # 55, Flat No # 1/A",
+      "House # 296, Road # 13, Block # C, Flat # 7A (SE), Bashundhara R/A",
+      "House # 580, Road # 8, Avenue # 4, Mirpur DOHS",
+      "H # 1, R # 9, Block # A, Mirpur-1, Dhaka-1216",
+      "Block # F, Road # 2, House # 10/12, Banasree, Rampura, Dhaka-1219"
+    ],
+    "frequency": 10,
+    "last_seen": "House # 38, Road # 02, Sector # 09, Uttara, Dhaka",
+    "context_before": [
+      "#"
+    ],
+    "context_after": [
+      ",",
+      "#"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER -NUMBER_111": {
+    "pattern": "Road -8",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "H-54, Road -8, Block -B, Adorshopara, Bawnia (West), Uttara-1230",
+      "House -69, Road -14, Sec-13, Uttara",
+      "foyslake, Road -02, house -01.floors-5A, lakevista, Chattogram",
+      "House -21, Road -121, Gulshan-1, Dhaka",
+      "House -14/A, Road -8, 3rd Floor, Block -D, Mirpur -11"
+    ],
+    "frequency": 5,
+    "last_seen": "House -14/A, Road -8, 3rd Floor, Block -D, Mirpur -11",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER LETTER LETTER_112": {
+    "pattern": "vanga mosjid er goli",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "66/2 agamashilen law college (vanga mosjid er goli boro mosque ) bangshal thana , dhaka -1100 world num 33",
+      "House 38, Block E, Lake View Avenue Road, Sector 2, Aftabnagar, Dhaka",
+      "592/ka, Victoria Primary school road, Ranir dighir par, Nimtoli, Cumilla",
+      "East Delta University Road, Mozzafar Nagar, Hill Top Tower, Chattogram",
+      "68 Haji Afser Uddin Road, West Dhanmondi, Dhaka"
+    ],
+    "frequency": 31,
+    "last_seen": "Nasir villa, Vatara central mosque road, Vatara, Dhaka-1212",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER: NUMBER_113": {
+    "pattern": "Road: 17",
+    "regex": "(?:(?:house:)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,|block:))?",
+    "confidence": 0.95,
+    "examples": [
+      "Road: 17, Home: 15, Block: C, Banani, Dhaka 1213",
+      "House: 88/B, Road: 14, Block: H, South Banasree, Dhaka",
+      "House: 13 (5th Floor), Road: 05, Block: Kha, Shekhertek, PC Culture Housing Society, , Adabor, Dhaka - 1207",
+      "House: 26, Road: 2, Block: D, Sector: 1, Aftab Nagar",
+      "House: 35, Road: 02, Arunapalli, C & B, Savar, Dhaka"
+    ],
+    "frequency": 14,
+    "last_seen": "House: 1/3, Road: 09, Priyanka Runway City, (near Baunia), Uttara 1230",
+    "context_before": [
+      "house:"
+    ],
+    "context_after": [
+      "block:",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER#NUMBER_114": {
+    "pattern": "Road#7",
+    "regex": "(?:(?:tower,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.8999999999999999,
+    "examples": [
+      "Tropical Homes Hossain Tower, House#582/A/B, Road#7, Flat#B-9, Adabor",
+      "House#28, Road#2, Block#C, Rampura, Banasree, Dhaka",
+      "N.S Siddique Tower, House#4/1, Road#11, Godakhali South Bishil, Mirpur-1, Dhaka-1216",
+      "Flat# A102, Karabi-14A, Road#04, Block#A, Rajuk Uttara Apartment Project, Uttara Sector 18, Dhaka"
+    ],
+    "frequency": 4,
+    "last_seen": "Flat# A102, Karabi-14A, Road#04, Block#A, Rajuk Uttara Apartment Project, Uttara Sector 18, Dhaka",
+    "context_before": [
+      "tower,"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBER/LETTER_115": {
+    "pattern": "Road 3/C",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Sector 9, Road 3/C, House 26, Uttara, Dhaka",
+      "Flat - 5D, House - 36, Road 14/A, Dhanmondi , (Opposite side of Bangladesh Medical emergency gate)",
+      "Building Name: Monen Shah, House 68, Road 17/E, Banani, Dhaka, Bangladesh, 1213",
+      "House 66, Road 8/A, Dhanmondi, Dhaka",
+      "Flat No. 1306, House-12B (Tista-1), Road 2/C, Block-A, Sector-18, Uttara, Dhaka"
+    ],
+    "frequency": 9,
+    "last_seen": "House 8, Road 23/C, Asad Tower, Gulshan-1, Dhaka",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER #NUMBER_116": {
+    "pattern": "Road #01",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House #46 (Flat-5B), Road #01, Sector #10, Uttara, Dhaka",
+      "Flat#5E, House#27, Road #2, Nasirabad Housing Society, Chittagong",
+      "House #6, Road #6, Polaspur, Soniakhra, Dhaka",
+      "House #03, Flat #C2, Road #18, Sector #04, Uttara",
+      "Road #5, House #1, Block #A, Chandrima Model Kacha Bazar, Mohammadpur, Dhaka"
+    ],
+    "frequency": 8,
+    "last_seen": "House C/36, Road #2, Block #D, Bashundhara R/A, Dhaka",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER NUMBER_117": {
+    "pattern": "Road No 4",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Banasree H Block, Road No 4, House No 24, Flat No 6B, Dhaka",
+      "House 69, Road No 16, Sector 11, Uttara, Dhaka",
+      "Block - A, 6 Number, Road Number 6, House No 2, Mirpur (Mirpur Stadium, , Swimming Pool er Pichone)",
+      "Gulshan 2, Road Number 65, Navy Headquarter",
+      "Tropical Hussein Tower, building no 582A, 582B, road no 7, , Baitul Aman housing Society, Adabor, Dhaka"
+    ],
+    "frequency": 15,
+    "last_seen": "House no 6 (2nd floor), Road no 8, Sector 11, Uttara, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_NUMBER LETTER_118": {
+    "pattern": "60 Feet",
+    "regex": "[\\d০-৯]+\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?",
+    "confidence": 0.95,
+    "examples": [
+      "20/22 Meheghni Tower, 60 Feet (beside Leguna Stand), Mirpur 2, Dhaka",
+      "363/A/10, North Pirerbag, Mirpur 60 feet, Sapra Mosjid , (Near Abubokkor Madrasa, Balur Math)",
+      "Moddho Pirer Bagh, Paka Mosque, 60 Feet Road, Mirpur 2, Dhaka",
+      "House#39/4c, DLL Solaimon Villa, North Pirerbagh, 60 feet (Maiker Goli), Dhaka",
+      "Demra, Staff Quarter. Virgin Bakery Lane (16 feet road), south side of Haji Moazzem Ali High School"
+    ],
+    "frequency": 15,
+    "last_seen": "Madani Avenue, 100 Feet Road, Vatara, Dhaka 1212",
+    "context_before": [],
+    "context_after": [],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_NUMBER LETTER. LETTER_119": {
+    "pattern": "2 No. Road",
+    "regex": "[\\d০-৯]+\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.8999999999999999,
+    "examples": [
+      "Chittagong, Polytechnic Mood, Mojaffor Noghor, Shahid Sohel Shorok, , New Professor Building, 2 No. Road",
+      "Ctg, Kulshi, Kulshi Colony Yakub Future Park Housing Society, 3 No. Road, 19 No. Building, M S Heritage",
+      "90/C, Shekertek 6 No. Road, Shamoly Housing",
+      "Basa 49/23 (Vhai Vhai Vila), 6 No. Road, Jonota Bag (Polashpur), Sonirakhra"
+    ],
+    "frequency": 4,
+    "last_seen": "Basa 49/23 (Vhai Vhai Vila), 6 No. Road, Jonota Bag (Polashpur), Sonirakhra",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER-NUMBER_120": {
+    "pattern": "Road Number-3",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+(?:\\s+(?:,|house))?",
+    "confidence": 0.95,
+    "examples": [
+      "Bayezid Textile, Kunjochaya Avashik, Road Number-3, RSRM Building, Chittagong",
+      "(After Rangipara Kachabazar), Road No-03, Ramna Residential Area, , North Agrabad, Chattogram, Proshanti (Beside Kazi Store)",
+      "North Khulshi, Road No-04, House No-05, Crystal Home, Flat No-A8, Chittagong",
+      "Mirpur-12, Block-B, Road No-9, House No-153 (4th Floor, Back Side), Dhaka",
+      "Section No-12, Block No-C, Road No-10, House No-01, 6th Floor, (Pallabi), Mirpur-12, Dhaka-1216"
+    ],
+    "frequency": 5,
+    "last_seen": "Section No-12, Block No-C, Road No-10, House No-01, 6th Floor, (Pallabi), Mirpur-12, Dhaka-1216",
+    "context_before": [],
+    "context_after": [
+      "house",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER. NUMBER/LETTER_121": {
+    "pattern": "Road No. 6/A",
+    "regex": "(?:(?:house|no\\.)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,|no\\.))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House No. 16, Road No. 6/A, Apartment No. 2A, Nobodoy Housing Society, Mohammadpur, Dhaka-1207",
+      "Pallabi, Jhilpar, Road No. 29/A, Plot No. 8, Pallabi Peace Apartment (Engineer Saheber Basha)"
+    ],
+    "frequency": 2,
+    "last_seen": "Pallabi, Jhilpar, Road No. 29/A, Plot No. 8, Pallabi Peace Apartment (Engineer Saheber Basha)",
+    "context_before": [
+      "house",
+      "no.",
+      "16,"
+    ],
+    "context_after": [
+      "no.",
+      "apartment",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER: NUMBER/NUMBER_122": {
+    "pattern": "Road: 12/4",
+    "regex": "(?:(?:70,|block:)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|south))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House: 70, Block: J, Road: 12/4, South Bonoshree, Goran, Dhaka",
+      "Protik Ruposree Housing, Building: Cherry E2, Flat: D4 4th Floor, Holding: 78, Road: 12/4, Block: J, South Banasree (Falguni Check)"
+    ],
+    "frequency": 2,
+    "last_seen": "Protik Ruposree Housing, Building: Cherry E2, Flat: D4 4th Floor, Holding: 78, Road: 12/4, Block: J, South Banasree (Falguni Check)",
+    "context_before": [
+      "block:",
+      "70,",
+      "j,"
+    ],
+    "context_after": [
+      "bonoshree,",
+      ",",
+      "south"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER. NUMBER_123": {
+    "pattern": "Road No. 1",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "South Khulsi, Road No. 1, Block - C, Lane 1, Chattogram",
+      "Foysal Tower, Flat No. 9B, House No. 3, Road No. 5, Block-B, Dhaka Uddyan,, Mohammadpur, Dhaka-1207",
+      "Hoque Heritage, 68 Panchlaish, Road No. 9, Opposite of Medical Staff Quarter,, Panchlaish, Chittagong",
+      "No. 1359, Road No. 2, Nimtola Model Town, Merul Badda, Dhaka",
+      "Jamal Building, Road No. 1, Kalpolok Residential, Baklia, Chittagong"
+    ],
+    "frequency": 22,
+    "last_seen": "Ispahane Nodedhara Abasik Alaka, Road No. 1, House No. 20, Keraniganj, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBER/NUMBER_124": {
+    "pattern": "Road 126/123",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.85,
+    "examples": [
+      "1/A House, Road 126/123, Flat AG, Mayfair Apt, Gulshan 1",
+      "144/4A (Ayesha Manjil), Road 8/3, Block F, Banasree, Lal Miar Goli, Nayapara, , Meradia, Dhaka",
+      "Banasree, Block D, Road 8/3, House: Radiant Krishnachura, Banasree, Dhaka"
+    ],
+    "frequency": 3,
+    "last_seen": "Banasree, Block D, Road 8/3, House: Radiant Krishnachura, Banasree, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER - NUMBER_125": {
+    "pattern": "Road - 4",
+    "regex": "(?:(?:\\-)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.8999999999999999,
+    "examples": [
+      "Epic Saleh Cielo, Flat: D-06, Katalganj R/A, Road - 4, Chawkbazar, Chittagong",
+      "Tagor House, Plot - 9/2(a), Lane - 1, Block - B, Section - 6, Mirpur, Dhaka",
+      "House - 74/B/1, Road - 14, Kollanpur, Mirpur, Dhaka",
+      "541/2, R - 12, Baridhara DOHS"
+    ],
+    "frequency": 4,
+    "last_seen": "541/2, R - 12, Baridhara DOHS",
+    "context_before": [
+      "-"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER: NUMBER_126": {
+    "pattern": "Road No: 05",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara (Ranavola -1st Security Islami Bank), Road No: 05, House No: 01, Opposite Sector 10",
+      "Mohammadpur, Dhaka Udyan, Ekta Housing, Road No: 2, House No: 24, Diamond Tower",
+      "Dhanmondi, Road no: 32, House no: 22/A, Flat no: 103",
+      "Road No: 8, House No: 149, DOHS, Savar Cantt., Savar",
+      "335, MRF Gafur Heights, West Nakhalpara, Dhaka 1215., Road No: 12, Flat No: B4"
+    ],
+    "frequency": 16,
+    "last_seen": "Mohammadpur Shakher Tack, Road No: 8, House No: 48, Kushi Villa, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_NUMBER_127": {
+    "pattern": "20",
+    "regex": "(?:(?:sector|road)\\s+)?[\\d০-৯]+(?:\\s+(?:,|house))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara Sector 11, Road 20, House 18, 3rd Floor, Left Side",
+      "Sector 4, Road 16, House 21, Uttara",
+      "একুশে টাওয়ার, গ্যাস রোড ০৪, রায়ের বাগ (শনির আখড়া)",
+      "নিকুঞ্জ ২, রোড নম্বর ১৮, ২/A",
+      "Uttara, Sector 13, Road 11, House 81"
+    ],
+    "frequency": 5,
+    "last_seen": "Uttara, Sector 13, Road 11, House 81",
+    "context_before": [
+      "sector",
+      "road"
+    ],
+    "context_after": [
+      "house",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_NUMBER LETTER LETTER_128": {
+    "pattern": "3 No Road",
+    "regex": "(?:(?:krisnochuda,|dokkhingaon)\\s+)?[\\d০-৯]+\\ [a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,|west))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Krisnochuda, 3 No Road, West Khulshi, Chottogram",
+      "Dokkhingaon 1 no road Dhaka .Bashaboo"
+    ],
+    "frequency": 2,
+    "last_seen": "Dokkhingaon 1 no road Dhaka .Bashaboo",
+    "context_before": [
+      "krisnochuda,",
+      "dokkhingaon"
+    ],
+    "context_after": [
+      "khulshi,",
+      "west",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER NUMBERLETTER_129": {
+    "pattern": "Road 4A",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Uttara Sector 5, Road 4A, House 23B",
+      "House 29, Road 3B, Mohammadia Housing Limited, Mohammad",
+      "House 66, Road 8A, Dhanmondi, Dhaka",
+      "Flat D3, House 64, Road 9A, Dhanmondi",
+      "Uttara, Sector 11, Road 13A, House 1, Floor 7B"
+    ],
+    "frequency": 6,
+    "last_seen": "Flat 3F, House 45, Road 4A, Dhanmondi R/A, Dhaka 1209",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER-NUMBER/NUMBER_130": {
+    "pattern": "R-2/2",
+    "regex": "(?:(?:h\\-07,|house\\-39,)\\s+)?[a-zA-Z]?\\-[\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|banani,))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "H-07, R-2/2, Block-L, Banani, Dhaka",
+      "House-39, Road-13/15, Block-D, Banani, ঢাকা"
+    ],
+    "frequency": 2,
+    "last_seen": "House-39, Road-13/15, Block-D, Banani, ঢাকা",
+    "context_before": [
+      "h-07,",
+      "house-39,"
+    ],
+    "context_after": [
+      ",",
+      "banani,",
+      "block-l,"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER LETTER LETTER LETTER LETTER_131": {
+    "pattern": "Haji Akram Uddin Mollah Road",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "House No. 56, Haji Akram Uddin Mollah Road, Rana Market, Shahjahan Sir Road, Hazaribagh, Dhaka",
+      "3 No Sher Shah Suri Road, Mohammadpur, Dhaka",
+      "Foys Lake Abdul Hamid Road, Jom Jom Bliding, Khulshi, Chattogram",
+      "Bhai Bhai Safir Uddin Road, (Borof Goli), Kuwait Bangladesh Building, Kha-Para, Khilkhet, Dhaka",
+      "Flat - 3B, Elite House Tower, Baitul Aqsa Jame Masjid Road, Shantibag, Paradogair, Matuail, Demra, Dhaka-1362"
+    ],
+    "frequency": 6,
+    "last_seen": "Baitul Aman Moshjid er goli, Haque Pharmacy r pichoner 10 tola building er 3 tolai, Paterbag, Shonirakhra, Dhaka",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER # NUMBER/NUMBER_132": {
+    "pattern": "Road # 12/3",
+    "regex": "(?:(?:plot|\\#)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,|block:))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Plot # 17, Road # 12/3, Block: J (Beside South Banasree Jame Mashid), South Banasree, Dhaka",
+      "Road # 10/5, House # 81, Block # F, Dokkhin Banashree, Near Protik Housing, Beside Bappir Math Nurserir Goli"
+    ],
+    "frequency": 2,
+    "last_seen": "Road # 10/5, House # 81, Block # F, Dokkhin Banashree, Near Protik Housing, Beside Bappir Math Nurserir Goli",
+    "context_before": [
+      "plot",
+      "17,",
+      "#"
+    ],
+    "context_after": [
+      "j",
+      "block:",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER - NUMBER/LETTER_133": {
+    "pattern": "Road - 15/A",
+    "regex": "(?:(?:\\-|block)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,|\\-))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Block - F, Road - 15/A, House - 525, Bashundhara R/A, Dhaka",
+      "Green Model Town, Flat - 8(C), House - 8, Road - 7/A, Section - B, Mugda/Manda, Dhaka"
+    ],
+    "frequency": 2,
+    "last_seen": "Green Model Town, Flat - 8(C), House - 8, Road - 7/A, Section - B, Mugda/Manda, Dhaka",
+    "context_before": [
+      "block",
+      "-",
+      "f,"
+    ],
+    "context_after": [
+      "house",
+      ",",
+      "-"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER- NUMBER_134": {
+    "pattern": "Road- 14",
+    "regex": "(?:(?:house\\-|391,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-\\ [\\d০-৯]+(?:\\s+(?:,|savar))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "House- 391, Road- 14, Savar DOHS",
+      "House- Dream Tower, House- 397/1, Flat- 7C, Road- 1, Ward- 49, Kawla Namapara, PO- Khilkhet, Dakshinkhan, Dhaka-1229"
+    ],
+    "frequency": 2,
+    "last_seen": "House- Dream Tower, House- 397/1, Flat- 7C, Road- 1, Ward- 49, Kawla Namapara, PO- Khilkhet, Dakshinkhan, Dhaka-1229",
+    "context_before": [
+      "391,",
+      "397/1,",
+      "house-"
+    ],
+    "context_after": [
+      "dohs",
+      ",",
+      "savar"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "learned_LETTER_135": {
+    "pattern": "Bissoroad",
+    "regex": "(?:(?:পিছনে,|poduar)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,|cumilla))?",
+    "confidence": 0.7999999999999999,
+    "examples": [
+      "Bhuiyan Bari, Hazi Akram Uddin School-এর পিছনে, Poduar Bazar, Bissoroad, Cumilla",
+      "17/3, Onward Lucida, Panthapath West Rajabazar, Gym er Goli, Dhaka, Flat 1C"
+    ],
+    "frequency": 2,
+    "last_seen": "17/3, Onward Lucida, Panthapath West Rajabazar, Gym er Goli, Dhaka, Flat 1C",
+    "context_before": [
+      "bazar,",
+      "poduar",
+      "পিছনে,"
+    ],
+    "context_after": [
+      "lucida,",
+      ",",
+      "cumilla"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L L_136": {
+    "pattern": "Learned from 103 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Baitul Falah Road",
+      "Jakir Hossain Road",
+      "Nur Mosque Road",
+      "Soyed Shah Road",
+      "Yugichad Mosque Line"
+    ],
+    "frequency": 103,
+    "last_seen": "Jamtola Masjid Goli",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L-N/L_137": {
+    "pattern": "Learned from 8 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.83,
+    "examples": [
+      "Road-10/A",
+      "road-19/b",
+      "Road-7/A",
+      "Road-7/C",
+      "Road-17/A"
+    ],
+    "frequency": 8,
+    "last_seen": "Road-4/A",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L:N_138": {
+    "pattern": "Learned from 3 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:[\\d০-৯]+",
+    "confidence": 0.78,
+    "examples": [
+      "road:3",
+      "R:18",
+      "Road:10"
+    ],
+    "frequency": 3,
+    "last_seen": "Road:10",
+    "context_before": [],
+    "context_after": [],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L_139": {
+    "pattern": "Learned from 142 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Green Road",
+      "Humayun Road",
+      "Rojonigondha Road",
+      "Lalbagh Road",
+      "Central Road"
+    ],
+    "frequency": 142,
+    "last_seen": "KB Road",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L # N_140": {
+    "pattern": "Learned from 10 excellent examples",
+    "regex": "(?:(?:\\#)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#\\ [\\d০-৯]+(?:\\s+(?:,|\\#))?",
+    "confidence": 0.85,
+    "examples": [
+      "Road # 14",
+      "Road # 13",
+      "Road # 8",
+      "R # 9",
+      "Road # 2"
+    ],
+    "frequency": 10,
+    "last_seen": "Road # 02",
+    "context_before": [
+      "#"
+    ],
+    "context_after": [
+      ",",
+      "#"
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L -N_141": {
+    "pattern": "Learned from 5 excellent examples",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.8,
+    "examples": [
+      "Road -8",
+      "Road -14",
+      "Road -02",
+      "Road -121",
+      "Road -8"
+    ],
+    "frequency": 5,
+    "last_seen": "Road -8",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L L L_142": {
+    "pattern": "Learned from 31 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "vanga mosjid er goli",
+      "Lake View Avenue Road",
+      "Victoria Primary school road",
+      "East Delta University Road",
+      "Haji Afser Uddin Road"
+    ],
+    "frequency": 31,
+    "last_seen": "Vatara central mosque road",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L: N_143": {
+    "pattern": "Learned from 14 excellent examples",
+    "regex": "(?:(?:house:)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,|block:))?",
+    "confidence": 0.89,
+    "examples": [
+      "Road: 17",
+      "Road: 14",
+      "Road: 05",
+      "Road: 2",
+      "Road: 02"
+    ],
+    "frequency": 14,
+    "last_seen": "Road: 09",
+    "context_before": [
+      "house:"
+    ],
+    "context_after": [
+      "block:",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L#N_144": {
+    "pattern": "Learned from 4 excellent examples",
+    "regex": "(?:(?:tower,)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.79,
+    "examples": [
+      "Road#7",
+      "Road#2",
+      "Road#11",
+      "Road#04"
+    ],
+    "frequency": 4,
+    "last_seen": "Road#04",
+    "context_before": [
+      "tower,"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L N/L_145": {
+    "pattern": "Learned from 9 excellent examples",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.84,
+    "examples": [
+      "Road 3/C",
+      "Road 14/A",
+      "Road 17/E",
+      "Road 8/A",
+      "Road 2/C"
+    ],
+    "frequency": 9,
+    "last_seen": "Road 23/C",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L #N_146": {
+    "pattern": "Learned from 8 excellent examples",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\#[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.83,
+    "examples": [
+      "Road #01",
+      "Road #2",
+      "Road #6",
+      "Road #18",
+      "Road #5"
+    ],
+    "frequency": 8,
+    "last_seen": "Road #2",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L N_147": {
+    "pattern": "Learned from 15 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.9,
+    "examples": [
+      "Road No 4",
+      "Road No 16",
+      "Road Number 6",
+      "Road Number 65",
+      "road no 7"
+    ],
+    "frequency": 15,
+    "last_seen": "Road no 8",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_N L_148": {
+    "pattern": "Learned from 15 excellent examples",
+    "regex": "[\\d০-৯]+\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?",
+    "confidence": 0.9,
+    "examples": [
+      "60 Feet",
+      "60 feet",
+      "60 Feet",
+      "60 feet",
+      "16 feet"
+    ],
+    "frequency": 15,
+    "last_seen": "100 Feet",
+    "context_before": [],
+    "context_after": [],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_N L. L_149": {
+    "pattern": "Learned from 4 excellent examples",
+    "regex": "[\\d০-৯]+\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.79,
+    "examples": [
+      "2 No. Road",
+      "3 No. Road",
+      "6 No. Road",
+      "6 No. Road"
+    ],
+    "frequency": 4,
+    "last_seen": "6 No. Road",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L-N_150": {
+    "pattern": "Learned from 5 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\-[\\d০-৯]+(?:\\s+(?:,|house))?",
+    "confidence": 0.8,
+    "examples": [
+      "Road Number-3",
+      "Road No-03",
+      "Road No-04",
+      "Road No-9",
+      "Road No-10"
+    ],
+    "frequency": 5,
+    "last_seen": "Road No-10",
+    "context_before": [],
+    "context_after": [
+      "house",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L. N_151": {
+    "pattern": "Learned from 22 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?\\.\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.95,
+    "examples": [
+      "Road No. 1",
+      "Road No. 5",
+      "Road No. 9",
+      "Road No. 2",
+      "Road No. 1"
+    ],
+    "frequency": 22,
+    "last_seen": "Road No. 1",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L N/N_152": {
+    "pattern": "Learned from 3 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+/[\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.78,
+    "examples": [
+      "Road 126/123",
+      "Road 8/3",
+      "Road 8/3"
+    ],
+    "frequency": 3,
+    "last_seen": "Road 8/3",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L - N_153": {
+    "pattern": "Learned from 4 excellent examples",
+    "regex": "(?:(?:\\-)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ \\-\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.79,
+    "examples": [
+      "Road - 4",
+      "Lane - 1",
+      "Road - 14",
+      "R - 12"
+    ],
+    "frequency": 4,
+    "last_seen": "R - 12",
+    "context_before": [
+      "-"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L: N_154": {
+    "pattern": "Learned from 16 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?:\\ [\\d০-৯]+(?:\\s+(?:,))?",
+    "confidence": 0.91,
+    "examples": [
+      "Road No: 05",
+      "Road No: 2",
+      "Road no: 32",
+      "Road No: 8",
+      "Road No: 12"
+    ],
+    "frequency": 16,
+    "last_seen": "Road No: 8",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_N_155": {
+    "pattern": "Learned from 5 excellent examples",
+    "regex": "(?:(?:sector|road)\\s+)?[\\d০-৯]+(?:\\s+(?:,|house))?",
+    "confidence": 0.8,
+    "examples": [
+      "20",
+      "16",
+      "০৪",
+      "১৮",
+      "11"
+    ],
+    "frequency": 5,
+    "last_seen": "11",
+    "context_before": [
+      "sector",
+      "road"
+    ],
+    "context_after": [
+      "house",
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L NL_156": {
+    "pattern": "Learned from 6 excellent examples",
+    "regex": "(?:(?:house)\\s+)?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [\\d০-৯]+[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.81,
+    "examples": [
+      "Road 4A",
+      "Road 3B",
+      "Road 8A",
+      "Road 9A",
+      "Road 13A"
+    ],
+    "frequency": 6,
+    "last_seen": "Road 4A",
+    "context_before": [
+      "house"
+    ],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  },
+  "excellent_L L L L L_157": {
+    "pattern": "Learned from 6 excellent examples",
+    "regex": "[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?\\ [a-zA-Z]?[a-zA-Z]?[a-zA-Z]?[a-zA-Z]?(?:\\s+(?:,))?",
+    "confidence": 0.81,
+    "examples": [
+      "Haji Akram Uddin Mollah Road",
+      "No Sher Shah Suri Road",
+      "Foys Lake Abdul Hamid Road",
+      "Bhai Bhai Safir Uddin Road",
+      "Baitul Aqsa Jame Masjid Road"
+    ],
+    "frequency": 6,
+    "last_seen": "Baitul Aman Moshjid er goli",
+    "context_before": [],
+    "context_after": [
+      ","
+    ],
+    "bangla_variant": false,
+    "english_variant": true
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 374,
+    "address": "Bali Arched Shopping Mall, 3rd Floor, 29 No Shop, Chawkbazar, Chottogram",
+    "components": {
+      "flat_number": "29"
+    }
+  },
+  {
+    "id": 817,
+    "address": "Purbo Kazipara, Saudagar Goli, Mirpur, House No. 586/1 (D1)",
+    "components": {
+      "flat_number": "D1"
+    }
+  },
+  {
+    "id": 843,
+    "address": "38/B, Promote Baily House, Mayakanon, Basabo, Dhaka. 6th Floor, 6B",
+    "components": {
+      "flat_number": "6B"
+    }
+  },
+  {
+    "id": 1136,
+    "address": "Shekertak Road #8, House #16/B, Rafiq Housing Society, Mohammadpur. 4th Floor, 5 Tala",
+    "components": {
+      "flat_number": "5"
+    }
+  }
+]

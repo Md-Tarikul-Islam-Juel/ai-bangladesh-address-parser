@@ -1,0 +1,20 @@
+[
+  {
+    "statistics": {
+      "total_records": 1363,
+      "with_area": 924,
+      "without_area": 439,
+      "coverage_percentage": 67.8,
+      "confidence_breakdown": {
+        "1.excellent_95_100": 732,
+        "2.very_high_90_95": 19,
+        "3.high_85_90": 52,
+        "4.good_80_85": 34,
+        "5.medium_high_75_80": 52,
+        "6.medium_70_75": 22,
+        "7.acceptable_65_70": 13,
+        "8.low_below_65": 0
+      }
+    }
+  }
+]

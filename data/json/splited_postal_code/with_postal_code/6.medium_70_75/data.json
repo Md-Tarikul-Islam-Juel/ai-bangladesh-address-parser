@@ -1,0 +1,79 @@
+[
+  {
+    "id": 12,
+    "address": "23/1, Noor fatah lane, , Lalbagh, Dhaka 1211(Mim Community center এর পাশের গলি দিয়ে ঢুকে ৩ টা বিল্ডিং এর পর, হারুন ডেকোরেটরের দোকানের উল্টো পাশের চিকন গলির ভেতর, কন্সট্রাকশন বিল্ডিং এর ৪র্থ তলায়)",
+    "components": {
+      "postal_code": "1211"
+    }
+  },
+  {
+    "id": 62,
+    "address": "66/2 agamashilen law college (vanga mosjid er goli boro mosque ) bangshal thana , dhaka -1100 world num 33",
+    "components": {
+      "postal_code": "1100"
+    }
+  },
+  {
+    "id": 204,
+    "address": "5/8 Block E, Lalmatia, Dhaka 1207, South side, 2nd floor",
+    "components": {
+      "postal_code": "1207"
+    }
+  },
+  {
+    "id": 543,
+    "address": "335, MRF Gafur Heights, West Nakhalpara, Dhaka 1215., Road No: 12, Flat No: B4",
+    "components": {
+      "postal_code": "1215"
+    }
+  },
+  {
+    "id": 618,
+    "address": "426 North Shahjahanpur, Dhaka-1217, Flat Number 8A",
+    "components": {
+      "postal_code": "1217"
+    }
+  },
+  {
+    "id": 1013,
+    "address": "Flat : 7A, House : 11/A, N.S. Avenue Road, Block : F, Sector : 1, Aftabnogor, Dhaka 1212 (Addar Mor, Cafe Lasana’s Building)",
+    "components": {
+      "postal_code": "1212"
+    }
+  },
+  {
+    "id": 1014,
+    "address": "71, Jawad towar opposite of Eidgah field Dhaka -1216, Mirpur 1",
+    "components": {
+      "postal_code": "1216"
+    }
+  },
+  {
+    "id": 1050,
+    "address": "44/kha, China Building, Azimpur Road, Dhaka-1205 (Opposite of Azimpur Graveyard gate no.2)",
+    "components": {
+      "postal_code": "1205"
+    }
+  },
+  {
+    "id": 1107,
+    "address": "ট্রপিকানা টাওয়ার, (১১ তম তলা), স্যুট #১০/ই, ৪৫ তোপখানা রোড, পুরানা পল্টন, ঢাকা-১০০০। (Touch Ad Firm)",
+    "components": {
+      "postal_code": "1000"
+    }
+  },
+  {
+    "id": 1142,
+    "address": "Plot No-17, Hori Charan Roy Road, Faridabad (Faridabad Doyel Cokkor), Gendaria Thana, Dhaka 1204, Civil Chowdhury Vila 3-C",
+    "components": {
+      "postal_code": "1204"
+    }
+  },
+  {
+    "id": 1284,
+    "address": "Haterpol, Motalab Plaza, Block B, Flat No 1111, Dhaka",
+    "components": {
+      "postal_code": "1111"
+    }
+  }
+]

@@ -1,0 +1,366 @@
+[
+  {
+    "id": 52,
+    "address": "Dhaka, Sanarpar, Green City, Shobuj Family Shop, Thana Demra",
+    "components": {
+      "area": "Thana Demra"
+    }
+  },
+  {
+    "id": 80,
+    "address": "Chittagong, Polytechnic Mood, Mojaffor Noghor, Shahid Sohel Shorok, , New Professor Building, 2 No. Road",
+    "components": {
+      "area": "Shahid Sohel Shorok"
+    }
+  },
+  {
+    "id": 162,
+    "address": "Khilgaon, Nababi Mor, Madani Jhil Par, Barishal Timber Shop",
+    "components": {
+      "area": "Barishal Timber Shop"
+    }
+  },
+  {
+    "id": 317,
+    "address": "660 Washpur, Keraniganj, Near Bosila Bridge",
+    "components": {
+      "area": "Near Bosila Bridge"
+    }
+  },
+  {
+    "id": 370,
+    "address": "257/2 Khilgaon Sipaibag, 4 Tala Goli (Patoyari Vhobon), Lotifiwa Hifjul , Quran Madrasa Building",
+    "components": {
+      "area": "Quran Madrasa Building"
+    }
+  },
+  {
+    "id": 441,
+    "address": "Postogola Bridge-er Oi Par, Hasnabad, Dakshin Keraniganj, Container Road, , opposite Zamzam Mart, alley in front of HR School, Amir Jamai Bari, Dhaka",
+    "components": {
+      "area": "Container Road"
+    }
+  },
+  {
+    "id": 494,
+    "address": "Sodorghat, near Kotoyali Thana, Market Bikrampur Garden City, Rahmaniya Traders (Under Ground), Dhaka",
+    "components": {
+      "area": "Rahmaniya Traders"
+    }
+  },
+  {
+    "id": 513,
+    "address": "Mohammadpur Tin Rasta Mor, Rajin Motors",
+    "components": {
+      "area": "Rajin Motors"
+    }
+  },
+  {
+    "id": 527,
+    "address": "F Rahman Billa, 3rd Floor, Narayanganj, Khanpur, North Road, Bow Bazar",
+    "components": {
+      "area": "Bow Bazar"
+    }
+  },
+  {
+    "id": 535,
+    "address": "Thana Araihazar, Jela Narayanganj, Post: Gopaldi, Gram: Daribishandi, Naya Para, Shahajadi Mehedi Factory-r Shathe",
+    "components": {
+      "area": "Daribishandi"
+    }
+  },
+  {
+    "id": 544,
+    "address": "462, Manikde, Dhaka Cant",
+    "components": {
+      "area": "Dhaka Cant"
+    }
+  },
+  {
+    "id": 554,
+    "address": "House no: 10, Defense House, 7th Floor, No: 1 Tafalia Main Road, Uludaha, Badaldi, Ward no: 52, Turag, Dhaka (Beside Uludaha Police Fari & opposite DESCO office)",
+    "components": {
+      "area": "Badaldi"
+    }
+  },
+  {
+    "id": 560,
+    "address": "77, East Basabo, Sabujbagh, Dhaka - 1214",
+    "components": {
+      "area": "Sabujbagh"
+    }
+  },
+  {
+    "id": 566,
+    "address": "1 No. Habilly, Gopalpur, Faridpur Sadar",
+    "components": {
+      "area": "Faridpur Sadar"
+    }
+  },
+  {
+    "id": 589,
+    "address": "19/B Harirampur, Darus Salam Thana, Mirpur 1, Dhaka-1216",
+    "components": {
+      "area": "Darus Salam Thana"
+    }
+  },
+  {
+    "id": 615,
+    "address": "Narayanganj Chasara, Rambabur Pukur",
+    "components": {
+      "area": "Rambabur Pukur"
+    }
+  },
+  {
+    "id": 624,
+    "address": "26 Dilu Road, New Eskaton House 26, Flat A2, Raner's Gulsepa Near Bhati High School, Dhaka District, Haatir Jhil.",
+    "components": {
+      "area": "Dhaka District"
+    }
+  },
+  {
+    "id": 629,
+    "address": "Noakhali, Sonaimuri",
+    "components": {
+      "area": "Sonaimuri"
+    }
+  },
+  {
+    "id": 636,
+    "address": "842 Prembagan, Ashkona, Dakhinkhan, Dhaka-1230",
+    "components": {
+      "area": "Dakhinkhan"
+    }
+  },
+  {
+    "id": 664,
+    "address": "Village + Post - Gobra, Mohosen Sorok, Biswas Bari, Upzila + Zila - Gopalganj",
+    "components": {
+      "area": "Biswas Bari"
+    }
+  },
+  {
+    "id": 672,
+    "address": "Nandankanan, 3 No Goli, Haris Dutta Lane, opposite DC Hill, Nur Mansion, beside Pratama Tailor’s, Kotowali Thana, Chattogram",
+    "components": {
+      "area": "Nur Mansion"
+    }
+  },
+  {
+    "id": 680,
+    "address": "Bangladesh Air Force Base, Kurmitola",
+    "components": {
+      "area": "Kurmitola"
+    }
+  },
+  {
+    "id": 695,
+    "address": "Cumilla Cantonment, near War Cemetery (Forizpur Grame)",
+    "components": {
+      "area": "Near War Cemetery"
+    }
+  },
+  {
+    "id": 698,
+    "address": "Isdair Zilla Porishod, Buri Dokan, Anondo Nagar Abasik Elaka, Dokkhinayan Basha, Narayanganj District",
+    "components": {
+      "area": "Narayanganj District"
+    }
+  },
+  {
+    "id": 702,
+    "address": "Mohammadpur, Bosila, Shyamlapur, Western City",
+    "components": {
+      "area": "Western City"
+    }
+  },
+  {
+    "id": 721,
+    "address": "Rajshahi, Beldarpara-Sultanabad Mosjid Opposite Side Building, Titli Homes",
+    "components": {
+      "area": "Titli Homes"
+    }
+  },
+  {
+    "id": 736,
+    "address": "Noakhali, Senbag, Samir Munsirhat",
+    "components": {
+      "area": "Samir Munsirhat"
+    }
+  },
+  {
+    "id": 753,
+    "address": "C/O Dr. Ibrahim Hossain, Kaliganj Pouroshova, Durbati, 1 No. Ward, Kaliganj, Gazipur",
+    "components": {
+      "area": "Durbati"
+    }
+  },
+  {
+    "id": 770,
+    "address": "Mia Bari, Vatikana Road, Jor Mosque, Barishal Sadar, Barishal",
+    "components": {
+      "area": "Barishal"
+    }
+  },
+  {
+    "id": 780,
+    "address": "Ka-192/4, Madbor Bari, Miabari Mosjid er pashe, Kuril Chowrasta",
+    "components": {
+      "area": "Kuril Chowrasta"
+    }
+  },
+  {
+    "id": 793,
+    "address": "H#313/A, 2nd Floor (South), R#21, New DOHS, Mohakhal",
+    "components": {
+      "area": "Mohakhal"
+    }
+  },
+  {
+    "id": 808,
+    "address": "Boshoti Shoroni, Nimbagan, Saidpur, 5310, Nilphamari",
+    "components": {
+      "area": "Saidpur"
+    }
+  },
+  {
+    "id": 840,
+    "address": "Gopalganj Sadar, Pachuria, Ansar Math-er Samne",
+    "components": {
+      "area": "Pachuria"
+    }
+  },
+  {
+    "id": 847,
+    "address": "Mujahid Nagar, Rayar Bagh, Kadamtali Thana",
+    "components": {
+      "area": "Kadamtali Thana"
+    }
+  },
+  {
+    "id": 886,
+    "address": "Dhaka Division, Shariatpur District, Shariatpur Sadar, Janani Oxygen",
+    "components": {
+      "area": "Janani Oxygen"
+    }
+  },
+  {
+    "id": 897,
+    "address": "Road # 10/5, House # 81, Block # F, Dokkhin Banashree, Near Protik Housing, Beside Bappir Math Nurserir Goli",
+    "components": {
+      "area": "Beside Bappir Math Nurserir Goli"
+    }
+  },
+  {
+    "id": 912,
+    "address": "Dag No. 1091, Holding No. 485, Khilbarirtek, Vatara, Dhaka - 1212",
+    "components": {
+      "area": "Vatara"
+    }
+  },
+  {
+    "id": 946,
+    "address": "Cikly, Saidpur",
+    "components": {
+      "area": "Saidpur"
+    }
+  },
+  {
+    "id": 1016,
+    "address": "370-371, 2A, 2nd floor, Globe Nibash, outer circular road, Rajarbag",
+    "components": {
+      "area": "Rajarbag"
+    }
+  },
+  {
+    "id": 1036,
+    "address": "BTI Sattar Manjil (C-4), 33 KB Abdur Sattar Road, Rahamatgonj, Jamal Khan, চট্টগ্রাম",
+    "components": {
+      "area": "Jamal Khan"
+    }
+  },
+  {
+    "id": 1080,
+    "address": "রজনীগন্ধা ২, এভিনিউ ৩, কমার্স কলেজ রোড, মিরপুর ২, ঢাকা",
+    "components": {
+      "area": "মিরপুর"
+    }
+  },
+  {
+    "id": 1112,
+    "address": "Laxmipur jela, Raipur, Dokhin Keroa, Mollarhat, Patwary Beraitij",
+    "components": {
+      "area": "Patwary Beraitij"
+    }
+  },
+  {
+    "id": 1134,
+    "address": "East Nadirabad, Hilview Housing Society, Chattogram, Beside Mimi Super Market, Building Name: Crown View",
+    "components": {
+      "area": "Beside Mimi Super Market"
+    }
+  },
+  {
+    "id": 1146,
+    "address": "Gazipur, Konabari, Jorun, Jomidar Either Vat",
+    "components": {
+      "area": "Jomidar Either Vat"
+    }
+  },
+  {
+    "id": 1156,
+    "address": "13 Chamelibag, Santinagar",
+    "components": {
+      "area": "Santinagar"
+    }
+  },
+  {
+    "id": 1214,
+    "address": "angshall, Ponchayet Koborstan er sheshe, Rupali Bank er goli, Sadek Tower (Lift 7B)",
+    "components": {
+      "area": "Sadek Tower"
+    }
+  },
+  {
+    "id": 1261,
+    "address": "Amberkhana, Rajar Golli, Sylhet 45,3/a",
+    "components": {
+      "area": "Rajar Golli"
+    }
+  },
+  {
+    "id": 1263,
+    "address": "Mohamimid Medical Center, Madani Avenue, Vatara, Dhaka 1212",
+    "components": {
+      "area": "Vatara"
+    }
+  },
+  {
+    "id": 1279,
+    "address": "Ahmed Rakib Lakshmipur, Mandari Bazar, Jillur Rohim College, Mamum Villa",
+    "components": {
+      "area": "Mamum Villa"
+    }
+  },
+  {
+    "id": 1316,
+    "address": "103 Matikata, Dhaka Cantt",
+    "components": {
+      "area": "Dhaka Cantt"
+    }
+  },
+  {
+    "id": 1326,
+    "address": "Dhaka, Kamrangir Char, Jawlahati, Baytul Maqsuda Jaame Masjid ar Pasa, Zamzam Tower",
+    "components": {
+      "area": "Zamzam Tower"
+    }
+  },
+  {
+    "id": 1345,
+    "address": "Post Office: Chengarchar Bazar, Police Station: Chengarchar, Matlob Uttar, District: Chandpur, Village: Kolakanda",
+    "components": {
+      "area": "Matlob Uttar"
+    }
+  }
+]

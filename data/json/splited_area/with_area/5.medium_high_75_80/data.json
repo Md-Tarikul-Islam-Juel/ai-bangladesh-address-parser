@@ -1,0 +1,366 @@
+[
+  {
+    "id": 34,
+    "address": "Level 3, Anirbaan Skyview, Lomboritek, Balughat, Cantonment, Dhaka-1206",
+    "components": {
+      "area": "Cantonment"
+    }
+  },
+  {
+    "id": 53,
+    "address": "Rampura Bou Bazar, Dhaka",
+    "components": {
+      "area": "Rampura"
+    }
+  },
+  {
+    "id": 109,
+    "address": "Motijheel AGB Colony, Ideal Zone, House 92",
+    "components": {
+      "area": "Motijheel"
+    }
+  },
+  {
+    "id": 159,
+    "address": "Moddho Badda Adorsho No Nogor, Inside the Lane, In Front of Borotek Mosque",
+    "components": {
+      "area": "Badda"
+    }
+  },
+  {
+    "id": 178,
+    "address": "Uttara (Ranavola -1st Security Islami Bank), Road No: 05, House No: 01, Opposite Sector 10",
+    "components": {
+      "area": "Uttara"
+    }
+  },
+  {
+    "id": 203,
+    "address": "Uttara, Baunia, Badaldi Bazar, 6 Tola Road, Turag Thana, Dhaka, Bangladesh",
+    "components": {
+      "area": "Uttara"
+    }
+  },
+  {
+    "id": 224,
+    "address": "khilkhet, master bari road, Dhaka",
+    "components": {
+      "area": "Khilkhet"
+    }
+  },
+  {
+    "id": 230,
+    "address": "165 Shantinagar, Sky View Park City, B-15, Dhaka-1217",
+    "components": {
+      "area": "Shantinagar"
+    }
+  },
+  {
+    "id": 278,
+    "address": "Uttara, Baunia, Kalibari",
+    "components": {
+      "area": "Uttara"
+    }
+  },
+  {
+    "id": 281,
+    "address": "Mohammadpur, Dhaka Udyan, Ekta Housing, Road No: 2, House No: 24, Diamond Tower",
+    "components": {
+      "area": "Mohammadpur"
+    }
+  },
+  {
+    "id": 348,
+    "address": "Holding no: E-10 (Dominant 7 star), Block E, Aftabnagar, Dhaka",
+    "components": {
+      "area": "Block E"
+    }
+  },
+  {
+    "id": 352,
+    "address": "Merajnagar C Block Chowrasta, Rayerbagh, Dhaka",
+    "components": {
+      "area": "Rayerbagh"
+    }
+  },
+  {
+    "id": 353,
+    "address": "Medile Badda, Badda, Post Office Goli, Joy Banglar Mour, Gagi Shoroni, Dhaka",
+    "components": {
+      "area": "Badda"
+    }
+  },
+  {
+    "id": 364,
+    "address": "14/2 Shadhinota Shoroni, Shoinic Club er sathay, Dhaka Cantonment",
+    "components": {
+      "area": "Dhaka Cantonment"
+    }
+  },
+  {
+    "id": 365,
+    "address": "Dhanmondi, Road no: 32, House no: 22/A, Flat no: 103",
+    "components": {
+      "area": "Dhanmondi"
+    }
+  },
+  {
+    "id": 388,
+    "address": "5/A/1 Narinda Monir Hosaain Lane, Gandaria, Dhaka-1100",
+    "components": {
+      "area": "Gandaria"
+    }
+  },
+  {
+    "id": 415,
+    "address": "Motijheel, Bangladesh Krishi Bank",
+    "components": {
+      "area": "Motijheel"
+    }
+  },
+  {
+    "id": 426,
+    "address": "76/1 Matikata, MPHARMA, Dhaka Cantonment, Dhaka",
+    "components": {
+      "area": "Cantonment"
+    }
+  },
+  {
+    "id": 486,
+    "address": "poran Dhaka Islampor abide mansion",
+    "components": {
+      "area": "Poran"
+    }
+  },
+  {
+    "id": 501,
+    "address": "Uttar Jatabari, Bibir Bagicha 1 No Gate, Rajonigondha Road",
+    "components": {
+      "area": "Bibir Bagicha"
+    }
+  },
+  {
+    "id": 514,
+    "address": "188 Khilgaon, Tilpapara, Road:10",
+    "components": {
+      "area": "Khilgaon"
+    }
+  },
+  {
+    "id": 552,
+    "address": "Siddhirganj, Omarpur, Ayubnagar, Alifa Medical Hall Building, 3rd Floor",
+    "components": {
+      "area": "Siddhirganj"
+    }
+  },
+  {
+    "id": 587,
+    "address": "Demra, Staff Quarter. Virgin Bakery Lane (16 feet road), south side of Haji Moazzem Ali High School",
+    "components": {
+      "area": "Demra"
+    }
+  },
+  {
+    "id": 625,
+    "address": "Demra Basherpool, Walton Goli, Dhaka",
+    "components": {
+      "area": "Demra"
+    }
+  },
+  {
+    "id": 626,
+    "address": "Biman Bahini Ghaṭi Kurmitola, Balughat Gate",
+    "components": {
+      "area": "Balughat"
+    }
+  },
+  {
+    "id": 633,
+    "address": "Merul Badda, D.I.T Project, Road No. 14, House No. 40, Dhaka",
+    "components": {
+      "area": "Badda"
+    }
+  },
+  {
+    "id": 663,
+    "address": "Dhaka Jatrabari, Shanir Akhra, Zia Sarani Road, Chapra Mosque er biporite, Testiti'r third floor",
+    "components": {
+      "area": "Jatrabari"
+    }
+  },
+  {
+    "id": 694,
+    "address": "Khilkhet, Dhaka",
+    "components": {
+      "area": "Khilkhet"
+    }
+  },
+  {
+    "id": 715,
+    "address": "Holding No: E-10 (Dominant 7 Star), Block: E, Aftabnagar, Dhaka",
+    "components": {
+      "area": "Aftab Nagar"
+    }
+  },
+  {
+    "id": 727,
+    "address": "Mohammadpur, Buddhijibi Road",
+    "components": {
+      "area": "Mohammadpur"
+    }
+  },
+  {
+    "id": 747,
+    "address": "Jatrabari, Rayarbag, Meraj Nogor, Boro Madrasa Road",
+    "components": {
+      "area": "Jatrabari"
+    }
+  },
+  {
+    "id": 756,
+    "address": "Uttara Azampur, Shahjan Tower, Kacha Bazar",
+    "components": {
+      "area": "Uttara"
+    }
+  },
+  {
+    "id": 806,
+    "address": "Mohammadpur, Dhaka Uddan, Road No. 2, Block B, House Eksho Bari",
+    "components": {
+      "area": "Mohammadpur"
+    }
+  },
+  {
+    "id": 815,
+    "address": "Mohammadpur Chadd Uddan, R 5, H 30/B",
+    "components": {
+      "area": "Mohammadpur"
+    }
+  },
+  {
+    "id": 820,
+    "address": "B-33/1, Madhubbari Chakkar, Dakhin Chayabithi, Gazipur Sadar, Gazipur",
+    "components": {
+      "area": "Gazipur Sadar"
+    }
+  },
+  {
+    "id": 833,
+    "address": "Uttara Priyanka City, Sector-12, Road-8, House-06, Floor-3rd, Dhaka (Delivery upore diye ashte hobe)",
+    "components": {
+      "area": "Uttara"
+    }
+  },
+  {
+    "id": 834,
+    "address": "Khilkhet, Baparipara, Kamaler Mor, Mia Bari, Dhaka",
+    "components": {
+      "area": "Khilkhet"
+    }
+  },
+  {
+    "id": 898,
+    "address": "Khilkhet, Talertek, Anex Tower, Dhaka",
+    "components": {
+      "area": "Khilkhet"
+    }
+  },
+  {
+    "id": 914,
+    "address": "৩৬৮/১ উত্তর পীরের বাগ, মিরপুর ১, ঢাক",
+    "components": {
+      "area": "মিরপুর"
+    }
+  },
+  {
+    "id": 916,
+    "address": "Mirpur DOHS, House No. 828, Road 12, Avenue 6, House Name: Suvro",
+    "components": {
+      "area": "Mirpur"
+    }
+  },
+  {
+    "id": 981,
+    "address": "Azimpur Govt Quarter (Opposite to EDEN College), Building No-32, Flat-6/C",
+    "components": {
+      "area": "Azimpur"
+    }
+  },
+  {
+    "id": 986,
+    "address": "Azimpur Govt Officers Quarter, Vobon 32, Flat 6B, Dhaka",
+    "components": {
+      "area": "Azimpur"
+    }
+  },
+  {
+    "id": 1093,
+    "address": "Demra, Dogaer Bazar, 7 Tola Minar Mosjid er Samne",
+    "components": {
+      "area": "Demra"
+    }
+  },
+  {
+    "id": 1106,
+    "address": "229/1, Shewrapara Wasa Road",
+    "components": {
+      "area": "Wasa"
+    }
+  },
+  {
+    "id": 1140,
+    "address": "Adabor, Monsurabad 12, House No 107, Flat D1",
+    "components": {
+      "area": "Adabor"
+    }
+  },
+  {
+    "id": 1143,
+    "address": "1/4 Shabek Shorafot Gonj Lane, Gandaria, Katherpul, Bobitar Goli, Majar ar Pashe, Gendaria, Dhaka",
+    "components": {
+      "area": "Gandaria"
+    }
+  },
+  {
+    "id": 1182,
+    "address": "Khilkhet bottola Dhaka, Blooming sun school ar pase",
+    "components": {
+      "area": "Khilkhet"
+    }
+  },
+  {
+    "id": 1203,
+    "address": "Shamoly Adabor, Monsurabad 6, Block-C, House-77/78, Flat-6(A), Lift-5",
+    "components": {
+      "area": "Adabor"
+    }
+  },
+  {
+    "id": 1242,
+    "address": "Mohakhali, Dhaka",
+    "components": {
+      "area": "Mohakhali"
+    }
+  },
+  {
+    "id": 1264,
+    "address": "Bashundhara Abashik Elaka, Rani Avenue, D Block, House 528/D",
+    "components": {
+      "area": "Bashundhara"
+    }
+  },
+  {
+    "id": 1287,
+    "address": "Mohammadpur, 40 feet, Shopnodhara Housing, 1 নম্বর রোড, 5 নম্বর বাসা (Moon Palace)",
+    "components": {
+      "area": "Mohammadpur"
+    }
+  },
+  {
+    "id": 1354,
+    "address": "Mohammadpur Shakher Tack, Road No: 8, House No: 48, Kushi Villa, Dhaka",
+    "components": {
+      "area": "Mohammadpur"
+    }
+  }
+]
