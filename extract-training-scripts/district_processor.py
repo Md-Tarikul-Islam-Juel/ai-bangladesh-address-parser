@@ -1361,9 +1361,9 @@ def cmd_extract(address: str, show_details: bool = False):
 def cmd_process(confidence: float = 0.70, input_file: str = None, output_file: str = None):
     """Process entire dataset"""
     if input_file is None:
-        input_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+        input_file = 'data/json/real-customer-address-dataset.json'
     if output_file is None:
-        output_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset-processed.json'
+        output_file = 'data/json/real-customer-address-dataset-processed.json'
     
     input_path = Path(input_file)
     output_path = Path(output_file)
@@ -1450,9 +1450,9 @@ def cmd_process(confidence: float = 0.70, input_file: str = None, output_file: s
 def cmd_split(input_file: str = None, output_dir: str = None):
     """Split dataset by confidence levels"""
     if input_file is None:
-        input_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+        input_file = 'data/json/real-customer-address-dataset.json'
     if output_dir is None:
-        output_dir = 'src/app/shared/utils/address-parser/data/json/splited_district_division'
+        output_dir = 'data/json/processing/district'
     
     input_path = Path(input_file)
     output_path = Path(output_dir)
@@ -1546,9 +1546,9 @@ def cmd_split(input_file: str = None, output_dir: str = None):
 def cmd_reprocess_all(base_dir: str = None):
     """Re-process all confidence levels"""
     if base_dir is None:
-        base_dir = 'src/app/shared/utils/address-parser/data/json/splited_district_division'
+        base_dir = 'data/json/processing/district'
     
-    input_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+    input_file = 'data/json/real-customer-address-dataset.json'
     
     print("=" * 80)
     print("RE-PROCESSING ALL LEVELS")
@@ -1566,7 +1566,7 @@ def cmd_reprocess_all(base_dir: str = None):
 def cmd_update_summary(base_dir: str = None):
     """Update split summary"""
     if base_dir is None:
-        base_dir = 'src/app/shared/utils/address-parser/data/json/splited_district_division'
+        base_dir = 'data/json/processing/district'
     
     base_path = Path(base_dir)
     

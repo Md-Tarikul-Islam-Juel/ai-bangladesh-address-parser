@@ -45,7 +45,7 @@ from typing import Dict, List, Optional, Tuple
 
 # Import house number extractor for validation
 try:
-    sys.path.insert(0, str(Path(__file__).parent / 'src/app/shared/utils/address-parser/data/json/splited_house_number/algorithm'))
+    sys.path.insert(0, str(Path(__file__).parent))
     from house_number_processor import \
       AdvancedHouseNumberExtractor as HouseNumberExtractor
     HOUSE_EXTRACTOR_AVAILABLE = True
@@ -1097,9 +1097,9 @@ def cmd_extract(address: str, show_details: bool = False):
 def cmd_process(confidence: float = 0.70, input_file: str = None, output_file: str = None):
     """Process entire dataset"""
     if input_file is None:
-        input_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+        input_file = 'data/json/real-customer-address-dataset.json'
     if output_file is None:
-        output_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset-processed.json'
+        output_file = 'data/json/real-customer-address-dataset-processed.json'
     
     input_path = Path(input_file)
     output_path = Path(output_file)
@@ -1182,9 +1182,9 @@ def cmd_process(confidence: float = 0.70, input_file: str = None, output_file: s
 def cmd_split(input_file: str = None, output_dir: str = None):
     """Split dataset by confidence levels"""
     if input_file is None:
-        input_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+        input_file = 'data/json/real-customer-address-dataset.json'
     if output_dir is None:
-        output_dir = 'src/app/shared/utils/address-parser/data/json/splited_road_number'
+        output_dir = 'data/json/processing/road'
     
     input_path = Path(input_file)
     output_path = Path(output_dir)
@@ -1276,7 +1276,7 @@ def cmd_split(input_file: str = None, output_dir: str = None):
 def cmd_reprocess(confidence_level: str, base_dir: str = None):
     """Re-process specific confidence level"""
     if base_dir is None:
-        base_dir = 'src/app/shared/utils/address-parser/data/json/splited_road_number'
+        base_dir = 'data/json/processing/road'
     
     data_path = Path(base_dir) / 'with_road_number' / confidence_level / 'data.json'
     
@@ -1347,9 +1347,9 @@ def cmd_reprocess(confidence_level: str, base_dir: str = None):
 def cmd_sync(confidence_level: str, main_file: str = None, split_dir: str = None):
     """Sync main dataset from split data"""
     if main_file is None:
-        main_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+        main_file = 'data/json/real-customer-address-dataset.json'
     if split_dir is None:
-        split_dir = 'src/app/shared/utils/address-parser/data/json/splited_road_number'
+        split_dir = 'data/json/processing/road'
     
     main_path = Path(main_file)
     split_path = Path(split_dir) / 'with_road_number' / confidence_level / 'data.json'
@@ -1412,7 +1412,7 @@ def cmd_sync(confidence_level: str, main_file: str = None, split_dir: str = None
 def cmd_train_ai(input_file: str = None):
     """Train AI patterns from dataset"""
     if input_file is None:
-        input_file = 'src/app/shared/utils/address-parser/data/json/splited_road_number/with_road_number/1.excellent_95_100/data.json'
+        input_file = 'data/json/processing/road/with_road_number/1.excellent_95_100/data.json'
     
     input_path = Path(input_file)
     

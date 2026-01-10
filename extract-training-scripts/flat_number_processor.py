@@ -808,9 +808,9 @@ def cmd_extract(address: str, show_details: bool = False):
 def cmd_process(confidence: float = 0.70, input_file: str = None, output_file: str = None):
     """Process entire dataset"""
     if input_file is None:
-        input_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+        input_file = 'data/json/real-customer-address-dataset.json'
     if output_file is None:
-        output_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset-processed.json'
+        output_file = 'data/json/real-customer-address-dataset-processed.json'
     
     input_path = Path(input_file)
     output_path = Path(output_file)
@@ -889,9 +889,9 @@ def cmd_process(confidence: float = 0.70, input_file: str = None, output_file: s
 def cmd_split(input_file: str = None, output_dir: str = None):
     """Split dataset by confidence levels"""
     if input_file is None:
-        input_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+        input_file = 'data/json/real-customer-address-dataset.json'
     if output_dir is None:
-        output_dir = 'src/app/shared/utils/address-parser/data/json/splited_flat_number'
+        output_dir = 'data/json/processing/flat'
     
     input_path = Path(input_file)
     output_path = Path(output_dir)
@@ -976,7 +976,7 @@ def cmd_split(input_file: str = None, output_dir: str = None):
 def cmd_reprocess(confidence_level: str, base_dir: str = None):
     """Re-process specific confidence level"""
     if base_dir is None:
-        base_dir = 'src/app/shared/utils/address-parser/data/json/splited_flat_number'
+        base_dir = 'data/json/processing/flat'
     
     data_path = Path(base_dir) / 'with_flat_number' / confidence_level / 'data.json'
     
@@ -1046,9 +1046,9 @@ def cmd_reprocess(confidence_level: str, base_dir: str = None):
 def cmd_reprocess_all(base_dir: str = None):
     """Re-process all confidence levels"""
     if base_dir is None:
-        base_dir = 'src/app/shared/utils/address-parser/data/json/splited_flat_number'
+        base_dir = 'data/json/processing/flat'
     
-    input_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+    input_file = 'data/json/real-customer-address-dataset.json'
     
     print("=" * 80)
     print("RE-PROCESSING ALL LEVELS")
@@ -1066,9 +1066,9 @@ def cmd_reprocess_all(base_dir: str = None):
 def cmd_sync(confidence_level: str, main_file: str = None, split_dir: str = None):
     """Sync main dataset from split data"""
     if main_file is None:
-        main_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+        main_file = 'data/json/real-customer-address-dataset.json'
     if split_dir is None:
-        split_dir = 'src/app/shared/utils/address-parser/data/json/splited_flat_number'
+        split_dir = 'data/json/processing/flat'
     
     main_path = Path(main_file)
     split_path = Path(split_dir) / 'with_flat_number' / confidence_level / 'data.json'
@@ -1133,7 +1133,7 @@ def cmd_sync(confidence_level: str, main_file: str = None, split_dir: str = None
 def cmd_move_empty(base_dir: str = None):
     """Move all records with empty flat_number to no_flat_number file"""
     if base_dir is None:
-        base_dir = 'src/app/shared/utils/address-parser/data/json/splited_flat_number'
+        base_dir = 'data/json/processing/flat'
     
     base_path = Path(base_dir)
     no_flat_path = base_path / 'no_flat_number' / 'data.json'
@@ -1221,7 +1221,7 @@ def cmd_move_empty(base_dir: str = None):
 def cmd_update_summary(base_dir: str = None):
     """Update split_summary.json based on current data"""
     if base_dir is None:
-        base_dir = 'src/app/shared/utils/address-parser/data/json/splited_flat_number'
+        base_dir = 'data/json/processing/flat'
     
     base_path = Path(base_dir)
     
@@ -1308,7 +1308,7 @@ def cmd_update_summary(base_dir: str = None):
 def cmd_fix_false_positives(base_dir: str = None):
     """Fix false positives (remove house numbers incorrectly identified as flat numbers)"""
     if base_dir is None:
-        base_dir = 'src/app/shared/utils/address-parser/data/json/splited_flat_number'
+        base_dir = 'data/json/processing/flat'
     
     base_path = Path(base_dir)
     

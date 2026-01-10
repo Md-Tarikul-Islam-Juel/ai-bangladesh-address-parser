@@ -92,7 +92,7 @@ class AdvancedAreaExtractor:
         
     def _load_area_data(self):
         """Load area mappings from JSON file"""
-        area_file = Path('src/app/shared/utils/address-parser/data/json/area-mappings.json')
+        area_file = Path('data/json/area-mappings.json')
         try:
             with open(area_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
@@ -201,7 +201,7 @@ class AdvancedAreaExtractor:
     def _setup_exclusions(self):
         """Setup comprehensive exclusion patterns and keywords from all processors"""
         # Load all 64 districts from bd-districts.json
-        districts_file = Path('src/app/shared/utils/address-parser/data/json/division/bd-districts.json')
+        districts_file = Path('data/json/division/bd-districts.json')
         self.city_names = []
         try:
             with open(districts_file, 'r', encoding='utf-8') as f:
@@ -1168,9 +1168,9 @@ def cmd_extract(address: str, show_details: bool = False):
 def cmd_process(confidence: float = 0.70, input_file: str = None, output_file: str = None):
     """Process entire dataset"""
     if input_file is None:
-        input_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+        input_file = 'data/json/real-customer-address-dataset.json'
     if output_file is None:
-        output_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset-processed.json'
+        output_file = 'data/json/real-customer-address-dataset-processed.json'
     
     input_path = Path(input_file)
     output_path = Path(output_file)
@@ -1231,9 +1231,9 @@ def cmd_process(confidence: float = 0.70, input_file: str = None, output_file: s
 def cmd_split(input_file: str = None, output_dir: str = None):
     """Split dataset by confidence levels"""
     if input_file is None:
-        input_file = 'src/app/shared/utils/address-parser/data/json/real-customer-address-dataset.json'
+        input_file = 'data/json/real-customer-address-dataset.json'
     if output_dir is None:
-        output_dir = 'src/app/shared/utils/address-parser/data/json/splited_area'
+        output_dir = 'data/json/processing/area'
     
     input_path = Path(input_file)
     output_path = Path(output_dir)
@@ -1332,7 +1332,7 @@ def cmd_reprocess_all(input_file: str = None, output_dir: str = None):
 def cmd_update_summary(base_dir: str = None):
     """Update split summary statistics"""
     if base_dir is None:
-        base_dir = 'src/app/shared/utils/address-parser/data/json/splited_area'
+        base_dir = 'data/json/processing/area'
     
     base_path = Path(base_dir)
     
