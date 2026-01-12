@@ -33,9 +33,9 @@ from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Set
 import logging
 
-# Setup production logging
+# Setup production logging (only show errors, not info messages)
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.ERROR,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)

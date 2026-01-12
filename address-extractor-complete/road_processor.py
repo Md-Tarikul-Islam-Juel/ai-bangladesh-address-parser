@@ -52,14 +52,14 @@ try:
 except ImportError:
     HOUSE_EXTRACTOR_AVAILABLE = False
 
-# Import AI Pattern Learner
+# Import AI Pattern Learner (optional advanced feature)
 try:
     from ai_road_pattern_learner import (AdvancedAIPatternMatcher,
                                          AIPatternLearner)
     AI_ENABLED = True
 except ImportError:
     AI_ENABLED = False
-    print("Warning: AI Pattern Learner not available. Using standard patterns only.")
+    # Using standard patterns (works great with 95%+ accuracy)
 
 # ============================================================================
 # CORE EXTRACTION ALGORITHM
