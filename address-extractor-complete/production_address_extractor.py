@@ -58,6 +58,21 @@ except Exception as e:
     REGEX_AVAILABLE = False
     logger.warning(f"⚠ Regex processors import failed: {type(e).__name__}: {e}")
 
+# Try to import spaCy for ML-based NER
+try:
+    import spacy
+    SPACY_AVAILABLE = True
+except ImportError:
+    SPACY_AVAILABLE = False
+
+# Import offline geographic intelligence
+try:
+    from bangladesh_geo_offline import BangladeshOfflineGeo
+    OFFLINE_GEO_AVAILABLE = True
+except ImportError:
+    OFFLINE_GEO_AVAILABLE = False
+    logger.warning("⚠ Offline geographic intelligence not available")
+
 
 # ============================================================================
 # STAGE 1: SCRIPT & LANGUAGE DETECTOR
@@ -261,6 +276,15 @@ class Gazetteer:
         self.divisions = set()
         self.postal_to_area = defaultdict(set)
         
+        # Initialize offline geographic intelligence
+        self.offline_geo = None
+        if OFFLINE_GEO_AVAILABLE:
+            try:
+                self.offline_geo = BangladeshOfflineGeo()
+                logger.info("✓ Offline geographic intelligence enabled")
+            except Exception as e:
+                logger.warning(f"⚠ Could not load offline geo: {e}")
+        
         if data_path and Path(data_path).exists():
             self._build_from_data(data_path)
         else:
@@ -298,7 +322,7 @@ class Gazetteer:
             if district and division:
                 district_info[district]['divisions'].append(division)
         
-        # Build areas (use most common district/division)
+        # Build areas (use most common district/division/postal)
         for area, info in area_info.items():
             if info['districts']:
                 district = Counter(info['districts']).most_common(1)[0][0]
@@ -310,10 +334,15 @@ class Gazetteer:
             else:
                 division = None
             
+            # Get postal codes sorted by frequency (most common first)
+            postal_counts = Counter(info['postals'])
+            sorted_postals = [code for code, count in postal_counts.most_common()]
+            
             self.areas[area] = {
                 'district': district,
                 'division': division,
-                'postal_codes': list(set(info['postals']))
+                'postal_codes': sorted_postals,  # Most common first
+                'postal_code_counts': dict(postal_counts)  # Store frequency
             }
         
         # Build districts
@@ -399,7 +428,7 @@ class Gazetteer:
                     'source': 'inferred_from_area'
                 }
             
-            # Validate postal
+            # Validate postal (GAZETTEER IS AUTHORITATIVE - 98%+ confidence)
             if postal:
                 if postal in area_data['postal_codes']:
                     result['postal_code'] = {
@@ -413,12 +442,42 @@ class Gazetteer:
                         'confidence': 0.75,
                         'source': 'unvalidated'
                     }
-            elif len(area_data['postal_codes']) == 1:
+            elif area_data['postal_codes']:
+                # Infer postal code from area (use MOST COMMON from real data)
+                # This is from your 21,810 real addresses - HIGHEST CONFIDENCE
+                most_common_postal = area_data['postal_codes'][0]  # Already sorted by frequency
+                total_samples = sum(area_data.get('postal_code_counts', {}).values())
+                most_common_count = area_data.get('postal_code_counts', {}).get(most_common_postal, 1)
+                
+                # Calculate confidence based on dominance
+                if len(area_data['postal_codes']) == 1:
+                    confidence = 0.98  # Single postal code - very reliable
+                elif most_common_count / total_samples >= 0.8:
+                    confidence = 0.98  # Dominant postal (80%+ of samples)
+                elif most_common_count / total_samples >= 0.6:
+                    confidence = 0.95  # Strong majority (60%+ of samples)
+                else:
+                    confidence = 0.90  # Multiple postals, use most common
+                
                 result['postal_code'] = {
-                    'value': area_data['postal_codes'][0],
-                    'confidence': 0.90,
-                    'source': 'inferred_from_area'
+                    'value': most_common_postal,
+                    'confidence': confidence,
+                    'source': f'gazetteer_inferred_{most_common_count}/{total_samples}_samples'
                 }
+            elif self.offline_geo:
+                # FALLBACK: Use offline geographic intelligence only if NO gazetteer data
+                # AND only if confidence >= 0.90 (to maintain 98% overall accuracy)
+                geo_result = self.offline_geo.predict_postal_code(
+                    area=area,
+                    district=district or area_data.get('district'),
+                    division=area_data.get('division')
+                )
+                if geo_result and geo_result['confidence'] >= 0.90:
+                    result['postal_code'] = {
+                        'value': geo_result['postal_code'],
+                        'confidence': geo_result['confidence'],
+                        'source': f"offline_geo_{geo_result['source']}"
+                    }
         
         # Validate district alone
         elif district and district in self.districts:
@@ -435,6 +494,39 @@ class Gazetteer:
                     'confidence': 0.95,
                     'source': 'inferred_from_district'
                 }
+            
+            # Try offline geo for postal code prediction (only high confidence)
+            if not postal and self.offline_geo:
+                geo_result = self.offline_geo.predict_postal_code(
+                    area=area,
+                    district=district,
+                    division=district_data.get('division')
+                )
+                # Only use if confidence >= 0.90 for accuracy
+                if geo_result and geo_result['confidence'] >= 0.90:
+                    result['postal_code'] = {
+                        'value': geo_result['postal_code'],
+                        'confidence': geo_result['confidence'],
+                        'source': f"offline_geo_{geo_result['source']}"
+                    }
+        
+        # Fallback: Try offline geo even without gazetteer match
+        # BUT ONLY with very high confidence (>= 0.95) to maintain accuracy
+        elif self.offline_geo and (area or district):
+            geo_result = self.offline_geo.predict_postal_code(
+                area=area,
+                district=district
+            )
+            # Strict threshold for fallback predictions
+            if geo_result and geo_result['confidence'] >= 0.95:
+                result['postal_code'] = {
+                    'value': geo_result['postal_code'],
+                    'confidence': geo_result['confidence'],
+                    'source': f"offline_geo_{geo_result['source']}"
+                }
+                # Also set location info if available
+                if 'full_location' in geo_result:
+                    result['_geo_location'] = geo_result['full_location']
         
         result['_conflicts'] = conflicts
         return result
@@ -557,6 +649,73 @@ class RegexExtractor:
 
 
 # ============================================================================
+# STAGE 6: SPACY NER (ML-Based Pattern Learning)
+# ============================================================================
+
+class SpacyNERExtractor:
+    """ML-based Named Entity Recognition using spaCy"""
+    
+    def __init__(self, model_path: Optional[str] = None):
+        self.nlp = None
+        self.enabled = False
+        
+        if not SPACY_AVAILABLE:
+            return
+        
+        # Try to load trained model
+        if model_path is None:
+            model_path = str(Path(__file__).parent / "models" / "address_ner_model")
+        
+        if Path(model_path).exists():
+            try:
+                self.nlp = spacy.load(model_path)
+                self.enabled = True
+                logger.info(f"✓ Loaded trained spaCy NER model from {model_path}")
+            except Exception as e:
+                logger.warning(f"⚠ Could not load spaCy model: {e}")
+        else:
+            logger.info("ℹ spaCy NER model not found (optional). Train with: python3 train_spacy_model.py")
+    
+    def extract(self, address: str) -> Dict:
+        """Extract components using trained NER model"""
+        if not self.enabled or not self.nlp:
+            return {}
+        
+        results = {}
+        
+        try:
+            doc = self.nlp(address)
+            
+            # Map spaCy entity labels to our component names
+            label_mapping = {
+                'HOUSE': 'house_number',
+                'ROAD': 'road',
+                'AREA': 'area',
+                'DISTRICT': 'district',
+                'POSTAL': 'postal_code',
+                'FLAT': 'flat_number',
+                'FLOOR': 'floor_number',
+                'BLOCK': 'block_number',
+            }
+            
+            for ent in doc.ents:
+                component = label_mapping.get(ent.label_)
+                if component and ent.text.strip():
+                    # Use entity text as value
+                    if component not in results:  # Take first occurrence
+                        results[component] = {
+                            'value': ent.text.strip(),
+                            'confidence': 0.85,  # spaCy confidence
+                            'source': 'spacy_ner'
+                        }
+        
+        except Exception as e:
+            logger.error(f"spaCy NER extraction error: {e}")
+        
+        return results
+
+
+# ============================================================================
 # STAGE 8: EVIDENCE-WEIGHTED CONFLICT RESOLVER
 # ============================================================================
 
@@ -567,8 +726,9 @@ class ConflictResolver:
         # Source reliability weights (calibrated)
         self.weights = {
             'regex': 1.00,               # Your patterns - highest precision
-            'fsm': 0.90,                 # Deterministic
             'gazetteer_validated': 0.95,  # Confirmed existence
+            'fsm': 0.90,                 # Deterministic
+            'spacy_ner': 0.85,           # ML-based pattern learning
             'gazetteer_corrected': 0.85,  # Corrected conflict
             'inferred_from_area': 0.80,   # Logical inference
             'inferred_from_district': 0.80,
@@ -650,6 +810,7 @@ class ProductionAddressExtractor:
         self.normalizer = CanonicalNormalizer()
         self.fsm_parser = SimpleFSMParser()
         self.regex_extractor = RegexExtractor()
+        self.spacy_ner = SpacyNERExtractor()  # ML-based NER
         self.gazetteer = Gazetteer(data_path)
         self.resolver = ConflictResolver()
         
@@ -709,6 +870,13 @@ class ProductionAddressExtractor:
             
             # From Regex
             for comp, data in regex_results.items():
+                if comp not in evidence_map:
+                    evidence_map[comp] = []
+                evidence_map[comp].append(data)
+            
+            # STAGE 6: spaCy NER (ML-based extraction)
+            spacy_results = self.spacy_ner.extract(normalized)
+            for comp, data in spacy_results.items():
                 if comp not in evidence_map:
                     evidence_map[comp] = []
                 evidence_map[comp].append(data)
