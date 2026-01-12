@@ -51,7 +51,9 @@ test_addresses = [
     'Banani, Dhaka',
     'Gulshan 2, Dhaka',
     'Dhanmondi 15, Dhaka',
-    '1152/C "Greenhouse", House# 45, Road# 08, Shapla Residential Area, Halishahar, Chittagong-4219'
+    '1152/C "Greenhouse", House# 45, Road# 08, Shapla Residential Area, Halishahar, Chittagong-4219',
+    '101/1 west monipur House name- Dream house, 60 feet road, 4th floor, flat- D2, Mirpur-2, Dhaka-1216',
+    'sottota tower, h:107/2,R:7, north bishil, mirpur 1, dhaka'
 ]
 
 print("="*80)
