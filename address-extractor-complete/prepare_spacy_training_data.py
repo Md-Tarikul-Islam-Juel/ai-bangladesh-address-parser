@@ -204,7 +204,7 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(description='Prepare spaCy training data')
-    parser.add_argument('--input', default='../../data/distilt5_production/train.json',
+    parser.add_argument('--input', default='../main/Processed data/merged_addresses.json',
                        help='Input dataset path')
     parser.add_argument('--output', default='data/spacy_training_data.json',
                        help='Output training data path')

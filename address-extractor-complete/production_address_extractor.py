@@ -46,11 +46,17 @@ sys.path.insert(0, str(Path(__file__).parent))
 try:
     from house_number_processor import AdvancedHouseNumberExtractor
     from road_processor import AdvancedRoadNumberExtractor
+    from area_processor import AdvancedAreaExtractor
+    from district_processor import AdvancedCityExtractor
+    from postal_code_processor import AdvancedPostalCodeExtractor
+    from flat_number_processor import AdvancedFlatNumberExtractor
+    from floor_number_processor import AdvancedFloorNumberExtractor
+    from block_processor import AdvancedBlockNumberExtractor
     REGEX_AVAILABLE = True
-    logger.info("✓ Loaded your existing regex processors")
-except ImportError:
+    logger.info("✓ Loaded ALL your existing regex processors")
+except Exception as e:
     REGEX_AVAILABLE = False
-    logger.warning("⚠ Regex processors not found - using FSM only")
+    logger.warning(f"⚠ Regex processors import failed: {type(e).__name__}: {e}")
 
 
 # ============================================================================
@@ -440,38 +446,113 @@ class Gazetteer:
 
 class RegexExtractor:
     """Wrapper for your existing regex processors"""
-    
+
     def __init__(self):
         if REGEX_AVAILABLE:
             self.house_extractor = AdvancedHouseNumberExtractor()
             self.road_extractor = AdvancedRoadNumberExtractor()
-            logger.info("✓ Your regex processors loaded")
+            self.area_extractor = AdvancedAreaExtractor()
+            self.district_extractor = AdvancedCityExtractor()
+            self.postal_extractor = AdvancedPostalCodeExtractor()
+            self.flat_extractor = AdvancedFlatNumberExtractor()
+            self.floor_extractor = AdvancedFloorNumberExtractor()
+            self.block_extractor = AdvancedBlockNumberExtractor()
+            logger.info("✓ ALL 8 regex processors loaded")
         else:
             self.house_extractor = None
             self.road_extractor = None
-    
+            self.area_extractor = None
+            self.district_extractor = None
+            self.postal_extractor = None
+            self.flat_extractor = None
+            self.floor_extractor = None
+            self.block_extractor = None
+
     def extract(self, address: str) -> Dict:
         """Extract using your regex processors"""
         results = {}
-        
+        min_confidence = 0.70
+
         if self.house_extractor:
             house_result = self.house_extractor.extract(address)
-            if house_result.house_number and house_result.confidence >= 0.70:
+            if house_result.house_number and house_result.confidence >= min_confidence:
                 results['house_number'] = {
                     'value': house_result.house_number,
                     'confidence': house_result.confidence,
                     'source': 'regex'
                 }
-        
+
         if self.road_extractor:
             road_result = self.road_extractor.extract(address)
-            if road_result.road and road_result.confidence >= 0.70:
+            if road_result.road and road_result.confidence >= min_confidence:
                 results['road'] = {
                     'value': road_result.road,
                     'confidence': road_result.confidence,
                     'source': 'regex'
                 }
-        
+
+        if self.area_extractor:
+            area_result = self.area_extractor.extract(address)
+            if hasattr(area_result, 'area') and area_result.area and area_result.confidence >= min_confidence:
+                results['area'] = {
+                    'value': area_result.area,
+                    'confidence': area_result.confidence,
+                    'source': 'regex'
+                }
+
+        if self.district_extractor:
+            district_result = self.district_extractor.extract(address)
+            # District extractor returns 'city' attribute (represents district)
+            if hasattr(district_result, 'city') and district_result.city and district_result.confidence >= min_confidence:
+                results['district'] = {
+                    'value': district_result.city,
+                    'confidence': district_result.confidence,
+                    'source': 'regex'
+                }
+                # Also extract division if available
+                if hasattr(district_result, 'division') and district_result.division and district_result.division_confidence >= min_confidence:
+                    results['division'] = {
+                        'value': district_result.division,
+                        'confidence': district_result.division_confidence,
+                        'source': 'regex'
+                    }
+
+        if self.postal_extractor:
+            postal_result = self.postal_extractor.extract(address)
+            if hasattr(postal_result, 'postal_code') and postal_result.postal_code and postal_result.confidence >= min_confidence:
+                results['postal_code'] = {
+                    'value': postal_result.postal_code,
+                    'confidence': postal_result.confidence,
+                    'source': 'regex'
+                }
+
+        if self.flat_extractor:
+            flat_result = self.flat_extractor.extract(address)
+            if hasattr(flat_result, 'flat_number') and flat_result.flat_number and flat_result.confidence >= min_confidence:
+                results['flat_number'] = {
+                    'value': flat_result.flat_number,
+                    'confidence': flat_result.confidence,
+                    'source': 'regex'
+                }
+
+        if self.floor_extractor:
+            floor_result = self.floor_extractor.extract(address)
+            if hasattr(floor_result, 'floor_number') and floor_result.floor_number and floor_result.confidence >= min_confidence:
+                results['floor_number'] = {
+                    'value': floor_result.floor_number,
+                    'confidence': floor_result.confidence,
+                    'source': 'regex'
+                }
+
+        if self.block_extractor:
+            block_result = self.block_extractor.extract(address)
+            if hasattr(block_result, 'block_number') and block_result.block_number and block_result.confidence >= min_confidence:
+                results['block_number'] = {
+                    'value': block_result.block_number,
+                    'confidence': block_result.confidence,
+                    'source': 'regex'
+                }
+
         return results
 
 
