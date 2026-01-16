@@ -1,0 +1,64 @@
+{
+  "name": "ai-bangladesh-address-parser",
+  "version": "1.0.0",
+  "description": "Production-grade AI-powered Bangladeshi address parser - Extract house, road, area, district, postal code, and more from full addresses",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node dist/test.js",
+    "prepublishOnly": "npm run build",
+    "postinstall": "python3 -m pip install -r requirements.txt --quiet 2>/dev/null || python -m pip install -r requirements.txt --quiet 2>/dev/null || echo 'Note: Install Python dependencies manually: pip install -r requirements.txt'",
+    "install-python-deps": "python3 -m pip install -r requirements.txt || python -m pip install -r requirements.txt"
+  },
+  "keywords": [
+    "ai",
+    "artificial-intelligence",
+    "ml",
+    "machine-learning",
+    "bangladesh",
+    "bd",
+    "address",
+    "parser",
+    "extraction",
+    "nlp",
+    "natural-language-processing",
+    "postal-code",
+    "address-parser",
+    "bangladesh-address",
+    "address-extraction",
+    "ner"
+  ],
+  "author": "[YOUR NAME] <your.email@example.com>",
+  "license": "PROPRIETARY",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/address-dataset.git"
+  },
+  "homepage": "https://github.com/your-username/address-dataset#readme",
+  "bugs": {
+    "url": "https://github.com/your-username/address-dataset/issues"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "python/",
+    "data/",
+    "models/",
+    "requirements.txt",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "python-shell": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "python": ">=3.9.0"
+  }
+}

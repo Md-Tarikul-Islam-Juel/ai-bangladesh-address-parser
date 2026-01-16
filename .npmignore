@@ -1,0 +1,63 @@
+# Development files
+lib/
+*.ts
+!*.d.ts
+.vscode/
+.idea/
+*.log
+*.swp
+*.swo
+*~
+
+# Test files
+**/*.test.ts
+**/*.spec.ts
+test.js
+tests/
+test_simple.js
+
+# Build artifacts (keep dist/)
+*.map
+
+# Git
+.git/
+.gitignore
+
+# Documentation (keep README.md)
+docs/
+*.md
+!README.md
+!README_NPM.md
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Keep these in package
+!python/
+!data/
+!models/
+!src/
+!dist/
+!requirements.txt
