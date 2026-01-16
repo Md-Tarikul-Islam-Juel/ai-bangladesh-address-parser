@@ -1,0 +1,11 @@
+# Python dependencies for Bangladesh Address Extractor
+spacy>=3.4.0
+pygtrie>=2.5.0
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+
+# Optional for training
+# transformers>=4.30.0
+# torch>=2.0.0
+# datasets>=2.14.0

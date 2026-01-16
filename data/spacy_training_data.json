@@ -1,0 +1,9277 @@
+[
+  {
+    "text": "#6, House #33, Flat 5E, Sector #4, Uttara",
+    "entities": [
+      [
+        11,
+        13,
+        "HOUSE"
+      ],
+      [
+        20,
+        22,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "1/4 Shabek Shorafot Gonj Lane, Gandaria, Katherpul, Bobitar Goli, Majar ar Pashe, Gendaria, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        4,
+        29,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "1/4, South Begun Bari (Master Bari), Tejgaon I/A, Tejgaon, Dhaka -1208. (Near Satrasta)",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        66,
+        70,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "1/A House, Road 126/123, Flat AG, Mayfair Apt, Gulshan 1",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        11,
+        23,
+        "ROAD"
+      ],
+      [
+        30,
+        32,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "10 Hatkhola Road, Tikatuli, Dhaka",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        3,
+        16,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "10/1 Nasrin Mintu Road, Kalachandpur, Gulshan",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        5,
+        22,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "10/W/A, Lift 9, Grand Hoque Tower, Mizan Road, Feni",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        35,
+        45,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "100/4 Middle Pirerbag (Bombai Goli), Mirpur, Dhaka -1216",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        23,
+        34,
+        "ROAD"
+      ],
+      [
+        52,
+        56,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "101/1 west monipur House name- Dream house, 60 feet road, 4th floor, flat- D2, Mirpur-2, Dhaka-1216",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        44,
+        51,
+        "ROAD"
+      ],
+      [
+        58,
+        59,
+        "FLOOR"
+      ],
+      [
+        75,
+        77,
+        "FLAT"
+      ],
+      [
+        95,
+        99,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "105/A, Central Road, Hatirpool, Dhaka",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        7,
+        19,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "109 Aga Sadek Road, Old Dhaka, Bongshal",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        4,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "11 Naya Paltan Mosque Goli, Flat: 9A",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        3,
+        26,
+        "ROAD"
+      ],
+      [
+        34,
+        36,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "11/3, Shukhi Vila (2nd floor), Iqbal Road, Mohammadpur",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        19,
+        20,
+        "FLOOR"
+      ],
+      [
+        31,
+        41,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "114 Kazi Nazrul Islam Avenue, Rupayan Trade Center, Lift 12",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        4,
+        28,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "115, Shantinagar, Rupayan Z.A Tower, Dhaka . Flat-C14",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        50,
+        53,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "1152/C \"Greenhouse\", House# 45, Road# 08 (In front of Kamal Store), Shapla Residential Area, Halishahar, Chittagong-4219",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        32,
+        40,
+        "ROAD"
+      ],
+      [
+        116,
+        120,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "1163/A, Khilgaon Chowdhury Para, 5th floor, left side, Dhaka",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        33,
+        34,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "125-Ramna Tower, Ramna Century Avenue, Boro Moghbazar Wireless, Dhaka",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        17,
+        37,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "132, Lalbagh road, Sikh shah Bazar, Azimpur, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        5,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "134, South Kamalapur (Behind South Kamalapur Jame Masjid), 7th Floor (Lift-6)",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        59,
+        60,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "14 no Shankhari Bazar, Dhaka -1100",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        30,
+        34,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "140 Crescent Road, Green Road, Behind Green Life Hospital",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        4,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "1421/1/A, Jhil Par (3rd Floor South), (Beside Iman Bagh Jame Masjid), Taltola, , Khilgaon, Dhaka",
+    "entities": [
+      [
+        0,
+        8,
+        "HOUSE"
+      ],
+      [
+        20,
+        21,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "144/4A (Ayesha Manjil), Road 8/3, Block F, Banasree, Lal Miar Goli, Nayapara, , Meradia, Dhaka",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        24,
+        32,
+        "ROAD"
+      ],
+      [
+        40,
+        41,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "144/6 Staff Road Quarter, Dhaka Cantonment, Dhaka",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        6,
+        16,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "147 Green Road, Flat F9, Above Agora Super Shop",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        4,
+        14,
+        "ROAD"
+      ],
+      [
+        21,
+        23,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "15 DIT Road, Malibagh, Chowdhury Para, Khilgaon, Dhaka. Mutual Trust Bank, 2nd Floor, আবুল হোটেল এর পাশে।",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        3,
+        11,
+        "ROAD"
+      ],
+      [
+        75,
+        76,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "15 No Basa, Possonno Podder Lane, Tatibazar",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        12,
+        32,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "15, Mayakanon, Bashabo, Dhaka, Lift: 2, Flat No: C2",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        45,
+        47,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "16 Monipuripara, Farha Garden, Flat-L6, Shangshad Avenue, Tejgaon, Dhaka-1215",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        36,
+        38,
+        "FLAT"
+      ],
+      [
+        40,
+        56,
+        "ROAD"
+      ],
+      [
+        73,
+        77,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "16/9 Azam Road, Mohammadpur, Dhaka 1207",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        5,
+        14,
+        "ROAD"
+      ],
+      [
+        35,
+        39,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "16/B Sonatonghor Road, Zigatola Tannery Mor, Chorokghatar Goli, Dhaka-1209",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        5,
+        21,
+        "ROAD"
+      ],
+      [
+        70,
+        74,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "164/1 (Royal Valley), West Arjatpara, Dhakaia Barir Goli, Lift-4, Flat-D-4, Tejgaon, Dhaka -1215",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        38,
+        56,
+        "ROAD"
+      ],
+      [
+        71,
+        72,
+        "FLAT"
+      ],
+      [
+        92,
+        96,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "165 Shantinagar, Sky View Park City, B-15, Dhaka-1217",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        49,
+        53,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "166/1 Sultanganj Road, Rayer Bazar, Dhaka",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        6,
+        21,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "167 Mirhajirbag, Abu Haji School Road, Bismillah Pharmacy r samne, Jatrabari, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        17,
+        37,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "17/2 Noorjahan Mohol, Shamoli Main Road (2 No Road), Majortilla, Islampur, Sylhet",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        22,
+        39,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "17/3, Onward Lucida, Panthapath West Rajabazar, Gym er Goli, Dhaka, Flat 1C",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        12,
+        "ROAD"
+      ],
+      [
+        73,
+        75,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "17/B Wari Rankin Street, Dhaka, Building Name: Jomsher Tower",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        5,
+        23,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "176, East Kafrul, Dhaka-1206",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        24,
+        28,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "178/2 Bangshal Road, Dhaka-1100",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        6,
+        19,
+        "ROAD"
+      ],
+      [
+        27,
+        31,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "18/L Tallabag, Dhaka 1207",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        21,
+        25,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "188 Khilgaon, Tilpapara, Road:10",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        25,
+        32,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "19 Bikrampur Villa, Flat 3A, Lake Circus Kalabagan, Dhaka",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        25,
+        27,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "19/B Harirampur, Darus Salam Thana, Mirpur 1, Dhaka-1216",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        52,
+        56,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "19/H, South Fuller Road Residential Area, University of Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        23,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "191 Dakshienkhan preambagan Uttara, Dhaka 1230",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        42,
+        46,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "191 Police Line, Fatullah, Narayanganj",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        4,
+        15,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "2 D, Karim Tower, 3 Orphanage Road, Bakshibazar, Dhaka 1211",
+    "entities": [
+      [
+        20,
+        34,
+        "ROAD"
+      ],
+      [
+        55,
+        59,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "2/10 R, Tolarbag, Panir Tankir Goli, Mirpur",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        18,
+        35,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "2/A Monir Hussain Lane, Narinda Police, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        4,
+        22,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "20/22 Meheghni Tower, 60 Feet (beside Leguna Stand), Mirpur 2, Dhaka",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        22,
+        29,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "202/1-D, Lalbagh Road, Choto Vat Mosjid, Dhaka-1211",
+    "entities": [
+      [
+        0,
+        7,
+        "HOUSE"
+      ],
+      [
+        9,
+        21,
+        "ROAD"
+      ],
+      [
+        47,
+        51,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "21/1, Nagar Nibash:03, DNCC Officer's Quarter, Road No:27, Block:K, Banani, Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        47,
+        57,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "21/D, Satish Sarkar Road, Gandaria. Dhaka, Dhaka 1204",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        24,
+        "ROAD"
+      ],
+      [
+        49,
+        53,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "214/1 Bagbari uttarpara, Gabtoli, Darussalam Thana, Mirpur, Dhaka-1216",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        66,
+        70,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "215/C, Sher-e-Bangla Road, Rayerbazar, Dhanmondi",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        14,
+        25,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "217 217/1 Robi Tomiz Tower, Flat No: 8/A, South Pirer Bag, Amtola Bazar, Agargaon 60 Feet, Dhaka-1207",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        4,
+        7,
+        "HOUSE"
+      ],
+      [
+        33,
+        35,
+        "FLAT"
+      ],
+      [
+        82,
+        89,
+        "ROAD"
+      ],
+      [
+        97,
+        101,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "219/8, Soiyod Palace, Bhanga Bridge, 60 Feet, South Pirerbagh, Mirpur, Dhaka -1216",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        37,
+        44,
+        "ROAD"
+      ],
+      [
+        78,
+        82,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "22/1 BDR Bari Road, South Ananda Nagar, Aftabnagar, Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        5,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "228, South Goran, Bagan Bari Road, M R Khan Lane, Khilgaon, Dhaka 1219",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        35,
+        48,
+        "ROAD"
+      ],
+      [
+        66,
+        70,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "229/1, Shewrapara Wasa Road",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        7,
+        27,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "23, Hena Kutir, East Ahmednagar, Mirpur 2, Dhaka 1216",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        49,
+        53,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "23/1, Al-Burooj International School, MM Ali Road, near Shilpokola Academy, Chittagong",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        38,
+        49,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "23/1, Noor fatah lane, , Lalbagh, Dhaka 1211(Mim Community center এর পাশের গলি দিয়ে ঢুকে ৩ টা বিল্ডিং এর পর, হারুন ডেকোরেটরের দোকানের উল্টো পাশের চিকন গলির ভেতর, কন্সট্রাকশন বিল্ডিং এর ৪র্থ তলায়)",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        69,
+        78,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "23/Ka, West Tejturi Bazar, Tejgaon, Dhaka-1215 Apartment Name: Vivek Jannat",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        57,
+        61,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "234/2, Rayer Bazar, Sultanganj road, Dhanmondi, Dhaka",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        20,
+        35,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "24 Purana Paltan Line, Ambit Rahman Tower 2, 6/C",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        3,
+        21,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "24/A Tiposultan Road, Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        5,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "249, Khalil Box Road, South Gawair, Ashkona, Dakkhin Khan, Square Building-এর বিপরীতে, হাজী তাহের মসজিদ থেকে সোজা দক্ষিণ দিকে, সেস মাঠের শেষে",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        5,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "25/1 North Mugda, Madbbor Tower, 7th Floor, Lift 6",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        33,
+        34,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "255/1/Gha, Banasree, Block-C, Road-17, Opposite of Shwapno Super Shop, Banasree, Moulovirtek, Dhaka 1219, Bangladesh",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        30,
+        37,
+        "ROAD"
+      ],
+      [
+        100,
+        104,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "255/1/Gha, Mouloviteck, Opposite of Banasree, Road No. 17, Block-C",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        46,
+        57,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "257/2 Khilgaon Sipaibag, 4 Tala Goli (Patoyari Vhobon), Lotifiwa Hifjul , Quran Madrasa Building",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        27,
+        36,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "25A Dilu Road, New Eskaton, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        4,
+        13,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "26 Dilu Road, New Eskaton House 26, Flat A2, Raner's Gulsepa Near Bhati High School, Dhaka District, Haatir Jhil.",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        3,
+        12,
+        "ROAD"
+      ],
+      [
+        32,
+        34,
+        "HOUSE"
+      ],
+      [
+        41,
+        43,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "26 Ice Factory Road, Munna Traduce Goli, Chittagong",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        3,
+        19,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "269 (Quick Sultan), Sultangonj Road, Rayer Bazar, Dhaka-1209",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        20,
+        35,
+        "ROAD"
+      ],
+      [
+        56,
+        60,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "27/2 C Moneshwar 1st Lane, Hazaribag, Dhaka",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        17,
+        25,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "27/2 Lal Mohan Poddar Lane, Iji Gate, Faridabad, Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        5,
+        26,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "27/A/1k Monessor 1st Lane, Hazaribagh, Kholilsordar Mosque Adjacent",
+    "entities": [
+      [
+        0,
+        7,
+        "HOUSE"
+      ],
+      [
+        17,
+        25,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "270/1, Shahid Ramiz Uddin Sarak, Senpara Parbata, Mirpur-10, Dhaka-1216",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        67,
+        71,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "270/a Dhanmondi 15 national bank er samner goli. Dhaka 1209",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        19,
+        47,
+        "ROAD"
+      ],
+      [
+        55,
+        59,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "272/B West Agargaon, Colonel Road, Dhaka",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        21,
+        33,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "28/29A Gopi Mohan Bosak Lane, Wari (Near Delip er Math), Dhaka",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        7,
+        28,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "287, Elephant Road, Achiya Garden, Flat-3B",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        5,
+        18,
+        "ROAD"
+      ],
+      [
+        40,
+        42,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "29/30 Station Road, Tejgaon, Dhaka",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        6,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "29/B Kaligong Boro Mosjid Road, Keranigonj, Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        5,
+        30,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "296, Shadhinota Shoroni Road, Jamtola Mor, Uttar Badda, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        5,
+        28,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "2nd 12-Storey Govt Office Building, 10th Floor, Segunbagicha, Dhaka",
+    "entities": [
+      [
+        4,
+        13,
+        "HOUSE"
+      ],
+      [
+        36,
+        38,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "3 Narinda Lane, Narinda",
+    "entities": [
+      [
+        0,
+        1,
+        "HOUSE"
+      ],
+      [
+        2,
+        14,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "3/2 NHB Quarter, Mirpur 14, Dhaka 1206",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        34,
+        38,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "310, West Nakhalpara, Lane:12, Tejgaon, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        22,
+        29,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "319/2, Prottasha Tower, Middle Pirerbagh, Mirpur 60 Feet",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        49,
+        56,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "322, Panorama, Road 1, Padma Residential Area, Rajshahi, 6207, Rajshahi, Bangladesh",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        15,
+        21,
+        "ROAD"
+      ],
+      [
+        57,
+        61,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "332 No. Pirerbagh (Alya Tower), Shimultola Mosque Area, Mirpur-1, Dhaka-1216",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        72,
+        76,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "335, MRF Gafur Heights, West Nakhalpara, Dhaka 1215., Road No: 12, Flat No: B4",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        54,
+        65,
+        "ROAD"
+      ],
+      [
+        72,
+        74,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "339 Jafrabad, Shankar, West Dhanmondi, Tangail House er Samna, Dhaka, Flat A8",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        75,
+        77,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "34/1 Allmah Iqbal Road, Narayanganj",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        5,
+        22,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "35, Shahjahanpur, Khilgaon, Iman Manjil, F-5/A, Dhaka-1219",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        54,
+        58,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "35/1, Shikkhok Nikunjo Building (Flat 8C), Srijoni Road, Ibrahimpur, Mirpur 14",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        38,
+        40,
+        "FLAT"
+      ],
+      [
+        43,
+        55,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "35/8/2 Feni House, Pir Saheb Goli, Shanti Nagar, Dhaka",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        19,
+        33,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "351/A, Road 27, Mohakhali DOHS",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        7,
+        14,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "356, South Anand Nagar, Inside Aftab Nagar, in front of BDR House, Baitul Falah Road, Amjad Sir's House, Badda, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        67,
+        84,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "361/3, North Pirerbag, 60 Feet, Chapra Mosjider Pichone, Mirpur",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        23,
+        30,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "363/A/10, North Pirerbag, Mirpur 60 feet, Sapra Mosjid , (Near Abubokkor Madrasa, Balur Math)",
+    "entities": [
+      [
+        0,
+        8,
+        "HOUSE"
+      ],
+      [
+        33,
+        40,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "365/2 Jafrabad, Mohammadpur, Opposite to Lalmatia City Hospital, Flat G2",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        70,
+        72,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "367, 368, North Shajahanpur, Flat No. 5-A, Dhaka-1217",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        38,
+        39,
+        "FLAT"
+      ],
+      [
+        49,
+        53,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "37, Kalicharan Saha Road, Mill Barrack Police Line, Thana Gandaria, Dhaka",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        4,
+        24,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "370-371, 2A, 2nd floor, Globe Nibash, outer circular road, Rajarbag",
+    "entities": [
+      [
+        0,
+        7,
+        "HOUSE"
+      ],
+      [
+        13,
+        14,
+        "FLOOR"
+      ],
+      [
+        38,
+        57,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "372/4, Free School Street, Pukurpar Fhal Mosjid, Dhaka",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        7,
+        25,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "38, East Ahmednagar, Daud Khan Mosque Road, Mirpur 2, Dhaka",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        21,
+        42,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "38/1, Road 04, Shamoli, Dhaka 1207",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        13,
+        "ROAD"
+      ],
+      [
+        30,
+        34,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "38/B, Promote Baily House, Mayakanon, Basabo, Dhaka. 6th Floor, 6B",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        53,
+        54,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "380/20-A, Kunjaban R/A, Behind TV Center, Rampura, Dhaka-1219",
+    "entities": [
+      [
+        0,
+        8,
+        "HOUSE"
+      ],
+      [
+        57,
+        61,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "39 Nandolal Datto Lane, Luxmi Bazar, Old Dhaka. Shorowerdy College এর পেছনের গলি, Lift-6, Happy TM Complex",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        70,
+        80,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "39/2, Abdul Hadi Lane, Agamasi Lane, Majedun Bibi Monjil, Lift - 5C, Dipti Bari, Puran Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        21,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "394/B Taniya Mohol (1st floor), Road no: 12, Shaheenbag, Nakhalpara, Tejgaon, Dhaka",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        20,
+        21,
+        "FLOOR"
+      ],
+      [
+        32,
+        43,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "3L17 Iqbal Road, Flat 5A",
+    "entities": [
+      [
+        5,
+        15,
+        "ROAD"
+      ],
+      [
+        22,
+        24,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "3rd floor, Left side lalmatia housing estate Shat Masjid road Block - E, house # 6/20, Mohammed pure, Dhaka -1207",
+    "entities": [
+      [
+        0,
+        1,
+        "FLOOR"
+      ],
+      [
+        11,
+        61,
+        "ROAD"
+      ],
+      [
+        81,
+        85,
+        "HOUSE"
+      ],
+      [
+        109,
+        113,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "4/50 Ekota Tower, West Vasantek, Dhaka 1206",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        39,
+        43,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "4/A, Urban Nest, 3, NAEM Road, Dhanmondi, Dhaka 1205",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        20,
+        29,
+        "ROAD"
+      ],
+      [
+        48,
+        52,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "4/A/B, 2nd Colony, Mazar Road, Mirpur-1, Dhaka-1216",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        19,
+        29,
+        "ROAD"
+      ],
+      [
+        47,
+        51,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "4/G, Bashbari, Mohammadpur, Dhaka. Flat -B4",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        41,
+        43,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "403(1 Ulama Monzil, Hazi Tower Goli, Modhubag, Moghbazar, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        20,
+        35,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "41, Chatteshwari Road, opposite Chatteshwari Kali Temple, beside Karnakod Tower, Chatteshwari Road, Chattogram",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        4,
+        21,
+        "ROAD"
+      ],
+      [
+        81,
+        98,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "41/3, Shopno Niloy (Lift 9), Molla Para, West Kafrul, Sher-E-Bangla Nagar, Dhaka 1207",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        81,
+        85,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "41/D, Haricharan Ray Road, Faridabad Glass Factory Mosque, Dhaka - 1204",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        25,
+        "ROAD"
+      ],
+      [
+        67,
+        71,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "411/2A, Lake View Road, South Pike Para, Kallyanpur, Dhaka",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        8,
+        22,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "426 North Shahjahanpur, Dhaka-1217, Flat Number 8A",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        41,
+        47,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "43-R/5 Indira Road, 3rd floor, Saju Srity House, , (beside Daffodil Technical Institutes), West Panthapath (opposite SEL Center), Dhaka-1215",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        7,
+        18,
+        "ROAD"
+      ],
+      [
+        20,
+        21,
+        "FLOOR"
+      ],
+      [
+        136,
+        140,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "43/8 (তিন তলা), Ulon Road, West Rampura, Hatirjheel, Dhaka-1219",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        16,
+        25,
+        "ROAD"
+      ],
+      [
+        59,
+        63,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "43/E/2, West Raja Bazar, Indira Road, Farmgate, Dhaka",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        25,
+        36,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "437/Ka, East Goran, Khilgaon, Dhaka 1219",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        36,
+        40,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "44/22 KA, GM Chawdhory Road, Shipyard, Khulna Sadar, Khulna",
+    "entities": [
+      [
+        0,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        27,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "44/kha, China Building, Azimpur Road, Dhaka-1205 (Opposite of Azimpur Graveyard gate no.2)",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        24,
+        36,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "466 Shahinbaag, Tejgaon, Dhaka 1215, 1st Floor",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        31,
+        35,
+        "POSTAL"
+      ],
+      [
+        37,
+        38,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "47, Kawranbazar, Latif Tower (12th floor), Dhaka-1215",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        30,
+        32,
+        "FLOOR"
+      ],
+      [
+        49,
+        53,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "473/2 South Goran, Khilgaon, Dhaka - 1219",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        37,
+        41,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "48/12, Swapnil Heights, Bou Bazar Road, Purbo Rampura, Al Aqsa Mosque Goli, Dhaka-1219",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        24,
+        38,
+        "ROAD"
+      ],
+      [
+        82,
+        86,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "5/8 Block E, Lalmatia, Dhaka 1207, South side, 2nd floor",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        10,
+        11,
+        "BLOCK"
+      ],
+      [
+        47,
+        48,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "5/A/1 Narinda Monir Hosaain Lane, Gandaria, Dhaka-1100",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        6,
+        32,
+        "ROAD"
+      ],
+      [
+        50,
+        54,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "50/1/B baseed villa mirhajirbag, shohid Faruq road zatrabari Dhaka",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        33,
+        50,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "53, Green Tower, Uttor Pirerbag, 60 Feet Mike er Goli, Mirpur, Dhaka",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        33,
+        40,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "54, Rawshan Ara Lane, Siddeshwari. Building name: Abedin Heights , (beside Sun Tower building) Flat no: 6-A",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        4,
+        20,
+        "ROAD"
+      ],
+      [
+        100,
+        102,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "541/2, R - 12, Baridhara DOHS",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        7,
+        13,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "56 Momin Road, DC Hill, Opposite of Bangladesh Nursery, Chittagong",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        3,
+        13,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "56/C, Asad Avenue, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "57 Central Road, Dhaka",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        3,
+        15,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "59 North Road, Vutergoli Mosjid",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        3,
+        13,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "592/ka, Victoria Primary school road, Ranir dighir par, Nimtoli, Cumilla",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        8,
+        36,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "593/A, 2nd Floor, Right Side, Faruk Ahmed's Building, Modhubag, Moghbazar (Sher-e-Bangla School-এর অপজিট গলিতে)",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        7,
+        8,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "5th Floor, Ascii System, House No. 100, Road No. 8, O R Nizam Road, Chittagong",
+    "entities": [
+      [
+        0,
+        1,
+        "FLOOR"
+      ],
+      [
+        35,
+        38,
+        "HOUSE"
+      ],
+      [
+        40,
+        50,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "61 Bijoy Nagar, Eastern Arzoo Building, Lift-11, Room No-4, Dhaka 1000",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        66,
+        70,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "62, North Circular Road, Hatirpool, Dhanmondi, Dhaka 1205",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        4,
+        23,
+        "ROAD"
+      ],
+      [
+        53,
+        57,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "620 Basic P R R Heights (Apartment Name), Boro Moghbazar, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        35,
+        39,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "63-Dewan Bari, Jonaki Road, Ahmed Nagar, Mirpur-1, Dhaka-1216",
+    "entities": [
+      [
+        0,
+        8,
+        "HOUSE"
+      ],
+      [
+        15,
+        26,
+        "ROAD"
+      ],
+      [
+        57,
+        61,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "65 Jigatola, Matbor Tower, Flat 13H, near Madina Sweets",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        32,
+        35,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "65-66, Siddheswari Road, Rangs Hafiz Tower, Dhaka-1217",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        7,
+        23,
+        "ROAD"
+      ],
+      [
+        50,
+        54,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "66/2 agamashilen law college (vanga mosjid er goli boro mosque ) bangshal thana , dhaka -1100 world num 33",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        30,
+        50,
+        "ROAD"
+      ],
+      [
+        89,
+        93,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "67/1, Shahalibag, Mirpur-1, Dhaka-1216",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        34,
+        38,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "68 Haji Afser Uddin Road, West Dhanmondi, Dhaka",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        3,
+        24,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "6no Kotowali Road, Nokhotro Tower, Old Dhaka, Tanti Bazar-1100",
+    "entities": [
+      [
+        1,
+        17,
+        "ROAD"
+      ],
+      [
+        58,
+        62,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "7 Circuit House Road, Flat A9, Eastern Manoshi, Ramna, Dhaka",
+    "entities": [
+      [
+        0,
+        1,
+        "HOUSE"
+      ],
+      [
+        2,
+        20,
+        "ROAD"
+      ],
+      [
+        27,
+        29,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "7/1, RK Mission Road, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        5,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "7/7, Bangladesh Bank Officers Quarter, Road 26, Block K, Banani, Dhaka",
+    "entities": [
+      [
+        39,
+        46,
+        "ROAD"
+      ],
+      [
+        54,
+        55,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "70, Outer Circular Road, Bora Moghbazar, Dhaka - 1217",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        4,
+        23,
+        "ROAD"
+      ],
+      [
+        49,
+        53,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "71, Jawad towar opposite of Eidgah field Dhaka -1216, Mirpur 1",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        48,
+        52,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "73/3 Madrasha Road, West Trimohoni, (Banasree Meradia Bazar), Dhaka 1219",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        5,
+        18,
+        "ROAD"
+      ],
+      [
+        68,
+        72,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "730/B, West Kazipara, Boubazar, Baitur Rob Masjid Goli, Mirpur 2, Dhaka",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        32,
+        54,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "76/2/E/24, North Jatrabari, Bibir Bagicha, Rojonigondha Road, Jheelpar, Dhaka",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        43,
+        60,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "76/A, Mama Store, Jonaki Road, Mirpur 1",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        18,
+        29,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "77, East Basabo, Sabujbagh, Dhaka - 1214",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        36,
+        40,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "77/2/E, Green House, West Vashantek, Dhaka Cantonment, Dhaka-1206",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        61,
+        65,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "78 No House, Central Road, Dhanmondi",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        13,
+        25,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "79, Old Thana Road, North Badda, Gulshan, Dhaka",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        4,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "8 Abbas Garden Road, Near Mohakhali Flyover, Dhaka, SEBPO Office",
+    "entities": [
+      [
+        0,
+        1,
+        "HOUSE"
+      ],
+      [
+        2,
+        19,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "8/1 Larmoni Street, Wari",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        4,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "8/4 Block C, Lalmatia, Dhaka",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        10,
+        11,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "81/6 Indira Road, (Tejgaon College Chatrabus Mosque)er Goli",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        5,
+        16,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "842 Prembagan, Ashkona, Dakhinkhan, Dhaka-1230",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        42,
+        46,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "85 Barontek, Dhaka Cantonment, Dhaka 1206",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        37,
+        41,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "9-C, House: 390/A, Road: 11 (ঘাটপার), Block-C, Bashundhara R/A, Dhaka",
+    "entities": [
+      [
+        5,
+        17,
+        "HOUSE"
+      ],
+      [
+        19,
+        27,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "90/C, Shekertek 6 No. Road, Shamoly Housing",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        16,
+        26,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "928 Shahidbag, Shantinagar, Motijheel, 2 Tala Bam Pash, Dhaka 1217",
+    "entities": [
+      [
+        0,
+        3,
+        "HOUSE"
+      ],
+      [
+        62,
+        66,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "93/3A Golartek, Darus Salam Thana, Mirpur-1, Dhaka 1216",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        51,
+        55,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "93/5, Moneshwar Road, Jigatola, Hazaribagh, Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "961/1 Outer Circular Road, opposite Rajarbagh Police Line Gate 3, Al-Mutmainnah Maa O Shishu Hospital Goli, Dhaka-1217",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        6,
+        25,
+        "ROAD"
+      ],
+      [
+        114,
+        118,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "A A Rashayan Shilpa LTD, West Wind Point (2nd Floor), Cha-89/4 & 89/5, Progati Sharani, North Badda, Bir Uttam Rafiqul Islam Avenue, Dhaka-1212",
+    "entities": [
+      [
+        42,
+        43,
+        "FLOOR"
+      ],
+      [
+        54,
+        62,
+        "HOUSE"
+      ],
+      [
+        101,
+        131,
+        "ROAD"
+      ],
+      [
+        139,
+        143,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Abokash Villa, 181/A, Flat 5C, Middle Paikpara, Mirpur-1, Dhaka-1216",
+    "entities": [
+      [
+        15,
+        20,
+        "HOUSE"
+      ],
+      [
+        27,
+        29,
+        "FLAT"
+      ],
+      [
+        64,
+        68,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Adabor, Monsurabad 12, House No 107, Flat D1",
+    "entities": [
+      [
+        32,
+        35,
+        "HOUSE"
+      ],
+      [
+        42,
+        44,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Aftabnagar, Block D, Lake View Road, Sector 1, House No 37,39, Flat No A7",
+    "entities": [
+      [
+        18,
+        19,
+        "BLOCK"
+      ],
+      [
+        21,
+        35,
+        "ROAD"
+      ],
+      [
+        56,
+        61,
+        "HOUSE"
+      ],
+      [
+        71,
+        73,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Aftabnagar, Road 03, Block F, House 53, Sector 1, Dhaka",
+    "entities": [
+      [
+        12,
+        19,
+        "ROAD"
+      ],
+      [
+        27,
+        28,
+        "BLOCK"
+      ],
+      [
+        36,
+        38,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Ahmadbag 2nd len basabo 135/3/A-1",
+    "entities": [
+      [
+        9,
+        16,
+        "ROAD"
+      ],
+      [
+        24,
+        33,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Amjad Villa, 24 Number House, 6th Floor, Lalbagh 8 No Goli (Opposite of Lalbagh Kella), Dhaka",
+    "entities": [
+      [
+        13,
+        15,
+        "HOUSE"
+      ],
+      [
+        30,
+        31,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "Andorkillah, CPDL Sirajudillah Road, Paragon City Building, Flat No 10C, Chittagong",
+    "entities": [
+      [
+        13,
+        35,
+        "ROAD"
+      ],
+      [
+        68,
+        71,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Anirban Mart, House 17, Road 5, Block A, Mirpur original 10, (Opposite to Rupali Community Center)",
+    "entities": [
+      [
+        20,
+        22,
+        "HOUSE"
+      ],
+      [
+        24,
+        30,
+        "ROAD"
+      ],
+      [
+        38,
+        39,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "AnnA's Makeover & School of Beautification, House#375/1 (1st floor), D.I.T Road, West Rampura, Dhaka-1219, Bangladesh",
+    "entities": [
+      [
+        44,
+        55,
+        "HOUSE"
+      ],
+      [
+        57,
+        58,
+        "FLOOR"
+      ],
+      [
+        71,
+        79,
+        "ROAD"
+      ],
+      [
+        101,
+        105,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Apsara 73/B, Flat-2A, Road-06, Banani DOHS, Dhaka",
+    "entities": [
+      [
+        7,
+        11,
+        "HOUSE"
+      ],
+      [
+        18,
+        20,
+        "FLAT"
+      ],
+      [
+        22,
+        29,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Austhayee Thikana, 235/8, Shahid Shamsul Haq Road, Jhautola, Comilla Sadar, Comilla",
+    "entities": [
+      [
+        19,
+        24,
+        "HOUSE"
+      ],
+      [
+        26,
+        49,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Avenue #5, Block #C, Line #16, House #25/2, Mirpur-11, Dhaka",
+    "entities": [
+      [
+        21,
+        29,
+        "ROAD"
+      ],
+      [
+        38,
+        42,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Avenue 6, Road 11, House 817, Mirpur DOHS, Dhaka",
+    "entities": [
+      [
+        0,
+        8,
+        "ROAD"
+      ],
+      [
+        25,
+        28,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Azimpur Govt Quarter (Opposite to EDEN College), Building No-32, Flat-6/C",
+    "entities": [
+      [
+        61,
+        63,
+        "HOUSE"
+      ],
+      [
+        70,
+        71,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "BTI Sattar Manjil (C-4), 33 KB Abdur Sattar Road, Rahamatgonj, Jamal Khan, চট্টগ্রাম",
+    "entities": [
+      [
+        25,
+        27,
+        "HOUSE"
+      ],
+      [
+        28,
+        48,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "BTI THE EMPORIUM, Flat No # 10-C, Level # 10, 14/1 Mirpur Rd, Shyamoli, Dhaka",
+    "entities": [
+      [
+        23,
+        25,
+        "FLAT"
+      ],
+      [
+        46,
+        50,
+        "HOUSE"
+      ],
+      [
+        51,
+        60,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Bagdad Apon Nibash, Lift 6, Road 5, House A/10, Main Road, Shamoly Housing 2nd Project, Adabor, Dhaka-1207",
+    "entities": [
+      [
+        28,
+        34,
+        "ROAD"
+      ],
+      [
+        36,
+        46,
+        "HOUSE"
+      ],
+      [
+        102,
+        106,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Baitul Aman Moshjid er goli, Haque Pharmacy r pichoner 10 tola building er 3 tolai, Paterbag, Shonirakhra, Dhaka",
+    "entities": [
+      [
+        0,
+        27,
+        "ROAD"
+      ],
+      [
+        55,
+        57,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Bali Arched Shopping Mall, 3rd Floor, 29 No Shop, Chawkbazar, Chottogram",
+    "entities": [
+      [
+        27,
+        28,
+        "FLOOR"
+      ],
+      [
+        38,
+        40,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Banasree H Block, Road No 4, House No 24, Flat No 6B, Dhaka",
+    "entities": [
+      [
+        18,
+        27,
+        "ROAD"
+      ],
+      [
+        38,
+        40,
+        "HOUSE"
+      ],
+      [
+        50,
+        52,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Banasree, Block D, Road 8/3, House: Radiant Krishnachura, Banasree, Dhaka",
+    "entities": [
+      [
+        16,
+        17,
+        "BLOCK"
+      ],
+      [
+        19,
+        27,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Banasree, G Block, Road 5, House 27",
+    "entities": [
+      [
+        19,
+        25,
+        "ROAD"
+      ],
+      [
+        33,
+        35,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Basa 49/23 (Vhai Vhai Vila), 6 No. Road, Jonota Bag (Polashpur), Sonirakhra",
+    "entities": [
+      [
+        5,
+        10,
+        "HOUSE"
+      ],
+      [
+        29,
+        39,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Basa number 570/571, Flat- B6, Shamim Shoroni, West Shewrapara. Sopno Outlet er Goli.",
+    "entities": [
+      [
+        12,
+        19,
+        "HOUSE"
+      ],
+      [
+        27,
+        29,
+        "FLAT"
+      ],
+      [
+        64,
+        84,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Bashundhara Abashik Elaka, Rani Avenue, D Block, House 528/D",
+    "entities": [
+      [
+        27,
+        38,
+        "ROAD"
+      ],
+      [
+        55,
+        60,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Bashundhara R/A, Block F, Road 12, Building 86",
+    "entities": [
+      [
+        23,
+        24,
+        "BLOCK"
+      ],
+      [
+        26,
+        33,
+        "ROAD"
+      ],
+      [
+        44,
+        46,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Bashundhara Residential Area, Rani Avenue, Block D, House 524",
+    "entities": [
+      [
+        30,
+        41,
+        "ROAD"
+      ],
+      [
+        49,
+        50,
+        "BLOCK"
+      ],
+      [
+        58,
+        61,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Basundhara R/A, Block-C, Road-11, House-390/A, NSU Road, Ghatpaar",
+    "entities": [
+      [
+        25,
+        32,
+        "ROAD"
+      ],
+      [
+        40,
+        45,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Basundhara, Block E, Road 17, House 338, Rupayan Lake Castle, Building 4, Apt. R2",
+    "entities": [
+      [
+        18,
+        19,
+        "BLOCK"
+      ],
+      [
+        21,
+        28,
+        "ROAD"
+      ],
+      [
+        36,
+        39,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Beside Police Plaza, Aziz Villa BA-A/3, Flat B-3",
+    "entities": [
+      [
+        32,
+        38,
+        "HOUSE"
+      ],
+      [
+        45,
+        46,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Bijoy Tower, 6/B, Boundary Road, Mymensingh",
+    "entities": [
+      [
+        13,
+        16,
+        "HOUSE"
+      ],
+      [
+        18,
+        31,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Bismillah Bhaban, 109/2, Paschim Barnatec, Pallabi, Dhaka Cantonment, Dhaka - 1206",
+    "entities": [
+      [
+        18,
+        23,
+        "HOUSE"
+      ],
+      [
+        78,
+        82,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Bldg no 4, Flat no 10A, Navana City Dale, Mirpur 15 (Rakeen City এর পাশে)",
+    "entities": [
+      [
+        8,
+        9,
+        "HOUSE"
+      ],
+      [
+        19,
+        22,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Block # F, Road # 2, House # 10/12, Banasree, Rampura, Dhaka-1219",
+    "entities": [
+      [
+        11,
+        19,
+        "ROAD"
+      ],
+      [
+        29,
+        34,
+        "HOUSE"
+      ],
+      [
+        61,
+        65,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Block - A, 6 Number, Road Number 6, House No 2, Mirpur (Mirpur Stadium, , Swimming Pool er Pichone)",
+    "entities": [
+      [
+        21,
+        34,
+        "ROAD"
+      ],
+      [
+        45,
+        46,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Block - F, Road - 15/A, House - 525, Bashundhara R/A, Dhaka",
+    "entities": [
+      [
+        11,
+        22,
+        "ROAD"
+      ],
+      [
+        32,
+        35,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Block C, Road 2, Bari 15/16, Mirpur 2",
+    "entities": [
+      [
+        6,
+        7,
+        "BLOCK"
+      ],
+      [
+        9,
+        15,
+        "ROAD"
+      ],
+      [
+        17,
+        27,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Block I, Road 2, House 33, Bashundhara R/A, Dhaka",
+    "entities": [
+      [
+        6,
+        7,
+        "BLOCK"
+      ],
+      [
+        9,
+        15,
+        "ROAD"
+      ],
+      [
+        23,
+        25,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Block-C, Road-3, House No-4, Mirpur-1, Dhaka-1216",
+    "entities": [
+      [
+        9,
+        15,
+        "ROAD"
+      ],
+      [
+        26,
+        27,
+        "HOUSE"
+      ],
+      [
+        45,
+        49,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Block-J, Road-N05, House-12, Eastern Housing Phase-02, Rupnagar, Pallabi, Mirpur, Dhaka-1216",
+    "entities": [
+      [
+        9,
+        17,
+        "ROAD"
+      ],
+      [
+        25,
+        27,
+        "HOUSE"
+      ],
+      [
+        88,
+        90,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Block: D, Road: 5, House: 16, Dhaka Uddan, Mohammadpur",
+    "entities": [
+      [
+        10,
+        17,
+        "ROAD"
+      ],
+      [
+        19,
+        28,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Building - Sajek Valley, House 17/E, Road 11, Block G (Beside Sports Grill Football Ground), Bashundhara R/A, Dhaka-1229",
+    "entities": [
+      [
+        31,
+        35,
+        "HOUSE"
+      ],
+      [
+        37,
+        44,
+        "ROAD"
+      ],
+      [
+        52,
+        53,
+        "BLOCK"
+      ],
+      [
+        116,
+        120,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Building 9, Flat 301, Japan Garden City, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        9,
+        10,
+        "HOUSE"
+      ],
+      [
+        17,
+        20,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Building Name: Monen Shah, House 68, Road 17/E, Banani, Dhaka, Bangladesh, 1213",
+    "entities": [
+      [
+        33,
+        35,
+        "HOUSE"
+      ],
+      [
+        37,
+        46,
+        "ROAD"
+      ],
+      [
+        75,
+        79,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Building No 13, Flat 15, Bailey Square, Bailey Road",
+    "entities": [
+      [
+        12,
+        14,
+        "HOUSE"
+      ],
+      [
+        21,
+        23,
+        "FLAT"
+      ],
+      [
+        40,
+        51,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Building No 376, 60 Feet Barak Mollar Mor, Mirpur 2, Dhaka",
+    "entities": [
+      [
+        12,
+        15,
+        "HOUSE"
+      ],
+      [
+        17,
+        24,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Building No-2, Class: D-1, Flat No: 13/C, opposite Rajarbag Police Telecom Building, , Thana: Motijheel, Dhaka",
+    "entities": [
+      [
+        12,
+        13,
+        "HOUSE"
+      ],
+      [
+        32,
+        34,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Building no 37. Flat no D-4. Azimpur Government Quarter. Zone A. Azimpur Road. Opposite to Human Science College. Dhaka 1205. (Near Nilkhet Bus Stand.)",
+    "entities": [
+      [
+        24,
+        25,
+        "FLAT"
+      ],
+      [
+        120,
+        124,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Building-6, NHA Garden City (Opposite of Adabar Thana), Ring Road, Shamoli",
+    "entities": [
+      [
+        9,
+        10,
+        "HOUSE"
+      ],
+      [
+        56,
+        65,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "CHA-107, Uttar Badda, near Badda General Hospital, Badda, Dhaka-1212",
+    "entities": [
+      [
+        0,
+        7,
+        "HOUSE"
+      ],
+      [
+        64,
+        68,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Cambria, 23/13, Khilji Road, Shaymoli, Dhaka",
+    "entities": [
+      [
+        9,
+        14,
+        "HOUSE"
+      ],
+      [
+        16,
+        27,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Cantonment Public School and College, DOHS, Chittagong, Road-1, House-1, Flat-B3",
+    "entities": [
+      [
+        56,
+        62,
+        "ROAD"
+      ],
+      [
+        78,
+        80,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Chayaneer, Flat No E-7, Mohammadpur, Pachlaish Thana, Kutub Vahban's Opposite Goli",
+    "entities": [
+      [
+        19,
+        20,
+        "FLAT"
+      ],
+      [
+        67,
+        82,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Chittagong, Rahman Nagar, Hill View, Road 4, Block A, Panchlaish Thana",
+    "entities": [
+      [
+        37,
+        43,
+        "ROAD"
+      ],
+      [
+        51,
+        52,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "Ctg, Kulshi, Kulshi Colony Yakub Future Park Housing Society, 3 No. Road, 19 No. Building, M S Heritage",
+    "entities": [
+      [
+        62,
+        72,
+        "ROAD"
+      ],
+      [
+        74,
+        76,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "DM Bhaban 2, House 48, Road 1, Block D, Bosila Garden City, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        19,
+        21,
+        "HOUSE"
+      ],
+      [
+        23,
+        29,
+        "ROAD"
+      ],
+      [
+        37,
+        38,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "Dag No. 1091, Holding No. 485, Khilbarirtek, Vatara, Dhaka - 1212",
+    "entities": [
+      [
+        26,
+        29,
+        "HOUSE"
+      ],
+      [
+        61,
+        65,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Dhaka, Mohammadpur, Shakertaq Roffiqe Housing, Road 8, House 14",
+    "entities": [
+      [
+        47,
+        53,
+        "ROAD"
+      ],
+      [
+        61,
+        63,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Dhaka, North Badda, Gupipara, Hazi Kumur Uddin Road, House No: Cha-132, Flat No: 4B",
+    "entities": [
+      [
+        30,
+        51,
+        "ROAD"
+      ],
+      [
+        63,
+        70,
+        "HOUSE"
+      ],
+      [
+        77,
+        79,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Dhaka, Shamoli -3, Apon Heights, 27/1/B, Flat-7C, Lift-7",
+    "entities": [
+      [
+        33,
+        39,
+        "HOUSE"
+      ],
+      [
+        46,
+        48,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Dhaka, Uttara Sector 7, Road 9, House 14",
+    "entities": [
+      [
+        24,
+        30,
+        "ROAD"
+      ],
+      [
+        38,
+        40,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Dhanmondi 12/A Road, House Number 79, Flat Number A/6",
+    "entities": [
+      [
+        34,
+        36,
+        "HOUSE"
+      ],
+      [
+        43,
+        49,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Dhanmondi, Road no: 32, House no: 22/A, Flat no: 103",
+    "entities": [
+      [
+        11,
+        22,
+        "ROAD"
+      ],
+      [
+        34,
+        38,
+        "HOUSE"
+      ],
+      [
+        45,
+        47,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Dokhin Bonusri, Khilgaw, Road no 7, Block B, House 80",
+    "entities": [
+      [
+        25,
+        34,
+        "ROAD"
+      ],
+      [
+        42,
+        43,
+        "BLOCK"
+      ],
+      [
+        51,
+        53,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Domino Place, House No 2, Flat No A/6, Siddheshwari (beside Anarkoli Market), Dhaka",
+    "entities": [
+      [
+        23,
+        24,
+        "HOUSE"
+      ],
+      [
+        34,
+        35,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "E5 Dome Inno Nasir, 116 DIT Road, Malibagh, Dhaka",
+    "entities": [
+      [
+        20,
+        23,
+        "HOUSE"
+      ],
+      [
+        24,
+        32,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "East Hazipara 2nd Lane, Rampura, Dhaka, House No. 62, Flat No. B4",
+    "entities": [
+      [
+        14,
+        22,
+        "ROAD"
+      ],
+      [
+        50,
+        52,
+        "HOUSE"
+      ],
+      [
+        63,
+        65,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "East Shewrapara, Iqbal Road, 398/1",
+    "entities": [
+      [
+        17,
+        27,
+        "ROAD"
+      ],
+      [
+        29,
+        34,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Eastern Banakunja-2, Block A, House no: 17, Road no: 6, Banasree, Dhaka",
+    "entities": [
+      [
+        27,
+        28,
+        "BLOCK"
+      ],
+      [
+        30,
+        42,
+        "HOUSE"
+      ],
+      [
+        44,
+        54,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Eastern Oyesis, 17/A, Mymensingh Road, Banglamotor, Dhaka",
+    "entities": [
+      [
+        16,
+        20,
+        "HOUSE"
+      ],
+      [
+        22,
+        37,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Eastern Panthochaya, Opposite BRB Hospital, Kolabagan, Building No 4, Flat No 1002",
+    "entities": [
+      [
+        67,
+        68,
+        "HOUSE"
+      ],
+      [
+        78,
+        82,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Epic Saleh Cielo, Flat: D-06, Katalganj R/A, Road - 4, Chawkbazar, Chittagong",
+    "entities": [
+      [
+        24,
+        25,
+        "FLAT"
+      ],
+      [
+        45,
+        53,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Erra Tower, Level 7, 1/B Outer Circular Road, Mogbazar, Dhaka",
+    "entities": [
+      [
+        21,
+        24,
+        "HOUSE"
+      ],
+      [
+        25,
+        44,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Esquire Tower, Mridha Bari Madrasa Street, Court Gaon, Munshiganj Sadar, , Munshiganj -1500",
+    "entities": [
+      [
+        15,
+        41,
+        "ROAD"
+      ],
+      [
+        87,
+        91,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Extended Pallabi, Gate - 6, Plot - 1B/2F, Abedin's Heritage, Flat B4",
+    "entities": [
+      [
+        35,
+        40,
+        "HOUSE"
+      ],
+      [
+        66,
+        68,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "F Rahman Billa, 3rd Floor, Narayanganj, Khanpur, North Road, Bow Bazar",
+    "entities": [
+      [
+        16,
+        17,
+        "FLOOR"
+      ],
+      [
+        49,
+        59,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "F-10A, H-04, R-03, Sector -07, Uttara",
+    "entities": [
+      [
+        7,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat # 5A, Green Valley Apt, 147/1 Green Road, (beside Agora) Dhanmondi, Dhaka 1205",
+    "entities": [
+      [
+        7,
+        9,
+        "FLAT"
+      ],
+      [
+        29,
+        34,
+        "HOUSE"
+      ],
+      [
+        35,
+        45,
+        "ROAD"
+      ],
+      [
+        79,
+        83,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat #7B, Plot #24/2, Gafur Tower, Golartek, Darus Salam, Mirpur-1, Dhaka-1216, (near to Darus Salam Thana)",
+    "entities": [
+      [
+        6,
+        8,
+        "FLAT"
+      ],
+      [
+        74,
+        78,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat - 3B, Elite House Tower, Baitul Aqsa Jame Masjid Road, Shantibag, Paradogair, Matuail, Demra, Dhaka-1362",
+    "entities": [
+      [
+        7,
+        9,
+        "FLAT"
+      ],
+      [
+        30,
+        58,
+        "ROAD"
+      ],
+      [
+        105,
+        109,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat - 5D, House - 36, Road 14/A, Dhanmondi , (Opposite side of Bangladesh Medical emergency gate)",
+    "entities": [
+      [
+        7,
+        9,
+        "FLAT"
+      ],
+      [
+        23,
+        32,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat 2B, ADDL Wasi, 149 Abed Dhali Road, Lake Circus, Kalabagan, Dhaka., Opposite Kalabagan Math, beside MK Electronics, near the 17 Ward Commissioner's signboard.",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        20,
+        23,
+        "HOUSE"
+      ],
+      [
+        24,
+        39,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat 3/B, House 31, Road 15, Sector 12, Uttara, Dhaka 1230",
+    "entities": [
+      [
+        5,
+        6,
+        "FLAT"
+      ],
+      [
+        16,
+        18,
+        "HOUSE"
+      ],
+      [
+        20,
+        27,
+        "ROAD"
+      ],
+      [
+        54,
+        58,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat 3F, House 45, Road 4A, Dhanmondi R/A, Dhaka 1209",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        15,
+        17,
+        "HOUSE"
+      ],
+      [
+        19,
+        26,
+        "ROAD"
+      ],
+      [
+        49,
+        53,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat 4A, House 82, Road 9/A, Dhanmondi, Dhaka",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        15,
+        17,
+        "HOUSE"
+      ],
+      [
+        19,
+        27,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat 4F, House 75, Road 11/A, Dhanmondi, Dhaka",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        15,
+        17,
+        "HOUSE"
+      ],
+      [
+        19,
+        28,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat 6/K, Building 5, Bonolata NHA Housing Complex, Lalmatia, Dhaka",
+    "entities": [
+      [
+        5,
+        6,
+        "FLAT"
+      ],
+      [
+        19,
+        20,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Flat 8B, House-44, London Tower, Road-12, Block-L, South Banasree",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        15,
+        17,
+        "HOUSE"
+      ],
+      [
+        33,
+        40,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat : 7A, House : 11/A, N.S. Avenue Road, Block : F, Sector : 1, Aftabnogor, Dhaka 1212 (Addar Mor, Cafe Lasana’s Building)",
+    "entities": [
+      [
+        7,
+        9,
+        "FLAT"
+      ],
+      [
+        30,
+        41,
+        "ROAD"
+      ],
+      [
+        84,
+        88,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat A/5, Relative Living Behind Abul Hotel, 41/3 Malibagh Chowdhury Para, Dhaka-1219",
+    "entities": [
+      [
+        5,
+        6,
+        "FLAT"
+      ],
+      [
+        45,
+        49,
+        "HOUSE"
+      ],
+      [
+        81,
+        85,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat A2, Road 8, House 181, Block C, Bashundhara Residential Area, Dhaka",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        9,
+        15,
+        "ROAD"
+      ],
+      [
+        23,
+        26,
+        "HOUSE"
+      ],
+      [
+        34,
+        35,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "Flat A9, Akbar's Dream, Plot 4, Road 3, Block C, Section 2 (near the water tank), Mirpur, Dhaka",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        29,
+        30,
+        "HOUSE"
+      ],
+      [
+        32,
+        38,
+        "ROAD"
+      ],
+      [
+        46,
+        47,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "Flat A9, House 384(Nehar Villa), Road 10, Adabor, Baitul Aman Housing Society, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        15,
+        18,
+        "HOUSE"
+      ],
+      [
+        33,
+        40,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat B/5, House No. 2, Road No. 4, Nasirabad Housing Society, Chittagong",
+    "entities": [
+      [
+        5,
+        6,
+        "FLAT"
+      ],
+      [
+        20,
+        21,
+        "HOUSE"
+      ],
+      [
+        23,
+        33,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat B3, House 80, Road 6, Block B, Monsurabad Housing Society, Adabor, Dhaka",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        15,
+        17,
+        "HOUSE"
+      ],
+      [
+        19,
+        25,
+        "ROAD"
+      ],
+      [
+        33,
+        34,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "Flat D3, House 64, Road 9A, Dhanmondi",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        15,
+        17,
+        "HOUSE"
+      ],
+      [
+        19,
+        26,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat L8/G, Northern Qamar Garden, 314-345 Chanmari Road, Lalkhan Bazar, Chittagong",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        34,
+        41,
+        "HOUSE"
+      ],
+      [
+        42,
+        55,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat No - A8, House No - 63, Block - G, Road No - 14/1, Niketon, Gulshan 1, Dhaka-1212",
+    "entities": [
+      [
+        10,
+        12,
+        "FLAT"
+      ],
+      [
+        40,
+        54,
+        "ROAD"
+      ],
+      [
+        82,
+        86,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat No 11/B, Judges Quarter (Opposite of Vicarunnesa School Azimpur Branch), 102 Azimpur Road, Azimpur, Dhaka",
+    "entities": [
+      [
+        8,
+        10,
+        "FLAT"
+      ],
+      [
+        78,
+        81,
+        "HOUSE"
+      ],
+      [
+        82,
+        94,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat No. 1306, House-12B (Tista-1), Road 2/C, Block-A, Sector-18, Uttara, Dhaka",
+    "entities": [
+      [
+        9,
+        13,
+        "FLAT"
+      ],
+      [
+        36,
+        44,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat No. 6/B (7th floor), House No. 4, Road No. 8 (Suchona Model Town), Bosila, Mohammadpur, Dhaka-1207",
+    "entities": [
+      [
+        9,
+        10,
+        "FLAT"
+      ],
+      [
+        14,
+        15,
+        "FLOOR"
+      ],
+      [
+        36,
+        37,
+        "HOUSE"
+      ],
+      [
+        39,
+        49,
+        "ROAD"
+      ],
+      [
+        99,
+        103,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat No. L - 3, Ramna Apartment Complex, 124/1 Bara Moghbazar, Dhaka - 1217",
+    "entities": [
+      [
+        9,
+        10,
+        "FLAT"
+      ],
+      [
+        32,
+        39,
+        "FLAT"
+      ],
+      [
+        41,
+        46,
+        "HOUSE"
+      ],
+      [
+        71,
+        75,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat no: 9D, Khulshi Titan, Road No: 01, South Khulshi R/A, Chittagong",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        28,
+        39,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat# A102, Karabi-14A, Road#04, Block#A, Rajuk Uttara Apartment Project, Uttara Sector 18, Dhaka",
+    "entities": [
+      [
+        6,
+        10,
+        "FLAT"
+      ],
+      [
+        24,
+        31,
+        "ROAD"
+      ],
+      [
+        65,
+        72,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Flat#5E, House#27, Road #2, Nasirabad Housing Society, Chittagong",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        9,
+        17,
+        "HOUSE"
+      ],
+      [
+        19,
+        26,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat-15/D, Floor no-15, Building no-10, Zone-B, Azimpur Govt. Quarter",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        36,
+        38,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Flat-203, House-62, Road-9/A, Dhanmondi, Dhaka-1205",
+    "entities": [
+      [
+        5,
+        8,
+        "FLAT"
+      ],
+      [
+        16,
+        18,
+        "HOUSE"
+      ],
+      [
+        20,
+        28,
+        "ROAD"
+      ],
+      [
+        47,
+        51,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat-7B, Merry Heights, Plot-6, Ave:1, Mirpur 11 (Kalshi Road)",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        29,
+        30,
+        "HOUSE"
+      ],
+      [
+        50,
+        61,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat-7C, House-604, YK Assort Villa, North Shahjahanpur, Dhaka",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        15,
+        18,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Flat-8A, House-38, Road-3, Block-B, Aftabnagar, Badda, Dhaka",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        15,
+        17,
+        "HOUSE"
+      ],
+      [
+        19,
+        25,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat-A 1, 25,26 Mirror Orient, Road-8, Dhanmondi, Dhaka-1205",
+    "entities": [
+      [
+        5,
+        6,
+        "FLAT"
+      ],
+      [
+        13,
+        15,
+        "HOUSE"
+      ],
+      [
+        31,
+        37,
+        "ROAD"
+      ],
+      [
+        56,
+        60,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat-B3, House-09, Road-7/C, Sector-03, Uttara, Dhaka",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        15,
+        17,
+        "HOUSE"
+      ],
+      [
+        19,
+        27,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat-BC 103, Tower-3, Mak Tower, Matabbar Road, North Badda, Dhaka-1212",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        33,
+        46,
+        "ROAD"
+      ],
+      [
+        67,
+        71,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Flat-E9, Building-2, Rowshan Hamlet Tower 5, 712 Nayanagar, , Baridhara J Block, Vatara (Besides UITS University, opposite of Noyanagar Kacha Bazar)",
+    "entities": [
+      [
+        5,
+        7,
+        "FLAT"
+      ],
+      [
+        18,
+        19,
+        "HOUSE"
+      ],
+      [
+        47,
+        48,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Flat: 2A, Crystal Dream, Road No.: 4, Adarshanagar, Badda Link Road, Badda, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "FLAT"
+      ],
+      [
+        25,
+        36,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Flat: 3/B, House: 172, Nahar Vila, North Ibrahimpur, Borobari Shorok, Mirpur 14, Dhaka",
+    "entities": [
+      [
+        6,
+        7,
+        "FLAT"
+      ],
+      [
+        11,
+        21,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Flat: 403, Block: A, SEL Shopnodhara, 99-99/1 Eskaton, Dhaka",
+    "entities": [
+      [
+        6,
+        9,
+        "FLAT"
+      ],
+      [
+        38,
+        45,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Flat: 8/A, Building no:3, NHA Garden City, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        6,
+        7,
+        "FLAT"
+      ],
+      [
+        23,
+        24,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Flat: A1, House: 54, Road: 3, Block: B, Niketon, Gulshan",
+    "entities": [
+      [
+        6,
+        8,
+        "FLAT"
+      ],
+      [
+        10,
+        19,
+        "HOUSE"
+      ],
+      [
+        21,
+        28,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Foysal Tower, Flat No. 9B, House No. 3, Road No. 5, Block-B, Dhaka Uddyan,, Mohammadpur, Dhaka-1207",
+    "entities": [
+      [
+        23,
+        25,
+        "FLAT"
+      ],
+      [
+        40,
+        50,
+        "ROAD"
+      ],
+      [
+        95,
+        99,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "G-1, Building No: 10, BCSIR, R/A, Elephant Road, Dhaka",
+    "entities": [
+      [
+        18,
+        20,
+        "HOUSE"
+      ],
+      [
+        34,
+        47,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "GLG, Flora Maria, Plot: 71/2 and 71/3, Pioneer Road, Kakrail. রমনা থানার উল্টা পাশে ইনসাইট সাইকো-সোশাল কেয়ার এন্ড রিসার্চ এর গল",
+    "entities": [
+      [
+        24,
+        28,
+        "HOUSE"
+      ],
+      [
+        39,
+        51,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Green Model Town, Avenue Road, Block-B, H:7-8, Manda, Mugdha, Dhaka-1214",
+    "entities": [
+      [
+        18,
+        29,
+        "ROAD"
+      ],
+      [
+        42,
+        45,
+        "HOUSE"
+      ],
+      [
+        68,
+        72,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Green Model Town, Flat - 8(C), House - 8, Road - 7/A, Section - B, Mugda/Manda, Dhaka",
+    "entities": [
+      [
+        25,
+        26,
+        "FLAT"
+      ],
+      [
+        42,
+        52,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Green Road, beside Green Life Hospital, House No. 33, 33/1, Flat No. H13",
+    "entities": [
+      [
+        0,
+        10,
+        "ROAD"
+      ],
+      [
+        50,
+        58,
+        "HOUSE"
+      ],
+      [
+        69,
+        72,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Green View, Holding No: 228/B/3/A, Malek Mattabor Road, Namapara, Boat Ghat, Khilkhet, Dhaka 1229",
+    "entities": [
+      [
+        24,
+        33,
+        "HOUSE"
+      ],
+      [
+        35,
+        54,
+        "ROAD"
+      ],
+      [
+        93,
+        97,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Gulshan 1, Road-5, Block-D, House No. 1, Dhaka",
+    "entities": [
+      [
+        11,
+        17,
+        "ROAD"
+      ],
+      [
+        28,
+        39,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Gulshan 2, Road 107, House 20, Flat 1C",
+    "entities": [
+      [
+        11,
+        19,
+        "ROAD"
+      ],
+      [
+        27,
+        29,
+        "HOUSE"
+      ],
+      [
+        36,
+        38,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "H # 1, R # 9, Block # A, Mirpur-1, Dhaka-1216",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        7,
+        12,
+        "ROAD"
+      ],
+      [
+        41,
+        45,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "H 23, R 1, Sector 6, Flat A/3",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        9,
+        "ROAD"
+      ],
+      [
+        26,
+        27,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "H 383, R 6, Baridhara DOHS",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        7,
+        10,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "H# 14, R# 2, B# C, Metro Housing, Bosila, Dhaka",
+    "entities": [
+      [
+        0,
+        5,
+        "HOUSE"
+      ],
+      [
+        7,
+        11,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "H#29, R#08, DIT Project, Merul Badda, Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        10,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "H#313/A, 2nd Floor (South), R#21, New DOHS, Mohakhal",
+    "entities": [
+      [
+        0,
+        7,
+        "HOUSE"
+      ],
+      [
+        9,
+        10,
+        "FLOOR"
+      ],
+      [
+        28,
+        32,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "H#313/A, 2nd Floor (South), R#21, New DOHS, Mohakhali",
+    "entities": [
+      [
+        0,
+        7,
+        "HOUSE"
+      ],
+      [
+        9,
+        10,
+        "FLOOR"
+      ],
+      [
+        28,
+        32,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "H-06, Road-13, Block-L, South Banasree, Khilgaon, Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        13,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "H-07, R-2/2, Block-L, Banani, Dhaka",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        11,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "H-19/A, Road-23, Block-B, Banani, Dhaka",
+    "entities": [
+      [
+        2,
+        6,
+        "HOUSE"
+      ],
+      [
+        8,
+        15,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "H-54, Road -8, Block -B, Adorshopara, Bawnia (West), Uttara-1230",
+    "entities": [
+      [
+        0,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        13,
+        "ROAD"
+      ],
+      [
+        60,
+        64,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "H-57/A, Road-4/A, Dhanmondi, Dhaka 1209",
+    "entities": [
+      [
+        2,
+        6,
+        "HOUSE"
+      ],
+      [
+        8,
+        16,
+        "ROAD"
+      ],
+      [
+        35,
+        39,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "H3, R3, Abdullahbag Mosjid Road, North Badda, Dhaka",
+    "entities": [
+      [
+        0,
+        2,
+        "HOUSE"
+      ],
+      [
+        8,
+        31,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "H:51, R:18, S:7, Uttara, Dhaka 1230",
+    "entities": [
+      [
+        2,
+        4,
+        "HOUSE"
+      ],
+      [
+        6,
+        10,
+        "ROAD"
+      ],
+      [
+        31,
+        35,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "HOUSE - 79, WESTERN VIEW, Flat - A22, Dhanmondi-8/A, (Almas super shop er sathe)",
+    "entities": [
+      [
+        8,
+        10,
+        "HOUSE"
+      ],
+      [
+        33,
+        36,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Hajj Finance Company Limited, Fazlur Rahman Center (1st floor), 72 Dilkusha C/A, Dhaka-1000",
+    "entities": [
+      [
+        52,
+        53,
+        "FLOOR"
+      ],
+      [
+        87,
+        91,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Hakim Homes, Flat-2/D, Haque Saheber Goli (Near by Central Hospital), Adabor, Shaymoli, Dhaka",
+    "entities": [
+      [
+        18,
+        19,
+        "FLAT"
+      ],
+      [
+        23,
+        41,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Haterpol, Motalab Plaza, Block B, Flat No 1111, Dhaka",
+    "entities": [
+      [
+        31,
+        32,
+        "BLOCK"
+      ],
+      [
+        42,
+        46,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Holding no-1924, Bando Bakari Goli, Ward-71, South Manda, Dhaka-1214",
+    "entities": [
+      [
+        0,
+        15,
+        "HOUSE"
+      ],
+      [
+        17,
+        34,
+        "ROAD"
+      ],
+      [
+        64,
+        68,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Holding no: E-10 (Dominant 7 star), Block E, Aftabnagar, Dhaka",
+    "entities": [
+      [
+        12,
+        16,
+        "HOUSE"
+      ],
+      [
+        42,
+        43,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "Home: 1/26/1/1, Mugda Thanar Goli, Dhaka",
+    "entities": [
+      [
+        6,
+        12,
+        "HOUSE"
+      ],
+      [
+        16,
+        33,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Hoque Heritage, 68 Panchlaish, Road No. 9, Opposite of Medical Staff Quarter,, Panchlaish, Chittagong",
+    "entities": [
+      [
+        16,
+        18,
+        "HOUSE"
+      ],
+      [
+        31,
+        41,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House # 21, Road # 06, Sector # 12, Uttara, Dhaka-1230",
+    "entities": [
+      [
+        8,
+        10,
+        "HOUSE"
+      ],
+      [
+        12,
+        21,
+        "ROAD"
+      ],
+      [
+        50,
+        54,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House # 296, Road # 13, Block # C, Flat # 7A (SE), Bashundhara R/A",
+    "entities": [
+      [
+        8,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        22,
+        "ROAD"
+      ],
+      [
+        42,
+        44,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "House # 38, Road # 02, Sector # 09, Uttara, Dhaka",
+    "entities": [
+      [
+        8,
+        10,
+        "HOUSE"
+      ],
+      [
+        12,
+        21,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House # 5 & 7, Road # 13, Lake View Society, North Badda, Dhaka-1212",
+    "entities": [
+      [
+        8,
+        9,
+        "HOUSE"
+      ],
+      [
+        15,
+        24,
+        "ROAD"
+      ],
+      [
+        64,
+        68,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House # 580, Road # 8, Avenue # 4, Mirpur DOHS",
+    "entities": [
+      [
+        8,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        21,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House #03, Flat #C2, Road #18, Sector #04, Uttara",
+    "entities": [
+      [
+        7,
+        9,
+        "HOUSE"
+      ],
+      [
+        17,
+        19,
+        "FLAT"
+      ],
+      [
+        21,
+        29,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House #18, Road #3, Block-A, Banasree, Dhaka",
+    "entities": [
+      [
+        7,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House #46 (Flat-5B), Road #01, Sector #10, Uttara, Dhaka",
+    "entities": [
+      [
+        7,
+        9,
+        "HOUSE"
+      ],
+      [
+        16,
+        18,
+        "FLAT"
+      ],
+      [
+        21,
+        29,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House #6, Road #6, Polaspur, Soniakhra, Dhaka",
+    "entities": [
+      [
+        7,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House - 1/3, Gate - 2, Moinul Road, Dhaka Cantonment",
+    "entities": [
+      [
+        8,
+        11,
+        "HOUSE"
+      ],
+      [
+        23,
+        34,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House - 45, Lake Circus, Kalabagan, Dhaka-1205",
+    "entities": [
+      [
+        8,
+        10,
+        "HOUSE"
+      ],
+      [
+        42,
+        46,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House - 74/B/1, Road - 14, Kollanpur, Mirpur, Dhaka",
+    "entities": [
+      [
+        8,
+        14,
+        "HOUSE"
+      ],
+      [
+        16,
+        25,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House -14/A, Road -8, 3rd Floor, Block -D, Mirpur -11",
+    "entities": [
+      [
+        7,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        20,
+        "ROAD"
+      ],
+      [
+        22,
+        23,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "House -20, Road-7, Dhanmondi, Dhaka",
+    "entities": [
+      [
+        7,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House -21, Road -121, Gulshan-1, Dhaka",
+    "entities": [
+      [
+        7,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House -69, Road -14, Sec-13, Uttara",
+    "entities": [
+      [
+        7,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        19,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 02, Road 28, Sector 7, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 10, Road 1, Lane 2, Block H, Hali Shahar Housing Estate, Chattogram",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        18,
+        24,
+        "ROAD"
+      ],
+      [
+        32,
+        33,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 10, Road 1, Lane 2, Block H, Hali Shahar Housing Estate, Chottogram",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        18,
+        24,
+        "ROAD"
+      ],
+      [
+        32,
+        33,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 10/GA, Road No: 2, Shymoli, Dhaka",
+    "entities": [
+      [
+        6,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        23,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 11/1, Block #E, Road #07, Rampura, Banasree, Dhaka, নোট: বাসার মেন গেট দিয়ে ঢুকে হাতের ডান পাশে লিফটের ৬ নাম্বার ফ্ল্যাট G-7",
+    "entities": [
+      [
+        0,
+        10,
+        "HOUSE"
+      ],
+      [
+        22,
+        30,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 12, Block D, Road 4, South Banasree, Gorun, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        16,
+        17,
+        "BLOCK"
+      ],
+      [
+        19,
+        25,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 128, Road 7, Block B, Pallabi Section 12, Mirpur-12",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        17,
+        "ROAD"
+      ],
+      [
+        25,
+        26,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 14, Road 2, Kallayanpur, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        16,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 16, Road 13, Sec 03, Uttara",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 17, Road 17, Sec 11, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 17, Road 20, Sector 4, Uttara, Dhaka-1230",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ],
+      [
+        43,
+        47,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House 18, Road 6, Block F, Rampura Banasree, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        16,
+        "ROAD"
+      ],
+      [
+        24,
+        25,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 18, Road 7, Nikunja 2",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        16,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 187/4, Titas Road, Banasree",
+    "entities": [
+      [
+        0,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        23,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 19 (Chowdhury Bhaban), Road 1, Block B, Nobodoy Housing, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        29,
+        35,
+        "ROAD"
+      ],
+      [
+        43,
+        44,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 21, Lift 1, Road 23, Sector 10",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        18,
+        25,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 227 (Apartment 5B, Lift 5), Road 15, Lake Road, Mohakhali DOHS",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        21,
+        23,
+        "FLAT"
+      ],
+      [
+        34,
+        41,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 23, Road 2, Nasirabad Housing Society",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        16,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 240/4B, Road 10/A (Old 19), West Dhanmondi, Dhaka",
+    "entities": [
+      [
+        0,
+        12,
+        "HOUSE"
+      ],
+      [
+        14,
+        23,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 253/254, Road 18, Block C, Section 6, Mirpur, Dhaka",
+    "entities": [
+      [
+        0,
+        13,
+        "HOUSE"
+      ],
+      [
+        15,
+        22,
+        "ROAD"
+      ],
+      [
+        30,
+        31,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 26/1, Road-4, Block-D, Mirpur 6",
+    "entities": [
+      [
+        0,
+        10,
+        "HOUSE"
+      ],
+      [
+        12,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 27, Road 5, Sector 10, Flat no A8, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        16,
+        "ROAD"
+      ],
+      [
+        37,
+        39,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "House 29, Road 3B, Mohammadia Housing Limited, Mohammad",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 31, Avenue 1, Block-B, Mirpur-13, 3rd floor",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        18,
+        "ROAD"
+      ],
+      [
+        40,
+        41,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "House 32, Road 14, Sector 11, Uttara",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 339, Road 3, Adabor, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 353, Shaheed Ramiz Uddin Road, Amtola Bazar (Beside of BRTA), Mirpur-10, Dhaka-1216",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        35,
+        "ROAD"
+      ],
+      [
+        85,
+        89,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House 36, Road 15, Sector 11, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 36/1, Lane 2, Block A, Section 6, Mirpur, Dhaka",
+    "entities": [
+      [
+        0,
+        10,
+        "HOUSE"
+      ],
+      [
+        12,
+        18,
+        "ROAD"
+      ],
+      [
+        26,
+        27,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 38, Block E, Lake View Avenue Road, Sector 2, Aftabnagar, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        16,
+        17,
+        "BLOCK"
+      ],
+      [
+        19,
+        35,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 38, Road 02, Sector 9, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 40, Apt 2E, Road 1, Jasimuddin Avenue, Sector 3, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        18,
+        24,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 40, Flat B4, Metropolitan Cooperative Housing Society Ltd, , Babar Road, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        15,
+        17,
+        "FLAT"
+      ],
+      [
+        67,
+        77,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 40, Road 18, Sector 11, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 44, Road 3, Block E, Flat 602, Banasree",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        16,
+        "ROAD"
+      ],
+      [
+        24,
+        25,
+        "BLOCK"
+      ],
+      [
+        32,
+        35,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "House 45, Road 01, Sector 9, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 45, Road 6, 3rd Floor, Samne, Sekertek, Adabor, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        16,
+        "ROAD"
+      ],
+      [
+        18,
+        19,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "House 47, Road 29, Mirpur Rupnagar Abashik, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 48 & 52, Road 05, Block B, Monsurabad R/A, Dhaka",
+    "entities": [
+      [
+        6,
+        13,
+        "HOUSE"
+      ],
+      [
+        15,
+        22,
+        "ROAD"
+      ],
+      [
+        30,
+        31,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 5, Road 4, Block A, Chunrima Dhaka Uddan, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        6,
+        7,
+        "HOUSE"
+      ],
+      [
+        9,
+        15,
+        "ROAD"
+      ],
+      [
+        23,
+        24,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 52, Road 10, Sector 10, Flat 4A, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ],
+      [
+        35,
+        37,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "House 565, Road 9, Avenue 3, Mirpur DOHS Link Road",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        19,
+        27,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 590, Lane 10, Purbachol Road, North Badda, Dhaka",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 60 Kha 7, Block-G, Road-9, Bonosree, Khilgaon, Near Eastern Bonobithi Market, Dhaka",
+    "entities": [
+      [
+        6,
+        14,
+        "HOUSE"
+      ],
+      [
+        25,
+        31,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 62, Seraj Garden, Flat 4B, West Malibagh, Just besides Rajuk Quarter",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        29,
+        31,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "House 635, Road 3, H block Basundhara R/A, Dhaka",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        17,
+        "ROAD"
+      ],
+      [
+        27,
+        28,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 66, Road 8/A, Dhanmondi, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 66, Road 8A, Dhanmondi, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 69, Road No 16, Sector 11, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 8+9, Road 4, Block C, Mirpur 2, Dhaka 1216, (Mirpur 2 Water Tank Area)",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        17,
+        "ROAD"
+      ],
+      [
+        25,
+        26,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 8, Road 23/C, Asad Tower, Gulshan-1, Dhaka",
+    "entities": [
+      [
+        6,
+        7,
+        "HOUSE"
+      ],
+      [
+        9,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 82, Lift-2, Road-01, Block B, Mohanagar Project, Hatirjheel, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        18,
+        25,
+        "ROAD"
+      ],
+      [
+        33,
+        34,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 9, Road no 1/A, South Pallabi, Mirpur 11, Dhaka",
+    "entities": [
+      [
+        6,
+        7,
+        "HOUSE"
+      ],
+      [
+        9,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 93/3, Floor 4, Road 8, Block C, Niketon, Gulshan, Dhaka",
+    "entities": [
+      [
+        0,
+        10,
+        "HOUSE"
+      ],
+      [
+        21,
+        27,
+        "ROAD"
+      ],
+      [
+        35,
+        36,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "House 968, Road 23, Block K, Bashundhara, Dhaka-1229",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        18,
+        "ROAD"
+      ],
+      [
+        26,
+        27,
+        "BLOCK"
+      ],
+      [
+        48,
+        52,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House 98-99, Road-14, Block-G, Bashundhara, Dhaka",
+    "entities": [
+      [
+        6,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House 981, Road - Post Office Goli, Middle Badda, Dhaka",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        18,
+        34,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House C/36, Road #2, Block #D, Bashundhara R/A, Dhaka",
+    "entities": [
+      [
+        0,
+        10,
+        "HOUSE"
+      ],
+      [
+        12,
+        19,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House No -7/L, Abdur Sadeque Road, Block-D, Flat-B3, Bashundhara R/A",
+    "entities": [
+      [
+        10,
+        13,
+        "HOUSE"
+      ],
+      [
+        15,
+        33,
+        "ROAD"
+      ],
+      [
+        49,
+        51,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "House No 1/18, Flat No B5, Park Palace, Humayun Road, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        9,
+        13,
+        "HOUSE"
+      ],
+      [
+        23,
+        25,
+        "FLAT"
+      ],
+      [
+        40,
+        52,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House No 3 (2nd Floor), Road No 7, Shakhertak, Adabor, Dhaka 1207",
+    "entities": [
+      [
+        9,
+        10,
+        "HOUSE"
+      ],
+      [
+        12,
+        13,
+        "FLOOR"
+      ],
+      [
+        24,
+        33,
+        "ROAD"
+      ],
+      [
+        61,
+        65,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House No. 107, Flat D1, Monsurabad 12, Adabor, Dhaka",
+    "entities": [
+      [
+        10,
+        13,
+        "HOUSE"
+      ],
+      [
+        20,
+        22,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "House No. 11, Road No. 9, Block-B, Bosila, West Dhanmondi, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        10,
+        12,
+        "HOUSE"
+      ],
+      [
+        14,
+        24,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House No. 16, Road No. 6/A, Apartment No. 2A, Nobodoy Housing Society, Mohammadpur, Dhaka-1207",
+    "entities": [
+      [
+        10,
+        12,
+        "HOUSE"
+      ],
+      [
+        14,
+        26,
+        "ROAD"
+      ],
+      [
+        42,
+        44,
+        "FLAT"
+      ],
+      [
+        90,
+        94,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House No. 1C, Rahima House, Beverly Hills Residential Area, Chatteswari Road, Chawk Bazar, Chattogram",
+    "entities": [
+      [
+        0,
+        12,
+        "HOUSE"
+      ],
+      [
+        60,
+        76,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House No. 207, Road No. 4, D Block, Eastern Housing, Pallabi",
+    "entities": [
+      [
+        10,
+        13,
+        "HOUSE"
+      ],
+      [
+        15,
+        25,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House No. 34 & 36, Lift - 3, Road No. 23, Block - D, Mirpur 12, Nearest of Muslim Bazar",
+    "entities": [
+      [
+        10,
+        12,
+        "HOUSE"
+      ],
+      [
+        29,
+        40,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House No. 47, Road No. 4, Block E, Flat 7-A, Lift No. 6, Banasree, Rampura, Dhaka",
+    "entities": [
+      [
+        10,
+        12,
+        "HOUSE"
+      ],
+      [
+        14,
+        24,
+        "ROAD"
+      ],
+      [
+        32,
+        33,
+        "BLOCK"
+      ],
+      [
+        40,
+        41,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "House No. 56, Haji Akram Uddin Mollah Road, Rana Market, Shahjahan Sir Road, Hazaribagh, Dhaka",
+    "entities": [
+      [
+        10,
+        12,
+        "HOUSE"
+      ],
+      [
+        14,
+        42,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House No: 38/8 (Future Nilima), Road No: 4, Shyamoli 1207, Dhaka",
+    "entities": [
+      [
+        10,
+        14,
+        "HOUSE"
+      ],
+      [
+        32,
+        42,
+        "ROAD"
+      ],
+      [
+        53,
+        57,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House no - 17/19, Road no - 4, Satmasjid Housing, Bhanga Masjid, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        11,
+        16,
+        "HOUSE"
+      ],
+      [
+        18,
+        29,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House no --20/6, Block -C, Tajmahal Road, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        11,
+        15,
+        "HOUSE"
+      ],
+      [
+        27,
+        40,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House no 22A, Road 112, Gulshan 2, Dhaka-1212",
+    "entities": [
+      [
+        0,
+        12,
+        "HOUSE"
+      ],
+      [
+        14,
+        22,
+        "ROAD"
+      ],
+      [
+        41,
+        45,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House no 26, Road no 4, Dhaka Cantonment",
+    "entities": [
+      [
+        9,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        22,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House no 29, Road no 1, Metro View Housing Society, Diyabari, Uttara, Dhaka. Near Uttara North Metro Station",
+    "entities": [
+      [
+        9,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        22,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House no 37, Block C, Main Road, Aftabnagar, Dhaka",
+    "entities": [
+      [
+        9,
+        11,
+        "HOUSE"
+      ],
+      [
+        19,
+        20,
+        "BLOCK"
+      ],
+      [
+        22,
+        31,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House no 6 (2nd floor), Road no 8, Sector 11, Uttara, Dhaka",
+    "entities": [
+      [
+        9,
+        10,
+        "HOUSE"
+      ],
+      [
+        12,
+        13,
+        "FLOOR"
+      ],
+      [
+        24,
+        33,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House no. 4, Flat no. 4A, Dhanmondi 7 number, Dhaka",
+    "entities": [
+      [
+        10,
+        11,
+        "HOUSE"
+      ],
+      [
+        22,
+        23,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "House no: 10, Defense House, 7th Floor, No: 1 Tafalia Main Road, Uludaha, Badaldi, Ward no: 52, Turag, Dhaka (Beside Uludaha Police Fari & opposite DESCO office)",
+    "entities": [
+      [
+        0,
+        12,
+        "HOUSE"
+      ],
+      [
+        29,
+        30,
+        "FLOOR"
+      ],
+      [
+        46,
+        63,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House no: 324, Lane no: 05, 1st Floor Left Side, Baridhara DOHS, ঢাকা",
+    "entities": [
+      [
+        0,
+        13,
+        "HOUSE"
+      ],
+      [
+        15,
+        26,
+        "ROAD"
+      ],
+      [
+        28,
+        29,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "House no: 468, Road no: 31, Mohakhali DOHS",
+    "entities": [
+      [
+        0,
+        13,
+        "HOUSE"
+      ],
+      [
+        15,
+        26,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House no: 82/15, 8(C), House name: Satubondhon, Baruntak, Dhaka Cantonment, Dhaka-1206",
+    "entities": [
+      [
+        10,
+        15,
+        "HOUSE"
+      ],
+      [
+        82,
+        86,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House# 346/A, Road# 18, Tilpapara Main Road, Tilpapara, Khilgaon, Dhaka-1219",
+    "entities": [
+      [
+        0,
+        12,
+        "HOUSE"
+      ],
+      [
+        14,
+        22,
+        "ROAD"
+      ],
+      [
+        72,
+        76,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House# 62/1 (4th floor), Haji goli (old khankah masjid-এর বিপরীতে), West Agargaon, Sher-e-Bangla Nagar, Dhaka-1207",
+    "entities": [
+      [
+        0,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        14,
+        "FLOOR"
+      ],
+      [
+        25,
+        34,
+        "ROAD"
+      ],
+      [
+        110,
+        114,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House#28, Road#2, Block#C, Rampura, Banasree, Dhaka",
+    "entities": [
+      [
+        0,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        16,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House#39/4c, DLL Solaimon Villa, North Pirerbagh, 60 feet (Maiker Goli), Dhaka",
+    "entities": [
+      [
+        0,
+        11,
+        "HOUSE"
+      ],
+      [
+        50,
+        57,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House#F25, Road#S06, Block#F, Mirpur Eastern Housing, Pallabi Phase 2, Dhaka",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        19,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House- 391, Road- 14, Savar DOHS",
+    "entities": [
+      [
+        7,
+        10,
+        "HOUSE"
+      ],
+      [
+        12,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House- Dream Tower, House- 397/1, Flat- 7C, Road- 1, Ward- 49, Kawla Namapara, PO- Khilkhet, Dakshinkhan, Dhaka-1229",
+    "entities": [
+      [
+        27,
+        32,
+        "HOUSE"
+      ],
+      [
+        40,
+        42,
+        "FLAT"
+      ],
+      [
+        44,
+        51,
+        "ROAD"
+      ],
+      [
+        112,
+        116,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House-11, Road - Avenue 2, Block-C, Mirpur-12, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        17,
+        25,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-15, Road-10, Sector-9, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-151/1, Road-2, Mohammadia Housing Limited, Mohammadpur, Dhaka 1207",
+    "entities": [
+      [
+        6,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        19,
+        "ROAD"
+      ],
+      [
+        68,
+        72,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House-17, Road-5, Block-H, Mirpur-2, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        16,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-17, Road-K.M Azom Lane, Satrowja, Puran Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        17,
+        28,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-25, Road-10, Sector-10, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-286 (Dom-Inno Casabalia), Road-8/A, West Dhanmondi, Dhanmondi-15, Dhaka-1209",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        32,
+        40,
+        "ROAD"
+      ],
+      [
+        78,
+        82,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House-3, Road-2, Block-B, Arifabad Housing Society, Mirpur-11, Section-7, Dhaka",
+    "entities": [
+      [
+        6,
+        7,
+        "HOUSE"
+      ],
+      [
+        9,
+        15,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-303, road-19/b, lift-5, Mohakhali DOHS",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-33, Road-11, Sector-14, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-34, Road-17/A, Block-E, Banani, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        19,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-35/A,Road-10/A,Dhanmondi, dhaka",
+    "entities": [
+      [
+        6,
+        10,
+        "HOUSE"
+      ],
+      [
+        11,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-39, Road-13/15, Block-D, Banani, ঢাকা",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-45,Road-03, block-b, section-12, pallabi, Metro pilar- 195",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        9,
+        16,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-46/48, Road-19, Nikunja-02, Dhaka",
+    "entities": [
+      [
+        6,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-49, Road-21, Block-D, Section-12, Pallabi, Mirpur",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-63-64 (3rd Floor), Road-04, Block-T, Section-06, Mirpur, Dhaka-1216",
+    "entities": [
+      [
+        6,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        14,
+        "FLOOR"
+      ],
+      [
+        25,
+        32,
+        "ROAD"
+      ],
+      [
+        69,
+        73,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House-63/1, Flat-A-4, Road-7/A, Dhanmondi R/A, Dhaka",
+    "entities": [
+      [
+        6,
+        10,
+        "HOUSE"
+      ],
+      [
+        17,
+        18,
+        "FLAT"
+      ],
+      [
+        22,
+        30,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-64, Road-9, Block-E, South Banasree, Dhaka",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        16,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-7, Road-12, Sector-7, Uttara, Dhaka",
+    "entities": [
+      [
+        6,
+        7,
+        "HOUSE"
+      ],
+      [
+        9,
+        16,
+        "ROAD"
+      ],
+      [
+        25,
+        26,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "House-7, Road-2, Block-H, Halishahar, Chattogram",
+    "entities": [
+      [
+        6,
+        7,
+        "HOUSE"
+      ],
+      [
+        9,
+        15,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-72, Road-18, Block-A, Flat-204, Banani, Dhaka 1213",
+    "entities": [
+      [
+        6,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        17,
+        "ROAD"
+      ],
+      [
+        33,
+        36,
+        "FLAT"
+      ],
+      [
+        52,
+        56,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House-825, Road-4A, Baitul Aman Housing Society, Adabor, Mohammadpur",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House-924 (Dom-Inno Encanto), Flat-B4, Shohidbagh (Opposite of Rajarbagh Police Lines Gate No 2), Dhaka-1217",
+    "entities": [
+      [
+        6,
+        9,
+        "HOUSE"
+      ],
+      [
+        35,
+        37,
+        "FLAT"
+      ],
+      [
+        104,
+        108,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House-E/13, Flat-C/6, Road-7, Arambag Residential Area, Mirpur-7, Dhaka",
+    "entities": [
+      [
+        0,
+        10,
+        "HOUSE"
+      ],
+      [
+        17,
+        18,
+        "FLAT"
+      ],
+      [
+        22,
+        28,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 09, Road: 1, Block: D, Housing Estate, Kushtia",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 1, Road: 6A, Ranavola, Uttara, Khan Vila, Mintu Shaheber Basha",
+    "entities": [
+      [
+        0,
+        8,
+        "HOUSE"
+      ],
+      [
+        10,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 1/3, Road: 09, Priyanka Runway City, (near Baunia), Uttara 1230",
+    "entities": [
+      [
+        0,
+        10,
+        "HOUSE"
+      ],
+      [
+        12,
+        20,
+        "ROAD"
+      ],
+      [
+        66,
+        70,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House: 13 (5th Floor), Road: 05, Block: Kha, Shekhertek, PC Culture Housing Society, , Adabor, Dhaka - 1207",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        12,
+        "FLOOR"
+      ],
+      [
+        23,
+        31,
+        "ROAD"
+      ],
+      [
+        103,
+        107,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "House: 15, Road: 1, Block: G, Rampura Bonosree",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 169/170, Road: 10, Block: C, Mirpur 6",
+    "entities": [
+      [
+        0,
+        14,
+        "HOUSE"
+      ],
+      [
+        16,
+        24,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 26, Road: 2, Block: D, Sector: 1, Aftab Nagar",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        18,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 315/A, Road 15 (Old), Dhanmondi, Keari Plazar Goli",
+    "entities": [
+      [
+        0,
+        12,
+        "HOUSE"
+      ],
+      [
+        14,
+        21,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 316/1/B(4th Floor), Shantipur, South Goran, Khilgaon, Dhaka-1219. (Main road of Shantipur Mosjid)",
+    "entities": [
+      [
+        7,
+        14,
+        "HOUSE"
+      ],
+      [
+        15,
+        16,
+        "FLOOR"
+      ],
+      [
+        74,
+        83,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 35, Road: 02, Arunapalli, C & B, Savar, Dhaka",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        19,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 63, Road: 7/B, Block: H, Banani, Dhaka",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        20,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 70, Block: J, Road: 12/4, South Bonoshree, Goran, Dhaka",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        21,
+        31,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 76, Road: 12, Block: E, Banani, Dhaka",
+    "entities": [
+      [
+        0,
+        9,
+        "HOUSE"
+      ],
+      [
+        11,
+        19,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 88/B, Road: 14, Block: H, South Banasree, Dhaka",
+    "entities": [
+      [
+        0,
+        11,
+        "HOUSE"
+      ],
+      [
+        13,
+        21,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "House: 9/6, Flat: 9A, Block: D, Lalmatia",
+    "entities": [
+      [
+        0,
+        10,
+        "HOUSE"
+      ],
+      [
+        18,
+        20,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "I Block, Lane 13, House 6, Halishahar, Chattogram",
+    "entities": [
+      [
+        9,
+        16,
+        "ROAD"
+      ],
+      [
+        24,
+        25,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Ispahane Nodedhara Abasik Alaka, Road No. 1, House No. 20, Keraniganj, Dhaka",
+    "entities": [
+      [
+        33,
+        43,
+        "ROAD"
+      ],
+      [
+        55,
+        57,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Ja 93/1, Middle Badda, Link Road, Dhaka",
+    "entities": [
+      [
+        0,
+        7,
+        "HOUSE"
+      ],
+      [
+        23,
+        32,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Japan Garden City, Building 5, 505, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        28,
+        29,
+        "HOUSE"
+      ],
+      [
+        31,
+        32,
+        "HOUSE"
+      ],
+      [
+        33,
+        34,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Japan Garden City, Mohammadpur, Building Number 8, Flat Number 506",
+    "entities": [
+      [
+        48,
+        49,
+        "HOUSE"
+      ],
+      [
+        56,
+        62,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Jhulonbari, 5th Floor, Tantibazar, Dhaka - 1100",
+    "entities": [
+      [
+        12,
+        13,
+        "FLOOR"
+      ],
+      [
+        43,
+        47,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Jigatola PWD Officers' Quarter, Building No: 4, Flat No: B-1 (Opposite of Sunami Restaurant), Hazaribag Road, Dhanmondi, Dhaka",
+    "entities": [
+      [
+        45,
+        46,
+        "HOUSE"
+      ],
+      [
+        53,
+        55,
+        "FLAT"
+      ],
+      [
+        94,
+        108,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Jumairah Levana Holding, Flat No #4C, House No #17, Road No #2, , Thana Panchlaish, Katalgonj, Chattogram",
+    "entities": [
+      [
+        30,
+        32,
+        "FLAT"
+      ],
+      [
+        52,
+        62,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "K/72/3, Flat-1/B, Shahjadpur Lake Side Road, Gulshan-2. Behind Ankur Restaurant. Mariam Tower-1, near Indian High Commission.",
+    "entities": [
+      [
+        0,
+        6,
+        "HOUSE"
+      ],
+      [
+        13,
+        14,
+        "FLAT"
+      ],
+      [
+        18,
+        43,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Ka-20/2a, Kalachandpur, Dhaka-1212",
+    "entities": [
+      [
+        0,
+        8,
+        "HOUSE"
+      ],
+      [
+        30,
+        34,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Kalabagan Lake Circus 3rd Lane, Mega Mohona, House No. 4, Dhaka",
+    "entities": [
+      [
+        22,
+        30,
+        "ROAD"
+      ],
+      [
+        55,
+        56,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Karim Villa, House: 738, Road: 4, Block: B, Chandgaon R/A, Chattogram",
+    "entities": [
+      [
+        13,
+        23,
+        "HOUSE"
+      ],
+      [
+        25,
+        32,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Kha 72/B, Amin Tower, Namapara Road, Khilkhet",
+    "entities": [
+      [
+        0,
+        8,
+        "HOUSE"
+      ],
+      [
+        22,
+        35,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Khaja Mention, 186/5, Tejkuni Para, Dhaka-1215",
+    "entities": [
+      [
+        15,
+        20,
+        "HOUSE"
+      ],
+      [
+        42,
+        46,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Kitchen World Ltd., Happy Rahman Plaza, 1st Floor, 25-27 Kazi Nazrul Islam Avenue, , Banglamotor Signal, Dhaka-1205",
+    "entities": [
+      [
+        40,
+        41,
+        "FLOOR"
+      ],
+      [
+        51,
+        56,
+        "HOUSE"
+      ],
+      [
+        57,
+        81,
+        "ROAD"
+      ],
+      [
+        111,
+        115,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Lake Valley R/A, Nuria Madrasha Road, House No -5, Road-4, Foy’s Lake, Chattogram",
+    "entities": [
+      [
+        17,
+        36,
+        "ROAD"
+      ],
+      [
+        48,
+        49,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Lakeview Apartment, House #88/17, Barontek, Dhaka Cantonment, Pallabi, Dhaka - 1206",
+    "entities": [
+      [
+        27,
+        32,
+        "HOUSE"
+      ],
+      [
+        79,
+        83,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Lalbagh 30/3 BC Das Street, Lalbagh Thana",
+    "entities": [
+      [
+        8,
+        12,
+        "HOUSE"
+      ],
+      [
+        13,
+        26,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Lecturer, Department of Pharmacy, Bangladesh University (Permanent Campus), 5/B, Beribandh Main Road, Adabar, Mohammadpur, Dhaka 1207",
+    "entities": [
+      [
+        76,
+        79,
+        "HOUSE"
+      ],
+      [
+        81,
+        100,
+        "ROAD"
+      ],
+      [
+        129,
+        133,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Lift Two, at the entrance of 11 Number Goli, 3rd Floor North Side, 88/3 Kadamtala,, Basabo, Shabujbag, Dhaka",
+    "entities": [
+      [
+        29,
+        31,
+        "HOUSE"
+      ],
+      [
+        32,
+        43,
+        "ROAD"
+      ],
+      [
+        45,
+        46,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "MAK Sadaf Tower, Flat 4B, 17 Chandmari Road, Lalkhan Bazar (Opposite to Ward Commissioner Office), PS: Khulshi, District: Chittagong",
+    "entities": [
+      [
+        22,
+        24,
+        "FLAT"
+      ],
+      [
+        26,
+        28,
+        "HOUSE"
+      ],
+      [
+        29,
+        43,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Madani Avenue, 100 Feet Road, Vatara, Dhaka 1212",
+    "entities": [
+      [
+        0,
+        13,
+        "ROAD"
+      ],
+      [
+        15,
+        18,
+        "HOUSE"
+      ],
+      [
+        44,
+        48,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Matuail High School Road (beside IFIC Bank), Jatrabari, Dhaka 1362",
+    "entities": [
+      [
+        0,
+        24,
+        "ROAD"
+      ],
+      [
+        62,
+        66,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Merul Badda, D.I.T Project, Road No. 14, House No. 40, Dhaka",
+    "entities": [
+      [
+        28,
+        39,
+        "ROAD"
+      ],
+      [
+        51,
+        53,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Metro Rail er 10 no Pilar er Pase, Merto View Housing Society, House 31, , Road 01, Diyabari, Uttara",
+    "entities": [
+      [
+        69,
+        71,
+        "HOUSE"
+      ],
+      [
+        75,
+        82,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Mirpur 1, behind Mukto Bangla Market, Block-F, Road-3, House-35, Corner house, , 2nd floor, left-side flat",
+    "entities": [
+      [
+        47,
+        53,
+        "ROAD"
+      ],
+      [
+        61,
+        63,
+        "HOUSE"
+      ],
+      [
+        81,
+        82,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "Mirpur 10, Kazipara, Al Aqsha Mosjid Goli, Kazipara 6 Number Goli, House Name: Moitrii Bhaban, Flat No: 2H",
+    "entities": [
+      [
+        21,
+        41,
+        "ROAD"
+      ],
+      [
+        100,
+        102,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Mirpur 11, Navana Probani Redgedale Building 06, Flat No C13",
+    "entities": [
+      [
+        45,
+        47,
+        "HOUSE"
+      ],
+      [
+        57,
+        60,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Mirpur 2 Number, 60 Feet, Borobag Tampu Stand, House Number 47, Lift-3, D4",
+    "entities": [
+      [
+        17,
+        24,
+        "ROAD"
+      ],
+      [
+        60,
+        62,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Mirpur 2, Block: A, Road Number: 3, House Number: 2/1, House Name: (অবকাশ)",
+    "entities": [
+      [
+        20,
+        34,
+        "ROAD"
+      ],
+      [
+        50,
+        53,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Mirpur DOHS, House No. 828, Road 12, Avenue 6, House Name: Suvro",
+    "entities": [
+      [
+        23,
+        26,
+        "HOUSE"
+      ],
+      [
+        37,
+        45,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Mirpur Shawrapara Bus Stand, Ashraf Ali School Goli, 865/1",
+    "entities": [
+      [
+        29,
+        51,
+        "ROAD"
+      ],
+      [
+        53,
+        58,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Mirpur, West Kazipara, Exam Hospital Lane, House No-643, Level-2, Mirpur-1216",
+    "entities": [
+      [
+        23,
+        41,
+        "ROAD"
+      ],
+      [
+        52,
+        55,
+        "HOUSE"
+      ],
+      [
+        73,
+        77,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Mirpur-12, Block-B, Road No-9, House No-153 (4th Floor, Back Side), Dhaka",
+    "entities": [
+      [
+        20,
+        29,
+        "ROAD"
+      ],
+      [
+        40,
+        43,
+        "HOUSE"
+      ],
+      [
+        45,
+        46,
+        "FLOOR"
+      ]
+    ]
+  },
+  {
+    "text": "Mirpur-13, Block-B, Road-4, House-43, Shapla Kunjo, Dhaka-1216",
+    "entities": [
+      [
+        20,
+        26,
+        "ROAD"
+      ],
+      [
+        34,
+        36,
+        "HOUSE"
+      ],
+      [
+        58,
+        62,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Mission daffodil, Flat#9b, 1803/2115 Zakir Hossain Road by lane, East Nasirabad, Chittagong",
+    "entities": [
+      [
+        23,
+        25,
+        "FLAT"
+      ],
+      [
+        27,
+        36,
+        "HOUSE"
+      ],
+      [
+        37,
+        63,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Moddho Pirer Bagh, Paka Mosque, 60 Feet Road, Mirpur 2, Dhaka",
+    "entities": [
+      [
+        32,
+        34,
+        "HOUSE"
+      ],
+      [
+        35,
+        44,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Mogbazar Modhubag, Khejur Gacer Goli, Basa 16/D, Dhaka",
+    "entities": [
+      [
+        19,
+        36,
+        "ROAD"
+      ],
+      [
+        43,
+        47,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Mohamimid Medical Center, Madani Avenue, Vatara, Dhaka 1212",
+    "entities": [
+      [
+        26,
+        39,
+        "ROAD"
+      ],
+      [
+        55,
+        59,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Mohammadi Housing Limited, Road No. 2, House No. 67, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        27,
+        37,
+        "ROAD"
+      ],
+      [
+        49,
+        51,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Mohammadia homes lohar gate,road 1 house 4, Mohammadpur, Dhaka",
+    "entities": [
+      [
+        28,
+        34,
+        "ROAD"
+      ],
+      [
+        41,
+        42,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Mohammadpur Chadd Uddan, R 5, H 30/B",
+    "entities": [
+      [
+        25,
+        28,
+        "ROAD"
+      ],
+      [
+        32,
+        36,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Mohammadpur Mohammadia Housing Society, Road no. 02, House no. 256",
+    "entities": [
+      [
+        40,
+        51,
+        "ROAD"
+      ],
+      [
+        63,
+        66,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Mohammadpur Shakher Tack, Road No: 8, House No: 48, Kushi Villa, Dhaka",
+    "entities": [
+      [
+        26,
+        36,
+        "ROAD"
+      ],
+      [
+        38,
+        50,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Mohammadpur, 40 feet, Shopnodhara Housing, 1 নম্বর রোড, 5 নম্বর বাসা (Moon Palace)",
+    "entities": [
+      [
+        13,
+        15,
+        "HOUSE"
+      ],
+      [
+        45,
+        54,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Mohammadpur, Dhaka Uddan, Road No. 2, Block B, House Eksho Bari",
+    "entities": [
+      [
+        26,
+        36,
+        "ROAD"
+      ],
+      [
+        44,
+        45,
+        "BLOCK"
+      ]
+    ]
+  },
+  {
+    "text": "Mohammadpur, Dhaka Udyan, Ekta Housing, Road No: 2, House No: 24, Diamond Tower",
+    "entities": [
+      [
+        40,
+        50,
+        "ROAD"
+      ],
+      [
+        52,
+        64,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Mounee Villa, Plot #70 & 70/1, Borobag, Mirpur-2, Dhaka 1216",
+    "entities": [
+      [
+        20,
+        29,
+        "HOUSE"
+      ],
+      [
+        56,
+        60,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Munda, Green Model Town, A Block, Road 13, House 17",
+    "entities": [
+      [
+        34,
+        41,
+        "ROAD"
+      ],
+      [
+        49,
+        51,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "N. S Nechha Garden, Flat 8D, Sha-115, Uttar Badda, Hasen Uddin Road(HAF General Hospital এর সামনে এসে, বামে ঢুকে ঢুকে Suktara Building-এর বিপরীতে ১ম বড় Apartment – Maa Vila-এর সাথে, বিল্ডিংয়ের নিচে একটি বিকাশের দোকান আছে)",
+    "entities": [
+      [
+        25,
+        27,
+        "FLAT"
+      ],
+      [
+        51,
+        67,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "N.S Siddique Tower, House#4/1, Road#11, Godakhali South Bishil, Mirpur-1, Dhaka-1216",
+    "entities": [
+      [
+        20,
+        29,
+        "HOUSE"
+      ],
+      [
+        31,
+        38,
+        "ROAD"
+      ],
+      [
+        80,
+        84,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "NHA Garden City, Building-03, Flat-2C, Shyamoli Ring Road, Dhaka",
+    "entities": [
+      [
+        26,
+        28,
+        "HOUSE"
+      ],
+      [
+        35,
+        37,
+        "FLAT"
+      ],
+      [
+        39,
+        57,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Nafiz castle, Home-1342, Road-13, Avenue-3, Mirpur DOHS, Dhaka",
+    "entities": [
+      [
+        14,
+        23,
+        "HOUSE"
+      ],
+      [
+        34,
+        42,
+        "ROAD"
+      ]
+    ]
+  },
+  {
+    "text": "Nandan Kanan, Lane 3, near Police Outpost, Holding No. 34, Buddhist Temple Road, Chattogram",
+    "entities": [
+      [
+        14,
+        20,
+        "ROAD"
+      ],
+      [
+        55,
+        57,
+        "HOUSE"
+      ]
+    ]
+  },
+  {
+    "text": "Nasir villa, Vatara central mosque road, Vatara, Dhaka-1212",
+    "entities": [
+      [
+        13,
+        39,
+        "ROAD"
+      ],
+      [
+        55,
+        59,
+        "POSTAL"
+      ]
+    ]
+  },
+  {
+    "text": "Nasirabad 1 No Housing Society, Equity Shabnam, Building No 27, Flat No B5, Chittagong",
+    "entities": [
+      [
+        60,
+        62,
+        "HOUSE"
+      ],
+      [
+        72,
+        74,
+        "FLAT"
+      ]
+    ]
+  },
+  {
+    "text": "Navana Interlinks Ltd. (Navana CNG Building), 205-207, Tejgaon I/A, GMG Moor, Dhaka-1308",
+    "entities": [
+      [
+        46,
+        53,
+        "HOUSE"
+      ],
+      [
+        84,
+        88,
+        "POSTAL"
+      ]
+    ]
+  }
+]
