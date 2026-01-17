@@ -9,8 +9,8 @@
     "dev": "tsc --watch",
     "test": "node dist/test.js",
     "prepublishOnly": "npm run build",
-    "postinstall": "python3 -m pip install -r requirements.txt --quiet 2>/dev/null || python -m pip install -r requirements.txt --quiet 2>/dev/null || echo 'Note: Install Python dependencies manually: pip install -r requirements.txt'",
-    "install-python-deps": "python3 -m pip install -r requirements.txt || python -m pip install -r requirements.txt"
+    "postinstall": "node scripts/postinstall.js",
+    "install-python-deps": "node scripts/postinstall.js"
   },
   "keywords": [
     "ai",
@@ -44,6 +44,7 @@
     "dist/",
     "src/",
     "python/",
+    "scripts/",
     "data/",
     "models/",
     "requirements.txt",
