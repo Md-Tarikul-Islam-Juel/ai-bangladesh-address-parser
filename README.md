@@ -561,20 +561,12 @@ See [LICENSE](LICENSE) for full terms.
 ## 📧 Support
 
 - **Issues:** [GitHub Issues](https://github.com/Md-Tarikul-Islam-Juel/ai-bangladesh-address-parser/issues)
-- **Documentation:** See `docs/` folder for detailed guides
-- **Email:** Contact the author for licensing inquiries
-
-## 🔗 Related
-
-- **Training Scripts:** See `training/train.py` for model training
-- **Python API:** See `python/api.py` for FastAPI REST API mode
-- **Test Scripts:** See `tests/simple_test.py` for examples
-- **Source Code:** See `src/` folder for Python implementation
+- **Package:** [npm Package](https://www.npmjs.com/package/ai-bangladesh-address-parser)
+- **Repository:** [GitHub Repository](https://github.com/Md-Tarikul-Islam-Juel/ai-bangladesh-address-parser)
 
 ## 📈 Version History
 
 - **1.0.0** - Initial release
-
   - Complete 9-stage extraction pipeline
   - **Fine-tuned spaCy NER model** trained on 21,810 real Bangladeshi addresses
   - Custom entity recognition for: HOUSE, ROAD, AREA, DISTRICT, POSTAL, FLAT, FLOOR, BLOCK
@@ -582,16 +574,9 @@ See [LICENSE](LICENSE) for full terms.
   - Postal code prediction (98%+ confidence)
   - High-performance optimizations (Trie, caching)
   - Support for all 8 divisions, 64 districts, 598 upazilas
-
-- 20ms latency (0.1ms cached)
-- Built-in caching (99% hit rate)
-- Trie-based lookups for speed
-
-### ✅ Offline-First
-
-- No API calls required
-- All data included in package
-- Works completely offline
+  - 20ms latency (0.1ms cached)
+  - Built-in caching (99% hit rate)
+  - 100% offline operation
 
 ---
 
