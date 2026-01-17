@@ -8,6 +8,7 @@
 import { PythonShell } from 'python-shell';
 import * as path from 'path';
 import * as fs from 'fs';
+import { execSync } from 'child_process';
 
 export interface ExtractedAddress {
   house_number?: string;
@@ -38,10 +39,14 @@ export interface ExtractionOptions {
 /**
  * Bangladesh Address Extractor
  * 
+ * Python is automatically detected and managed - no configuration needed!
+ * The package will find Python (python3, python, or py) automatically.
+ * 
  * @example
  * ```typescript
  * import { AddressExtractor } from 'ai-bangladesh-address-parser';
  * 
+ * // Python is automatically detected - zero configuration!
  * const extractor = new AddressExtractor();
  * const result = await extractor.extract('House 12, Road 5, Mirpur, Dhaka-1216');
  * console.log(result.components);
@@ -53,19 +58,56 @@ export class AddressExtractor {
   private pythonPath: string;
   private initialized: boolean = false;
 
-  constructor(options?: { pythonPath?: string; scriptPath?: string }) {
-    // Find Python script
-    const scriptPath = options?.scriptPath || path.join(__dirname, '../python/api.py');
-    this.pythonScriptPath = path.resolve(scriptPath);
+  /**
+   * Creates a new AddressExtractor instance.
+   * 
+   * Python is automatically detected and managed internally.
+   * No configuration needed - just create and use!
+   */
+  constructor() {
+    // Find Python script automatically
+    this.pythonScriptPath = path.resolve(path.join(__dirname, '../python/extract.py'));
 
-    // Find Python executable
-    this.pythonPath = options?.pythonPath || 'python3';
+    // Python is managed completely internally - automatically detected
+    // Tries python3, python, then py and verifies Python 3.9+
+    const detected = this.findPython();
+    if (detected) {
+      this.pythonPath = detected;
+    } else {
+      // Fallback to python3 (most common)
+      this.pythonPath = 'python3';
+    }
 
     // Verify Python script exists
     if (!fs.existsSync(this.pythonScriptPath)) {
       console.warn(`Warning: Python script not found at ${this.pythonScriptPath}`);
-      console.warn('Make sure the python/api.py file exists');
+      console.warn('Make sure the python/extract.py file exists');
     }
+  }
+
+  /**
+   * Auto-detect Python executable
+   */
+  private findPython(): string | null {
+    const pythonCommands = ['python3', 'python', 'py'];
+    
+    for (const cmd of pythonCommands) {
+      try {
+        const version = execSync(`${cmd} --version`, { encoding: 'utf8', stdio: 'pipe' });
+        const match = version.match(/(\d+)\.(\d+)/);
+        if (match) {
+          const major = parseInt(match[1]);
+          const minor = parseInt(match[2]);
+          if (major >= 3 && minor >= 9) {
+            return cmd;
+          }
+        }
+      } catch (e) {
+        // Try next command
+        continue;
+      }
+    }
+    return null;
   }
 
   /**
