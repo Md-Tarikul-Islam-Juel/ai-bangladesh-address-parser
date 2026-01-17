@@ -68,6 +68,7 @@ npm install ai-bangladesh-address-parser
 ```typescript
 import { AddressExtractor } from "ai-bangladesh-address-parser";
 
+// Python is automatically detected - no options needed!
 const extractor = new AddressExtractor();
 
 // Extract from single address
@@ -92,6 +93,7 @@ console.log(result.extraction_time_ms); // 23.45
 const { AddressExtractor } = require("ai-bangladesh-address-parser");
 
 async function main() {
+  // Python auto-detected automatically - zero configuration!
   const extractor = new AddressExtractor();
 
   const result = await extractor.extract(
@@ -157,6 +159,7 @@ const results = await extractor.batchExtract([
 ```typescript
 import { AddressExtractor } from "ai-bangladesh-address-parser";
 
+// Python automatically detected - no configuration needed!
 const extractor = new AddressExtractor();
 
 const address = "House 12, Road 5, Mirpur, Dhaka-1216";
