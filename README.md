@@ -41,12 +41,14 @@
 ### Problem: Unstructured Address Data
 
 **Before (Raw Input):**
+
 ```
 "1152/C \"Greenhouse\", House# 45, Road# 08, Shapla Residential Area, Halishahar, Chittagong-4219"
 "Flat A-3, Building 7, Bashundhara R/A, Dhaka"
 ```
 
 **After (Structured Output):**
+
 ```json
 {
   "house_number": "45",
@@ -61,21 +63,25 @@
 ### Real-World Use Cases
 
 **✅ E-commerce Checkout**
+
 - Customer enters: `"House 12, Road 5, Mirpur, Dhaka"`
 - System extracts: `{ house: "12", road: "5", area: "Mirpur", district: "Dhaka", postal_code: "1216" }`
 - Auto-fills delivery form, validates postal code, calculates shipping
 
 **✅ Delivery Management**
+
 - Driver receives: `"Banani, Dhaka"`
 - System extracts: `{ area: "Banani", district: "Dhaka", postal_code: "1213" }`
 - Routes optimized, delivery time estimated, GPS coordinates found
 
 **✅ Address Validation**
+
 - User input: `"Gulshan 2, Dhaka"`
 - System validates: District exists ✓, Postal code predicted: `1212` (98% confidence) ✓
 - Prevents invalid addresses, reduces failed deliveries
 
 **✅ Data Normalization**
+
 - Multiple formats: `"Dhaka-1216"`, `"Dhaka 1216"`, `"Dhaka, 1216"`
 - All normalized to: `{ district: "Dhaka", postal_code: "1216" }`
 - Consistent database, easier searching and reporting
@@ -112,7 +118,6 @@ npm install ai-bangladesh-address-parser
 ```typescript
 import { AddressExtractor } from "ai-bangladesh-address-parser";
 
-// Python is automatically detected - no options needed!
 const extractor = new AddressExtractor();
 
 // Extract from single address
@@ -137,7 +142,6 @@ console.log(result.extraction_time_ms); // 23.45
 const { AddressExtractor } = require("ai-bangladesh-address-parser");
 
 async function main() {
-  // Python auto-detected automatically - zero configuration!
   const extractor = new AddressExtractor();
 
   const result = await extractor.extract(
@@ -203,7 +207,6 @@ const results = await extractor.batchExtract([
 ```typescript
 import { AddressExtractor } from "ai-bangladesh-address-parser";
 
-// Python automatically detected - no configuration needed!
 const extractor = new AddressExtractor();
 
 const address = "House 12, Road 5, Mirpur, Dhaka-1216";
