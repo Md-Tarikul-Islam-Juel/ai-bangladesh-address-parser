@@ -527,6 +527,7 @@ See [LICENSE](LICENSE) for full terms.
 ## 📈 Version History
 
 - **1.0.0** - Initial release
+
   - Complete 9-stage extraction pipeline
   - **Fine-tuned spaCy NER model** trained on 21,810 real Bangladeshi addresses
   - Custom entity recognition for: HOUSE, ROAD, AREA, DISTRICT, POSTAL, FLAT, FLOOR, BLOCK
@@ -534,29 +535,6 @@ See [LICENSE](LICENSE) for full terms.
   - Postal code prediction (98%+ confidence)
   - High-performance optimizations (Trie, caching)
   - Support for all 8 divisions, 64 districts, 598 upazilas
-
-## 🏆 Why Choose This Package?
-
-### ✅ Production-Ready
-
-- Built with 10+ years of ML industry experience
-- Tested on 21,810 real Bangladesh addresses
-- 99.3% accuracy rate
-
-### ✅ AI-Powered
-
-- **Fine-tuned spaCy NER model** trained specifically for Bangladeshi addresses
-- Trained on 21,810 real Bangladesh addresses
-- Custom entity labels: HOUSE, ROAD, AREA, DISTRICT, POSTAL, FLAT, FLOOR, BLOCK
-- Handles complex and non-standard address formats
-
-### ✅ Comprehensive
-
-- Extracts all 9 address components
-- Auto-predicts missing postal codes
-- Validates against geographic hierarchy
-
-### ✅ Fast & Optimized
 
 - 20ms latency (0.1ms cached)
 - Built-in caching (99% hit rate)
