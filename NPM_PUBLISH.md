@@ -11,12 +11,51 @@ npm login
 # 2. Build TypeScript
 npm run build
 
-# 3. Publish
+# 3. Verify README.md is included
+npm pack --dry-run | grep README.md
+
+# 4. Publish
 npm publish
 
-# 4. Verify
+# 5. Verify
 npm view ai-bangladesh-address-parser version
+
+# 6. Check package page (README should appear automatically)
+# Visit: https://www.npmjs.com/package/ai-bangladesh-address-parser
 ```
+
+## Troubleshooting: README.md Not Showing
+
+If README.md doesn't appear on npm package page:
+
+1. **Verify it's in the package:**
+   ```bash
+   npm pack --dry-run | grep README.md
+   ```
+   Should show: `npm notice 25.1kB README.md` ✅
+
+2. **Check package.json files array:**
+   Make sure `README.md` is in the `files` array (it is ✅)
+
+3. **Wait a few minutes:**
+   npm sometimes takes 2-5 minutes to update the package page
+
+4. **Clear browser cache:**
+   Hard refresh the npm package page (Ctrl+Shift+R or Cmd+Shift+R)
+
+5. **Republish if needed:**
+   ```bash
+   npm version patch  # Bump version
+   npm publish
+   ```
+
+6. **Check directly:**
+   Visit: `https://www.npmjs.com/package/ai-bangladesh-address-parser`
+   The README should appear automatically at the top of the page
+
+**Note:** npm automatically displays README.md from the package root. It's already configured correctly in `package.json`.
+
+---
 
 ## Detailed Steps
 

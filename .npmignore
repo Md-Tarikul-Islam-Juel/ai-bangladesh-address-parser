@@ -40,8 +40,10 @@ coverage/
 
 # Documentation (keep README.md and LICENSE)
 docs/
+# Exclude all .md files except README.md
 *.md
 !README.md
+!**/README.md
 
 # Training data and scripts (not needed for runtime)
 training/
