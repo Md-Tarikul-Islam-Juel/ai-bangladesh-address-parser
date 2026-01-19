@@ -1,11 +1,11 @@
 {
   "name": "ai-bangladesh-address-parser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Production-grade AI-powered Bangladeshi address parser - Extract house, road, area, district, postal code, and more from full addresses",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "npx tsc",
     "dev": "tsc --watch",
     "test": "node dist/test.js",
     "prepublishOnly": "npm run build",
@@ -47,16 +47,18 @@
     "tools/",
     "data/",
     "models/",
+    "config/",
     "requirements.txt",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "package.json"
   ],
   "dependencies": {
     "python-shell": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0"
+    "@types/node": "^20.19.30",
+    "typescript": "^5.9.3"
   },
   "engines": {
     "node": ">=14.0.0",

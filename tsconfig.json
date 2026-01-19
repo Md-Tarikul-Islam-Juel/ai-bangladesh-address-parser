@@ -4,7 +4,7 @@
     "module": "commonjs",
     "lib": ["ES2020"],
     "outDir": "./dist",
-    "rootDir": "./lib",
+    "rootDir": "./api/node",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -14,6 +14,6 @@
     "sourceMap": true,
     "resolveJsonModule": true
   },
-  "include": ["lib/**/*"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+  "include": ["api/node/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.js"]
 }

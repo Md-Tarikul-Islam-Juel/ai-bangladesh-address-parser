@@ -33,7 +33,7 @@ logging.basicConfig(
 )
 
 # Add parent directory and src directory to path
-project_root = Path(__file__).parent.parent
+project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 sys.path.insert(0, str(project_root / "src"))
 
@@ -68,7 +68,7 @@ def get_extractor():
         
         try:
             # Try to find data file
-            data_path = Path(__file__).parent.parent / "data" / "merged_addresses.json"
+            data_path = Path(__file__).parent.parent.parent / "data" / "raw" / "merged_addresses.json"
             if data_path.exists():
                 _extractor = ProductionAddressExtractor(data_path=str(data_path))
             else:

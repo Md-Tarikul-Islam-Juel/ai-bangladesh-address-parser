@@ -66,7 +66,8 @@ export class AddressExtractor {
    */
   constructor() {
     // Find Python script automatically
-    this.pythonScriptPath = path.resolve(path.join(__dirname, '../python/extract.py'));
+    // In npm package: __dirname points to dist/, so go up to package root
+    this.pythonScriptPath = path.resolve(path.join(__dirname, '../api/python/extract.py'));
 
     // Python is managed completely internally - automatically detected
     // Tries python3, python, then py and verifies Python 3.9+
@@ -130,7 +131,7 @@ export class AddressExtractor {
     }
 
     try {
-      const pythonScript = path.join(__dirname, '../python/extract.py');
+      const pythonScript = path.join(__dirname, '../api/python/extract.py');
       
       const pythonOptions = {
         mode: 'text' as const,  // Use 'text' mode to handle JSON manually

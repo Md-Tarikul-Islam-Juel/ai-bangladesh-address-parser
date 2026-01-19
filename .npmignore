@@ -1,61 +1,70 @@
 # Development files
-lib/
-*.ts
-!*.d.ts
 .vscode/
 .idea/
-*.log
 *.swp
 *.swo
-*~
-
-# Test files
-**/*.test.ts
-**/*.spec.ts
-test.js
-tests/
-test_simple.js
-
-# Build artifacts (keep dist/)
-*.map
+.DS_Store
+Thumbs.db
 
 # Git
 .git/
 .gitignore
+.gitattributes
 
-# Documentation (keep README.md)
-docs/
-# README.md is automatically included by npm - don't exclude markdown files that npm needs
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
 
-# Python cache
+# Build artifacts (source only, dist is included)
+*.tsbuildinfo
+
+# Python
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
 .Python
-
-# Virtual environments
 venv/
 env/
 .venv/
+*.egg-info/
+.pytest_cache/
 
-# IDE
-.vscode/
-.idea/
+# Testing
+tests/
+*.test.ts
+*.test.js
+coverage/
+.nyc_output/
 
-# OS
-.DS_Store
-Thumbs.db
+# Documentation (keep README.md and LICENSE)
+docs/
+*.md
+!README.md
 
-# Temporary files
-*.tmp
+# Training data and scripts (not needed for runtime)
+training/
+data/training/
+models/training/
+models/archived/
+
+# Development configs
+.env
+.env.local
+*.log
+
+# TypeScript source (only dist is needed)
+api/node/*.ts
+!api/node/index.ts
+tsconfig.json
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Misc
+LINKEDIN_POST.md
 *.bak
-*~
-
-# Keep these in package
-!python/
-!data/
-!models/
-!src/
-!dist/
-!requirements.txt
+*.tmp
