@@ -204,14 +204,17 @@ class AdvancedRoadNumberExtractor:
             (r'\b((?:rd|Rd|RD)\.?[\s]+[\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),
             # Rd- pattern - e.g., "Rd-5", "Rd-12" - capture full
             (r'\b((?:rd|Rd|RD)[\s-]+[\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),
-            # R- pattern - e.g., "R-03", "R-2/2", "R-6" - capture full (case insensitive)
-            (r'\b([rR][\s-]+[\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),
-            # R: pattern - e.g., "R:18", "R:2" - capture full
-            (r'\b(r:[\s]*[\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),
-            # R # pattern - e.g., "R # 9", "R#21", "R#08", "R# 2" - capture full (allow leading zeros and spaces)
-            (r'\b([rR]\s*#\s*0?[\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # R#21, R#08, R# 2
-            # R pattern (space) - e.g., "R 6", "R 12" - capture full (case insensitive)
-            (r'\b([rR][\s]+[\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),
+            # R@ pattern (R at symbol) - e.g., "R@7", "r@7" - extract number only (HIGH PRIORITY)
+            (r'\b[rR]@[\s]*([\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # R@7 → "7", r@7 → "7"
+            # R- pattern - e.g., "R-03", "R-2/2", "R-6", "r-7" - extract number only (case insensitive)
+            # IMPORTANT: Check context to avoid matching house patterns like "h-107/2,r-7"
+            (r'(?<!h-)(?<!H-)(?<!h\s)(?<!H\s)\b[rR][\s-]+([\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # r-7 → "7", R-03 → "03"
+            # R: pattern - e.g., "R:18", "R:2", "r:7" - extract number only
+            (r'\b[rR]:[\s]*([\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # R:18 → "18", r:7 → "7"
+            # R # pattern - e.g., "R # 9", "R#21", "R#08", "R# 2" - extract number only (allow leading zeros and spaces)
+            (r'\b[rR]\s*#\s*(0?[\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # R#21 → "21", R#08 → "08", R# 2 → "2"
+            # R pattern (space) - e.g., "R 6", "R 12", "r 7" - extract number only (case insensitive)
+            (r'\b[rR][\s]+([\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # R 6 → "6", r 7 → "7"
             # Road with letter+number - e.g., "Road E2", "Road 5", "Road 3", "Road 10" - capture full
             (r'((?:road|rd|Road|Rd|ROAD|RD)[\s]+[\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),
         ]
@@ -650,15 +653,31 @@ class AdvancedRoadNumberExtractor:
         if re.search(r'\b[A-Z]#[\d০-৯]+', before_match[-15:], re.IGNORECASE):
             return True
         
-        # 6. H- patterns (H dash) - e.g., "H-07", "H-7", "H-04"
-        if re.search(r'\bh[\s-]+[\d০-৯]+', before_match[-15:], re.IGNORECASE):
+        # 6. H- patterns (H dash) - e.g., "H-07", "H-7", "H-04", "h-107/2"
+        # Check for h- or H- patterns, including with slashes like "h-107/2"
+        if re.search(r'\b[hH][\s-]+[\d০-৯]+', before_match[-30:], re.IGNORECASE):
             # But check if road keyword appears after H
-            h_match = re.search(r'\bh[\s-]+[\d০-৯]+', before_match[-20:], re.IGNORECASE)
+            h_match = re.search(r'\b[hH][\s-]+[\d০-৯]+', before_match[-30:], re.IGNORECASE)
             if h_match:
-                h_pos = match_start - (20 - h_match.start())
+                h_pos = match_start - (30 - h_match.start())
                 text_after_h = before_match[h_pos:match_start].lower()
+                # If there's a comma between h- and r-, it's likely "h-107/2,r-7" pattern
+                # In this case, r-7 is a road, not a house number
+                if ',' in text_after_h:
+                    # Check if the comma separates h- pattern from current match
+                    comma_pos = text_after_h.rfind(',')
+                    if comma_pos > 0:
+                        # There's a comma - check if h- pattern is before comma
+                        text_before_comma = text_after_h[:comma_pos]
+                        if re.search(r'\b[hH][\s-]+[\d০-৯]+', text_before_comma, re.IGNORECASE):
+                            # h- pattern before comma, current match after comma - likely road
+                            return False  # It's a road (r-7 after h-107/2)
                 if not any(rk in text_after_h for rk in road_keywords_before):
                     return True  # It's a house number (H-07 pattern)
+        
+        # 6b. H@ patterns (H at symbol) - e.g., "h@45", "H@45"
+        if re.search(r'\b[hH]@[\s]*[\d০-৯]+', before_match[-20:], re.IGNORECASE):
+            return True  # It's a house number
         
         # 7. H space number/slash - e.g., "H 30/B"
         if re.search(r'\bh\s+[\d০-৯]+[/\-][a-zA-Z\d]+', before_match[-20:], re.IGNORECASE):
@@ -803,10 +822,32 @@ class AdvancedRoadNumberExtractor:
                 return True
             
             # Case 2: Road number is part of house number (e.g., house="H-07" and road="07")
+            # IMPORTANT: Only check if road number is a complete component, not just a substring
+            # For example, "7" should NOT match "107/2" because "7" is just a digit inside "107"
             if road_num.lower() in house_num.lower():
-                # But exclude if road number contains road keywords (including "r ", "r-")
-                if not any(kw in road_num.lower() for kw in ['road', 'rd', 'lane', 'street', 'avenue', 'r ', 'r-', 'রোড']):
-                    return True
+                # re is already imported at module level
+                # Check if road_num appears as a complete component (not just a digit inside another number)
+                # Examples:
+                # - "07" in "H-07" → True (complete component)
+                # - "7" in "107/2" → False (just a digit, not a component)
+                # - "2" in "107/2" → True (complete component after slash)
+                
+                # If road number is just digits, check if it's a complete component
+                if re.match(r'^[\d০-৯]+$', road_num):
+                    # Check if it appears as a complete component (with word boundaries or separators)
+                    # Pattern: (start|separator)road_num(separator|end)
+                    pattern = r'(?:^|[/\-,\s])' + re.escape(road_num) + r'(?:[/\-,\s]|$)'
+                    if re.search(pattern, house_num):
+                        # It's a complete component - check if it has road keywords
+                        # But exclude if road number contains road keywords (including "r ", "r-")
+                        if not any(kw in road_num.lower() for kw in ['road', 'rd', 'lane', 'street', 'avenue', 'r ', 'r-', 'রোড']):
+                            return True
+                    # If not a complete component (e.g., "7" in "107/2"), don't exclude it - return False
+                    return False
+                else:
+                    # Road number has letters - check normally
+                    if not any(kw in road_num.lower() for kw in ['road', 'rd', 'lane', 'street', 'avenue', 'r ', 'r-', 'রোড']):
+                        return True
             
             # Case 3: Check if the match position overlaps with house number position
             # Get the position of house number in address
@@ -953,6 +994,52 @@ class AdvancedRoadNumberExtractor:
                     # Get match positions
                     match_start_pos = match.start()
                     match_end_pos = match.end()
+                    
+                    # CRITICAL: Ensure road_number doesn't contain house patterns
+                    # Check if road_number itself contains house pattern (should never happen, but safety check)
+                    if re.search(r'\b[hH][\s\-@]+[\d০-৯]+', road_number, re.IGNORECASE):
+                        # Road number contains house pattern - this is wrong, skip this match
+                        continue
+                    
+                    # CRITICAL: Check if road number contains comma and house pattern before comma
+                    # If road_number contains comma and house pattern before comma, extract only the part after comma
+                    if ',' in road_number:
+                        # Check if there's a house pattern before the comma
+                        comma_pos = road_number.find(',')
+                        part_before_comma = road_number[:comma_pos].strip()
+                        part_after_comma = road_number[comma_pos+1:].strip()
+                        
+                        # Check if part before comma is a house pattern (h-, H-, h@, H@)
+                        if re.match(r'^[hH][\s-@]+[\d০-৯]+', part_before_comma, re.IGNORECASE):
+                            # This is a house pattern - extract only the road part after comma
+                            road_number = part_after_comma.strip()
+                            if not road_number:
+                                continue  # No road number after comma
+                            # Update match positions to reflect the new road_number
+                            # Find the position of the road part after comma in the original address
+                            comma_in_address = address.find(',', match_start_pos)
+                            if comma_in_address != -1:
+                                match_start_pos = comma_in_address + 1
+                                match_end_pos = match_start_pos + len(road_number)
+                    
+                    # Also check if address context before match contains house pattern
+                    # If "h-107/2," appears before "r-7", ensure we only extract "r-7"
+                    context_before = address[max(0, match_start_pos-30):match_start_pos].lower()
+                    if re.search(r'\b[hH][\s-]+[\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?[\s]*[,]', context_before):
+                        # House pattern with comma before - this is correct, road should be after comma
+                        # But ensure road_number doesn't include the house part
+                        if ',' in road_number:
+                            parts = road_number.split(',')
+                            if len(parts) > 1:
+                                # Take the last part (should be the road)
+                                road_number = parts[-1].strip()
+                                if not road_number:
+                                    continue
+                                # Find the position after the comma
+                                comma_in_address = address.find(',', max(0, match_start_pos-30))
+                                if comma_in_address != -1:
+                                    match_start_pos = comma_in_address + 1
+                                    match_end_pos = match_start_pos + len(road_number)
                     
                     # STRICT POSTAL CODE VALIDATION
                     if self._is_postal_code(road_number, address, match_start_pos, match_end_pos):

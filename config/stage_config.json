@@ -1,0 +1,26 @@
+{
+  "stage_1_script_detection": true,
+  "stage_2_normalization": true,
+  "stage_3_fsm_parsing": true,
+  "stage_4_regex_extraction": true,
+  "stage_5_spacy_ner": true,
+  "stage_6_gazetteer": true,
+  "stage_7_geographic": true,
+  "stage_8_conflict_resolution": true,
+  "stage_9_output": true,
+  "_metadata": {
+   "mandatory_stages": [
+     "stage_2_normalization",
+     "stage_4_regex_extraction",
+     "stage_8_conflict_resolution",
+     "stage_9_output"
+   ],
+   "optional_stages": [
+     "stage_1_script_detection",
+     "stage_3_fsm_parsing",
+     "stage_5_spacy_ner",
+     "stage_6_gazetteer",
+     "stage_7_geographic"
+   ]
+ }
+}

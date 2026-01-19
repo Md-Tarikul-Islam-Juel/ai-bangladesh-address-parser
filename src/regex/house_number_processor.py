@@ -117,11 +117,15 @@ class AdvancedHouseNumberExtractor:
             # Letter hash number pattern - e.g., "U#19"
             (r'\b([A-Z]#[\d০-৯]+[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # Captures full pattern like "U#19"
             
+            # H@ pattern (H at symbol) - e.g., "h@45", "H@45" - extract number only
+            (r'\b[hH]@[\s]*([\d০-৯]+[/\-]?[\d০-৯]*[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # h@45 → "45", H@45 → "45"
             # H-07, R-2/2 type patterns (H = House, R = Road - but H takes priority)
-            (r'^(h[\s-]+[\d০-৯]+[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # H-07 (captures full H-07 - check first)
-            (r'\b(h[\s-]+[\d০-৯]+[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # H-7, H-04 (anywhere in address)
-            # H with number (no dash) - e.g., "H3" - capture full
-            (r'\b(h[\s]*[\d০-৯]+[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # Capture "H3"
+            # IMPORTANT: Handle slash patterns like "h-107/2" - extract number only
+            (r'\b[hH][\s-]+([\d০-৯]+[/\-][\d০-৯]+[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # h-107/2 → "107/2", H-12/6 → "12/6" (with slash - HIGH PRIORITY)
+            (r'^h[\s-]+([\d০-৯]+[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # H-07 → "07" (at start)
+            (r'\b[hH][\s-]+([\d০-৯]+[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # H-7 → "7", H-04 → "04", h-107 → "107" (anywhere)
+            # H with number (no dash) - e.g., "H3" - extract number only
+            (r'\b[hH][\s]*([\d০-৯]+[a-zA-Z]?)(?=\s*[,\(\)]|\s|$)', 0.98),  # H3 → "3", h3 → "3"
             
             # H 30/B pattern (H space number/slash) - e.g., "H 30/B"
             (r'\bh\s+([\d০-৯]+[/\-][a-zA-Z\d]+)(?=\s*[,\(\)]|\s|$)', 0.98),

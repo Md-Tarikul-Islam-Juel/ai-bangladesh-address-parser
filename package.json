@@ -9,8 +9,8 @@
     "dev": "tsc --watch",
     "test": "node dist/test.js",
     "prepublishOnly": "npm run build",
-    "postinstall": "node scripts/postinstall.js",
-    "install-python-deps": "node scripts/postinstall.js"
+    "postinstall": "node tools/postinstall.js",
+    "install-python-deps": "node tools/postinstall.js"
   },
   "keywords": [
     "ai",
@@ -43,8 +43,8 @@
   "files": [
     "dist/",
     "src/",
-    "python/",
-    "scripts/",
+    "api/",
+    "tools/",
     "data/",
     "models/",
     "requirements.txt",
