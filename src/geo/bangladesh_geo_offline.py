@@ -31,7 +31,7 @@ class BangladeshOfflineGeo:
     - district-to-division-mapping.json (64 districts)
     """
     
-    def __init__(self, division_data_path: str = "../../data/division"):
+    def __init__(self, division_data_path: str = "../../data/geographic/division"):
         self.division_path = Path(division_data_path)
         
         # Complete hierarchy storage

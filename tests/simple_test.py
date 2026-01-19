@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import json
 
-from src.core.production_address_extractor import ProductionAddressExtractor
+from src.core import ProductionAddressExtractor
 
 print("="*80)
 print("🇧🇩 PRODUCTION ADDRESS EXTRACTION SYSTEM")
@@ -31,22 +31,31 @@ print("  → Loading Gazetteer from 21,810 real addresses...")
 print("  → Loading Offline Geographic Intelligence...")
 print("  → Loading Bangladesh-trained ML model...")
 
+# Load data path
+data_path = Path(__file__).parent.parent / "data" / "raw" / "merged_addresses.json"
+data_path_str = str(data_path) if data_path.exists() else None
+
+# Initialize extractor (automatically loads stage config from config/stage_config.json)
 extractor = ProductionAddressExtractor(
-    data_path="../data/merged_addresses.json"
+    data_path=data_path_str
 )
 
 # Check what's enabled
 print("\n✅ System Ready!")
-print(f"  📊 Gazetteer: {len(extractor.gazetteer.areas)} areas loaded")
-print(f"  🗺️  Offline Geo: {'ENABLED' if extractor.gazetteer.offline_geo else 'DISABLED'}")
-if extractor.gazetteer.offline_geo:
-    geo = extractor.gazetteer.offline_geo
-    print(f"     • {len(geo.divisions)} divisions")
-    print(f"     • {len(geo.districts)} districts") 
-    print(f"     • {len(geo.upazilas)} upazilas with postal codes")
-    print(f"     • {len(geo.unions)} unions")
-    print(f"     • {len(geo.postal_to_upazila)} postal code mappings")
-print(f"  🤖 ML Model: {'ENABLED' if extractor.spacy_ner else 'DISABLED'}")
+print(f"  📊 Gazetteer: {'ENABLED' if extractor.gazetteer else 'DISABLED'}")
+if extractor.gazetteer:
+    print(f"     • {len(extractor.gazetteer.areas)} areas loaded")
+    print(f"  🗺️  Offline Geo: {'ENABLED' if extractor.gazetteer.offline_geo else 'DISABLED'}")
+    if extractor.gazetteer.offline_geo:
+        geo = extractor.gazetteer.offline_geo
+        print(f"     • {len(geo.divisions)} divisions")
+        print(f"     • {len(geo.districts)} districts") 
+        print(f"     • {len(geo.upazilas)} upazilas with postal codes")
+        print(f"     • {len(geo.unions)} unions")
+        print(f"     • {len(geo.postal_to_upazila)} postal code mappings")
+print(f"  🤖 ML Model (spaCy NER): {'ENABLED' if extractor.spacy_ner and extractor.spacy_ner.enabled else 'DISABLED'}")
+print(f"  🔧 FSM Parser: {'ENABLED' if extractor.fsm_parser else 'DISABLED'}")
+print(f"  📝 Script Detection: {'ENABLED' if extractor.script_detector else 'DISABLED'}")
 print()
 
 # Test addresses (Array/List)
@@ -60,7 +69,9 @@ test_addresses = [
     'Dhanmondi 15, Dhaka',
     '1152/C "Greenhouse", House# 45, Road# 08, Shapla Residential Area, Halishahar, Chittagong-4219',
     '101/1 west monipur House name- Dream house, 60 feet road, 4th floor, flat- D2, Mirpur-2, Dhaka-1216',
-    'sottota tower, h:107/2,R:7, north bishil, mirpur 1, dhaka'
+    '1/4, South Begun Bari (Master Bari), Tejgaon I/A, Tejgaon, Dhaka -1208. (Near Satrasta)',
+    '৬ রোড, ৯ ব্লক, C, চন্দ্রিমা মডেল টাউন, মোহাম্মদপুর, ঢাকা।',
+    '৫৬ জিগাতলা, হাজী আবদুর রহমান লেন, ধানমন্ডি, ঢাকা-১২০৯' ,'sottota tower, h107/2,Road 7, zigatola' 
 ]
 
 print("="*80)

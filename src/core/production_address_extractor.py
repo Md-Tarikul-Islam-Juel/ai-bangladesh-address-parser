@@ -844,19 +844,37 @@ class ProductionAddressExtractor:
     - Statistics tracking
     """
     
-    def __init__(self, data_path: Optional[str] = None, cache_size: int = 10000):
+    def __init__(self, data_path: Optional[str] = None, cache_size: int = 10000, 
+                 stage_config: Optional[Dict] = None):
+        """
+        Initialize Production Address Extractor with optional stage configuration
+        
+        Args:
+            data_path: Path to merged_addresses.json for gazetteer
+            cache_size: LRU cache size (default: 10000)
+            stage_config: Dictionary with stage enable/disable flags
+                Example: {
+                    'stage_1_script_detection': True,
+                    'stage_3_4_fsm_parsing': False,
+                    'stage_6_spacy_ner': True,
+                    'stage_7_gazetteer': True
+                }
+        """
         logger.info("=" * 80)
         logger.info("INITIALIZING PRODUCTION ADDRESS EXTRACTION SYSTEM")
         logger.info("=" * 80)
         
-        # Initialize all stages
-        self.script_detector = ScriptDetector()
-        self.normalizer = CanonicalNormalizer()
-        self.fsm_parser = SimpleFSMParser()
-        self.regex_extractor = RegexExtractor()
-        self.spacy_ner = SpacyNERExtractor()  # ML-based NER
-        self.gazetteer = Gazetteer(data_path)
-        self.resolver = ConflictResolver()
+        # Load stage configuration (default: all enabled)
+        self.stage_config = self._load_stage_config(stage_config)
+        
+        # Initialize all stages (will be conditionally used)
+        self.script_detector = ScriptDetector() if self.stage_config.get('stage_1_script_detection', True) else None
+        self.normalizer = CanonicalNormalizer()  # Always enabled (essential)
+        self.fsm_parser = SimpleFSMParser() if self.stage_config.get('stage_3_4_fsm_parsing', True) else None
+        self.regex_extractor = RegexExtractor()  # Always enabled (essential)
+        self.spacy_ner = SpacyNERExtractor() if self.stage_config.get('stage_6_spacy_ner', True) else None
+        self.gazetteer = Gazetteer(data_path) if self.stage_config.get('stage_7_gazetteer', True) else None
+        self.resolver = ConflictResolver()  # Always enabled (essential)
         
         # Technique #27: Cache for extraction results
         self._cache = {}
@@ -872,11 +890,54 @@ class ProductionAddressExtractor:
             'cache_misses': 0
         }
         
-        logger.info("✓ All stages initialized")
-        if TRIE_AVAILABLE:
+        # Log enabled stages
+        enabled_stages = [k for k, v in self.stage_config.items() if v]
+        disabled_stages = [k for k, v in self.stage_config.items() if not v]
+        logger.info(f"✓ Enabled stages: {', '.join(enabled_stages)}")
+        if disabled_stages:
+            logger.info(f"⚠ Disabled stages: {', '.join(disabled_stages)}")
+        if TRIE_AVAILABLE and self.gazetteer:
             logger.info("✓ Trie-optimized gazetteer enabled (Technique #26)")
         logger.info("✓ LRU caching enabled (Technique #27)")
         logger.info("=" * 80)
+    
+    def _load_stage_config(self, stage_config: Optional[Dict] = None) -> Dict:
+        """Load stage configuration from dict or JSON file"""
+        default_config = {
+            'stage_1_script_detection': True,
+            'stage_2_normalization': True,  # Always True (essential)
+            'stage_3_4_fsm_parsing': True,
+            'stage_5_regex_extraction': True,  # Always True (essential)
+            'stage_6_spacy_ner': True,
+            'stage_7_gazetteer': True,
+            'stage_8_conflict_resolution': True,  # Always True (essential)
+            'stage_9_output': True,  # Always True (essential)
+        }
+        
+        # If config provided directly, use it
+        if stage_config:
+            # Merge with defaults
+            config = default_config.copy()
+            config.update(stage_config)
+            return config
+        
+        # Try to load from config file
+        config_file = Path(__file__).parent.parent.parent / "config" / "stage_config.json"
+        if config_file.exists():
+            try:
+                with open(config_file, 'r', encoding='utf-8') as f:
+                    file_config = json.load(f)
+                    # Extract stage settings
+                    if 'stages' in file_config:
+                        config = default_config.copy()
+                        for stage_key, stage_data in file_config['stages'].items():
+                            if stage_key in config:
+                                config[stage_key] = stage_data.get('enabled', True)
+                        return config
+            except Exception as e:
+                logger.warning(f"Could not load config file: {e}, using defaults")
+        
+        return default_config
     
     def extract(self, address: str, detailed: bool = False) -> Dict:
         """
@@ -914,58 +975,62 @@ class ProductionAddressExtractor:
         original_address = address
         
         try:
-            # STAGE 1: Script Detection
-            script_info = self.script_detector.detect(address)
+            # STAGE 1: Script Detection (Optional)
+            script_info = {'primary_script': ScriptType.NEUTRAL, 'is_mixed': False}
+            if self.stage_config.get('stage_1_script_detection', True) and self.script_detector:
+                script_info = self.script_detector.detect(address)
             
-            # STAGE 2: Normalization
+            # STAGE 2: Normalization (Always enabled - essential)
             normalized = self.normalizer.normalize(address)
-            
-            # STAGE 3-4: FSM Parsing
-            fsm_result = self.fsm_parser.parse(normalized)
-            
-            # STAGE 5: Regex Extraction (Your Processors!)
-            regex_results = self.regex_extractor.extract(normalized)
             
             # Collect evidence
             evidence_map = {}
             
-            # From FSM
-            for comp, value in fsm_result['components'].items():
-                if value:
-                    if comp not in evidence_map:
-                        evidence_map[comp] = []
-                    evidence_map[comp].append({
-                        'value': value,
-                        'confidence': fsm_result['confidence'],
-                        'source': 'fsm'
-                    })
+            # STAGE 3-4: FSM Parsing (Optional)
+            if self.stage_config.get('stage_3_4_fsm_parsing', True) and self.fsm_parser:
+                fsm_result = self.fsm_parser.parse(normalized)
+                # From FSM
+                for comp, value in fsm_result['components'].items():
+                    if value:
+                        if comp not in evidence_map:
+                            evidence_map[comp] = []
+                        evidence_map[comp].append({
+                            'value': value,
+                            'confidence': fsm_result['confidence'],
+                            'source': 'fsm'
+                        })
             
+            # STAGE 5: Regex Extraction (Always enabled - essential)
+            regex_results = self.regex_extractor.extract(normalized)
             # From Regex
             for comp, data in regex_results.items():
                 if comp not in evidence_map:
                     evidence_map[comp] = []
                 evidence_map[comp].append(data)
             
-            # STAGE 6: spaCy NER (ML-based extraction)
-            spacy_results = self.spacy_ner.extract(normalized)
-            for comp, data in spacy_results.items():
-                if comp not in evidence_map:
-                    evidence_map[comp] = []
-                evidence_map[comp].append(data)
-            
-            # STAGE 7: Gazetteer Validation
-            gazetteer_enhancements = self.gazetteer.validate({
-                'area': evidence_map.get('area', [{}])[0].get('value') if 'area' in evidence_map and evidence_map['area'] else None,
-                'district': evidence_map.get('district', [{}])[0].get('value') if 'district' in evidence_map and evidence_map['district'] else None,
-                'postal_code': evidence_map.get('postal_code', [{}])[0].get('value') if 'postal_code' in evidence_map and evidence_map['postal_code'] else None,
-            })
-            
-            # Add gazetteer evidence
-            for comp, data in gazetteer_enhancements.items():
-                if comp != '_conflicts' and data:
+            # STAGE 6: spaCy NER (Optional - ML-based extraction)
+            if self.stage_config.get('stage_6_spacy_ner', True) and self.spacy_ner:
+                spacy_results = self.spacy_ner.extract(normalized)
+                for comp, data in spacy_results.items():
                     if comp not in evidence_map:
                         evidence_map[comp] = []
                     evidence_map[comp].append(data)
+            
+            # STAGE 7: Gazetteer Validation (Optional)
+            gazetteer_enhancements = {'_conflicts': []}
+            if self.stage_config.get('stage_7_gazetteer', True) and self.gazetteer:
+                gazetteer_enhancements = self.gazetteer.validate({
+                    'area': evidence_map.get('area', [{}])[0].get('value') if 'area' in evidence_map and evidence_map['area'] else None,
+                    'district': evidence_map.get('district', [{}])[0].get('value') if 'district' in evidence_map and evidence_map['district'] else None,
+                    'postal_code': evidence_map.get('postal_code', [{}])[0].get('value') if 'postal_code' in evidence_map and evidence_map['postal_code'] else None,
+                })
+                
+                # Add gazetteer evidence
+                for comp, data in gazetteer_enhancements.items():
+                    if comp != '_conflicts' and data:
+                        if comp not in evidence_map:
+                            evidence_map[comp] = []
+                        evidence_map[comp].append(data)
             
             # STAGE 8: Conflict Resolution
             final_components = self.resolver.resolve(evidence_map)
@@ -983,9 +1048,15 @@ class ProductionAddressExtractor:
             }
             
             if detailed:
+                script_value = script_info.get('primary_script', ScriptType.NEUTRAL)
+                if isinstance(script_value, ScriptType):
+                    script_str = script_value.value
+                else:
+                    script_str = str(script_value) if script_value else 'neutral'
+                
                 output['metadata'] = {
-                    'script': script_info['primary_script'].value,
-                    'is_mixed': script_info['is_mixed'],
+                    'script': script_str,
+                    'is_mixed': script_info.get('is_mixed', False),
                     'conflicts': gazetteer_enhancements.get('_conflicts', []),
                     'component_details': {
                         comp: {
@@ -995,7 +1066,8 @@ class ProductionAddressExtractor:
                         }
                         for comp, data in final_components.items()
                         if data and data.get('value')
-                    }
+                    },
+                    'enabled_stages': [k for k, v in self.stage_config.items() if v]
                 }
             
             self.stats['total_processed'] += 1
