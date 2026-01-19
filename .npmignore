@@ -25,9 +25,7 @@ test_simple.js
 
 # Documentation (keep README.md)
 docs/
-*.md
-!README.md
-!README_NPM.md
+# README.md is automatically included by npm - don't exclude markdown files that npm needs
 
 # Python cache
 __pycache__/
