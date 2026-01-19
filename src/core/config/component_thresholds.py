@@ -38,7 +38,7 @@ def load_component_thresholds(thresholds: Optional[Dict] = None) -> Dict[str, fl
     
     # Try to load from config file
     # Go up from src/core/config/ -> src/core/ -> src/ -> root/ -> config/
-    config_file = Path(__file__).parent.parent.parent.parent / "config" / "component_thresholds.json"
+    config_file = Path(__file__).parent.parent.parent.parent / "config" / "confidence_thresholds.json"
     if config_file.exists():
         try:
             with open(config_file, 'r', encoding='utf-8') as f:

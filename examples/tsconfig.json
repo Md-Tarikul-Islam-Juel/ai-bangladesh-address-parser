@@ -1,0 +1,24 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": ".",
+    "moduleResolution": "node",
+    "baseUrl": "..",
+    "paths": {
+      "ai-bangladesh-address-parser": ["./dist/index"]
+    }
+  },
+  "include": ["*.ts"],
+  "exclude": ["node_modules", "dist"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "baseUrl": "..",
+      "paths": {
+        "ai-bangladesh-address-parser": ["./dist/index"]
+      }
+    }
+  }
+}

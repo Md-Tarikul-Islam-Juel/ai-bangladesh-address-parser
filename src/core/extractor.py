@@ -1,7 +1,7 @@
 """Main Address Extractor - Orchestrates all stages"""
 
 import time
-from typing import Dict, Optional
+from typing import Dict, Optional, List, Callable
 import logging
 
 from .stages.script_detector import ScriptDetector
@@ -16,6 +16,10 @@ from .config.stage_config import load_stage_config
 from .config.component_thresholds import load_component_thresholds
 from .utils.types import ScriptType
 from .utils.constants import TRIE_AVAILABLE
+from .utils.address_utils import (
+    validate_address, format_address, compare_addresses, 
+    suggest_addresses, get_statistics
+)
 
 logger = logging.getLogger(__name__)
 
@@ -368,3 +372,190 @@ class ProductionAddressExtractor:
         self._cache.clear()
         self._cache_hits = 0
         self._cache_misses = 0
+    
+    # ========================================================================
+    # ADVANCED FEATURES
+    # ========================================================================
+    
+    def validate(self, address: str, required: Optional[List[str]] = None) -> Dict:
+        """
+        Validate address completeness and component validity
+        
+        Args:
+            address: Address string to validate
+            required: List of required components (default: ['district', 'area'])
+        
+        Returns:
+            {
+                'is_valid': bool,
+                'completeness': float,
+                'missing': List[str],
+                'invalid': List[str],
+                'score': float,
+                'components': Dict
+            }
+        """
+        result = self.extract(address)
+        components = result.get('components', {})
+        
+        validation = validate_address(components, required)
+        validation['components'] = components
+        validation['overall_confidence'] = result.get('overall_confidence', 0.0)
+        
+        return validation
+    
+    def format(self, address: str, style: str = 'full', 
+               separator: str = ', ', include_postal: bool = True) -> str:
+        """
+        Format address into standardized string
+        
+        Args:
+            address: Address string to format
+            style: 'full' | 'short' | 'postal' | 'minimal'
+            separator: Separator between components
+            include_postal: Whether to include postal code
+        
+        Returns:
+            Formatted address string
+        """
+        result = self.extract(address)
+        components = result.get('components', {})
+        return format_address(components, style, separator, include_postal)
+    
+    def compare(self, address1: str, address2: str) -> Dict:
+        """
+        Compare two addresses and calculate similarity
+        
+        Args:
+            address1: First address string
+            address2: Second address string
+        
+        Returns:
+            {
+                'similarity': float,
+                'match': bool,
+                'differences': List[str],
+                'common': List[str],
+                'score': float
+            }
+        """
+        result1 = self.extract(address1)
+        result2 = self.extract(address2)
+        
+        components1 = result1.get('components', {})
+        components2 = result2.get('components', {})
+        
+        comparison = compare_addresses(components1, components2)
+        comparison['address1'] = components1
+        comparison['address2'] = components2
+        
+        return comparison
+    
+    def suggest(self, query: str, limit: int = 5) -> List[Dict]:
+        """
+        Suggest addresses based on query (area/district name)
+        
+        Args:
+            query: Search query (area or district name)
+            limit: Maximum number of suggestions
+        
+        Returns:
+            List of suggested addresses with confidence scores
+        """
+        if not self.gazetteer:
+            return []
+        
+        return suggest_addresses(query, self.gazetteer, limit)
+    
+    def enrich(self, address: str) -> Dict:
+        """
+        Enrich address with additional geographic information
+        
+        Args:
+            address: Address string
+        
+        Returns:
+            Enriched address with additional fields
+        """
+        result = self.extract(address, detailed=True)
+        components = result.get('components', {})
+        
+        enriched = result.copy()
+        
+        # Add geographic hierarchy if available
+        # Check if hierarchy is already in metadata from geographic validator stage
+        if 'metadata' in result and result['metadata']:
+            geo_metadata = result['metadata'].get('geographic_validation', {})
+            if 'location_hierarchy' in geo_metadata:
+                enriched['hierarchy'] = geo_metadata['location_hierarchy']
+            elif 'full_location_hierarchy' in geo_metadata:
+                enriched['hierarchy'] = geo_metadata['full_location_hierarchy']
+        
+        # If not in metadata, try to get it directly from postal code
+        if 'hierarchy' not in enriched and self.geographic_validator and self.geographic_validator.offline_geo:
+            postal_code = components.get('postal_code')
+            if postal_code:
+                # Extract postal code value if it's a dict
+                postal_value = postal_code.get('value') if isinstance(postal_code, dict) else postal_code
+                if postal_value:
+                    hierarchy = self.geographic_validator.offline_geo.get_full_hierarchy(str(postal_value))
+                    if hierarchy:
+                        enriched['hierarchy'] = hierarchy
+        
+        # Add suggestions for missing components
+        if not components.get('postal_code') and components.get('area'):
+            suggestions = self.suggest(components['area'], limit=1)
+            if suggestions and suggestions[0].get('postal_code'):
+                enriched['suggested_postal_code'] = suggestions[0]['postal_code']
+        
+        return enriched
+    
+    def bulk_extract(self, addresses: List[str], 
+                    on_progress: Optional[Callable[[int, int], None]] = None,
+                    on_error: Optional[Callable[[str, Exception], None]] = None) -> List[Dict]:
+        """
+        Extract from multiple addresses with progress callbacks
+        
+        Args:
+            addresses: List of address strings
+            on_progress: Callback(current_index, total)
+            on_error: Callback(address, error)
+        
+        Returns:
+            List of extraction results
+        """
+        results = []
+        total = len(addresses)
+        
+        for i, address in enumerate(addresses, 1):
+            try:
+                result = self.extract(address)
+                results.append(result)
+                
+                if on_progress:
+                    on_progress(i, total)
+            except Exception as e:
+                error_result = self._empty_result(address, time.time(), str(e))
+                results.append(error_result)
+                
+                if on_error:
+                    on_error(address, e)
+        
+        return results
+    
+    def get_statistics(self, addresses: List[str]) -> Dict:
+        """
+        Calculate statistics for a list of addresses
+        
+        Args:
+            addresses: List of address strings
+        
+        Returns:
+            Statistics dictionary
+        """
+        results = []
+        for address in addresses:
+            result = self.extract(address)
+            results.append(result)
+        
+        return get_statistics(results)

@@ -72,7 +72,7 @@ test_addresses = [
     '1/4, South Begun Bari (Master Bari), Tejgaon I/A, Tejgaon, Dhaka -1208. (Near Satrasta)',
     '৬ রোড, ৯ ব্লক, C, চন্দ্রিমা মডেল টাউন, মোহাম্মদপুর, ঢাকা।',
     '৫৬ জিগাতলা, হাজী আবদুর রহমান লেন, ধানমন্ডি, ঢাকা-১২০৯' ,'sottota tower, h107/2,Road 7, zigatola',
-    "বন-এ্যামি আমেনা রহমান ভিলা, ৫৭/৫৮ ব্লক - চ, , Road number- 1, মিরপুর, ঢাকা- ১২১৬" 
+    "Uttara, Sector 11, Road 13A, House 1, Floor 7B" 
 ]
 
 print("="*80)

@@ -29,11 +29,34 @@ export interface ExtractionResult {
   normalized_address: string;
   original_address: string;
   cached?: boolean;
+  metadata?: {
+    script?: string;
+    is_mixed?: boolean;
+    conflicts?: string[];
+    component_details?: Record<string, {
+      value: string;
+      confidence: number;
+      source: string;
+    }>;
+    enabled_stages?: string[];
+  };
 }
 
 export interface ExtractionOptions {
   detailed?: boolean;
   timeout?: number; // milliseconds
+}
+
+export interface ConfidenceThresholds {
+  house_number?: number;
+  road?: number;
+  area?: number;
+  district?: number;
+  division?: number;
+  postal_code?: number;
+  flat_number?: number;
+  floor_number?: number;
+  block_number?: number;
 }
 
 /**
@@ -57,6 +80,7 @@ export class AddressExtractor {
   private pythonScriptPath: string;
   private pythonPath: string;
   private initialized: boolean = false;
+  private confidenceThresholds: ConfidenceThresholds | null = null;
 
   /**
    * Creates a new AddressExtractor instance.
@@ -112,6 +136,42 @@ export class AddressExtractor {
   }
 
   /**
+   * Set confidence thresholds for address components
+   * 
+   * Components with confidence below the threshold will be filtered out from results.
+   * 
+   * @param thresholds - Dictionary with minimum confidence thresholds (0.0-1.0) for each component
+   * @returns void
+   * 
+   * @example
+   * ```typescript
+   * extractor.setConfidenceThresholds({
+   *   house_number: 0.75,
+   *   postal_code: 0.85,
+   *   area: 0.70
+   * });
+   * ```
+   */
+  setConfidenceThresholds(thresholds: ConfidenceThresholds): void {
+    // Validate thresholds are between 0 and 1
+    for (const [key, value] of Object.entries(thresholds)) {
+      if (value !== undefined && (value < 0 || value > 1)) {
+        throw new Error(`Invalid threshold for ${key}: ${value}. Must be between 0.0 and 1.0`);
+      }
+    }
+    this.confidenceThresholds = thresholds;
+  }
+
+  /**
+   * Get current confidence thresholds
+   * 
+   * @returns Current confidence thresholds or null if not set
+   */
+  getConfidenceThresholds(): ConfidenceThresholds | null {
+    return this.confidenceThresholds;
+  }
+
+  /**
    * Extract address components from a full address string
    * 
    * @param address - Full address string (e.g., "House 12, Road 5, Mirpur, Dhaka-1216")
@@ -132,54 +192,19 @@ export class AddressExtractor {
 
     try {
       const pythonScript = path.join(__dirname, '../api/python/extract.py');
+      const args: string[] = ['extract', address];
       
-      const pythonOptions = {
-        mode: 'text' as const,  // Use 'text' mode to handle JSON manually
-        pythonPath: this.pythonPath,
-        pythonOptions: ['-u'],
-        scriptPath: path.dirname(pythonScript),
-        args: [address, options.detailed ? '--detailed' : ''],
-      };
-
-      // python-shell v5+ uses Promises, not callbacks
-      const timeout = options.timeout || 30000; // 30 seconds default
+      if (options.detailed) {
+        args.push('--detailed');
+      }
       
-      const extractionPromise = PythonShell.run(
-        path.basename(pythonScript),
-        pythonOptions
-      ).then((results: any[]) => {
-        if (!results || results.length === 0) {
-          throw new Error('No results returned from Python script');
-        }
+      if (this.confidenceThresholds) {
+        args.push('--thresholds', JSON.stringify(this.confidenceThresholds));
+      }
 
-        // Join all results (in case of multi-line output)
-        const output = results.join('').trim();
-        
-        // Find JSON in output (in case there's any text before/after)
-        const jsonMatch = output.match(/\{[\s\S]*\}/);
-        if (!jsonMatch) {
-          throw new Error('No JSON found in Python output');
-        }
-        
-        try {
-          const result = JSON.parse(jsonMatch[0]);
-          return result as ExtractionResult;
-        } catch (parseError) {
-          throw new Error(`Failed to parse Python result: ${parseError}`);
-        }
-      }).catch((error: any) => {
-        throw new Error(`Python extraction error: ${error.message || String(error)}`);
-      });
-
-      // Add timeout
-      return Promise.race([
-        extractionPromise,
-        new Promise<ExtractionResult>((_, reject) => {
-          setTimeout(() => {
-            reject(new Error(`Address extraction timed out after ${timeout}ms`));
-          }, timeout);
-        })
-      ]);
+      const timeout = options.timeout || 30000;
+      const result = await this._runPythonScript(pythonScript, args, timeout);
+      return result as ExtractionResult;
     } catch (error) {
       throw new Error(`Address extraction failed: ${error instanceof Error ? error.message : String(error)}`);
     }
@@ -189,7 +214,7 @@ export class AddressExtractor {
    * Extract components from multiple addresses (batch processing)
    * 
    * @param addresses - Array of address strings
-   * @param options - Extraction options
+   * @param options - Extraction options with optional progress/error callbacks
    * @returns Promise with array of extraction results
    * 
    * @example
@@ -199,22 +224,47 @@ export class AddressExtractor {
    *   'Banani, Dhaka',
    *   'Gulshan 2, Dhaka'
    * ];
-   * const results = await extractor.batchExtract(addresses);
+   * 
+   * const results = await extractor.batchExtract(addresses, {
+   *   onProgress: (current, total) => {
+   *     console.log(`Processing ${current}/${total}`);
+   *   },
+   *   onError: (address, error) => {
+   *     console.error(`Failed: ${address}`, error);
+   *   }
+   * });
+   * 
    * results.forEach((result, i) => {
    *   console.log(`${addresses[i]}: ${result.components.postal_code}`);
    * });
    * ```
    */
-  async batchExtract(addresses: string[], options: ExtractionOptions = {}): Promise<ExtractionResult[]> {
+  async batchExtract(
+    addresses: string[], 
+    options: ExtractionOptions & {
+      onProgress?: (current: number, total: number) => void;
+      onError?: (address: string, error: Error) => void;
+    } = {}
+  ): Promise<ExtractionResult[]> {
     const results: ExtractionResult[] = [];
+    const total = addresses.length;
 
-    for (const address of addresses) {
+    for (let i = 0; i < addresses.length; i++) {
+      const address = addresses[i];
       try {
         const result = await this.extract(address, options);
         results.push(result);
+        
+        if (options.onProgress) {
+          options.onProgress(i + 1, total);
+        }
       } catch (error) {
         // Return empty result on error
         results.push(this.emptyResult(address));
+        
+        if (options.onError) {
+          options.onError(address, error instanceof Error ? error : new Error(String(error)));
+        }
       }
     }
 
@@ -241,6 +291,259 @@ export class AddressExtractor {
   getVersion(): string {
     const packageJson = require('../package.json');
     return packageJson.version;
+  }
+
+  /**
+   * Validate address completeness and component validity
+   * 
+   * @param address - Address string to validate
+   * @param required - Optional list of required components (default: ['district', 'area'])
+   * @returns Promise with validation result
+   * 
+   * @example
+   * ```typescript
+   * const validation = await extractor.validate("House 12, Road 5, Mirpur, Dhaka-1216");
+   * console.log(validation.is_valid); // true
+   * console.log(validation.completeness); // 0.89
+   * ```
+   */
+  async validate(address: string, required?: string[]): Promise<any> {
+    try {
+      const pythonScript = path.join(__dirname, '../api/python/extract.py');
+      const args: string[] = ['validate', address];
+      
+      if (required && required.length > 0) {
+        args.push('--required', required.join(','));
+      }
+      
+      if (this.confidenceThresholds) {
+        args.push('--thresholds', JSON.stringify(this.confidenceThresholds));
+      }
+
+      const result = await this._runPythonScript(pythonScript, args);
+      return result;
+    } catch (error) {
+      throw new Error(`Address validation failed: ${error instanceof Error ? error.message : String(error)}`);
+    }
+  }
+
+  /**
+   * Format address into standardized string
+   * 
+   * @param address - Address string to format
+   * @param options - Formatting options
+   * @returns Promise with formatted address string
+   * 
+   * @example
+   * ```typescript
+   * const formatted = await extractor.format("House 12, Road 5, Mirpur, Dhaka-1216", {
+   *   style: 'short',
+   *   separator: ', ',
+   *   includePostal: true
+   * });
+   * // "Mirpur, Dhaka, 1216"
+   * ```
+   */
+  async format(address: string, options: {
+    style?: 'full' | 'short' | 'postal' | 'minimal';
+    separator?: string;
+    includePostal?: boolean;
+  } = {}): Promise<string> {
+    try {
+      const pythonScript = path.join(__dirname, '../api/python/extract.py');
+      const args: string[] = ['format', address];
+      
+      if (options.style) {
+        args.push('--style', options.style);
+      }
+      if (options.separator) {
+        args.push('--separator', options.separator);
+      }
+      if (options.includePostal === false) {
+        args.push('--no-postal');
+      }
+      
+      if (this.confidenceThresholds) {
+        args.push('--thresholds', JSON.stringify(this.confidenceThresholds));
+      }
+
+      const result = await this._runPythonScript(pythonScript, args);
+      return result.formatted || '';
+    } catch (error) {
+      throw new Error(`Address formatting failed: ${error instanceof Error ? error.message : String(error)}`);
+    }
+  }
+
+  /**
+   * Compare two addresses and calculate similarity
+   * 
+   * @param address1 - First address string
+   * @param address2 - Second address string
+   * @returns Promise with comparison result
+   * 
+   * @example
+   * ```typescript
+   * const comparison = await extractor.compare(
+   *   "House 12, Road 5, Mirpur, Dhaka",
+   *   "H-12, R-5, Mirpur, Dhaka-1216"
+   * );
+   * console.log(comparison.similarity); // 0.92
+   * console.log(comparison.match); // true
+   * ```
+   */
+  async compare(address1: string, address2: string): Promise<any> {
+    try {
+      const pythonScript = path.join(__dirname, '../api/python/extract.py');
+      const args: string[] = ['compare', address1, address2];
+      
+      if (this.confidenceThresholds) {
+        args.push('--thresholds', JSON.stringify(this.confidenceThresholds));
+      }
+
+      const result = await this._runPythonScript(pythonScript, args);
+      return result;
+    } catch (error) {
+      throw new Error(`Address comparison failed: ${error instanceof Error ? error.message : String(error)}`);
+    }
+  }
+
+  /**
+   * Suggest addresses based on query (area/district name)
+   * 
+   * @param query - Search query (area or district name)
+   * @param limit - Maximum number of suggestions (default: 5)
+   * @returns Promise with array of suggestions
+   * 
+   * @example
+   * ```typescript
+   * const suggestions = await extractor.suggest("Mirpur", { limit: 5 });
+   * suggestions.forEach(s => {
+   *   console.log(`${s.area}, ${s.district} - ${s.postal_code}`);
+   * });
+   * ```
+   */
+  async suggest(query: string, limit: number = 5): Promise<any[]> {
+    try {
+      const pythonScript = path.join(__dirname, '../api/python/extract.py');
+      const args: string[] = ['suggest', query, '--limit', limit.toString()];
+      
+      if (this.confidenceThresholds) {
+        args.push('--thresholds', JSON.stringify(this.confidenceThresholds));
+      }
+
+      const result = await this._runPythonScript(pythonScript, args);
+      return result.suggestions || [];
+    } catch (error) {
+      throw new Error(`Address suggestion failed: ${error instanceof Error ? error.message : String(error)}`);
+    }
+  }
+
+
+  /**
+   * Enrich address with additional geographic information
+   * 
+   * @param address - Address string
+   * @returns Promise with enriched address data
+   * 
+   * @example
+   * ```typescript
+   * const enriched = await extractor.enrich("Mirpur, Dhaka");
+   * console.log(enriched.hierarchy); // Geographic hierarchy
+   * console.log(enriched.suggested_postal_code); // Suggested postal code if missing
+   * ```
+   */
+  async enrich(address: string): Promise<any> {
+    try {
+      const pythonScript = path.join(__dirname, '../api/python/extract.py');
+      const args: string[] = ['enrich', address];
+      
+      if (this.confidenceThresholds) {
+        args.push('--thresholds', JSON.stringify(this.confidenceThresholds));
+      }
+
+      const result = await this._runPythonScript(pythonScript, args);
+      return result;
+    } catch (error) {
+      throw new Error(`Address enrichment failed: ${error instanceof Error ? error.message : String(error)}`);
+    }
+  }
+
+  /**
+   * Calculate statistics for a list of addresses
+   * 
+   * @param addresses - Array of address strings
+   * @returns Promise with statistics
+   * 
+   * @example
+   * ```typescript
+   * const stats = await extractor.getStatistics([
+   *   "House 12, Mirpur, Dhaka",
+   *   "Banani, Dhaka",
+   *   "Gulshan, Dhaka"
+   * ]);
+   * console.log(stats.completeness); // 0.87
+   * console.log(stats.distribution.districts); // { "Dhaka": 3 }
+   * ```
+   */
+  async getStatistics(addresses: string[]): Promise<any> {
+    try {
+      const pythonScript = path.join(__dirname, '../api/python/extract.py');
+      const args: string[] = ['statistics', JSON.stringify(addresses)];
+      
+      if (this.confidenceThresholds) {
+        args.push('--thresholds', JSON.stringify(this.confidenceThresholds));
+      }
+
+      const result = await this._runPythonScript(pythonScript, args);
+      return result.statistics || {};
+    } catch (error) {
+      throw new Error(`Statistics calculation failed: ${error instanceof Error ? error.message : String(error)}`);
+    }
+  }
+
+  /**
+   * Internal method to run Python script and parse JSON output
+   */
+  private async _runPythonScript(scriptPath: string, args: string[], timeout: number = 30000): Promise<any> {
+    const pythonOptions = {
+      mode: 'text' as const,
+      pythonPath: this.pythonPath,
+      pythonOptions: ['-u'],
+      scriptPath: path.dirname(scriptPath),
+      args: args,
+    };
+
+    const extractionPromise = PythonShell.run(
+      path.basename(scriptPath),
+      pythonOptions
+    ).then((results: any[]) => {
+      if (!results || results.length === 0) {
+        throw new Error('No results returned from Python script');
+      }
+
+      const output = results.join('').trim();
+      const jsonMatch = output.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) {
+        throw new Error('No JSON found in Python output');
+      }
+
+      try {
+        return JSON.parse(jsonMatch[0]);
+      } catch (parseError) {
+        throw new Error(`Failed to parse Python result: ${parseError}`);
+      }
+    }).catch((error: any) => {
+      throw new Error(`Python execution error: ${error.message || String(error)}`);
+    });
+
+    return Promise.race([
+      extractionPromise,
+      new Promise<any>((_, reject) => {
+        setTimeout(() => {
+          reject(new Error(`Operation timed out after ${timeout}ms`));
+        }, timeout);
+      })
+    ]);
   }
 
   private emptyResult(address: string): ExtractionResult {
