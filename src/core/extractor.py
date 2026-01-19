@@ -13,6 +13,7 @@ from .stages.gazetteer import Gazetteer
 from .stages.geographic_validator import GeographicValidator
 from .stages.conflict_resolver import ConflictResolver
 from .config.stage_config import load_stage_config
+from .config.component_thresholds import load_component_thresholds
 from .utils.types import ScriptType
 from .utils.constants import TRIE_AVAILABLE
 
@@ -35,7 +36,7 @@ class ProductionAddressExtractor:
     """
     
     def __init__(self, data_path: Optional[str] = None, cache_size: int = 10000, 
-                 stage_config: Optional[Dict] = None):
+                 stage_config: Optional[Dict] = None, component_thresholds: Optional[Dict] = None):
         """
         Initialize Production Address Extractor with optional stage configuration
         
@@ -45,9 +46,16 @@ class ProductionAddressExtractor:
             stage_config: Dictionary with stage enable/disable flags
                 Example: {
                     'stage_1_script_detection': True,
-                    'stage_3_4_fsm_parsing': False,
-                    'stage_6_spacy_ner': True,
-                    'stage_7_gazetteer': True
+                    'stage_3_fsm_parsing': False,
+                    'stage_5_spacy_ner': True,
+                    'stage_6_gazetteer': True,
+                    'stage_7_geographic': True
+                }
+            component_thresholds: Dictionary with minimum confidence thresholds for components
+                Example: {
+                    'house_number': 0.75,
+                    'postal_code': 0.85,
+                    'area': 0.70
                 }
         """
         logger.info("=" * 80)
@@ -57,15 +65,18 @@ class ProductionAddressExtractor:
         # Load stage configuration (default: all enabled)
         self.stage_config = load_stage_config(stage_config)
         
+        # Load component confidence thresholds
+        self.component_thresholds = load_component_thresholds(thresholds=component_thresholds)
+        
         # Initialize all stages (will be conditionally used)
         self.script_detector = ScriptDetector() if self.stage_config.get('stage_1_script_detection', True) else None
         self.normalizer = CanonicalNormalizer()  # Always enabled (essential)
-        self.fsm_parser = SimpleFSMParser() if self.stage_config.get('stage_3_4_fsm_parsing', True) else None
+        self.fsm_parser = SimpleFSMParser() if self.stage_config.get('stage_3_fsm_parsing', True) else None
         self.regex_extractor = RegexExtractor()  # Always enabled (essential)
-        self.spacy_ner = SpacyNERExtractor() if self.stage_config.get('stage_6_spacy_ner', True) else None
-        self.gazetteer = Gazetteer(data_path) if self.stage_config.get('stage_7_gazetteer', True) else None
-        self.geographic_validator = GeographicValidator() if self.stage_config.get('stage_7_5_geographic', True) else None
-        self.resolver = ConflictResolver()  # Always enabled (essential)
+        self.spacy_ner = SpacyNERExtractor() if self.stage_config.get('stage_5_spacy_ner', True) else None
+        self.gazetteer = Gazetteer(data_path) if self.stage_config.get('stage_6_gazetteer', True) else None
+        self.geographic_validator = GeographicValidator() if self.stage_config.get('stage_7_geographic', True) else None
+        self.resolver = ConflictResolver(component_thresholds=self.component_thresholds)  # Always enabled (essential)
         
         # Technique #27: Cache for extraction results
         self._cache = {}
@@ -139,39 +150,50 @@ class ProductionAddressExtractor:
             # Collect evidence
             evidence_map = {}
             
-            # STAGE 3-4: FSM Parsing (Optional)
-            if self.stage_config.get('stage_3_4_fsm_parsing', True) and self.fsm_parser:
+            # STAGE 3: FSM Parsing (Optional)
+            if self.stage_config.get('stage_3_fsm_parsing', True) and self.fsm_parser:
                 fsm_result = self.fsm_parser.parse(normalized)
-                # From FSM
+                # From FSM - apply confidence threshold
                 for comp, value in fsm_result['components'].items():
                     if value:
+                        confidence = fsm_result['confidence']
+                        threshold = self.component_thresholds.get(comp, 0.0)
+                        if confidence >= threshold:
+                            if comp not in evidence_map:
+                                evidence_map[comp] = []
+                            evidence_map[comp].append({
+                                'value': value,
+                                'confidence': confidence,
+                                'source': 'fsm'
+                            })
+            
+            # STAGE 4: Regex Extraction (Always enabled - essential)
+            regex_results = self.regex_extractor.extract(normalized)
+            # From Regex - apply confidence threshold
+            for comp, data in regex_results.items():
+                if data and isinstance(data, dict):
+                    confidence = data.get('confidence', 0.0)
+                    threshold = self.component_thresholds.get(comp, 0.0)
+                    if confidence >= threshold:
                         if comp not in evidence_map:
                             evidence_map[comp] = []
-                        evidence_map[comp].append({
-                            'value': value,
-                            'confidence': fsm_result['confidence'],
-                            'source': 'fsm'
-                        })
+                        evidence_map[comp].append(data)
             
-            # STAGE 5: Regex Extraction (Always enabled - essential)
-            regex_results = self.regex_extractor.extract(normalized)
-            # From Regex
-            for comp, data in regex_results.items():
-                if comp not in evidence_map:
-                    evidence_map[comp] = []
-                evidence_map[comp].append(data)
-            
-            # STAGE 6: spaCy NER (Optional - ML-based extraction)
-            if self.stage_config.get('stage_6_spacy_ner', True) and self.spacy_ner:
+            # STAGE 5: spaCy NER (Optional - ML-based extraction)
+            if self.stage_config.get('stage_5_spacy_ner', True) and self.spacy_ner:
                 spacy_results = self.spacy_ner.extract(normalized)
                 for comp, data in spacy_results.items():
-                    if comp not in evidence_map:
-                        evidence_map[comp] = []
-                    evidence_map[comp].append(data)
+                    if data and isinstance(data, dict):
+                        confidence = data.get('confidence', 0.0)
+                        threshold = self.component_thresholds.get(comp, 0.0)
+                        if confidence >= threshold:
+                            if comp not in evidence_map:
+                                evidence_map[comp] = []
+                            evidence_map[comp].append(data)
             
-            # STAGE 7: Gazetteer Validation (Optional)
+            # STAGE 6: Gazetteer Validation (Optional)
             gazetteer_enhancements = {'_conflicts': []}
-            if self.stage_config.get('stage_7_gazetteer', True) and self.gazetteer:
+            if self.stage_config.get('stage_6_gazetteer', True) and self.gazetteer:
                 # Get current extracted values
                 current_area = evidence_map.get('area', [{}])[0].get('value') if 'area' in evidence_map and evidence_map['area'] else None
                 current_district = evidence_map.get('district', [{}])[0].get('value') if 'district' in evidence_map and evidence_map['district'] else None
@@ -197,15 +219,19 @@ class ProductionAddressExtractor:
                     'postal_code': current_postal,
                 })
                 
-                # Add gazetteer evidence
+                # Add gazetteer evidence - apply confidence threshold
                 for comp, data in gazetteer_enhancements.items():
                     if comp != '_conflicts' and data:
-                        if comp not in evidence_map:
-                            evidence_map[comp] = []
-                        evidence_map[comp].append(data)
+                        if isinstance(data, dict):
+                            confidence = data.get('confidence', 0.0)
+                            threshold = self.component_thresholds.get(comp, 0.0)
+                            if confidence >= threshold:
+                                if comp not in evidence_map:
+                                    evidence_map[comp] = []
+                                evidence_map[comp].append(data)
             
-            # STAGE 7.5: Geographic Intelligence & Validation (Optional)
-            if self.stage_config.get('stage_7_5_geographic', True) and self.geographic_validator:
+            # STAGE 7: Geographic Intelligence & Validation (Optional)
+            if self.stage_config.get('stage_7_geographic', True) and self.geographic_validator:
                 # Get current extracted values for geographic validation
                 current_area = evidence_map.get('area', [{}])[0].get('value') if 'area' in evidence_map and evidence_map['area'] else None
                 current_district = evidence_map.get('district', [{}])[0].get('value') if 'district' in evidence_map and evidence_map['district'] else None
@@ -223,12 +249,15 @@ class ProductionAddressExtractor:
                     }
                 )
                 
-                # Add extracted components to evidence
+                # Add extracted components to evidence - apply confidence threshold
                 for comp, data in geographic_extraction.items():
-                    if data:
-                        if comp not in evidence_map:
-                            evidence_map[comp] = []
-                        evidence_map[comp].append(data)
+                    if data and isinstance(data, dict):
+                        confidence = data.get('confidence', 0.0)
+                        threshold = self.component_thresholds.get(comp, 0.0)
+                        if confidence >= threshold:
+                            if comp not in evidence_map:
+                                evidence_map[comp] = []
+                            evidence_map[comp].append(data)
                 
                 # Validate and enhance with geographic intelligence
                 geographic_enhancements = self.geographic_validator.validate_and_enhance({
@@ -238,13 +267,16 @@ class ProductionAddressExtractor:
                     'postal_code': current_postal or geographic_extraction.get('postal_code', {}).get('value')
                 })
                 
-                # Add geographic enhancements to evidence
+                # Add geographic enhancements to evidence - apply confidence threshold
                 for comp, data in geographic_enhancements.items():
                     if comp not in ['geographic_valid', 'geographic_conflicts', 'geographic_suggestions', 'location_hierarchy', 'full_location_hierarchy']:
                         if data and isinstance(data, dict) and data.get('value'):
-                            if comp not in evidence_map:
-                                evidence_map[comp] = []
-                            evidence_map[comp].append(data)
+                            confidence = data.get('confidence', 0.0)
+                            threshold = self.component_thresholds.get(comp, 0.0)
+                            if confidence >= threshold:
+                                if comp not in evidence_map:
+                                    evidence_map[comp] = []
+                                evidence_map[comp].append(data)
             
             # STAGE 8: Conflict Resolution
             final_components = self.resolver.resolve(evidence_map)

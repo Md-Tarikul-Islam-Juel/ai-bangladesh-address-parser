@@ -2,13 +2,13 @@
 
 import re
 from collections import defaultdict
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 
 class ConflictResolver:
     """Evidence-weighted conflict resolution"""
     
-    def __init__(self):
+    def __init__(self, component_thresholds: Optional[Dict[str, float]] = None):
         # Source reliability weights (calibrated)
         self.weights = {
             'regex': 1.00,               # Your patterns - highest precision
@@ -18,8 +18,17 @@ class ConflictResolver:
             'gazetteer_corrected': 0.85,  # Corrected conflict
             'inferred_from_area': 0.80,   # Logical inference
             'inferred_from_district': 0.80,
+            'geographic_inferred_from_area': 0.80,
+            'geographic_inferred_from_union': 0.80,
+            'geographic_inferred_from_district': 0.80,
+            'geographic_validated': 0.95,
+            'geographic_upazila_extraction': 0.90,
+            'geographic_union_extraction': 0.85,
             'unvalidated': 0.60,         # Not confirmed
         }
+        
+        # Component confidence thresholds (optional)
+        self.component_thresholds = component_thresholds or {}
     
     def resolve(self, evidence_map: Dict[str, List[Dict]]) -> Dict:
         """Resolve conflicts using weighted voting"""
@@ -71,9 +80,17 @@ class ConflictResolver:
                 avg_conf = sum(e['confidence'] for e in normalized_evidences) / len(normalized_evidences)
                 best_source = max(normalized_evidences, key=lambda e: e['confidence'])['source']
                 
+                final_confidence = min(avg_conf * 1.05, 0.99)  # Consensus bonus
+                
+                # Apply component-specific threshold
+                threshold = self.component_thresholds.get(component, 0.0)
+                if final_confidence < threshold:
+                    resolved[component] = None  # Below threshold, reject
+                    continue
+                
                 resolved[component] = {
                     'value': value,
-                    'confidence': min(avg_conf * 1.05, 0.99),  # Consensus bonus
+                    'confidence': final_confidence,
                     'source': best_source,
                     'evidence_count': len(normalized_evidences)
                 }
@@ -89,9 +106,17 @@ class ConflictResolver:
                 best_evidence = max([e for e in normalized_evidences if e['value'] == best_value],
                                   key=lambda e: e['confidence'])
                 
+                final_confidence = best_evidence['confidence'] * 0.90  # Conflict penalty
+                
+                # Apply component-specific threshold
+                threshold = self.component_thresholds.get(component, 0.0)
+                if final_confidence < threshold:
+                    resolved[component] = None  # Below threshold, reject
+                    continue
+                
                 resolved[component] = {
                     'value': best_value,
-                    'confidence': best_evidence['confidence'] * 0.90,  # Conflict penalty
+                    'confidence': final_confidence,
                     'source': best_evidence['source'],
                     'evidence_count': len(normalized_evidences),
                     'conflict': True

@@ -34,37 +34,42 @@ from src.core import ProductionAddressExtractor
 # Stage mapping
 STAGE_MAP = {
     'script': 'stage_1_script_detection',
-    'fsm': 'stage_3_4_fsm_parsing',
-    'spacy': 'stage_6_spacy_ner',
-    'gazetteer': 'stage_7_gazetteer',
-    'all': ['stage_1_script_detection', 'stage_3_4_fsm_parsing', 'stage_6_spacy_ner', 'stage_7_gazetteer']
+    'fsm': 'stage_3_fsm_parsing',
+    'spacy': 'stage_5_spacy_ner',
+    'gazetteer': 'stage_6_gazetteer',
+    'geographic': 'stage_7_geographic',
+    'all': ['stage_1_script_detection', 'stage_3_fsm_parsing', 'stage_5_spacy_ner', 'stage_6_gazetteer', 'stage_7_geographic']
 }
 
 # Performance profiles
 PROFILES = {
     'fast': {
         'stage_1_script_detection': False,
-        'stage_3_4_fsm_parsing': False,
-        'stage_6_spacy_ner': False,
-        'stage_7_gazetteer': False
+        'stage_3_fsm_parsing': False,
+        'stage_5_spacy_ner': False,
+        'stage_6_gazetteer': False,
+        'stage_7_geographic': False
     },
     'balanced': {
         'stage_1_script_detection': False,
-        'stage_3_4_fsm_parsing': False,
-        'stage_6_spacy_ner': True,
-        'stage_7_gazetteer': True
+        'stage_3_fsm_parsing': False,
+        'stage_5_spacy_ner': True,
+        'stage_6_gazetteer': True,
+        'stage_7_geographic': True
     },
     'accurate': {
         'stage_1_script_detection': True,
-        'stage_3_4_fsm_parsing': True,
-        'stage_6_spacy_ner': True,
-        'stage_7_gazetteer': True
+        'stage_3_fsm_parsing': True,
+        'stage_5_spacy_ner': True,
+        'stage_6_gazetteer': True,
+        'stage_7_geographic': True
     },
     'minimal': {
         'stage_1_script_detection': False,
-        'stage_3_4_fsm_parsing': False,
-        'stage_6_spacy_ner': False,
-        'stage_7_gazetteer': False
+        'stage_3_fsm_parsing': False,
+        'stage_5_spacy_ner': False,
+        'stage_6_gazetteer': False,
+        'stage_7_geographic': False
     }
 }
 
@@ -73,11 +78,15 @@ def load_config_file():
     config_file = project_root / "config" / "stage_config.json"
     if config_file.exists():
         with open(config_file, 'r', encoding='utf-8') as f:
-            return json.load(f)
+            data = json.load(f)
+            # Remove metadata if present
+            if '_metadata' in data:
+                data = {k: v for k, v in data.items() if k != '_metadata'}
+            return data
     return None
 
 def save_config_file(config: dict):
-    """Save configuration to JSON file"""
+    """Save configuration to JSON file (simplified flat format)"""
     config_file = project_root / "config" / "stage_config.json"
     config_file.parent.mkdir(parents=True, exist_ok=True)
     
@@ -85,21 +94,42 @@ def save_config_file(config: dict):
     if config_file.exists():
         with open(config_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
+            # Preserve metadata if present
+            metadata = data.get('_metadata', {})
     else:
-        data = {'stages': {}}
+        data = {}
+        metadata = {
+            "description": "Stage enable/disable configuration",
+            "mandatory_stages": [
+                "stage_2_normalization",
+                "stage_4_regex_extraction",
+                "stage_8_conflict_resolution",
+                "stage_9_output"
+            ],
+            "optional_stages": [
+                "stage_1_script_detection",
+                "stage_3_fsm_parsing",
+                "stage_5_spacy_ner",
+                "stage_6_gazetteer",
+                "stage_7_geographic"
+            ]
+        }
     
-    # Update stage settings
-    if 'stages' not in data:
-        data['stages'] = {}
+    # Remove metadata from data before updating
+    if '_metadata' in data:
+        del data['_metadata']
     
-    for stage_key, enabled in config.items():
-        if stage_key in data['stages']:
-            data['stages'][stage_key]['enabled'] = enabled
-        else:
-            data['stages'][stage_key] = {
-                'enabled': enabled,
-                'description': f'Stage {stage_key}'
-            }
+    # Update stage settings (simplified flat format)
+    data.update(config)
+    
+    # Ensure mandatory stages are always enabled
+    mandatory_stages = ['stage_2_normalization', 'stage_4_regex_extraction', 
+                       'stage_8_conflict_resolution', 'stage_9_output']
+    for stage in mandatory_stages:
+        data[stage] = True
+    
+    # Add metadata back
+    data['_metadata'] = metadata
     
     with open(config_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
@@ -119,23 +149,33 @@ def show_config():
         with open(config_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        if 'stages' in data:
-            print("Stage Status:")
-            print("-" * 80)
-            for stage_key, stage_data in data['stages'].items():
-                enabled = "✓ ENABLED" if stage_data.get('enabled', True) else "✗ DISABLED"
-                desc = stage_data.get('description', '')
-                optional = " (Optional)" if stage_data.get('optional', False) else " (Essential)"
-                print(f"  {stage_key:30s} {enabled:15s} {desc}{optional}")
-            print()
+        # Extract metadata
+        metadata = data.get('_metadata', {})
+        mandatory_stages = metadata.get('mandatory_stages', [
+            'stage_2_normalization',
+            'stage_4_regex_extraction',
+            'stage_8_conflict_resolution',
+            'stage_9_output'
+        ])
         
-        if 'performance_profiles' in data:
-            print("Available Performance Profiles:")
-            print("-" * 80)
-            for profile_name, profile_data in data['performance_profiles'].items():
-                desc = profile_data.get('description', '')
-                print(f"  {profile_name:15s} - {desc}")
-            print()
+        # Filter out metadata from config
+        config = {k: v for k, v in data.items() if k != '_metadata'}
+        
+        print("MANDATORY STAGES (always enabled):")
+        print("-" * 80)
+        for stage_key in sorted(mandatory_stages):
+            if stage_key in config:
+                enabled = "✓ ENABLED" if config.get(stage_key, True) else "✗ DISABLED"
+                print(f"  {stage_key:35s} {enabled:12s} (MANDATORY)")
+        print()
+        
+        print("OPTIONAL STAGES (can be disabled):")
+        print("-" * 80)
+        optional_stages = [k for k in sorted(config.keys()) if k not in mandatory_stages]
+        for stage_key in optional_stages:
+            enabled = "✓ ENABLED" if config.get(stage_key, True) else "✗ DISABLED"
+            print(f"  {stage_key:35s} {enabled:12s} (OPTIONAL)")
+        print()
     else:
         print("No configuration file found. Using defaults (all stages enabled).")
         print()
@@ -144,10 +184,11 @@ def show_config():
         default_stages = {
             'stage_1_script_detection': True,
             'stage_2_normalization': True,
-            'stage_3_4_fsm_parsing': True,
-            'stage_5_regex_extraction': True,
-            'stage_6_spacy_ner': True,
-            'stage_7_gazetteer': True,
+            'stage_3_fsm_parsing': True,
+            'stage_4_regex_extraction': True,
+            'stage_5_spacy_ner': True,
+            'stage_6_gazetteer': True,
+            'stage_7_geographic': True,
             'stage_8_conflict_resolution': True,
             'stage_9_output': True
         }

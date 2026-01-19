@@ -1,4 +1,4 @@
-"""Stage 3-4: FSM Parser"""
+"""Stage 3: FSM Parser"""
 
 import re
 from typing import Dict

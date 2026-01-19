@@ -1,4 +1,4 @@
-"""Stage 7: Gazetteer Validation & Enhancement"""
+"""Stage 6: Gazetteer Validation & Enhancement"""
 
 import json
 import logging

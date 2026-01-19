@@ -13,11 +13,11 @@ def load_stage_config(stage_config: Optional[Dict] = None) -> Dict:
     default_config = {
         'stage_1_script_detection': True,
         'stage_2_normalization': True,  # Always True (essential)
-        'stage_3_4_fsm_parsing': True,
-        'stage_5_regex_extraction': True,  # Always True (essential)
-        'stage_6_spacy_ner': True,
-        'stage_7_gazetteer': True,
-        'stage_7_5_geographic': True,  # Geographic Intelligence & Validation
+        'stage_3_fsm_parsing': True,
+        'stage_4_regex_extraction': True,  # Always True (essential)
+        'stage_5_spacy_ner': True,
+        'stage_6_gazetteer': True,
+        'stage_7_geographic': True,  # Geographic Intelligence & Validation
         'stage_8_conflict_resolution': True,  # Always True (essential)
         'stage_9_output': True,  # Always True (essential)
     }
@@ -36,13 +36,18 @@ def load_stage_config(stage_config: Optional[Dict] = None) -> Dict:
         try:
             with open(config_file, 'r', encoding='utf-8') as f:
                 file_config = json.load(f)
-                # Extract stage settings
-                if 'stages' in file_config:
-                    config = default_config.copy()
-                    for stage_key, stage_data in file_config['stages'].items():
-                        if stage_key in config:
-                            config[stage_key] = stage_data.get('enabled', True)
-                    return config
+                # Simplified format: flat structure with boolean values
+                # Skip metadata if present
+                config = default_config.copy()
+                for stage_key in default_config.keys():
+                    if stage_key in file_config:
+                        config[stage_key] = bool(file_config[stage_key])
+                # Ensure mandatory stages are always enabled
+                mandatory_stages = ['stage_2_normalization', 'stage_4_regex_extraction', 
+                                   'stage_8_conflict_resolution', 'stage_9_output']
+                for stage in mandatory_stages:
+                    config[stage] = True
+                return config
         except Exception as e:
             logger.warning(f"Could not load config file: {e}, using defaults")
     

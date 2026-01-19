@@ -71,7 +71,8 @@ test_addresses = [
     '101/1 west monipur House name- Dream house, 60 feet road, 4th floor, flat- D2, Mirpur-2, Dhaka-1216',
     '1/4, South Begun Bari (Master Bari), Tejgaon I/A, Tejgaon, Dhaka -1208. (Near Satrasta)',
     '৬ রোড, ৯ ব্লক, C, চন্দ্রিমা মডেল টাউন, মোহাম্মদপুর, ঢাকা।',
-    '৫৬ জিগাতলা, হাজী আবদুর রহমান লেন, ধানমন্ডি, ঢাকা-১২০৯' ,'sottota tower, h107/2,Road 7, zigatola' 
+    '৫৬ জিগাতলা, হাজী আবদুর রহমান লেন, ধানমন্ডি, ঢাকা-১২০৯' ,'sottota tower, h107/2,Road 7, zigatola',
+    "বন-এ্যামি আমেনা রহমান ভিলা, ৫৭/৫৮ ব্লক - চ, , Road number- 1, মিরপুর, ঢাকা- ১২১৬" 
 ]
 
 print("="*80)

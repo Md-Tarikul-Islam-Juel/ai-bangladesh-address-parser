@@ -1,4 +1,4 @@
-"""Stage 7.5: Geographic Intelligence & Validation"""
+"""Stage 7: Geographic Intelligence & Validation"""
 
 import logging
 from typing import Dict, Optional, List

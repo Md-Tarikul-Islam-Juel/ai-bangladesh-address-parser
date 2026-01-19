@@ -1,4 +1,4 @@
-"""Stage 6: spaCy NER (ML-Based Extraction)"""
+"""Stage 5: spaCy NER (ML-Based Extraction)"""
 
 import logging
 from pathlib import Path

@@ -1,4 +1,4 @@
-"""Stage 5: Regex Pattern Extraction"""
+"""Stage 4: Regex Pattern Extraction"""
 
 from typing import Dict
 import logging
