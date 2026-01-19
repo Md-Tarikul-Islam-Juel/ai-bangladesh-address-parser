@@ -1,6 +1,6 @@
 {
   "name": "ai-bangladesh-address-parser",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Production-grade AI-powered Bangladeshi address parser - Extract house, road, area, district, postal code, and more from full addresses",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -30,15 +30,15 @@
     "address-extraction",
     "ner"
   ],
-  "author": "[YOUR NAME] <your.email@example.com>",
+  "author": "Md. Tarikul Islam Juel",
   "license": "PROPRIETARY",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/address-dataset.git"
+    "url": "https://github.com/Md-Tarikul-Islam-Juel/ai-bangladesh-address-parser.git"
   },
-  "homepage": "https://github.com/your-username/address-dataset#readme",
+  "homepage": "https://github.com/Md-Tarikul-Islam-Juel/ai-bangladesh-address-parser#readme",
   "bugs": {
-    "url": "https://github.com/your-username/address-dataset/issues"
+    "url": "https://github.com/Md-Tarikul-Islam-Juel/ai-bangladesh-address-parser/issues"
   },
   "files": [
     "dist/",

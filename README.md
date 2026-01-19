@@ -329,18 +329,32 @@ python-shell
 Python Script (extract.py)
     ↓
 ProductionAddressExtractor (9-stage pipeline)
-    ├── Script Detection
-    ├── Canonical Normalization
-    ├── Token Classification
-    ├── FSM Parsing
-    ├── Regex Extraction
-    ├── spaCy NER (ML)
-    ├── Gazetteer Validation
-    ├── Conflict Resolution
-    └── Structured Output
+    ├── STAGE 1: Script Detection (Bangla/English/Mixed)
+    ├── STAGE 2: Canonical Normalization (Standardize format)
+    ├── STAGE 3: Token Classification (Classify tokens)
+    ├── STAGE 4: FSM Parsing (Validate structure)
+    ├── STAGE 5: Regex Extraction (Pattern matching)
+    ├── STAGE 6: spaCy NER (ML-based extraction)
+    ├── STAGE 7: Gazetteer Validation (Geographic intelligence)
+    ├── STAGE 8: Conflict Resolution (Evidence-weighted)
+    └── STAGE 9: Structured Output (JSON generation)
     ↓
 Extracted Components (JSON)
 ```
+
+### 9-Stage Pipeline Details
+
+1. **Script Detection** - Identifies Bangla, English, or Mixed scripts
+2. **Canonical Normalization** - Converts Bangla numerals, standardizes format
+3. **Token Classification** - Classifies each token by type (HOUSE, ROAD, AREA, etc.)
+4. **FSM Parsing** - Validates address structure using finite state machine
+5. **Regex Extraction** - Extracts components using specialized regex patterns
+6. **spaCy NER** - ML-based entity recognition (fine-tuned on 21,810 addresses)
+7. **Gazetteer Validation** - Validates and auto-fills using geographic database
+8. **Conflict Resolution** - Resolves conflicts using evidence-weighted approach
+9. **Structured Output** - Generates final JSON with confidence scores
+
+See [9_STAGES_DATA_PROCESSING.md](9_STAGES_DATA_PROCESSING.md) for complete details.
 
 ## 📊 Performance
 
