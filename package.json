@@ -1,6 +1,6 @@
 {
   "name": "ai-bangladesh-address-parser",
-  "version": "1.0.6",
+  "version": "1.0.5",
   "description": "Production-grade AI-powered Bangladeshi address parser - Extract house, road, area, district, postal code, and more from full addresses",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
