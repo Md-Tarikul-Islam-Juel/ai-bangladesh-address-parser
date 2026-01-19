@@ -1,36 +1,357 @@
-Copyright (c) 2026 Md. Tarikul Islam Juel
+PROPRIETARY SOFTWARE LICENSE
 
-All Rights Reserved.
+Copyright (c) 2026 Md. Tarikul Islam Juel. All Rights Reserved.
 
 This software and associated documentation files (the "Software") are proprietary
-property of the copyright holder.
+property of the copyright holder. This license grants limited rights to use the
+Software under specific terms and conditions.
 
-PERMITTED USAGE:
+================================================================================
+1. GRANT OF LICENSE
+================================================================================
 
-✅ You MAY:
+Subject to the terms and conditions of this License, the copyright holder grants
+you a limited, non-exclusive, non-transferable, revocable license to:
 
-- Install and use the Software as-is
-- Use the Software for your projects (personal or commercial)
-- Distribute the Software as part of your applications
+✅ PERMITTED USES:
 
-❌ You MAY NOT:
+(a) Install and use the Software in its original, unmodified form
+(b) Use the Software for personal, educational, or commercial projects
+(c) Distribute the Software as part of your applications, products, or services
+(d) Include the Software in bundled software distributions
+(e) Use the Software in production environments and commercial applications
 
-1. MODIFY - Any modification, adaptation, or alteration of the Software is strictly prohibited
-2. CREATE DERIVATIVE WORKS - You may not create works based on or derived from the Software
-3. REDISTRIBUTE MODIFIED VERSIONS - Any modified version must not be distributed
-4. REVERSE ENGINEER - Reverse engineering, decompiling, or disassembling is prohibited
-5. REMOVE COPYRIGHT NOTICES - All copyright notices must remain intact
+================================================================================
+2. RESTRICTIONS
+================================================================================
 
-The Software is provided "AS IS", without warranty of any kind, express or implied,
-including but not limited to the warranties of merchantability, fitness for a particular
-purpose and noninfringement. In no event shall the authors or copyright holders be liable
-for any claim, damages or other liability, whether in an action of contract, tort or
-otherwise, arising from, out of or in connection with the Software or the use or other
-dealings in the Software.
+❌ PROHIBITED ACTIONS:
 
-For licensing inquiries or permission requests, please contact the copyright holder.
+You are expressly prohibited from:
 
----
+(a) MODIFYING - Any modification, adaptation, alteration, or customization of
+    the Software source code, configuration files, or any component is strictly
+    prohibited
+
+(b) CREATING DERIVATIVE WORKS - You may not create works based on, derived from,
+    or incorporating substantial portions of the Software, including but not
+    limited to:
+    - Forked versions
+    - Modified versions
+    - Enhanced versions
+    - Ports to other platforms or languages
+    - Works that incorporate the Software's algorithms, logic, or structure
+
+(c) REDISTRIBUTING MODIFIED VERSIONS - Any modified, adapted, or altered version
+    of the Software must not be distributed, published, or made available to
+    third parties
+
+(d) REVERSE ENGINEERING - Reverse engineering, decompiling, disassembling, or
+    attempting to derive the source code from the Software is prohibited
+
+(e) REMOVING ATTRIBUTION - All copyright notices, license text, and attribution
+    must remain intact and visible in all distributions
+
+(f) SUBLICENSING - You may not grant sublicenses or assign this license to
+    third parties without explicit written permission
+
+(g) COMPETITIVE USE - Using the Software to create competing products or
+    services that directly compete with the Software is prohibited
+
+(h) TECHNICAL EXTRACTION & EXTRACTION TOOLS - You are prohibited from:
+    - Extracting, copying, or exporting machine learning models, model weights,
+      neural network architectures, or trained parameters
+    - Extracting, copying, or exporting training data, datasets, or data files
+    - Extracting, copying, or exporting geographic data, gazetteer data, or
+      administrative hierarchy data
+    - Extracting, copying, or exporting configuration files, patterns, or
+      rule-based logic
+    - Using automated tools, scripts, or programs to extract any component
+      of the Software
+    - Using decompilers, disassemblers, or extraction tools on the Software
+    - Accessing or copying files from the models/, data/, config/, or src/
+      directories for purposes other than runtime execution
+
+(i) WRAPPER & API WORKAROUNDS - You are prohibited from:
+    - Creating wrapper libraries, API layers, or abstraction layers that
+      expose the Software's functionality as a service
+    - Creating REST APIs, GraphQL APIs, or any network-based interfaces that
+      expose the Software's functionality
+    - Creating microservices, serverless functions, or cloud functions that
+      wrap or expose the Software
+    - Creating plugins, extensions, or middleware that modify or extend the
+      Software's behavior
+    - Creating adapters, bridges, or integration layers that expose the
+      Software's core functionality
+
+(j) SERVICE-AS-A-SERVICE (SAAS) RESALE - You are prohibited from:
+    - Offering the Software as a hosted service, cloud service, or SaaS product
+    - Reselling, sublicensing, or redistributing the Software as a service
+    - Creating multi-tenant services that provide the Software's functionality
+      to third parties
+    - Creating API gateways, proxy services, or intermediary services that
+      provide access to the Software
+    - Offering the Software through web services, mobile apps, or any
+      client-server architecture where the Software runs on your servers
+      for third-party clients
+
+(k) RUNTIME & EXECUTION MODIFICATIONS - You are prohibited from:
+    - Modifying the Software's behavior at runtime through code injection,
+      monkey patching, or dynamic code modification
+    - Intercepting, modifying, or replacing function calls, method calls, or
+      API calls within the Software
+    - Using debuggers, profilers, or instrumentation tools to modify the
+      Software's execution flow
+    - Creating runtime patches, hotfixes, or dynamic modifications
+    - Using reflection, introspection, or metaprogramming to alter the
+      Software's behavior
+
+(l) DATA & MODEL MANIPULATION - You are prohibited from:
+    - Modifying, editing, or altering model files, weights, or architectures
+    - Modifying, editing, or altering data files, training data, or datasets
+    - Modifying, editing, or altering configuration files, patterns, or rules
+    - Replacing model files with custom or alternative models
+    - Extracting and reusing model components in other projects
+    - Training new models based on the Software's architecture or data
+
+(m) ALGORITHM & LOGIC EXTRACTION - You are prohibited from:
+    - Extracting, copying, or reimplementing algorithms, processing logic,
+      or business rules from the Software
+    - Extracting, copying, or reimplementing the multi-stage processing
+      pipeline or workflow logic
+    - Extracting, copying, or reimplementing pattern matching rules,
+      regex patterns, or validation logic
+    - Extracting, copying, or reimplementing normalization, transformation,
+      or preprocessing logic
+    - Creating similar software that implements the same algorithms or logic
+
+(n) NETWORK & DISTRIBUTED ACCESS - You are prohibited from:
+    - Exposing the Software over a network, internet, or distributed system
+      for use by third parties
+    - Creating client-server architectures where the Software runs on servers
+      accessed by clients
+    - Creating peer-to-peer or distributed systems that share the Software
+    - Creating load balancers, proxies, or gateways that distribute access
+      to the Software
+
+(o) AUTOMATED & BULK ACCESS - You are prohibited from:
+    - Creating automated systems that provide bulk or high-volume access to
+      the Software's functionality
+    - Creating scraping tools, bots, or automated agents that use the Software
+    - Creating services that aggregate or batch process requests through
+      the Software
+    - Creating systems that resell or redistribute the Software's output
+      as a service
+
+(p) VIRTUALIZATION & CONTAINERIZATION ABUSE - You are prohibited from:
+    - Creating Docker containers, virtual machines, or containerized services
+      that expose the Software as a service
+    - Creating Kubernetes deployments, serverless functions, or cloud
+      infrastructure that provides the Software as a service
+    - Creating platform-as-a-service (PaaS) or infrastructure-as-a-service
+      (IaaS) offerings that include the Software
+
+(q) INTELLECTUAL PROPERTY EXTRACTION - You are prohibited from:
+    - Extracting trade secrets, proprietary algorithms, or confidential
+      information from the Software
+    - Using the Software to reverse engineer or understand proprietary
+      techniques or methodologies
+    - Documenting, publishing, or sharing internal workings, algorithms,
+      or implementation details of the Software
+    - Creating documentation, tutorials, or guides that reveal proprietary
+      implementation details
+
+================================================================================
+3. ATTRIBUTION REQUIREMENTS
+================================================================================
+
+When distributing the Software, you must:
+
+(a) Include the original copyright notice
+(b) Include this license text in its entirety
+(c) Maintain all attribution and credit information
+(d) Clearly indicate that the Software is proprietary and modifications are
+    prohibited
+
+================================================================================
+4. INTELLECTUAL PROPERTY
+================================================================================
+
+The Software is protected by copyright laws and international copyright treaties.
+All intellectual property rights, including but not limited to copyrights,
+patents, trademarks, and trade secrets, remain the exclusive property of the
+copyright holder. This license does not grant you any rights to use the
+copyright holder's trademarks, service marks, or trade names.
+
+SPECIFIC PROTECTED COMPONENTS:
+
+The following components are specifically protected and may not be extracted,
+copied, modified, or reused:
+
+(a) Machine Learning Models:
+    - All files in models/production/, models/training/, and models/archived/
+    - Model weights, neural network architectures, and trained parameters
+    - Model configuration files (config.cfg, meta.json)
+    - Vocabulary files, tokenizers, and embeddings
+    - Any spaCy model files or model artifacts
+
+(b) Training Data & Datasets:
+    - All files in data/training/
+    - Training data files (spacy_training_data.json)
+    - Raw data files (merged_addresses.json)
+    - Any annotated or labeled datasets
+
+(c) Geographic Data:
+    - All files in data/geographic/
+    - Division, district, upazila, union, and village data
+    - Postal code databases and mappings
+    - Administrative hierarchy data
+    - Any geographic reference data
+
+(d) Configuration & Patterns:
+    - All files in config/
+    - Confidence thresholds, stage configurations
+    - Regex patterns and processing rules
+    - Component thresholds and validation rules
+
+(e) Source Code & Algorithms:
+    - All Python source code in src/
+    - All TypeScript/JavaScript source code in api/
+    - Processing pipelines, stages, and workflows
+    - Algorithms, logic, and business rules
+    - Normalization, validation, and extraction logic
+
+(f) Documentation & Training Materials:
+    - Training scripts and methodologies
+    - Implementation guides and technical documentation
+    - Any proprietary techniques or methodologies
+
+================================================================================
+5. WARRANTY DISCLAIMER
+================================================================================
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
+OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+6. LIMITATION OF LIABILITY
+================================================================================
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+================================================================================
+7. TERMINATION
+================================================================================
+
+This license is effective until terminated. Your rights under this license will
+terminate automatically without notice if you fail to comply with any of its
+terms. Upon termination, you must immediately cease all use of the Software
+and destroy all copies in your possession.
+
+================================================================================
+8. GOVERNING LAW
+================================================================================
+
+This license shall be governed by and construed in accordance with the laws of
+Bangladesh, without regard to its conflict of law provisions. Any disputes
+arising from this license shall be subject to the exclusive jurisdiction of
+the courts of Bangladesh.
+
+================================================================================
+9. CONTACT & LICENSING INQUIRIES
+================================================================================
+
+For licensing inquiries, permission requests, or questions about this license,
+please contact:
+
+Md. Tarikul Islam Juel
+GitHub: https://github.com/Md-Tarikul-Islam-Juel/ai-bangladesh-address-parser
+Issues: https://github.com/Md-Tarikul-Islam-Juel/ai-bangladesh-address-parser/issues
+
+================================================================================
+10. TECHNICAL ENFORCEMENT & MONITORING
+================================================================================
+
+The copyright holder reserves the right to:
+
+(a) Monitor usage of the Software to ensure compliance with this license
+(b) Implement technical measures to prevent unauthorized use, modification,
+    or extraction of the Software
+(c) Use code obfuscation, anti-tampering measures, or other technical
+    protections as deemed necessary
+(d) Require registration, authentication, or licensing verification for
+    certain uses of the Software
+(e) Audit your use of the Software to verify compliance with this license
+
+You agree not to circumvent, disable, or interfere with any technical
+protection measures implemented in the Software.
+
+================================================================================
+11. DEFINITIONS & INTERPRETATION
+================================================================================
+
+For the purposes of this license:
+
+(a) "Software" includes:
+    - All source code, compiled code, and executables
+    - All data files, models, configurations, and resources
+    - All documentation, training materials, and related files
+    - Any updates, patches, or modifications provided by the copyright holder
+
+(b) "Modification" includes:
+    - Any change to source code, configuration, or data files
+    - Any alteration of behavior, functionality, or output
+    - Any addition, deletion, or replacement of components
+    - Any runtime or dynamic modification of execution
+
+(c) "Derivative Work" includes:
+    - Any work based on or derived from the Software
+    - Any work incorporating substantial portions of the Software
+    - Any work that uses the Software's algorithms, logic, or structure
+    - Any work that would not exist without the Software
+
+(d) "Service" includes:
+    - Any hosted, cloud, or network-accessible offering
+    - Any API, web service, or remote access mechanism
+    - Any multi-tenant or shared infrastructure
+    - Any client-server or distributed architecture
+
+(e) "Extraction" includes:
+    - Copying, exporting, or transferring any component
+    - Using automated tools, scripts, or programs to obtain components
+    - Reverse engineering or decompiling to obtain components
+    - Accessing files or data for purposes other than runtime execution
+
+This license shall be interpreted broadly to protect the copyright holder's
+intellectual property rights to the maximum extent permitted by law.
+
+================================================================================
+12. ENTIRE AGREEMENT
+================================================================================
+
+This license constitutes the entire agreement between you and the copyright
+holder regarding the Software and supersedes all prior or contemporaneous
+understandings, agreements, representations, and warranties.
+
+================================================================================
 
 PROPRIETARY SOFTWARE - ALL RIGHTS RESERVED
 USE PERMITTED - MODIFICATIONS PROHIBITED
+
+Version: 2.0
+Last Updated: January 2026
+
+This license has been enhanced with comprehensive technical protections to close
+all potential loopholes including model extraction, SaaS resale, wrapper APIs,
+runtime modifications, and intellectual property extraction.
